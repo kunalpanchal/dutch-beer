@@ -19,6 +19,8 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
+The public site defaults to English at `/en`; Dutch is available at `/nl`. The language switcher preserves the current page. Unprefixed routes redirect to English.
+
 Quality checks:
 
 ```bash
