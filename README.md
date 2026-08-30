@@ -19,7 +19,7 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
-The public site defaults to English at `/en`; Dutch is available at `/nl`. The language switcher preserves the current page. Unprefixed routes redirect to English.
+The public site defaults to English at `/en`; Dutch is available at `/nl`. Language is switched from the footer (`EN` is selected by default). Unprefixed routes redirect to English.
 
 Quality checks:
 
@@ -42,12 +42,12 @@ The `lib/schema.ts` model preserves sources, status, contributor context, and an
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md). For the moment, site visitors can send evidence-backed suggestions from `/contribute`; structured contribution forms and authentication are deliberately deferred until a persistent store is connected.
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md). Add a brewery or beer from `/contribute` — the form prefills a GitHub issue for review. You can also use the **Add a brewery** and **Add a beer** issue templates in this repository.
 
 ## Next increments
 
 - Choose and add a PostgreSQL ORM/migration layer
-- Add a structured contribution form with spam protection and moderation inbox
+- Connect a persistent store and moderation inbox for submitted GitHub issues
 - Add email/domain verification for brewery claims
 - Render only `published` records in each directory
 - Add per-field provenance and historical revisions

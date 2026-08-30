@@ -1,2 +1,3 @@
 import { redirect } from "next/navigation";
-export default function ContributePage() { redirect("/en/contribute"); }
+import { defaultLocale } from "@/lib/i18n";
+export default function ContributePage() { redirect(`/${defaultLocale}/contribute`); }

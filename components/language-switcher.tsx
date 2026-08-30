@@ -1,5 +1,28 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { Locale } from "@/lib/i18n";
-export function LanguageSwitcher({ locale }: { locale: Locale }) { const pathname = usePathname(); const other = locale === "en" ? "nl" : "en"; const rest = pathname.replace(new RegExp(`^/${locale}(?=/|$)`), "") || "/"; return <Link className="language-switcher" href={`/${other}${rest === "/" ? "" : rest}`} lang={other} aria-label={locale === "en" ? "Bekijk deze pagina in het Nederlands" : "View this page in English"}>{other.toUpperCase()}</Link>; }
+import { copy, locales, type Locale } from "@/lib/i18n";
+import { replaceLocaleInPath } from "@/lib/paths";
+
+export function LanguageSwitcher({ locale }: { locale: Locale }) {
+  const pathname = usePathname();
+  const labels = copy[locale].language;
+
+  return (
+    <nav className="language-switcher" aria-label={labels.label}>
+      {locales.map((code) => (
+        <Link
+          key={code}
+          href={replaceLocaleInPath(pathname, code)}
+          hrefLang={code}
+          lang={code}
+          aria-current={code === locale ? "page" : undefined}
+          aria-label={labels[code]}
+        >
+          {code.toUpperCase()}
+        </Link>
+      ))}
+    </nav>
+  );
+}

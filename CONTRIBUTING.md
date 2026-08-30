@@ -2,9 +2,18 @@
 
 Thank you for helping make the Dutch beer record more complete and more accurate.
 
-## What makes a useful contribution
+## Add a brewery or beer
 
-For a brewery, include its name, official website, and Dutch locality. For a beer, include the brewery, beer name, and the best available primary source. A link to the brewery’s own site is preferred; a clear photograph of a label can also help.
+The preferred path is the website form at `/contribute`. It prefills a GitHub issue so maintainers can review the source before anything is published. Email is only a fallback if you cannot use GitHub.
+
+You can also open a structured issue from this repository:
+
+1. Click **New issue**.
+2. Choose **Add a brewery**, **Add a beer**, or **Correct a listing**.
+3. Fill every required field, especially the primary source URL.
+4. Wait for review. Listings are not published automatically.
+
+A useful brewery submission includes name, official website, and Dutch locality. A useful beer submission includes brewery, beer name, and the best available primary source. A link to the brewery’s own site is preferred; a clear photograph of a label can also help.
 
 Please distinguish facts from guesses. If a beer is discontinued, seasonal, contract-brewed, or has a changed ABV, say how you know and when the source was checked.
 

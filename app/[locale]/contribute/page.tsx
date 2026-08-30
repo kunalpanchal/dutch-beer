@@ -1,5 +1,28 @@
 import { notFound } from "next/navigation";
+import { ContributionForm, GithubTemplateLinks } from "@/components/contribution-form";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { copy, isLocale } from "@/lib/i18n";
-const subjects = ["New brewery submission", "New beer submission", "Directory correction"];
-export default async function ContributePage({ params }: { params: Promise<{ locale: string }> }) { const { locale } = await params; if (!isLocale(locale)) notFound(); const text = copy[locale].contribute; return <main><SiteHeader locale={locale} /><section className="contribute-page"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}<br /><em>{text.emphasis}</em></h1><p className="lead">{text.lead}</p><div className="contribution-options">{text.options.map(([title, description, action], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{description}</p><a href={`mailto:hello@dutch.beer?subject=${encodeURIComponent(subjects[index])}`}>{action} →</a></article>)}</div><aside className="trust-note"><strong>{text.trustTitle}</strong><p>{text.trustCopy}</p></aside></section><SiteFooter locale={locale} /></main>; }
+
+export default async function ContributePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const text = copy[locale].contribute;
+
+  return (
+    <main>
+      <SiteHeader locale={locale} />
+      <section className="contribute-page shell">
+        <p className="eyebrow">{text.eyebrow}</p>
+        <h1>{text.title}</h1>
+        <p className="lead">{text.lead}</p>
+        <ContributionForm locale={locale} />
+        <GithubTemplateLinks locale={locale} />
+        <aside className="trust-note">
+          <strong>{text.trustTitle}</strong>
+          <p>{text.trustCopy}</p>
+        </aside>
+      </section>
+      <SiteFooter locale={locale} />
+    </main>
+  );
+}
