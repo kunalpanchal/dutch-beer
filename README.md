@@ -33,21 +33,21 @@ npm run build
 
 We do not fabricate or scrape entries into the public directory. Each fact should have a source and capture date. The initial workflow is intentionally conservative:
 
-1. A contributor submits a new listing or correction with a source.
-2. The submission receives a trust level and stays `pending_review`.
-3. A moderator publishes, rejects, or requests a correction.
+1. A contributor opens a pull request with a sourced listing file (or a code change).
+2. The listing stays `pending_review` until the PR is merged.
+3. A maintainer reviews the source, then merges or requests changes.
 4. A brewery can eventually claim a profile through verification of its official domain.
 
 The `lib/schema.ts` model preserves sources, status, contributor context, and an audit trail at the domain boundary. Add a database adapter/migrations as the next increment; PostgreSQL is the expected production target, configured with `DATABASE_URL`.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md). Add a brewery or beer from `/contribute` — the form prefills a GitHub issue for review. You can also use the **Add a brewery** and **Add a beer** issue templates in this repository.
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md). Add a brewery or beer from `/contribute` — the form prefills a JSON file and opens a GitHub pull request. Listings, corrections, and code changes all land through PRs, never through issues or a direct commit to `main`.
 
 ## Next increments
 
 - Choose and add a PostgreSQL ORM/migration layer
-- Connect a persistent store and moderation inbox for submitted GitHub issues
+- Connect a persistent store and render merged `data/` listings in the directory
 - Add email/domain verification for brewery claims
 - Render only `published` records in each directory
 - Add per-field provenance and historical revisions

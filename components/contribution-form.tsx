@@ -3,9 +3,8 @@
 import { useState, type FormEvent } from "react";
 import {
   contributionKinds,
-  githubIssueTemplates,
-  githubIssueUrl,
-  mailtoUrl,
+  githubNewEntryUrls,
+  githubPullRequestUrl,
   payloadFromForm,
   type ContributionKind,
 } from "@/lib/contribute";
@@ -16,18 +15,13 @@ export function ContributionForm({ locale }: { locale: Locale }) {
   const text = copy[locale].contribute;
   const type = text.types[kind];
 
-  function submitToGitHub(event: FormEvent<HTMLFormElement>) {
+  function submitPullRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    window.location.assign(githubIssueUrl(payloadFromForm(kind, new FormData(event.currentTarget))));
-  }
-
-  function sendByEmail(form: HTMLFormElement) {
-    if (!form.reportValidity()) return;
-    window.location.assign(mailtoUrl(payloadFromForm(kind, new FormData(form))));
+    window.location.assign(githubPullRequestUrl(payloadFromForm(kind, new FormData(event.currentTarget))));
   }
 
   return (
-    <form className="contribute-form" onSubmit={submitToGitHub}>
+    <form className="contribute-form" onSubmit={submitPullRequest}>
       <div className="kind-switch" role="group" aria-label={text.eyebrow}>
         {contributionKinds.map((value) => (
           <button
@@ -122,16 +116,6 @@ export function ContributionForm({ locale }: { locale: Locale }) {
         <button className="button button-ale" type="submit">
           {text.submit}
         </button>
-        <button
-          className="text-action"
-          type="button"
-          onClick={(event) => {
-            const form = event.currentTarget.form;
-            if (form) sendByEmail(form);
-          }}
-        >
-          {text.emailInstead}
-        </button>
         <p>{text.submitHint}</p>
       </div>
     </form>
@@ -145,9 +129,9 @@ export function GithubTemplateLinks({ locale }: { locale: Locale }) {
       <strong>{text.githubTemplatesTitle}</strong>
       <p>{text.githubTemplatesCopy}</p>
       <div>
-        <a href={githubIssueTemplates.brewery}>{text.githubBrewery}</a>
-        <a href={githubIssueTemplates.beer}>{text.githubBeer}</a>
-        <a href={githubIssueTemplates.correction}>{text.githubCorrection}</a>
+        <a href={githubNewEntryUrls.brewery}>{text.githubBrewery}</a>
+        <a href={githubNewEntryUrls.beer}>{text.githubBeer}</a>
+        <a href={githubNewEntryUrls.correction}>{text.githubCorrection}</a>
       </div>
     </aside>
   );
