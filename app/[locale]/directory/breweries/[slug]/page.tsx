@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, listBreweries, openStreetMapHref } from "@/lib/catalog/store";
+import { breweryOrigins, getBreweryBySlug, listBeersForBrewery, listBreweries, openStreetMapHref } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
 export async function generateStaticParams() {
@@ -34,6 +34,7 @@ export default async function BreweryPage({
   const origins = breweryOrigins(brewery);
   const place = [brewery.address?.locality, brewery.address?.region].filter(Boolean).join(", ");
   const mapHref = openStreetMapHref(brewery.address?.latitude, brewery.address?.longitude);
+  const beers = await listBeersForBrewery(brewery);
 
   return (
     <main>
@@ -111,6 +112,21 @@ export default async function BreweryPage({
             ))}
           </div>
         </section>
+
+        {beers.length > 0 ? (
+          <section>
+            <h2>{text.brewery.beers}</h2>
+            <ul className="id-list">
+              {beers.map((beer) => (
+                <li key={beer.id}>
+                  <Link href={`/${locale}/directory/beers/${beer.slug}`}>{beer.name}</Link>
+                  {beer.style ? ` · ${beer.style}` : ""}
+                  {beer.abv !== undefined ? ` · ${beer.abv}%` : ""}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         {brewery.externalIds && Object.values(brewery.externalIds).some(Boolean) ? (
           <section>

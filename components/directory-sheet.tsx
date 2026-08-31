@@ -2,71 +2,54 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { BreweryListItem } from "@/lib/catalog/store";
 
 const PAGE_SIZE = 25;
 
 type SortDir = "asc" | "desc";
 
-export type SheetCopy = {
+export type SheetToolbarCopy = {
   search: string;
   searchPlaceholder: string;
-  facetLabel: string;
-  allFacet: string;
+  sort: string;
+  sortDefault: string;
   showing: string;
   noMatches: string;
   previous: string;
   next: string;
   pagination: string;
-  columns: {
-    name: string;
-    locality: string;
-    region: string;
-    website: string;
-    map: string;
-    sources: string;
-  };
-  origin: Record<string, string>;
-  closed: string;
-  claimed: string;
 };
 
-type Column = {
+export type SheetColumn<T> = {
   id: string;
   label: string;
-  value: (row: BreweryListItem) => string;
-  href?: (row: BreweryListItem) => string | undefined;
+  value: (row: T) => string;
+  href?: (row: T) => string | undefined;
   external?: boolean;
-  format?: (row: BreweryListItem) => string;
+  format?: (row: T) => string;
 };
 
 function compare(a: string, b: string): number {
   return a.localeCompare(b, "nl", { numeric: true, sensitivity: "base" });
 }
 
-function host(url: string): string {
-  if (!url) return "";
-  try {
-    const parsed = new URL(url);
-    const path = parsed.pathname === "/" ? "" : parsed.pathname.replace(/\/$/, "");
-    return `${parsed.hostname.replace(/^www\./, "")}${path}`;
-  } catch {
-    return url;
-  }
-}
-
 function interpolate(template: string, values: Record<string, string | number>): string {
   return template.replace(/\{(\w+)\}/g, (_, key: string) => String(values[key] ?? ""));
 }
 
-export function BrewerySheet({
+export function DirectorySheet<T extends { slug: string }>({
   rows,
-  hrefBase,
+  columns,
   copy,
+  facet,
 }: {
-  rows: BreweryListItem[];
-  hrefBase: string;
-  copy: SheetCopy;
+  rows: T[];
+  columns: SheetColumn<T>[];
+  copy: SheetToolbarCopy;
+  facet?: {
+    label: string;
+    all: string;
+    value: (row: T) => string | undefined;
+  };
 }) {
   const [query, setQuery] = useState("");
   const [facetValue, setFacetValue] = useState("");
@@ -74,57 +57,23 @@ export function BrewerySheet({
   const [sortDir, setSortDir] = useState<SortDir>("asc");
   const [page, setPage] = useState(1);
 
-  const columns: Column[] = useMemo(() => [
-    {
-      id: "name",
-      label: copy.columns.name,
-      value: (row) => row.name,
-      href: (row) => `${hrefBase}/${row.slug}`,
-      format: (row) => {
-        const flags = [row.closed ? copy.closed : "", row.claimed ? copy.claimed : ""].filter(Boolean);
-        return flags.length ? `${row.name} (${flags.join(", ")})` : row.name;
-      },
-    },
-    { id: "locality", label: copy.columns.locality, value: (row) => row.locality ?? "" },
-    { id: "region", label: copy.columns.region, value: (row) => row.region ?? "" },
-    {
-      id: "map",
-      label: copy.columns.map,
-      value: (row) => (row.mapHref ? copy.columns.map : ""),
-      href: (row) => row.mapHref,
-      external: true,
-    },
-    {
-      id: "website",
-      label: copy.columns.website,
-      value: (row) => row.website ?? "",
-      href: (row) => row.website,
-      external: true,
-      format: (row) => host(row.website ?? ""),
-    },
-    {
-      id: "sources",
-      label: copy.columns.sources,
-      value: (row) => row.origins.map((origin) => copy.origin[origin] ?? origin).join(", "),
-    },
-  ], [copy, hrefBase]);
-
   const facetOptions = useMemo(() => {
-    const unique = [...new Set(rows.map((row) => row.region).filter((value): value is string => Boolean(value)))];
-    return unique.sort((a, b) => (a < b ? -1 : a > b ? 1 : 0));
-  }, [rows]);
+    if (!facet) return [];
+    const unique = [...new Set(rows.map((row) => facet.value(row)).filter((value): value is string => Boolean(value)))];
+    return unique.sort((a, b) => compare(a, b));
+  }, [facet, rows]);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return rows.filter((row) => {
-      if (facetValue && row.region !== facetValue) return false;
+      if (facet && facetValue && facet.value(row) !== facetValue) return false;
       if (!needle) return true;
       return columns.some((column) => {
         const formatted = column.format?.(row);
         return `${formatted ?? ""} ${column.value(row)}`.toLowerCase().includes(needle);
       });
     });
-  }, [columns, facetValue, query, rows]);
+  }, [columns, facet, facetValue, query, rows]);
 
   const sorted = useMemo(() => {
     const column = columns.find((item) => item.id === sortKey);
@@ -171,9 +120,9 @@ export function BrewerySheet({
             placeholder={copy.searchPlaceholder}
           />
         </label>
-        {facetOptions.length > 0 ? (
+        {facet && facetOptions.length > 0 ? (
           <label className="sheet-facet">
-            <span>{copy.facetLabel}</span>
+            <span>{facet.label}</span>
             <select
               value={facetValue}
               onChange={(event) => {
@@ -181,7 +130,7 @@ export function BrewerySheet({
                 setPage(1);
               }}
             >
-              <option value="">{copy.allFacet}</option>
+              <option value="">{facet.all}</option>
               {facetOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
@@ -190,6 +139,24 @@ export function BrewerySheet({
             </select>
           </label>
         ) : null}
+        <label className="sheet-sort-control">
+          <span>{copy.sort}</span>
+          <select
+            value={sortKey}
+            onChange={(event) => {
+              setSortKey(event.target.value);
+              setSortDir("asc");
+              setPage(1);
+            }}
+          >
+            <option value="">{copy.sortDefault}</option>
+            {columns.map((column) => (
+              <option key={column.id} value={column.id}>
+                {column.label}
+              </option>
+            ))}
+          </select>
+        </label>
         <p className="sheet-meta">{interpolate(copy.showing, { from, to, total: sorted.length })}</p>
       </div>
       <div className="sheet-scroll">
@@ -202,7 +169,12 @@ export function BrewerySheet({
               {columns.map((column) => {
                 const active = sortKey === column.id;
                 return (
-                  <th key={column.id} scope="col" aria-sort={active ? (sortDir === "asc" ? "ascending" : "descending") : "none"}>
+                  <th
+                    key={column.id}
+                    className={`sheet-col-${column.id}`}
+                    scope="col"
+                    aria-sort={active ? (sortDir === "asc" ? "ascending" : "descending") : "none"}
+                  >
                     <button type="button" onClick={() => sortBy(column.id)}>
                       {column.label}
                       <span className="sheet-sort" aria-hidden="true">
@@ -228,8 +200,13 @@ export function BrewerySheet({
                   {columns.map((column) => {
                     const href = column.href?.(row);
                     const label = column.format?.(row) ?? column.value(row);
+                    const empty = !label;
                     return (
-                      <td key={column.id}>
+                      <td
+                        key={column.id}
+                        className={`sheet-col-${column.id}${empty ? " is-empty" : ""}`}
+                        data-label={column.label}
+                      >
                         {href && label ? (
                           column.external ? (
                             <a href={href} target="_blank" rel="noreferrer">

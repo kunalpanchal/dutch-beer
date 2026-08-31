@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BeerList } from "@/components/beer-list";
+import { BreweryList } from "@/components/brewery-list";
 import { PintMark } from "@/components/pint-mark";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { BreweryList } from "@/components/brewery-list";
-import { listBreweries, toListItem } from "@/lib/catalog/store";
+import { listBeers, listBreweries, toBeerListItem, toListItem } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -21,7 +22,9 @@ export default async function DirectoryPage({
   if (!isLocale(locale) || (kind !== "breweries" && kind !== "beers")) notFound();
   const text = copy[locale].directory;
   const page = text[kind];
-  const rows = kind === "breweries" ? (await listBreweries()).map(toListItem) : [];
+  const breweryRows = kind === "breweries" ? (await listBreweries()).map(toListItem) : [];
+  const beerRows = kind === "beers" ? (await listBeers()).map(toBeerListItem) : [];
+  const empty = kind === "breweries" ? breweryRows.length === 0 : beerRows.length === 0;
 
   return (
     <main>
@@ -44,15 +47,7 @@ export default async function DirectoryPage({
         <h1>{page.title}</h1>
         <p>{page.description}</p>
       </section>
-      {rows.length > 0 ? (
-        <section className="shell listing-section">
-          <BreweryList
-            locale={locale}
-            items={rows}
-            hrefBase={`/${locale}/directory/breweries`}
-          />
-        </section>
-      ) : (
+      {empty ? (
         <section className="empty-state shell">
           <PintMark className="empty-mark" />
           <h2>{page.empty}</h2>
@@ -60,6 +55,14 @@ export default async function DirectoryPage({
           <Link className="button button-ale" href={`/${locale}/contribute`}>
             {page.action}
           </Link>
+        </section>
+      ) : (
+        <section className="shell listing-section">
+          {kind === "breweries" ? (
+            <BreweryList locale={locale} items={breweryRows} hrefBase={`/${locale}/directory/breweries`} />
+          ) : (
+            <BeerList locale={locale} items={beerRows} hrefBase={`/${locale}/directory/beers`} />
+          )}
         </section>
       )}
       <SiteFooter locale={locale} />

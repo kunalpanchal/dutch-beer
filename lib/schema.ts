@@ -58,14 +58,23 @@ export interface Brewery extends AuditFields {
   closed?: boolean;
 }
 
+export interface BeerExternalIds {
+  wikidata?: string;
+  senb?: string;
+}
+
 export interface Beer extends AuditFields {
   id: string;
   slug: string;
   breweryId: string;
+  breweryName: string;
+  brewerySlug?: string;
   name: string;
   style?: string;
   abv?: number;
   availability?: "year_round" | "seasonal" | "one_off" | "unknown";
+  website?: string;
+  externalIds?: BeerExternalIds;
 }
 
 export interface Contribution extends AuditFields {

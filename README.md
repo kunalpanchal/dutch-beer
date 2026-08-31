@@ -34,11 +34,14 @@ npm run validate:listings
 npm run build
 ```
 
-Refresh the brewery catalog from open data (writes `data/catalog.json`, all records `pending_review`):
+Refresh the catalog from open data (writes `data/catalog.json`, all records `pending_review`):
 
 ```bash
 npm run import:breweries
+npm run import:beers
 ```
+
+Beers come from Wikidata only (CC0). Do not import SENB or other sources that require a cite-only link.
 
 See [data/ATTRIBUTION.md](./data/ATTRIBUTION.md) for licenses and matching rules.
 

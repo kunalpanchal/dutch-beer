@@ -19,4 +19,13 @@ describe("imported catalog", () => {
     assert.ok(catalog.sources.open_brewery_db.count > 0);
     assert.ok(catalog.sources.openstreetmap.count > 0);
   });
+
+  it("keeps imported Wikidata beers pending review", () => {
+    const beers = catalog.beers ?? [];
+    assert.ok(beers.length > 0);
+    assert.equal(beers.filter((beer) => beer.status === "published").length, 0);
+    assert.ok(beers.every((beer) => beer.status === "pending_review"));
+    assert.ok(beers.every((beer) => beer.sources.some((source) => source.origin === "wikidata")));
+    assert.ok(beers.every((beer) => beer.externalIds?.wikidata));
+  });
 });

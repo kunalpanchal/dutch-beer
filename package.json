@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test lib/catalog/*.test.ts lib/contribute.test.ts",
     "validate:listings": "node scripts/validate-listings.mjs",
-    "import:breweries": "tsx scripts/import-breweries.ts"
+    "import:breweries": "tsx scripts/import-breweries.ts",
+    "import:beers": "tsx scripts/import-beers.ts"
   },
   "dependencies": {
     "next": "16.3.3",

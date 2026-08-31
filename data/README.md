@@ -106,4 +106,4 @@ After review, set `"status": "published"`. Published claims overlay onto `catalo
 
 ## Open-data catalog
 
-`data/catalog.json` is a bulk import from Wikidata, Open Brewery DB, and OpenStreetMap. See [ATTRIBUTION.md](./ATTRIBUTION.md). Do not treat `catalog.json` as a listing file for `/contribute` — community additions still go in `data/breweries/`, `data/beers/`, `data/corrections/`, or `data/claims/`.
+`data/catalog.json` is a bulk import: breweries from Wikidata, Open Brewery DB, and OpenStreetMap; beers from Wikidata (CC0) only. See [ATTRIBUTION.md](./ATTRIBUTION.md). Do not treat `catalog.json` as a listing file for `/contribute` — community additions still go in `data/breweries/`, `data/beers/`, `data/corrections/`, or `data/claims/`.

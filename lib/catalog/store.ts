@@ -1,7 +1,7 @@
 import { cache } from "react";
 import { readFile } from "fs/promises";
 import path from "path";
-import type { Brewery, OpenDataOrigin, PublicationStatus } from "@/lib/schema";
+import type { Beer, Brewery, OpenDataOrigin, PublicationStatus } from "@/lib/schema";
 import { applyPublishedClaims, loadClaimFiles } from "@/lib/catalog/claims";
 import type { CatalogFile } from "@/lib/catalog/merge";
 import { breweryOrigins, sourceConfidence } from "@/lib/catalog/merge";
@@ -16,6 +16,8 @@ const emptyCatalog = (): CatalogFile => ({
     openstreetmap: { fetchedAt: "", count: 0 },
   },
   breweries: [],
+  beers: [],
+  beerSources: { wikidata: { fetchedAt: "", count: 0 } },
 });
 
 export const loadCatalog = cache(async (): Promise<CatalogFile> => {
@@ -47,6 +49,21 @@ export async function getBreweryBySlug(slug: string): Promise<Brewery | undefine
   return (await listBreweries()).find((brewery) => brewery.slug === slug);
 }
 
+export async function listBeers(): Promise<Beer[]> {
+  const catalog = await loadCatalog();
+  return catalog.beers ?? [];
+}
+
+export async function getBeerBySlug(slug: string): Promise<Beer | undefined> {
+  return (await listBeers()).find((beer) => beer.slug === slug);
+}
+
+export async function listBeersForBrewery(brewery: Brewery): Promise<Beer[]> {
+  return (await listBeers()).filter(
+    (beer) => beer.breweryId === brewery.id || beer.brewerySlug === brewery.slug,
+  );
+}
+
 export function isLikelyCurrent(brewery: Brewery): boolean {
   return !brewery.closed && Boolean(brewery.website || breweryOrigins(brewery).length >= 2);
 }
@@ -69,6 +86,36 @@ export interface BreweryListItem {
   claimed?: boolean;
   status: PublicationStatus;
   confidence: "high" | "medium" | "low";
+}
+
+export interface BeerListItem {
+  slug: string;
+  name: string;
+  breweryName: string;
+  brewerySlug?: string;
+  style?: string;
+  abv?: number;
+  origins: OpenDataOrigin[];
+  status: PublicationStatus;
+}
+
+export function toBeerListItem(beer: Beer): BeerListItem {
+  return {
+    slug: beer.slug,
+    name: beer.name,
+    breweryName: beer.breweryName,
+    brewerySlug: beer.brewerySlug,
+    style: beer.style,
+    abv: beer.abv,
+    origins: [
+      ...new Set(
+        beer.sources
+          .map((source) => source.origin)
+          .filter((origin): origin is OpenDataOrigin => Boolean(origin)),
+      ),
+    ],
+    status: beer.status,
+  };
 }
 
 export function toListItem(brewery: Brewery): BreweryListItem {
