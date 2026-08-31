@@ -11,7 +11,7 @@ const display = Libre_Baskerville({
 const sans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: { default: "Dutch.beer — A directory of Dutch beer", template: "%s | Dutch.beer" },
+  title: { default: "Dutch.beer | A directory of Dutch beer", template: "%s | Dutch.beer" },
   description: "A community-kept list of Dutch breweries and beers.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
 };
