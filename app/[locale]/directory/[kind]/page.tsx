@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PintMark } from "@/components/pint-mark";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { BreweryList } from "@/components/brewery-list";
+import { SourceOriginNote } from "@/components/source-credit";
 import { listPendingBreweries, listPublishedBreweries, toListItem } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
@@ -71,6 +72,11 @@ export default async function DirectoryPage({
           </div>
         </section>
       )}
+      {kind === "breweries" ? (
+        <section className="shell listing-section">
+          <SourceOriginNote locale={locale} />
+        </section>
+      ) : null}
       <SiteFooter locale={locale} />
     </main>
   );

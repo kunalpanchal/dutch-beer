@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { BreweryList } from "@/components/brewery-list";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { SourceOriginNote } from "@/components/source-credit";
 import { listPendingBreweries, loadCatalog, toListItem } from "@/lib/catalog/store";
 import { copy, isLocale } from "@/lib/i18n";
 
@@ -28,6 +29,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ locale:
         ) : null}
       </section>
       <section className="shell listing-section">
+        <SourceOriginNote locale={locale} />
         <BreweryList
           locale={locale}
           items={pending.map(toListItem)}

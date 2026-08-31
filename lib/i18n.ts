@@ -24,7 +24,7 @@ export const copy = {
       intro: "Breweries and beers from around the country, kept by people who drink them. No ads. No locked lists.",
       explore: "See the breweries",
       add: "Add one you know",
-      note: "Still early — open-data imports wait in the review inbox until a source is checked.",
+      note: "Still early — records imported from Wikidata, Open Brewery DB, and OpenStreetMap wait in the review inbox until a source is checked.",
       boardLabel: "On tap",
       principles: [
         ["Open", "Anyone can read it. Anyone can help fill it in."],
@@ -47,7 +47,7 @@ export const copy = {
         empty: "The taps are still dry.",
         action: "Add a beer",
       },
-      emptyCopy: "The public board only shows listings a moderator has checked. Open-data imports stay pending until then.",
+      emptyCopy: "The public board only shows listings a moderator has checked. Records imported from Wikidata, Open Brewery DB, and OpenStreetMap stay pending until then.",
       pendingNote: "imported brewery listings are waiting for review.",
       website: "Website",
       closed: "Closed",
@@ -78,7 +78,7 @@ export const copy = {
     },
     brewery: {
       awaiting: "Awaiting review",
-      awaitingCopy: "This listing is not on the public board yet. The facts below still need a human check against their sources.",
+      awaitingCopy: "This listing was imported from open data and is not on the public board yet. Check the sources below.",
       officialSite: "Official website",
       location: "Location",
       identifiers: "External identifiers",
@@ -138,6 +138,18 @@ export const copy = {
       trustTitle: "How listings get in",
       trustCopy: "New submissions keep their source and wait for review. Breweries can later claim a profile from their official domain.",
     },
+    attribution: {
+      title: "Where these records come from",
+      lead: "Pending brewery listings were imported from public datasets. They stay off the public board until a moderator checks the source.",
+      credit: "Brewery records are imported from",
+      and: ", and ",
+      creditAfter: "They are not published until a source is checked.",
+      blurb: {
+        wikidata: "Names, official websites, places, and identifiers.",
+        open_brewery_db: "Names, websites, cities, and coordinates.",
+        openstreetmap: "Names, addresses, coordinates, and Wikidata links.",
+      },
+    },
   },
   nl: {
     navigation: {
@@ -156,7 +168,7 @@ export const copy = {
       intro: "Brouwerijen en bieren uit het hele land, bijgehouden door mensen die ze drinken. Geen reclame. Geen gesloten lijsten.",
       explore: "Bekijk de brouwerijen",
       add: "Zet er een op de lijst",
-      note: "Nog vroeg — open-data-import blijft in de beoordelingslijst tot een bron is gecheckt.",
+      note: "Nog vroeg — records uit Wikidata, Open Brewery DB en OpenStreetMap blijven in de beoordelingslijst tot een bron is gecheckt.",
       boardLabel: "Van de tap",
       principles: [
         ["Open", "Iedereen kan het lezen. Iedereen kan helpen het te vullen."],
@@ -179,7 +191,7 @@ export const copy = {
         empty: "De kranen staan nog droog.",
         action: "Voeg een bier toe",
       },
-      emptyCopy: "Het publieke bord toont alleen vermeldingen die een moderator heeft gecheckt. Open-data-import blijft tot die tijd in behandeling.",
+      emptyCopy: "Het publieke bord toont alleen vermeldingen die een moderator heeft gecheckt. Records uit Wikidata, Open Brewery DB en OpenStreetMap blijven tot die tijd in behandeling.",
       pendingNote: "geïmporteerde brouwerijvermeldingen wachten op beoordeling.",
       website: "Website",
       closed: "Gesloten",
@@ -210,7 +222,7 @@ export const copy = {
     },
     brewery: {
       awaiting: "Wacht op beoordeling",
-      awaitingCopy: "Deze vermelding staat nog niet op het publieke bord. De feiten hieronder moeten nog tegen hun bronnen worden gecheckt.",
+      awaitingCopy: "Deze vermelding is geïmporteerd uit open data en staat nog niet op het publieke bord. Check de bronnen hieronder.",
       officialSite: "Officiële website",
       location: "Locatie",
       identifiers: "Externe identifiers",
@@ -269,6 +281,18 @@ export const copy = {
       githubCorrection: "Correctie indienen",
       trustTitle: "Hoe vermeldingen erin komen",
       trustCopy: "Nieuwe inzendingen houden hun bron en wachten op beoordeling. Brouwerijen kunnen later een profiel claimen via hun officiële domein.",
+    },
+    attribution: {
+      title: "Waar deze records vandaan komen",
+      lead: "Openstaande brouwerijvermeldingen zijn geïmporteerd uit open datasets. Ze blijven van het publieke bord tot een moderator de bron checkt.",
+      credit: "Brouwerijrecords zijn geïmporteerd uit",
+      and: " en ",
+      creditAfter: "Ze worden niet gepubliceerd tot een bron is gecheckt.",
+      blurb: {
+        wikidata: "Namen, officiële websites, plaatsen en identifiers.",
+        open_brewery_db: "Namen, websites, steden en coördinaten.",
+        openstreetmap: "Namen, adressen, coördinaten en Wikidata-koppelingen.",
+      },
     },
   },
 } as const;
