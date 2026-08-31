@@ -177,10 +177,6 @@ export const copy = {
       trustTitle: "How listings get in",
       trustCopy: "Every listing, correction, and brewery claim lands through a pull request. A reviewer checks the source before merge.",
     },
-    attribution: {
-      credit: "Brewery records are imported from",
-      and: ", and ",
-    },
   },
   nl: {
     navigation: {
@@ -351,10 +347,6 @@ export const copy = {
       domainEvidence: "De bewijs-URL moet een pagina op diezelfde website zijn.",
       trustTitle: "Hoe vermeldingen erin komen",
       trustCopy: "Elke vermelding, correctie en brouwerijclaim gaat via een pull request. Een reviewer checkt de bron vóór merge.",
-    },
-    attribution: {
-      credit: "Brouwerijrecords zijn geïmporteerd uit",
-      and: " en ",
     },
   },
 } as const;
