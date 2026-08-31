@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Use the website form
+  - name: Add a listing via the website
     url: https://dutch.beer/en/contribute
-    about: Prefill a brewery, beer, or correction from the dutch.beer contribute page.
+    about: Opens a prefilled GitHub pull request. Issues are not used for listings.
+  - name: Add a listing file yourself
+    url: https://github.com/kunalpanchal/dutchbeer/blob/main/data/README.md
+    about: JSON layout for breweries, beers, and corrections. Open a pull request; do not commit to main.

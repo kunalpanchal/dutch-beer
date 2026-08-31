@@ -1,5 +1,4 @@
 export const GITHUB_REPO = "kunalpanchal/dutchbeer";
-export const CONTRIBUTE_EMAIL = "hello@dutch.beer";
 
 export const contributionKinds = ["brewery", "beer", "correction"] as const;
 export type ContributionKind = (typeof contributionKinds)[number];
@@ -19,85 +18,110 @@ export type ContributionPayload = {
   notes: string;
 };
 
-export const githubIssueTemplates = {
-  brewery: `https://github.com/${GITHUB_REPO}/issues/new?template=add-brewery.yml`,
-  beer: `https://github.com/${GITHUB_REPO}/issues/new?template=add-beer.yml`,
-  correction: `https://github.com/${GITHUB_REPO}/issues/new?template=correction.yml`,
-} as const;
-
-function line(label: string, value: string): string {
-  return value.trim() ? `- **${label}:** ${value.trim()}` : "";
+export function slugify(value: string): string {
+  const slug = value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+  return slug || "entry";
 }
 
-export function contributionIssue(payload: ContributionPayload): { title: string; body: string; labels: string } {
-  const notes = payload.notes.trim() || "_None_";
+export function githubNewFileUrl(path: string, contents?: string): string {
+  const params = new URLSearchParams({ filename: path });
+  if (contents) params.set("value", contents);
+  return `https://github.com/${GITHUB_REPO}/new/main?${params.toString()}`;
+}
+
+function capturedAt(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function source(payload: ContributionPayload) {
+  return {
+    sourceKind: "official_website" as const,
+    url: payload.source,
+    capturedAt: capturedAt(),
+    ...(payload.notes ? { note: payload.notes } : {}),
+  };
+}
+
+export function contributionFile(payload: ContributionPayload): { path: string; contents: string } {
   if (payload.kind === "beer") {
+    const slug = slugify(payload.beerName);
+    const abv = Number.parseFloat(payload.abv.replace(",", "."));
     return {
-      title: `[Beer] ${payload.beerName.trim()}`,
-      labels: "new-entry,beer",
-      body: [
-        "## New beer",
-        line("Beer", payload.beerName),
-        line("Brewery", payload.breweryName),
-        line("Style", payload.style),
-        line("ABV", payload.abv),
-        line("Availability", payload.availability),
-        line("Primary source", payload.source),
-        "### Notes",
-        notes,
-        "_Submitted from the dutch.beer contribute form._",
-      ]
-        .filter(Boolean)
-        .join("\n"),
+      path: `data/beers/${slug}.json`,
+      contents: `${JSON.stringify(
+        {
+          slug,
+          name: payload.beerName,
+          brewery: payload.breweryName,
+          ...(payload.style ? { style: payload.style } : {}),
+          ...(Number.isFinite(abv) ? { abv } : {}),
+          availability: payload.availability || "unknown",
+          status: "pending_review",
+          trustLevel: "new",
+          sources: [source(payload)],
+        },
+        null,
+        2,
+      )}\n`,
     };
   }
 
   if (payload.kind === "correction") {
+    const slug = slugify(payload.entity);
     return {
-      title: `[Correction] ${payload.entity.trim()}`,
-      labels: "correction",
-      body: [
-        "## Directory correction",
-        line("Entry", payload.entity),
-        line("Primary source", payload.source),
-        "### What should change",
-        notes,
-        "_Submitted from the dutch.beer contribute form._",
-      ]
-        .filter(Boolean)
-        .join("\n"),
+      path: `data/corrections/${slug}.json`,
+      contents: `${JSON.stringify(
+        {
+          entry: payload.entity,
+          change: payload.notes,
+          status: "pending_review",
+          sources: [source(payload)],
+        },
+        null,
+        2,
+      )}\n`,
     };
   }
 
+  const slug = slugify(payload.breweryName);
   return {
-    title: `[Brewery] ${payload.breweryName.trim()}`,
-    labels: "new-entry,brewery",
-    body: [
-      "## New brewery",
-      line("Name", payload.breweryName),
-      line("Website", payload.website),
-      line("Locality", payload.locality),
-      line("Region", payload.region),
-      line("Primary source", payload.source),
-      "### Notes",
-      notes,
-      "_Submitted from the dutch.beer contribute form._",
-    ]
-      .filter(Boolean)
-      .join("\n"),
+    path: `data/breweries/${slug}.json`,
+    contents: `${JSON.stringify(
+      {
+        slug,
+        name: payload.breweryName,
+        website: payload.website,
+        address: {
+          locality: payload.locality,
+          ...(payload.region ? { region: payload.region } : {}),
+          countryCode: "NL",
+        },
+        status: "pending_review",
+        trustLevel: "new",
+        sources: [source(payload)],
+      },
+      null,
+      2,
+    )}\n`,
   };
 }
 
-export function githubIssueUrl(payload: ContributionPayload): string {
-  const { title, body, labels } = contributionIssue(payload);
-  const params = new URLSearchParams({ title, body, labels });
-  return `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+export function githubPullRequestUrl(payload: ContributionPayload): string {
+  const { path, contents } = contributionFile(payload);
+  return githubNewFileUrl(path, contents);
 }
 
-export function mailtoUrl(payload: ContributionPayload): string {
-  const { title, body } = contributionIssue(payload);
-  return `mailto:${CONTRIBUTE_EMAIL}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
-}
+export const githubNewEntryUrls = {
+  brewery: githubNewFileUrl("data/breweries/brewery-name.json"),
+  beer: githubNewFileUrl("data/beers/beer-name.json"),
+  correction: githubNewFileUrl("data/corrections/entry-name.json"),
+} as const;
 
 export function payloadFromForm(kind: ContributionKind, form: FormData): ContributionPayload {
   const read = (key: string) => String(form.get(key) ?? "").trim();
