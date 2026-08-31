@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GitHubLink } from "@/components/github-mark";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { PintMark } from "@/components/pint-mark";
 import { copy, type Locale } from "@/lib/i18n";
@@ -23,9 +24,12 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <Link href={`/${locale}/directory/beers`}>{text.beers}</Link>
           <Link href={`/${locale}/contribute`}>{text.contribute}</Link>
         </nav>
-        <Link className="header-cta" href={`/${locale}/contribute`}>
-          {text.addListing}
-        </Link>
+        <div className="header-end">
+          <GitHubLink />
+          <Link className="header-cta" href={`/${locale}/contribute`}>
+            {text.addListing}
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -43,8 +47,8 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
             <Link href={`/${locale}/directory/beers`}>{text.navigation.beers}</Link>
             <Link href={`/${locale}/contribute`}>{text.navigation.contribute}</Link>
-            <a href="https://github.com/kunalpanchal/dutchbeer">GitHub</a>
           </nav>
+          <GitHubLink />
           <LanguageSwitcher locale={locale} />
         </div>
       </div>

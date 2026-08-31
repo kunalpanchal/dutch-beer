@@ -83,12 +83,35 @@ footer a:hover,
   text-underline-offset: 3px;
 }
 
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .header-cta {
   padding: 8px 14px;
   background: var(--amber);
   color: var(--stout);
   font-size: 14px;
   font-weight: 700;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+}
+
+a.github-link:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.github-mark {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .hero {
@@ -856,7 +879,7 @@ button.button { font-family: inherit; }
     font-size: 14px;
   }
 
-  .header-cta {
+  .header-end {
     grid-area: cta;
     margin-left: 0;
     white-space: nowrap;
