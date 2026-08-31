@@ -2,19 +2,26 @@
 
 -
 
-## Kind of change
+## This pull request
 
-- [ ] Code or site change
-- [ ] Documentation
-- [ ] Directory data (link the reviewed issue)
+- [ ] Adds or updates a brewery (`data/breweries/`)
+- [ ] Adds or updates a beer (`data/beers/`)
+- [ ] Corrects a listing (`data/corrections/` or an existing data file)
+- [ ] Code, docs, or site change
 
-## Adding a brewery or beer
+Every change, including listings, must go through a pull request. Do not commit to `main`.
 
-New public listings should start as a GitHub issue from [the website form](https://dutch.beer/en/contribute) or from **New issue** → **Add a brewery** / **Add a beer**. Only open a data PR after a maintainer has reviewed that issue.
+## Source
+
+Required for directory data. Prefer the brewery’s own website.
+
+URL:
 
 ## Test plan
 
+- [ ] JSON is valid (directory data)
 - [ ] `npm run lint`
 - [ ] `npm run typecheck`
 - [ ] `npm run test`
+- [ ] `npm run validate:listings`
 - [ ] `npm run build`
