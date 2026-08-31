@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710901",
+  "slug": "caramel-fudge-stout-pedro-ximenez-edition-2021",
+  "breweryId": "wd-q123469240",
+  "breweryName": "Brouwerij Kees",
+  "brewerySlug": "brouwerij-kees",
+  "name": "Caramel Fudge Stout (Pedro Ximénez Edition 2021)",
+  "style": "imperial stout",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "https://brouwerijkees.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710901",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710901"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "wd-q114086789",
+  "slug": "brouwerij-de-concurrent",
+  "name": "Brouwerij De Concurrent",
+  "address": {
+    "locality": "Venlo",
+    "countryCode": "NL",
+    "latitude": 51.371944444,
+    "longitude": 6.154583333
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q114086789",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q114086789"
+  }
+}

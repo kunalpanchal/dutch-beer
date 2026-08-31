@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139766224",
+  "slug": "luctor-et-emergo-tarwe-tripel",
+  "breweryId": "wd-q125779652",
+  "breweryName": "Bierbrouwerij Vermeersen",
+  "brewerySlug": "bierbrouwerij-vermeersen",
+  "name": "Luctor et Emergo Tarwe Tripel",
+  "style": "tripel",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "https://vermeersen.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139766224",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vermeersen.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139766224"
+  }
+}

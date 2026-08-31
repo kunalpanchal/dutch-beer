@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139764797",
+  "slug": "shadow-assassin-auchentoshan-ba",
+  "breweryId": "wd-q124666148",
+  "breweryName": "Van Moll",
+  "brewerySlug": "van-moll",
+  "name": "Shadow Assassin - Auchentoshan BA",
+  "style": "American barley wine",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "https://vanmollcraftbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139764797",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vanmollcraftbeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139764797"
+  }
+}

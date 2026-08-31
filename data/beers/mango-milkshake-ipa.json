@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139674289",
+  "slug": "mango-milkshake-ipa",
+  "breweryId": "wd-q123759630",
+  "breweryName": "vandeStreek",
+  "brewerySlug": "vandestreek",
+  "name": "Mango Milkshake IPA",
+  "style": "Milkshake India Pale Ale",
+  "abv": 6.25,
+  "availability": "unknown",
+  "website": "https://vandestreekbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139674289",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139674289"
+  }
+}

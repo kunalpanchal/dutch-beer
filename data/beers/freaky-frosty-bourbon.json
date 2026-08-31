@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139832811",
+  "slug": "freaky-frosty-bourbon",
+  "breweryId": "wd-q125779700",
+  "breweryName": "X-brewing",
+  "brewerySlug": "x-brewing",
+  "name": "Freaky Frosty Bourbon",
+  "style": "ijsbier",
+  "abv": 20,
+  "availability": "unknown",
+  "website": "https://www.x-brewing.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139832811",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.x-brewing.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139832811"
+  }
+}

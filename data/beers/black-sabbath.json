@@ -1,0 +1,35 @@
+{
+  "id": "wd-q131918639",
+  "slug": "black-sabbath",
+  "breweryId": "wd-q124663040",
+  "breweryName": "Brouwerij Bliksem",
+  "brewerySlug": "brouwerij-bliksem",
+  "name": "Black Sabbath",
+  "style": "quadrupel",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://www.brouwerijbliksem.nl/product/black-sabbath/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q131918639",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijbliksem.nl/product/black-sabbath/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q131918639",
+    "senb": "16564"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139850911",
+  "slug": "sintel",
+  "breweryId": "wd-q107252594",
+  "breweryName": "Nevel",
+  "brewerySlug": "nevel",
+  "name": "Sintel",
+  "abv": 5.7,
+  "availability": "unknown",
+  "website": "https://nevel.org/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139850911",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://nevel.org/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139850911"
+  }
+}

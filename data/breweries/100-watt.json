@@ -1,0 +1,42 @@
+{
+  "id": "wd-q124666075",
+  "slug": "100-watt",
+  "name": "100 Watt",
+  "website": "https://100watt.nl/",
+  "address": {
+    "locality": "Eindhoven",
+    "region": "Noord-Brabant",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124666075",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 0ce224fd-2e79-4755-98f8-8c415fdcf9a7",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://100watt.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124666075",
+    "openBreweryDb": "0ce224fd-2e79-4755-98f8-8c415fdcf9a7",
+    "senb": "1171"
+  }
+}

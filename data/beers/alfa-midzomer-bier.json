@@ -1,0 +1,34 @@
+{
+  "id": "wd-q133269711",
+  "slug": "alfa-midzomer-bier",
+  "breweryId": "wd-q2538673",
+  "breweryName": "Alfa Brouwerij",
+  "brewerySlug": "alfa-brouwerij",
+  "name": "Alfa Midzomer Bier",
+  "abv": 3.9,
+  "availability": "unknown",
+  "website": "http://www.alfa-bier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q133269711",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.alfa-bier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q133269711",
+    "senb": "3061"
+  }
+}

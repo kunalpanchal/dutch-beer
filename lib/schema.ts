@@ -83,15 +83,25 @@ export interface Brewery extends AuditFields {
   taproom?: TaproomInfo;
 }
 
+export interface BeerExternalIds {
+  wikidata?: string;
+  senb?: string;
+}
+
 export interface Beer extends AuditFields {
   id: string;
   slug: string;
   breweryId: string;
+  breweryName: string;
+  brewerySlug?: string;
   name: string;
   style?: string;
   abv?: number;
-  description?: string;
   availability?: BeerAvailability;
+  website?: string;
+  /** Owner- or source-supplied short copy. Never generated. */
+  description?: string;
+  externalIds?: BeerExternalIds;
 }
 
 export interface Contribution extends AuditFields {

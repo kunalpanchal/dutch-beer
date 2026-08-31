@@ -1,0 +1,35 @@
+{
+  "id": "wd-q137460543",
+  "slug": "4-granen-bok",
+  "breweryId": "wd-q392195",
+  "breweryName": "Jopen",
+  "brewerySlug": "jopen",
+  "name": "4-Granen Bok",
+  "style": "bokbier",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.jopenbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137460543",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jopenbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137460543",
+    "senb": "4608"
+  }
+}

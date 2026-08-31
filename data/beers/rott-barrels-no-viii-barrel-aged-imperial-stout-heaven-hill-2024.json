@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681232",
+  "slug": "rott-barrels-no-viii-barrel-aged-imperial-stout-heaven-hill-2024",
+  "breweryId": "wd-q125779522",
+  "breweryName": "ROTT. Brouwers",
+  "brewerySlug": "rott-brouwers",
+  "name": "ROTT.BARRELS | No. VIII - Barrel Aged Imperial Stout ~ Heaven Hill (2024)",
+  "style": "vatgerijpt bier",
+  "abv": 12.5,
+  "availability": "unknown",
+  "website": "http://www.rottbrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681232",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rottbrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681232"
+  }
+}

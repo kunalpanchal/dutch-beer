@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710418",
+  "slug": "wrecking-ball-the-wreckoning-brew-1000",
+  "breweryId": "wd-q124666075",
+  "breweryName": "100 Watt",
+  "brewerySlug": "100-watt",
+  "name": "Wrecking Ball - the Wreckoning (brew 1000)",
+  "style": "gerstewijn",
+  "abv": 15,
+  "availability": "unknown",
+  "website": "https://100watt.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710418",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://100watt.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710418"
+  }
+}

@@ -2,26 +2,29 @@ import { notFound } from "next/navigation";
 import { ContributionForm, GithubTemplateLinks } from "@/components/contribution-form";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getBreweryBySlug } from "@/lib/catalog/store";
+import { contributionKinds, type ContributionKind } from "@/lib/contribute";
 import { copy, isLocale } from "@/lib/i18n";
+
+function isContributionKind(value: string | undefined): value is ContributionKind {
+  return contributionKinds.includes(value as ContributionKind);
+}
 
 export default async function ContributePage({
   params,
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
+  searchParams: Promise<{ kind?: string; brewery?: string; entry?: string }>;
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const query = await searchParams;
-  const read = (key: string) => {
-    const value = query[key];
-    return typeof value === "string" ? value : undefined;
-  };
-  const kind = read("kind");
-  const brewerySlug = read("brewery");
-  const brewery = brewerySlug ? await getBreweryBySlug(brewerySlug) : undefined;
   const text = copy[locale].contribute;
+  const initialKind = isContributionKind(query.kind) ? query.kind : undefined;
+  const brewery = query.brewery ? await getBreweryBySlug(query.brewery) : undefined;
+  const claimPrefill = brewery
+    ? { slug: brewery.slug, name: brewery.name, website: brewery.website }
+    : undefined;
 
   return (
     <main>
@@ -31,13 +34,11 @@ export default async function ContributePage({
         <h1>{text.title}</h1>
         <p className="lead">{text.lead}</p>
         <ContributionForm
+          key={`${initialKind ?? "brewery"}-${claimPrefill?.slug ?? ""}-${query.entry ?? ""}`}
           locale={locale}
-          initialKind={kind}
-          initialBreweryName={brewery?.name}
-          initialWebsite={brewery?.website}
-          initialLocality={brewery?.address?.locality}
-          initialRegion={brewery?.address?.region}
-          initialEntity={read("entry") || brewery?.name}
+          initialKind={initialKind}
+          claimPrefill={claimPrefill}
+          initialEntity={query.entry}
         />
         <GithubTemplateLinks locale={locale} />
         <aside className="trust-note">

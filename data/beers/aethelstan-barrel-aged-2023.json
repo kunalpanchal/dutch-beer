@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139818062",
+  "slug": "aethelstan-barrel-aged-2023",
+  "breweryId": "wd-q125578806",
+  "breweryName": "Big Belly Brewing",
+  "brewerySlug": "big-belly-brewing",
+  "name": "AETHELSTAN - Barrel Aged 2023",
+  "style": "imperial stout",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "https://www.bigbellybrewing.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139818062",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.bigbellybrewing.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139818062"
+  }
+}

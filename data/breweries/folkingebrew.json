@@ -1,0 +1,44 @@
+{
+  "id": "wd-q125779670",
+  "slug": "folkingebrew",
+  "name": "Folkingebrew",
+  "website": "https://www.folkingebrew.nl/the-pub/",
+  "address": {
+    "locality": "Groningen",
+    "region": "Groningen",
+    "countryCode": "NL",
+    "latitude": 53.2249652,
+    "longitude": 6.5636606
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779670",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id e3d9c33a-077b-426c-98ed-50e3e240135b",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.folkingebrew.nl/the-pub/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779670",
+    "openBreweryDb": "e3d9c33a-077b-426c-98ed-50e3e240135b",
+    "senb": "1964"
+  }
+}

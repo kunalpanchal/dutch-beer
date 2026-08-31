@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139888383",
+  "slug": "norbertijn-blond",
+  "breweryId": "unlinked",
+  "breweryName": "Unknown brewery",
+  "name": "Norbertijn Blond",
+  "style": "blond",
+  "abv": 6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139888383",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139888383"
+  }
+}

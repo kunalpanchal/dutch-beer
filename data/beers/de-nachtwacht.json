@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700854",
+  "slug": "de-nachtwacht",
+  "breweryId": "wd-q35200069",
+  "breweryName": "Brouwerij Mommeriete",
+  "brewerySlug": "brouwerij-mommeriete",
+  "name": "De Nachtwacht",
+  "style": "rookbier",
+  "abv": 5.7,
+  "availability": "unknown",
+  "website": "http://www.mommeriete.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700854",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.mommeriete.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700854"
+  }
+}

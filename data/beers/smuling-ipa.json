@@ -1,0 +1,34 @@
+{
+  "id": "wd-q138501996",
+  "slug": "smuling-ipa",
+  "breweryId": "wd-q125779517",
+  "breweryName": "Poesiat & Kater",
+  "brewerySlug": "poesiat-kater",
+  "name": "Smuling IPA",
+  "style": "American India Pale Ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://poesiatenkater.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q138501996",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://poesiatenkater.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q138501996"
+  }
+}

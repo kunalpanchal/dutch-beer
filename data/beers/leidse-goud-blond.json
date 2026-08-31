@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139857670",
+  "slug": "leidse-goud-blond",
+  "breweryId": "wd-q125780189",
+  "breweryName": "Brouwerij Leidse Goud",
+  "brewerySlug": "brouwerij-leidse-goud",
+  "name": "Leidse Goud Blond",
+  "style": "blond",
+  "abv": 6.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139857670",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139857670"
+  }
+}

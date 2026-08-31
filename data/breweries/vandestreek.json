@@ -1,0 +1,42 @@
+{
+  "id": "wd-q123759630",
+  "slug": "vandestreek",
+  "name": "vandeStreek",
+  "website": "https://vandestreekbier.nl/",
+  "address": {
+    "locality": "Utrecht",
+    "region": "Utrecht",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q123759630",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 92cdc232-7a90-4dfb-be89-4aad392acb83",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q123759630",
+    "openBreweryDb": "92cdc232-7a90-4dfb-be89-4aad392acb83",
+    "senb": "1184"
+  }
+}

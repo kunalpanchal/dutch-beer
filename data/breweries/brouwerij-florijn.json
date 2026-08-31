@@ -1,0 +1,27 @@
+{
+  "id": "wd-q125780143",
+  "slug": "brouwerij-florijn",
+  "name": "Brouwerij Florijn",
+  "address": {
+    "locality": "Nijmegen",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125780143",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125780143",
+    "senb": "6958"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q137563111",
+  "slug": "kaapse-harrie",
+  "breweryId": "wd-q124620906",
+  "breweryName": "Kaapse Brouwers",
+  "brewerySlug": "kaapse-brouwers",
+  "name": "Kaapse Harrie",
+  "style": "saison",
+  "abv": 6.1,
+  "availability": "unknown",
+  "website": "https://www.kaapsebrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137563111",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.kaapsebrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137563111",
+    "senb": "7952"
+  }
+}

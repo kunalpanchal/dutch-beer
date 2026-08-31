@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140051634",
+  "slug": "queen-bee",
+  "breweryId": "wd-q125779678",
+  "breweryName": "Brouwerij De Smokkelaar",
+  "brewerySlug": "brouwerij-de-smokkelaar",
+  "name": "Queen Bee",
+  "style": "tripel",
+  "abv": 7.8,
+  "availability": "unknown",
+  "website": "https://www.brouwerijdesmokkelaar.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051634",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijdesmokkelaar.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051634"
+  }
+}

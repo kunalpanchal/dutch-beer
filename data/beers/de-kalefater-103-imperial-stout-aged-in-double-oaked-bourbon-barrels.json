@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139691880",
+  "slug": "de-kalefater-103-imperial-stout-aged-in-double-oaked-bourbon-barrels",
+  "breweryId": "wd-q124513920",
+  "breweryName": "Bierbrouwerij De Magistraat",
+  "brewerySlug": "bierbrouwerij-de-magistraat",
+  "name": "De Kalefater 103 - Imperial Stout Aged In Double Oaked Bourbon Barrels",
+  "abv": 11.5,
+  "availability": "unknown",
+  "website": "https://www.magistraat.beer/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691880",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.magistraat.beer/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691880"
+  }
+}

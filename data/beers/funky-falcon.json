@@ -1,0 +1,35 @@
+{
+  "id": "wd-q127386976",
+  "slug": "funky-falcon",
+  "breweryId": "wd-q123965471",
+  "breweryName": "Two Chefs Brewing",
+  "brewerySlug": "two-chefs-brewing",
+  "name": "Funky Falcon",
+  "style": "American pale ale",
+  "abv": 5.2,
+  "availability": "unknown",
+  "website": "https://twochefsbrewing.com/nl/bier/funky-falcon",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q127386976",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://twochefsbrewing.com/nl/bier/funky-falcon",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q127386976",
+    "senb": "13960"
+  }
+}

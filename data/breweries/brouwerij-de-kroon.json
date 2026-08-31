@@ -1,0 +1,28 @@
+{
+  "id": "wd-q3388916",
+  "slug": "brouwerij-de-kroon",
+  "name": "Brouwerij De Kroon",
+  "address": {
+    "locality": "Oirschot",
+    "countryCode": "NL",
+    "latitude": 51.50169,
+    "longitude": 5.30555
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q3388916",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3388916"
+  }
+}

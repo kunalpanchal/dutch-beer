@@ -1,3 +1,5 @@
+import { emailMatchesWebsite, urlMatchesWebsite } from "@/lib/catalog/normalize";
+
 export const GITHUB_REPO = "kunalpanchal/dutchbeer";
 
 export const contributionKinds = ["brewery", "beer", "correction", "claim"] as const;
@@ -6,6 +8,7 @@ export type ContributionKind = (typeof contributionKinds)[number];
 export type ContributionPayload = {
   kind: ContributionKind;
   breweryName: string;
+  brewerySlug: string;
   beerName: string;
   website: string;
   locality: string;
@@ -16,6 +19,8 @@ export type ContributionPayload = {
   entity: string;
   source: string;
   notes: string;
+  email: string;
+  contact: string;
   description: string;
   coverImage: string;
   logo: string;
@@ -47,10 +52,16 @@ function capturedAt(): string {
 function source(payload: ContributionPayload, sourceKind: "official_website" | "brewery_submission" = "official_website") {
   return {
     sourceKind,
-    url: payload.source || payload.website,
+    url: payload.source,
     capturedAt: capturedAt(),
     ...(payload.notes ? { note: payload.notes } : {}),
   };
+}
+
+export function claimDomainError(payload: Pick<ContributionPayload, "email" | "website" | "source">): "email" | "evidence" | undefined {
+  if (!emailMatchesWebsite(payload.email, payload.website)) return "email";
+  if (!urlMatchesWebsite(payload.source, payload.website)) return "evidence";
+  return undefined;
 }
 
 function profileFields(payload: ContributionPayload) {
@@ -76,7 +87,8 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
         {
           slug,
           name: payload.beerName,
-          brewery: payload.breweryName,
+          breweryName: payload.breweryName,
+          ...(payload.brewerySlug ? { brewerySlug: payload.brewerySlug } : {}),
           ...(payload.style ? { style: payload.style } : {}),
           ...(Number.isFinite(abv) ? { abv } : {}),
           availability: payload.availability || "unknown",
@@ -98,7 +110,6 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
         {
           entry: payload.entity,
           change: payload.notes,
-          ...profileFields(payload),
           status: "pending_review",
           sources: [source(payload)],
         },
@@ -109,14 +120,15 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
   }
 
   if (payload.kind === "claim") {
-    const slug = slugify(payload.breweryName);
+    const slug = payload.brewerySlug || slugify(payload.breweryName);
     return {
       path: `data/claims/${slug}.json`,
       contents: `${JSON.stringify(
         {
-          kind: "claim",
           slug,
-          name: payload.breweryName,
+          brewery: payload.breweryName,
+          claimedBy: payload.contact,
+          email: payload.email,
           website: payload.website,
           ...profileFields(payload),
           status: "pending_review",
@@ -169,6 +181,7 @@ export function payloadFromForm(kind: ContributionKind, form: FormData): Contrib
   return {
     kind,
     breweryName: read("breweryName"),
+    brewerySlug: read("brewerySlug"),
     beerName: read("beerName"),
     website: read("website"),
     locality: read("locality"),
@@ -179,6 +192,8 @@ export function payloadFromForm(kind: ContributionKind, form: FormData): Contrib
     entity: read("entity"),
     source: read("source"),
     notes: read("notes"),
+    email: read("email"),
+    contact: read("contact"),
     description: read("description"),
     coverImage: read("coverImage"),
     logo: read("logo"),

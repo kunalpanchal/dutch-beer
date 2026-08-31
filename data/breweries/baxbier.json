@@ -1,0 +1,44 @@
+{
+  "id": "wd-q124662583",
+  "slug": "baxbier",
+  "name": "Baxbier",
+  "website": "https://www.baxbier.com/",
+  "address": {
+    "locality": "Groningen",
+    "region": "Groningen",
+    "countryCode": "NL",
+    "latitude": 53.226634839,
+    "longitude": 6.535161711
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124662583",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id b1b4c4b2-771a-472a-ae1b-faadb8cac5ef",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.baxbier.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124662583",
+    "openBreweryDb": "b1b4c4b2-771a-472a-ae1b-faadb8cac5ef",
+    "senb": "1214"
+  }
+}

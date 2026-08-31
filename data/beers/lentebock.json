@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140047956",
+  "slug": "lentebock",
+  "breweryId": "wd-q125779393",
+  "breweryName": "De Hollandse Pilsener Fabriek",
+  "brewerySlug": "de-hollandse-pilsener-fabriek",
+  "name": "Lentebock",
+  "style": "lentebok",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://dehollandsepilsenerfabriek.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140047956",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://dehollandsepilsenerfabriek.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140047956"
+  }
+}

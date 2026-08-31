@@ -12,7 +12,7 @@ import {
   listBeersForBrewery,
   listBreweries,
 } from "@/lib/catalog/store";
-import { copy, isLocale, locales } from "@/lib/i18n";
+import { copy, isLocale } from "@/lib/i18n";
 import {
   beerPath,
   breweryPath,
@@ -32,10 +32,7 @@ import {
   socialEntries,
 } from "@/lib/seo";
 
-export async function generateStaticParams() {
-  const breweries = await listBreweries();
-  return locales.flatMap((locale) => breweries.map((brewery) => ({ locale, slug: brewery.slug })));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,

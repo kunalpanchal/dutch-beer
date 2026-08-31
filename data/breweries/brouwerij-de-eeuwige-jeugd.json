@@ -1,0 +1,44 @@
+{
+  "id": "wd-q125779531",
+  "slug": "brouwerij-de-eeuwige-jeugd",
+  "name": "Brouwerij De Eeuwige Jeugd",
+  "website": "http://www.deeeuwigejeugd.nl/",
+  "address": {
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.337032,
+    "longitude": 4.924842
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779531",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id a9d218c4-b493-423b-939b-06882dc799e9",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.deeeuwigejeugd.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779531",
+    "openBreweryDb": "a9d218c4-b493-423b-939b-06882dc799e9",
+    "senb": "1482"
+  }
+}

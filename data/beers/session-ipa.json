@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139700997",
+  "slug": "session-ipa",
+  "breweryId": "wd-q125780240",
+  "breweryName": "Brouwerij Vandeoirsprong",
+  "brewerySlug": "brouwerij-vandeoirsprong",
+  "name": "Session IPA",
+  "style": "session IPA",
+  "abv": 3,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700997",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700997"
+  }
+}

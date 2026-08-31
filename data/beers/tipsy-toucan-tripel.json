@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139766351",
+  "slug": "tipsy-toucan-tripel",
+  "breweryId": "wd-q125826775",
+  "breweryName": "Slot Oostende",
+  "brewerySlug": "slot-oostende",
+  "name": "Tipsy Toucan Tripel",
+  "style": "tripel",
+  "abv": 8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139766351",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139766351"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139694713",
+  "slug": "iced-coffee-connaisseur-moi-frappuccino-editions-v2-red-velvet-white-chocolate-vanilla-rainbow-sprinkle-donut",
+  "breweryId": "wd-q124663583",
+  "breweryName": "Dutch Bargain",
+  "brewerySlug": "dutch-bargain",
+  "name": "Iced Coffee Connaisseur, Moi? Frappuccino Editions - V2: Red Velvet, White Chocolate, Vanilla, Rainbow Sprinkle Donut",
+  "style": "ijsbier",
+  "abv": 18,
+  "availability": "unknown",
+  "website": "https://www.dutchbargain.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139694713",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dutchbargain.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139694713"
+  }
+}

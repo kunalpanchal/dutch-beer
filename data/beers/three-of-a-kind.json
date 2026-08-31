@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139691569",
+  "slug": "three-of-a-kind",
+  "breweryId": "wd-q124625708",
+  "breweryName": "Kompaan",
+  "brewerySlug": "kompaan",
+  "name": "Three of A Kind",
+  "style": "tripel",
+  "abv": 9,
+  "availability": "unknown",
+  "website": "https://kompaanbier.nl/nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691569",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://kompaanbier.nl/nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691569"
+  }
+}

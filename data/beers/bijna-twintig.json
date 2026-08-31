@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139888372",
+  "slug": "bijna-twintig",
+  "breweryId": "unlinked",
+  "breweryName": "Unknown brewery",
+  "name": "Bijna Twintig",
+  "style": "imperial stout",
+  "abv": 11.9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139888372",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139888372"
+  }
+}

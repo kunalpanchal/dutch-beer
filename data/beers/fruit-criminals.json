@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139680406",
+  "slug": "fruit-criminals",
+  "breweryId": "wd-q125779635",
+  "breweryName": "Brouwerij Eleven",
+  "brewerySlug": "brouwerij-eleven",
+  "name": "Fruit Criminals",
+  "abv": 6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680406",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680406"
+  }
+}

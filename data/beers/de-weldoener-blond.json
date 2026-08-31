@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130279169",
+  "slug": "de-weldoener-blond",
+  "breweryId": "wd-q125779356",
+  "breweryName": "Brouwerij Maallust",
+  "brewerySlug": "brouwerij-maallust",
+  "name": "De Weldoener Blond",
+  "style": "blond",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.maallust.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130279169",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.maallust.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130279169",
+    "senb": "7404"
+  }
+}

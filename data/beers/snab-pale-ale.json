@@ -1,0 +1,34 @@
+{
+  "id": "wd-q2234893",
+  "slug": "snab-pale-ale",
+  "breweryId": "wd-q2380166",
+  "breweryName": "Stichting Noord-Hollandse Alternatieve Bierbrouwers",
+  "brewerySlug": "stichting-noord-hollandse-alternatieve-bierbrouwers",
+  "name": "SNAB Pale Ale",
+  "style": "pale ale",
+  "abv": 6.3,
+  "availability": "unknown",
+  "website": "http://www.snab.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2234893",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.snab.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2234893"
+  }
+}

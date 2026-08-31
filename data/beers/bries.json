@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139850918",
+  "slug": "bries",
+  "breweryId": "wd-q107252594",
+  "breweryName": "Nevel",
+  "brewerySlug": "nevel",
+  "name": "Bries",
+  "style": "sour beer",
+  "abv": 6.1,
+  "availability": "unknown",
+  "website": "https://nevel.org/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139850918",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://nevel.org/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139850918"
+  }
+}

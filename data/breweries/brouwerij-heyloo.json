@@ -1,0 +1,29 @@
+{
+  "id": "wd-q3136982",
+  "slug": "brouwerij-heyloo",
+  "name": "Brouwerij Heyloo",
+  "address": {
+    "locality": "",
+    "countryCode": "NL",
+    "latitude": 52.606087591,
+    "longitude": 4.720738081
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q3136982",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3136982",
+    "senb": "1129"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794812",
+  "slug": "extra-stout-bio",
+  "breweryId": "wd-q28034318",
+  "breweryName": "Brouwerij Troost",
+  "brewerySlug": "brouwerij-troost",
+  "name": "Extra Stout Bio",
+  "style": "stout",
+  "abv": 7.7,
+  "availability": "unknown",
+  "website": "http://www.brouwerijtroost.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794812",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijtroost.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794812"
+  }
+}

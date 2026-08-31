@@ -10,8 +10,6 @@
 - [ ] Claims a brewery (`data/claims/`)
 - [ ] Code, docs, or site change
 
-Every change, including listings, must go through a pull request. Do not commit to `main`.
-
 ## Source
 
 Required for directory data. Prefer the brewery’s own website.

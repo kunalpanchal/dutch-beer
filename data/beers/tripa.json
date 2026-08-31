@@ -1,0 +1,34 @@
+{
+  "id": "wd-q137946409",
+  "slug": "tripa",
+  "breweryId": "wd-q137940929",
+  "breweryName": "Jake's Beer",
+  "brewerySlug": "jakes-beer",
+  "name": "Tripa",
+  "style": "Triple India Pale Ale",
+  "abv": 8.4,
+  "availability": "unknown",
+  "website": "https://www.jakesbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137946409",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jakesbeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137946409"
+  }
+}

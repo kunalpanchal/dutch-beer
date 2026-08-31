@@ -1,0 +1,28 @@
+{
+  "id": "wd-q140053953",
+  "slug": "risluie",
+  "breweryId": "wd-q125779666",
+  "breweryName": "IV:UUR Bierbrouwerij",
+  "brewerySlug": "iv-uur-bierbrouwerij",
+  "name": "RISLUIE",
+  "style": "imperial stout",
+  "abv": 9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140053953",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140053953"
+  }
+}

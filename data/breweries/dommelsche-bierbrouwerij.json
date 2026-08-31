@@ -1,0 +1,44 @@
+{
+  "id": "wd-q13573965",
+  "slug": "dommelsche-bierbrouwerij",
+  "name": "Dommelsche Bierbrouwerij",
+  "website": "http://www.dommelsch.nl/",
+  "address": {
+    "locality": "Valkenswaard",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.3482553,
+    "longitude": 5.4279544
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q13573965",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id e8a8113c-849b-44d9-b710-8f76a163f59b",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.dommelsch.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q13573965",
+    "openBreweryDb": "e8a8113c-849b-44d9-b710-8f76a163f59b",
+    "senb": "161"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "wd-q22773399",
+  "slug": "q22773399",
+  "name": "Q22773399",
+  "website": "https://www.muifelbrouwerij.nl/",
+  "address": {
+    "locality": "Oss",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.7597627,
+    "longitude": 5.5577691
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q22773399",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id a2572c75-6690-42f3-b3cb-27e35e1fd1dd",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.muifelbrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q22773399",
+    "openBreweryDb": "a2572c75-6690-42f3-b3cb-27e35e1fd1dd",
+    "senb": "1070"
+  }
+}

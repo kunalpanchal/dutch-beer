@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139691498",
+  "slug": "biere-de-garde-brune",
+  "breweryId": "wd-q14369075",
+  "breweryName": "Speciaalbierbrouwerij Duits & Lauret",
+  "brewerySlug": "speciaalbierbrouwerij-duits-lauret",
+  "name": "Bière de Garde Brune",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "https://duitslauret.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691498",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://duitslauret.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691498"
+  }
+}

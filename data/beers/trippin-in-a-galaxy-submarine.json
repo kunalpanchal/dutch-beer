@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139694736",
+  "slug": "trippin-in-a-galaxy-submarine",
+  "breweryId": "wd-q124663583",
+  "breweryName": "Dutch Bargain",
+  "brewerySlug": "dutch-bargain",
+  "name": "Trippin’ In A Galaxy Submarine",
+  "style": "Double India Pale Ale",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://www.dutchbargain.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139694736",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dutchbargain.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139694736"
+  }
+}

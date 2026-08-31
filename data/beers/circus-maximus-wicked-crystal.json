@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140050757",
+  "slug": "circus-maximus-wicked-crystal",
+  "breweryId": "wd-q2110734",
+  "breweryName": "Maximus Brouwerij",
+  "brewerySlug": "maximus-brouwerij",
+  "name": "Circus Maximus: Wicked Crystal",
+  "style": "Berliner Weisse",
+  "abv": 3.9,
+  "availability": "unknown",
+  "website": "https://maximusbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140050757",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://maximusbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140050757"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130279545",
+  "slug": "meander",
+  "breweryId": "wd-q107252594",
+  "breweryName": "Nevel",
+  "brewerySlug": "nevel",
+  "name": "Meander",
+  "style": "blond",
+  "abv": 6.1,
+  "availability": "unknown",
+  "website": "https://nevel.org/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130279545",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://nevel.org/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130279545",
+    "senb": "15251"
+  }
+}

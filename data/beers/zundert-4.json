@@ -1,0 +1,35 @@
+{
+  "id": "wd-q132497032",
+  "slug": "zundert-4",
+  "breweryId": "wd-q125779366",
+  "breweryName": "Trappistenbrouwerij De Kievit",
+  "brewerySlug": "trappistenbrouwerij-de-kievit",
+  "name": "Zundert 4",
+  "style": "trappistenbier",
+  "abv": 4,
+  "availability": "unknown",
+  "website": "https://zunderttrappist.nl/zundert-4-refterbier-trappist/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q132497032",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://zunderttrappist.nl/zundert-4-refterbier-trappist/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q132497032",
+    "senb": "18859"
+  }
+}

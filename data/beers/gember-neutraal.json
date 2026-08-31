@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139701151",
+  "slug": "gember-neutraal",
+  "breweryId": "wd-q2208517",
+  "breweryName": "Brouwerij De 7 Deugden",
+  "brewerySlug": "brouwerij-de-7-deugden",
+  "name": "Gember+Neutraal",
+  "abv": 5.7,
+  "availability": "unknown",
+  "website": "https://de7deugden.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139701151",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://de7deugden.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139701151"
+  }
+}

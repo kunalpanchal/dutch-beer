@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140051681",
+  "slug": "de-filantroop-tripel",
+  "breweryId": "wd-q140051620",
+  "breweryName": "Q140051620",
+  "brewerySlug": "q140051620",
+  "name": "De Filantroop - Tripel",
+  "style": "tripel",
+  "abv": 7.2,
+  "availability": "unknown",
+  "website": "http://www.defilantroopbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051681",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.defilantroopbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051681"
+  }
+}

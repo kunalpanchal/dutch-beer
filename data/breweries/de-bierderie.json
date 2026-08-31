@@ -1,0 +1,30 @@
+{
+  "id": "obdb-13eef395-8779-4484-a700-a998455ab9e2",
+  "slug": "de-bierderie",
+  "name": "De Bierderie",
+  "address": {
+    "locality": "Wormerveer",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.5044186,
+    "longitude": 4.7877418
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 13eef395-8779-4484-a700-a998455ab9e2",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "openBreweryDb": "13eef395-8779-4484-a700-a998455ab9e2"
+  }
+}

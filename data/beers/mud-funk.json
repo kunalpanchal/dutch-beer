@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139680979",
+  "slug": "mud-funk",
+  "breweryId": "wd-q138864321",
+  "breweryName": "Anchorage Brewing Company",
+  "name": "Mud & Funk",
+  "style": "imperial stout",
+  "abv": 11.9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680979",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680979"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q133447760",
+  "slug": "grapefruit-ipa",
+  "breweryId": "wd-q123759630",
+  "breweryName": "vandeStreek",
+  "brewerySlug": "vandestreek",
+  "name": "Grapefruit IPA",
+  "style": "hoog fermentatiebier",
+  "abv": 0.5,
+  "availability": "unknown",
+  "website": "https://vandestreekbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q133447760",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q133447760",
+    "senb": "13710"
+  }
+}

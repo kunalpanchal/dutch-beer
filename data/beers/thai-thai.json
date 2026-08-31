@@ -1,0 +1,35 @@
+{
+  "id": "wd-q137799708",
+  "slug": "thai-thai",
+  "breweryId": "wd-q125779378",
+  "breweryName": "Oedipus",
+  "brewerySlug": "oedipus",
+  "name": "Thai Thai",
+  "style": "tripel",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://oedipus.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137799708",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://oedipus.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137799708",
+    "senb": "13983"
+  }
+}

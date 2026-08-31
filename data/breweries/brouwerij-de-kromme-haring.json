@@ -1,0 +1,33 @@
+{
+  "id": "wd-q124646359",
+  "slug": "brouwerij-de-kromme-haring",
+  "name": "Brouwerij De Kromme Haring",
+  "website": "https://www.dekrommeharing.nl/",
+  "address": {
+    "locality": "Utrecht",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124646359",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dekrommeharing.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124646359",
+    "senb": "1267"
+  }
+}

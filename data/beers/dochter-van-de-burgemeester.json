@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139596195",
+  "slug": "dochter-van-de-burgemeester",
+  "breweryId": "wd-q124513920",
+  "breweryName": "Bierbrouwerij De Magistraat",
+  "brewerySlug": "bierbrouwerij-de-magistraat",
+  "name": "Dochter van de Burgemeester",
+  "style": "blond",
+  "abv": 5.9,
+  "availability": "unknown",
+  "website": "https://www.magistraat.beer/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139596195",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.magistraat.beer/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139596195"
+  }
+}

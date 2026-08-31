@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139701068",
+  "slug": "wallys-next-adventure",
+  "breweryId": "wd-q124670909",
+  "breweryName": "Q124670909",
+  "brewerySlug": "q124670909",
+  "name": "Wally's Next Adventure",
+  "style": "New England India Pale Ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://rockcitybrewing.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139701068",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://rockcitybrewing.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139701068"
+  }
+}

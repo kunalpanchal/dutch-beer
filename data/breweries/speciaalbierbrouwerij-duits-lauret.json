@@ -1,0 +1,44 @@
+{
+  "id": "wd-q14369075",
+  "slug": "speciaalbierbrouwerij-duits-lauret",
+  "name": "Speciaalbierbrouwerij Duits & Lauret",
+  "website": "https://duitslauret.com/",
+  "address": {
+    "locality": "Everdingen",
+    "region": "Utrecht",
+    "countryCode": "NL",
+    "latitude": 51.96175,
+    "longitude": 5.1749042
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q14369075",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 0bbd6a9f-5427-4459-bb98-64ff780b807d",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://duitslauret.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q14369075",
+    "openBreweryDb": "0bbd6a9f-5427-4459-bb98-64ff780b807d",
+    "senb": "1092"
+  }
+}

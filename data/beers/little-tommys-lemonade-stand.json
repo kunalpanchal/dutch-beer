@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139675561",
+  "slug": "little-tommys-lemonade-stand",
+  "breweryId": "wd-q61698778",
+  "breweryName": "Uiltje Brewing Company",
+  "brewerySlug": "uiltje-brewing-company",
+  "name": "Little Tommy's Lemonade Stand",
+  "style": "pale ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.uiltjecraftbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139675561",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.uiltjecraftbeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139675561"
+  }
+}

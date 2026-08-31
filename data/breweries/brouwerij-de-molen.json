@@ -1,0 +1,44 @@
+{
+  "id": "wd-q1828277",
+  "slug": "brouwerij-de-molen",
+  "name": "Brouwerij De Molen",
+  "website": "https://brouwerijdemolen.nl/",
+  "address": {
+    "locality": "Bodegraven",
+    "region": "Zuid-Holland",
+    "countryCode": "NL",
+    "latitude": 52.08496111,
+    "longitude": 4.73838889
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q1828277",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 97dc5659-a6ab-4765-9cf6-39494e821fd2",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdemolen.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q1828277",
+    "openBreweryDb": "97dc5659-a6ab-4765-9cf6-39494e821fd2",
+    "senb": "1020"
+  }
+}

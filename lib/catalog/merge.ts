@@ -1,4 +1,4 @@
-import type { Brewery, OpenDataOrigin, Provenance } from "@/lib/schema";
+import type { Beer, Brewery, OpenDataOrigin, Provenance } from "@/lib/schema";
 import {
   canonicalWebsite,
   hostnameFromUrl,
@@ -26,11 +26,13 @@ export interface SourceRecord {
 
 export interface CatalogMeta {
   generatedAt: string;
-  sources: Record<OpenDataOrigin, { fetchedAt: string; count: number }>;
+  sources: Partial<Record<OpenDataOrigin, { fetchedAt: string; count: number }>>;
 }
 
 export interface CatalogFile extends CatalogMeta {
   breweries: Brewery[];
+  beers?: Beer[];
+  beerSources?: { wikidata: { fetchedAt: string; count: number } };
 }
 
 const ORIGIN_NOTE: Record<OpenDataOrigin, string> = {

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130321377",
+  "slug": "jopen-mooie-nel",
+  "breweryId": "wd-q392195",
+  "breweryName": "Jopen",
+  "brewerySlug": "jopen",
+  "name": "Jopen Mooie Nel",
+  "style": "India pale ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.jopenbier.nl/product/jopen-mooie-nel-ipa/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130321377",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jopenbier.nl/product/jopen-mooie-nel-ipa/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130321377",
+    "senb": "8235"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "wd-q12059978",
+  "slug": "t-scheepje",
+  "name": "'t Scheepje",
+  "address": {
+    "locality": "",
+    "countryCode": "NL",
+    "latitude": 52.3814,
+    "longitude": 4.64564
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q12059978",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "wikidata": "Q12059978"
+  }
+}

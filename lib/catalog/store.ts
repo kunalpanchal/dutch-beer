@@ -2,50 +2,62 @@ import { cache } from "react";
 import { readFile } from "fs/promises";
 import path from "path";
 import type { Beer, Brewery, OpenDataOrigin, PublicationStatus } from "@/lib/schema";
+import { applyPublishedClaims, loadClaimFiles } from "@/lib/catalog/claims";
 import type { CatalogFile } from "@/lib/catalog/merge";
 import { breweryOrigins, sourceConfidence } from "@/lib/catalog/merge";
+import { catalogCounts, recentBoardEntries } from "@/lib/catalog/home";
 import { slugify } from "@/lib/catalog/normalize";
-import {
-  loadBeerListings,
-  loadBreweryListings,
-  mergeBreweryListings,
-  resolveBeerListings,
-} from "@/lib/catalog/listings";
 
-export const catalogPath = path.join(process.cwd(), "data/catalog.json");
+const assembledCatalogPath = path.join(process.cwd(), "data/.assembled.json");
 
 const emptyCatalog = (): CatalogFile => ({
   generatedAt: "",
-  sources: {
-    wikidata: { fetchedAt: "", count: 0 },
-    open_brewery_db: { fetchedAt: "", count: 0 },
-    openstreetmap: { fetchedAt: "", count: 0 },
-  },
+  sources: {},
   breweries: [],
+  beers: [],
+  beerSources: { wikidata: { fetchedAt: "", count: 0 } },
 });
 
 export const loadCatalog = cache(async (): Promise<CatalogFile> => {
   try {
-    const raw = await readFile(catalogPath, "utf8");
-    return JSON.parse(raw) as CatalogFile;
+    return JSON.parse(await readFile(assembledCatalogPath, "utf8")) as CatalogFile;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return emptyCatalog();
     throw error;
   }
 });
 
-const loadMergedBreweries = cache(async (): Promise<Brewery[]> => {
-  const [catalog, listings] = await Promise.all([loadCatalog(), loadBreweryListings()]);
-  return mergeBreweryListings(catalog.breweries, listings);
-});
+const loadClaims = cache(loadClaimFiles);
 
-const loadResolvedBeers = cache(async (): Promise<Beer[]> => {
-  const [breweries, listings] = await Promise.all([loadMergedBreweries(), loadBeerListings()]);
-  return resolveBeerListings(listings, breweries);
+interface CatalogIndex {
+  breweries: Brewery[];
+  beers: Beer[];
+  breweryBySlug: Map<string, Brewery>;
+  breweryById: Map<string, Brewery>;
+  beerBySlug: Map<string, Beer>;
+  beersByBrewery: Map<string, Beer[]>;
+}
+
+const loadIndexedCatalog = cache(async (): Promise<CatalogIndex> => {
+  const [catalog, claims] = await Promise.all([loadCatalog(), loadClaims()]);
+  const breweries = applyPublishedClaims(catalog.breweries, claims);
+  const beers = catalog.beers ?? [];
+  const breweryBySlug = new Map(breweries.map((brewery) => [brewery.slug, brewery]));
+  const breweryById = new Map(breweries.map((brewery) => [brewery.id, brewery]));
+  const beerBySlug = new Map(beers.map((beer) => [beer.slug, beer]));
+  const beersByBrewery = new Map<string, Beer[]>();
+  for (const beer of beers) {
+    for (const key of new Set([beer.breweryId, beer.brewerySlug].filter((value): value is string => Boolean(value)))) {
+      const list = beersByBrewery.get(key) ?? [];
+      list.push(beer);
+      beersByBrewery.set(key, list);
+    }
+  }
+  return { breweries, beers, breweryBySlug, breweryById, beerBySlug, beersByBrewery };
 });
 
 export async function listBreweries(): Promise<Brewery[]> {
-  return loadMergedBreweries();
+  return (await loadIndexedCatalog()).breweries;
 }
 
 export async function listPublishedBreweries(): Promise<Brewery[]> {
@@ -57,31 +69,48 @@ export async function listPendingBreweries(): Promise<Brewery[]> {
 }
 
 export async function getBreweryBySlug(slug: string): Promise<Brewery | undefined> {
-  return (await listBreweries()).find((brewery) => brewery.slug === slug);
+  return (await loadIndexedCatalog()).breweryBySlug.get(slug);
 }
 
 export async function getBreweryById(id: string): Promise<Brewery | undefined> {
-  return (await listBreweries()).find((brewery) => brewery.id === id);
+  return (await loadIndexedCatalog()).breweryById.get(id);
 }
 
 export async function listBeers(): Promise<Beer[]> {
-  return loadResolvedBeers();
+  return (await loadIndexedCatalog()).beers;
 }
 
 export async function listPublishedBeers(): Promise<Beer[]> {
   return (await listBeers()).filter((beer) => beer.status === "published");
 }
 
+export async function getCatalogCounts() {
+  return catalogCounts(await loadCatalog());
+}
+
+export async function listRecentBoardEntries(limit = 6) {
+  return recentBoardEntries(await loadCatalog(), limit);
+}
+
 export async function getBeerBySlug(slug: string): Promise<Beer | undefined> {
-  return (await listBeers()).find((beer) => beer.slug === slug);
+  return (await loadIndexedCatalog()).beerBySlug.get(slug);
 }
 
 export async function listBeersForBrewery(brewery: Brewery): Promise<Beer[]> {
-  return (await listBeers()).filter((beer) => beer.breweryId === brewery.id);
+  const index = await loadIndexedCatalog();
+  const byId = index.beersByBrewery.get(brewery.id) ?? [];
+  if (byId.length) return byId;
+  return index.beersByBrewery.get(brewery.slug) ?? [];
 }
 
 export function isLikelyCurrent(brewery: Brewery): boolean {
   return !brewery.closed && Boolean(brewery.website || breweryOrigins(brewery).length >= 2);
+}
+
+export function openStreetMapHref(latitude?: number, longitude?: number): string | undefined {
+  if (latitude === undefined || longitude === undefined) return undefined;
+  if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return undefined;
+  return `https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}#map=16/${latitude}/${longitude}`;
 }
 
 export interface BreweryListItem {
@@ -90,11 +119,42 @@ export interface BreweryListItem {
   locality?: string;
   region?: string;
   website?: string;
+  mapHref?: string;
   origins: OpenDataOrigin[];
   closed?: boolean;
+  claimed?: boolean;
   status: PublicationStatus;
   confidence: "high" | "medium" | "low";
-  claimed: boolean;
+}
+
+export interface BeerListItem {
+  slug: string;
+  name: string;
+  breweryName: string;
+  brewerySlug?: string;
+  style?: string;
+  abv?: number;
+  origins: OpenDataOrigin[];
+  status: PublicationStatus;
+}
+
+export function toBeerListItem(beer: Beer): BeerListItem {
+  return {
+    slug: beer.slug,
+    name: beer.name,
+    breweryName: beer.breweryName,
+    brewerySlug: beer.brewerySlug,
+    style: beer.style,
+    abv: beer.abv,
+    origins: [
+      ...new Set(
+        beer.sources
+          .map((source) => source.origin)
+          .filter((origin): origin is OpenDataOrigin => Boolean(origin)),
+      ),
+    ],
+    status: beer.status,
+  };
 }
 
 export function toListItem(brewery: Brewery): BreweryListItem {
@@ -105,11 +165,12 @@ export function toListItem(brewery: Brewery): BreweryListItem {
     locality: brewery.address?.locality || undefined,
     region: brewery.address?.region,
     website: brewery.website,
+    mapHref: openStreetMapHref(brewery.address?.latitude, brewery.address?.longitude),
     origins,
     closed: brewery.closed,
+    claimed: Boolean(brewery.claimedBy),
     status: brewery.status,
     confidence: sourceConfidence(origins, brewery.website, brewery.closed),
-    claimed: Boolean(brewery.claimedBy) || brewery.trustLevel === "verified_brewery",
   };
 }
 

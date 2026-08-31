@@ -1,0 +1,35 @@
+{
+  "id": "obdb-0c68728b-7772-425c-a7b9-d2f866f6b706",
+  "slug": "rooie-dop",
+  "name": "Rooie Dop",
+  "website": "https://rooienel.nl/",
+  "address": {
+    "locality": "Utrecht",
+    "region": "Utrecht",
+    "countryCode": "NL",
+    "latitude": 52.1070075,
+    "longitude": 5.1072833
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 0c68728b-7772-425c-a7b9-d2f866f6b706",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://rooienel.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "0c68728b-7772-425c-a7b9-d2f866f6b706"
+  }
+}

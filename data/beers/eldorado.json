@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139676854",
+  "slug": "eldorado",
+  "breweryId": "wd-q3496897",
+  "breweryName": "Brouwerij 't IJ",
+  "name": "Eldorado",
+  "style": "India Pale Lager",
+  "abv": 5.3,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676854",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676854"
+  }
+}

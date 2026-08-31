@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139692739",
+  "slug": "amstel-extra-7-5",
+  "breweryId": "wd-q478119",
+  "breweryName": "Amstel",
+  "brewerySlug": "amstel",
+  "name": "Amstel Extra (7,5%)",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "http://www.amstel.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139692739",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.amstel.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139692739"
+  }
+}

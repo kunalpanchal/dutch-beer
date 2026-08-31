@@ -1,0 +1,34 @@
+{
+  "id": "wd-q141041003",
+  "slug": "martinus-neipa",
+  "breweryId": "wd-q125779469",
+  "breweryName": "Brouwerij Martinus",
+  "brewerySlug": "brouwerij-martinus",
+  "name": "Martinus NEIPA",
+  "style": "New England India Pale Ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "http://www.brouwerijmartinus.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q141041003",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijmartinus.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q141041003"
+  }
+}

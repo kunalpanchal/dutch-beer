@@ -1,0 +1,18 @@
+{
+  "id": "osm-way-274981313",
+  "slug": "brouwerij-egmond-egmond-aan-den-hoef",
+  "name": "Brouwerij Egmond",
+  "website": "https://www.sanctiadalberti.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.sanctiadalberti.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

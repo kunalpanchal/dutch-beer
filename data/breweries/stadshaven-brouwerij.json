@@ -1,0 +1,33 @@
+{
+  "id": "wd-q114839811",
+  "slug": "stadshaven-brouwerij",
+  "name": "Stadshaven Brouwerij",
+  "website": "https://stadshavenbrouwerij.nl/",
+  "address": {
+    "locality": "Rotterdam",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q114839811",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://stadshavenbrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q114839811",
+    "senb": "3128"
+  }
+}

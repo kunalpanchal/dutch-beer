@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139691842",
+  "slug": "tien",
+  "breweryId": "wd-q112748989",
+  "breweryName": "Naeckte Brouwers",
+  "brewerySlug": "naeckte-brouwers",
+  "name": "TIEN",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://naecktebrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691842",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://naecktebrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691842"
+  }
+}

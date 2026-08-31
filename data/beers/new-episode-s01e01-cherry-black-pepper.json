@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139679195",
+  "slug": "new-episode-s01e01-cherry-black-pepper",
+  "breweryId": "wd-q123965471",
+  "breweryName": "Two Chefs Brewing",
+  "brewerySlug": "two-chefs-brewing",
+  "name": "New Episode S01E01: Cherry + Black Pepper",
+  "style": "saison",
+  "abv": 4.8,
+  "availability": "unknown",
+  "website": "https://twochefsbrewing.com/nl",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139679195",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://twochefsbrewing.com/nl",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139679195"
+  }
+}

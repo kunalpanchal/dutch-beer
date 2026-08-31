@@ -1,0 +1,29 @@
+{
+  "id": "wd-q122970477",
+  "slug": "stadsbrouwerij",
+  "name": "Stadsbrouwerij",
+  "address": {
+    "locality": "Leeuwarden",
+    "countryCode": "NL",
+    "latitude": 53.19925,
+    "longitude": 5.792638888
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q122970477",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q122970477",
+    "senb": "2986"
+  }
+}

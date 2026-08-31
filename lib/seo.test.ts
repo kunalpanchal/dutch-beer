@@ -94,6 +94,7 @@ describe("beer SEO", () => {
     id: "beer-bloedbroeder",
     slug: "bloedbroeder",
     breweryId: kompaan.id,
+    breweryName: kompaan.name,
     name: "Bloedbroeder",
     style: "IPA",
     abv: 7.2,

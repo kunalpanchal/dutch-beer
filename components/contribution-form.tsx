@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import {
+  claimDomainError,
   contributionKinds,
   githubNewEntryUrls,
   githubPullRequestUrl,
@@ -10,35 +11,37 @@ import {
 } from "@/lib/contribute";
 import { copy, type Locale } from "@/lib/i18n";
 
-function isContributionKind(value: string | undefined): value is ContributionKind {
-  return contributionKinds.includes(value as ContributionKind);
-}
-
 export function ContributionForm({
   locale,
-  initialKind,
-  initialBreweryName,
-  initialWebsite,
-  initialLocality,
-  initialRegion,
+  initialKind = "brewery",
+  claimPrefill,
   initialEntity,
 }: {
   locale: Locale;
-  initialKind?: string;
-  initialBreweryName?: string;
-  initialWebsite?: string;
-  initialLocality?: string;
-  initialRegion?: string;
+  initialKind?: ContributionKind;
+  claimPrefill?: { slug: string; name: string; website?: string };
   initialEntity?: string;
 }) {
-  const [kind, setKind] = useState<ContributionKind>(isContributionKind(initialKind) ? initialKind : "brewery");
+  const [kind, setKind] = useState<ContributionKind>(initialKind);
+  const [error, setError] = useState<string>();
   const text = copy[locale].contribute;
   const type = text.types[kind];
-  const showProfile = kind === "claim" || kind === "correction";
 
   function submitPullRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    window.location.assign(githubPullRequestUrl(payloadFromForm(kind, new FormData(event.currentTarget))));
+    const payload = payloadFromForm(kind, new FormData(event.currentTarget));
+    if (kind === "claim") {
+      const mismatch = claimDomainError(payload);
+      if (mismatch === "email") {
+        setError(text.domainEmail);
+        return;
+      }
+      if (mismatch === "evidence") {
+        setError(text.domainEvidence);
+        return;
+      }
+    }
+    window.location.assign(githubPullRequestUrl(payload));
   }
 
   return (
@@ -50,7 +53,10 @@ export function ContributionForm({
             type="button"
             aria-pressed={kind === value}
             className={kind === value ? "is-active" : undefined}
-            onClick={() => setKind(value)}
+            onClick={() => {
+              setKind(value);
+              setError(undefined);
+            }}
           >
             {text.types[value].label}
           </button>
@@ -66,44 +72,19 @@ export function ContributionForm({
         <div className="form-grid">
           <label>
             {text.fields.breweryName}
-            <input
-              name="breweryName"
-              required
-              autoComplete="organization"
-              defaultValue={initialBreweryName}
-              placeholder={text.placeholders.breweryName}
-            />
+            <input name="breweryName" required autoComplete="organization" placeholder={text.placeholders.breweryName} />
           </label>
           <label>
             {text.fields.website}
-            <input name="website" type="url" required defaultValue={initialWebsite} placeholder={text.placeholders.website} />
+            <input name="website" type="url" required placeholder={text.placeholders.website} />
           </label>
           <label>
             {text.fields.locality}
-            <input name="locality" required defaultValue={initialLocality} placeholder={text.placeholders.locality} />
+            <input name="locality" required placeholder={text.placeholders.locality} />
           </label>
           <label>
             {text.fields.region} <span>{text.optional}</span>
-            <input name="region" defaultValue={initialRegion} placeholder={text.placeholders.region} />
-          </label>
-        </div>
-      ) : null}
-
-      {kind === "claim" ? (
-        <div className="form-grid">
-          <label>
-            {text.fields.breweryName}
-            <input
-              name="breweryName"
-              required
-              autoComplete="organization"
-              defaultValue={initialBreweryName}
-              placeholder={text.placeholders.breweryName}
-            />
-          </label>
-          <label>
-            {text.fields.website}
-            <input name="website" type="url" required defaultValue={initialWebsite} placeholder={text.placeholders.website} />
+            <input name="region" placeholder={text.placeholders.region} />
           </label>
         </div>
       ) : null}
@@ -116,12 +97,7 @@ export function ContributionForm({
           </label>
           <label>
             {text.fields.breweryName}
-            <input
-              name="breweryName"
-              required
-              defaultValue={initialBreweryName}
-              placeholder={text.placeholders.breweryName}
-            />
+            <input name="breweryName" required placeholder={text.placeholders.breweryName} />
           </label>
           <label>
             {text.fields.style} <span>{text.optional}</span>
@@ -150,14 +126,49 @@ export function ContributionForm({
             <input
               name="entity"
               required
-              defaultValue={initialEntity || initialBreweryName}
+              defaultValue={initialEntity || claimPrefill?.name}
               placeholder={text.placeholders.entity}
             />
           </label>
         </div>
       ) : null}
 
-      {showProfile ? (
+      {kind === "claim" ? (
+        <div className="form-grid">
+          {claimPrefill ? <input type="hidden" name="brewerySlug" value={claimPrefill.slug} /> : null}
+          <label>
+            {text.fields.breweryName}
+            <input
+              name="breweryName"
+              required
+              autoComplete="organization"
+              defaultValue={claimPrefill?.name}
+              readOnly={Boolean(claimPrefill)}
+              placeholder={text.placeholders.breweryName}
+            />
+          </label>
+          <label>
+            {text.fields.website}
+            <input
+              name="website"
+              type="url"
+              required
+              defaultValue={claimPrefill?.website}
+              placeholder={text.placeholders.website}
+            />
+          </label>
+          <label>
+            {text.fields.contact}
+            <input name="contact" required autoComplete="name" placeholder={text.placeholders.contact} />
+          </label>
+          <label>
+            {text.fields.email}
+            <input name="email" type="email" required autoComplete="email" placeholder={text.placeholders.email} />
+          </label>
+        </div>
+      ) : null}
+
+      {kind === "claim" ? (
         <div className="form-grid">
           <label>
             {text.fields.description} <span>{text.optional}</span>
@@ -184,25 +195,26 @@ export function ContributionForm({
 
       <div className="form-grid form-grid-wide">
         <label>
-          {text.fields.source}
+          {text.fields[kind === "claim" ? "evidence" : "source"]}
           <input
             name="source"
             type="url"
             required
-            defaultValue={kind === "claim" ? initialWebsite : undefined}
-            placeholder={text.placeholders.source}
+            placeholder={kind === "claim" ? text.placeholders.claimSource : text.placeholders.source}
           />
         </label>
         <label>
-          {text.fields.notes} {kind === "correction" || kind === "claim" ? null : <span>{text.optional}</span>}
+          {text.fields.notes} {kind === "correction" ? null : <span>{text.optional}</span>}
           <textarea
             name="notes"
             rows={4}
-            required={kind === "correction" || kind === "claim"}
+            required={kind === "correction"}
             placeholder={kind === "claim" ? text.placeholders.claimNotes : text.placeholders.notes}
           />
         </label>
       </div>
+
+      {error ? <p className="form-error" role="alert">{error}</p> : null}
 
       <div className="form-actions">
         <button className="button button-ale" type="submit">

@@ -1,0 +1,27 @@
+{
+  "id": "wd-q61043304",
+  "slug": "grolsch-0-0",
+  "breweryId": "unlinked",
+  "breweryName": "Unknown brewery",
+  "name": "Grolsch 0.0%",
+  "style": "alcoholvrij bier",
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q61043304",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q61043304",
+    "senb": "9404"
+  }
+}

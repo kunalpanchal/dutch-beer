@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140494201",
+  "slug": "dors",
+  "breweryId": "wd-q2072541",
+  "breweryName": "Royal Swinkels",
+  "brewerySlug": "royal-swinkels",
+  "name": "Dors",
+  "style": "pils",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "https://royalswinkels.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140494201",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://royalswinkels.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140494201"
+  }
+}

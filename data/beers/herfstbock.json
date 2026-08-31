@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139719593",
+  "slug": "herfstbock",
+  "breweryId": "wd-q125779393",
+  "breweryName": "De Hollandse Pilsener Fabriek",
+  "brewerySlug": "de-hollandse-pilsener-fabriek",
+  "name": "Herfstbock",
+  "style": "bokbier",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "https://dehollandsepilsenerfabriek.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139719593",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://dehollandsepilsenerfabriek.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139719593"
+  }
+}

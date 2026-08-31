@@ -1,0 +1,28 @@
+{
+  "id": "wd-q140053944",
+  "slug": "bommn-beernd",
+  "breweryId": "wd-q125779666",
+  "breweryName": "IV:UUR Bierbrouwerij",
+  "brewerySlug": "iv-uur-bierbrouwerij",
+  "name": "Bomm'n Beernd",
+  "style": "tripel",
+  "abv": 9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140053944",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140053944"
+  }
+}

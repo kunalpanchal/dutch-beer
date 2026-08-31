@@ -1,0 +1,35 @@
+{
+  "id": "obdb-3aff0dab-35e0-4d09-ada5-afce6e8cb6d5",
+  "slug": "thissens-brouwerij",
+  "name": "Thissen's Brouwerij",
+  "website": "http://www.thissensbrouwerij.nl/contact/",
+  "address": {
+    "locality": "Lith",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.8090178,
+    "longitude": 5.4284446
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 3aff0dab-35e0-4d09-ada5-afce6e8cb6d5",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.thissensbrouwerij.nl/contact/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "3aff0dab-35e0-4d09-ada5-afce6e8cb6d5"
+  }
+}

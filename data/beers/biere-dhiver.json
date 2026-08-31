@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139676874",
+  "slug": "biere-dhiver",
+  "breweryId": "wd-q3496897",
+  "breweryName": "Brouwerij 't IJ",
+  "name": "Bière d'Hiver",
+  "style": "winter warmer",
+  "abv": 9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676874",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676874"
+  }
+}

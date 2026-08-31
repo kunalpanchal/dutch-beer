@@ -1,0 +1,35 @@
+{
+  "id": "obdb-a4e6108a-f682-4632-9ba3-eebe121bea7c",
+  "slug": "koninklijke-grolsch",
+  "name": "Koninklijke Grolsch",
+  "website": "http://www.grolsch.nl/",
+  "address": {
+    "locality": "Enschede",
+    "region": "Overijssel",
+    "countryCode": "NL",
+    "latitude": 52.2059476,
+    "longitude": 6.8160167
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id a4e6108a-f682-4632-9ba3-eebe121bea7c",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.grolsch.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "a4e6108a-f682-4632-9ba3-eebe121bea7c"
+  }
+}

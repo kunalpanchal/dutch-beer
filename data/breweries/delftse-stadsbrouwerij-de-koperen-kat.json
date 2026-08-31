@@ -1,0 +1,18 @@
+{
+  "id": "osm-node-3214833256",
+  "slug": "delftse-stadsbrouwerij-de-koperen-kat",
+  "name": "Delftse Stadsbrouwerij De Koperen Kat",
+  "website": "https://www.koperenkat.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.koperenkat.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

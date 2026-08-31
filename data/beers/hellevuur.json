@@ -1,0 +1,35 @@
+{
+  "id": "wd-q134476541",
+  "slug": "hellevuur",
+  "breweryId": "wd-q124663040",
+  "breweryName": "Brouwerij Bliksem",
+  "brewerySlug": "brouwerij-bliksem",
+  "name": "Hellevuur",
+  "style": "vatgerijpt bier",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://www.brouwerijbliksem.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q134476541",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijbliksem.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q134476541",
+    "senb": "15865"
+  }
+}

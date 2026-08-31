@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139675270",
+  "slug": "extravagant-nectaron-tipa",
+  "breweryId": "wd-q124632565",
+  "breweryName": "Moersleutel",
+  "brewerySlug": "moersleutel",
+  "name": "Extravagant: Nectaron TIPA",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://moersleutel.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139675270",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://moersleutel.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139675270"
+  }
+}

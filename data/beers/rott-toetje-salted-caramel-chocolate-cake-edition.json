@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681202",
+  "slug": "rott-toetje-salted-caramel-chocolate-cake-edition",
+  "breweryId": "wd-q125779522",
+  "breweryName": "ROTT. Brouwers",
+  "brewerySlug": "rott-brouwers",
+  "name": "ROTT.TOETJE | Salted Caramel Chocolate Cake Edition",
+  "style": "imperial stout",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "http://www.rottbrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681202",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rottbrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681202"
+  }
+}

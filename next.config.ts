@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       { protocol: "http", hostname: "**" },
     ],
   },
+  outputFileTracingIncludes: {
+    "/*": ["./data/.assembled.json", "./data/claims/**/*.json"],
+  },
 };
 
 export default nextConfig;

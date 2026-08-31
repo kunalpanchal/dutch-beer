@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139744325",
+  "slug": "last-10-seconds",
+  "breweryId": "wd-q125821702",
+  "breweryName": "Cockroach Brew",
+  "brewerySlug": "cockroach-brew",
+  "name": "Last 10 Seconds",
+  "style": "American India Pale Ale",
+  "abv": 7,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139744325",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139744325"
+  }
+}

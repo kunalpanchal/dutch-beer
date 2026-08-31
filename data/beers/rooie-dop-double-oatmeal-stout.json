@@ -1,0 +1,34 @@
+{
+  "id": "wd-q2057516",
+  "slug": "rooie-dop-double-oatmeal-stout",
+  "breweryId": "wd-q140935198",
+  "breweryName": "Q140935198",
+  "brewerySlug": "q140935198",
+  "name": "Rooie Dop Double Oatmeal Stout",
+  "style": "oatmeal stout",
+  "abv": 9.6,
+  "availability": "unknown",
+  "website": "http://www.rooiedop.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2057516",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rooiedop.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2057516"
+  }
+}

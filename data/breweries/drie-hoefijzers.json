@@ -1,0 +1,29 @@
+{
+  "id": "wd-q1867904",
+  "slug": "drie-hoefijzers",
+  "name": "Drie Hoefijzers",
+  "address": {
+    "locality": "Breda",
+    "countryCode": "NL",
+    "latitude": 51.59519,
+    "longitude": 4.78801
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q1867904",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "wikidata": "Q1867904"
+  }
+}

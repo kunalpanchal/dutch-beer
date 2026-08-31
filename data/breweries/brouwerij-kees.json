@@ -1,0 +1,42 @@
+{
+  "id": "wd-q123469240",
+  "slug": "brouwerij-kees",
+  "name": "Brouwerij Kees",
+  "website": "https://brouwerijkees.nl/",
+  "address": {
+    "locality": "Middelburg",
+    "region": "Zeeland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q123469240",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 00b18321-6e85-4ac5-a812-e27fadca20fc",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q123469240",
+    "openBreweryDb": "00b18321-6e85-4ac5-a812-e27fadca20fc",
+    "senb": "1276"
+  }
+}

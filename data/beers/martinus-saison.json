@@ -1,0 +1,34 @@
+{
+  "id": "wd-q141040991",
+  "slug": "martinus-saison",
+  "breweryId": "wd-q125779469",
+  "breweryName": "Brouwerij Martinus",
+  "brewerySlug": "brouwerij-martinus",
+  "name": "Martinus Saison",
+  "style": "saison",
+  "abv": 7.6,
+  "availability": "unknown",
+  "website": "http://www.brouwerijmartinus.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q141040991",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijmartinus.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q141040991"
+  }
+}

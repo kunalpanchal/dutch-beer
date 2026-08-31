@@ -1,0 +1,34 @@
+{
+  "id": "wd-q3247283",
+  "slug": "alfa-krachtig-dort",
+  "breweryId": "wd-q2538673",
+  "breweryName": "Alfa Brouwerij",
+  "brewerySlug": "alfa-brouwerij",
+  "name": "Alfa Krachtig Dort",
+  "style": "Dortmunder",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "http://www.alfa-bier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q3247283",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.alfa-bier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3247283"
+  }
+}

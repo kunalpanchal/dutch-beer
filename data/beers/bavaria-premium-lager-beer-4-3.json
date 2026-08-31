@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139692141",
+  "slug": "bavaria-premium-lager-beer-4-3",
+  "breweryId": "wd-q2072541",
+  "breweryName": "Royal Swinkels",
+  "brewerySlug": "royal-swinkels",
+  "name": "Bavaria Premium Lager Beer 4.3%",
+  "style": "pale lager",
+  "abv": 4.3,
+  "availability": "unknown",
+  "website": "https://royalswinkels.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139692141",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://royalswinkels.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139692141"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "osm-way-279834664",
+  "slug": "brouwerij-la-trappe",
+  "name": "Brouwerij La Trappe",
+  "website": "https://www.latrappetrappist.com/nl",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.latrappetrappist.com/nl",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

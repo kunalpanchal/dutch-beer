@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681269",
+  "slug": "mango-manana",
+  "breweryId": "wd-q113866902",
+  "breweryName": "Gebrouwen door Vrouwen",
+  "brewerySlug": "gebrouwen-door-vrouwen",
+  "name": "Mango Mañana",
+  "style": "alcoholvrije IPA",
+  "abv": 0.3,
+  "availability": "unknown",
+  "website": "https://www.gebrouwendoorvrouwen.nl/en",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681269",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.gebrouwendoorvrouwen.nl/en",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681269"
+  }
+}

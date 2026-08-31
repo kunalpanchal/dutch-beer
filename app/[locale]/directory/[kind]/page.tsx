@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BeerList } from "@/components/beer-list";
+import { BreweryList } from "@/components/brewery-list";
 import { PintMark } from "@/components/pint-mark";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { BreweryCards } from "@/components/brewery-cards";
-import { SourceOriginNote } from "@/components/source-credit";
-import {
-  getBreweryById,
-  listPendingBreweries,
-  listPublishedBeers,
-  listPublishedBreweries,
-  toListItem,
-} from "@/lib/catalog/store";
+import { listBeers, listBreweries, toBeerListItem, toListItem } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
-import { beerPath } from "@/lib/paths";
 import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -47,15 +40,9 @@ export default async function DirectoryPage({
   if (!isLocale(locale) || (kind !== "breweries" && kind !== "beers")) notFound();
   const text = copy[locale].directory;
   const page = text[kind];
-  const publishedBreweries = kind === "breweries" ? await listPublishedBreweries() : [];
-  const publishedBeers = kind === "beers" ? await listPublishedBeers() : [];
-  const pendingCount = kind === "breweries" ? (await listPendingBreweries()).length : 0;
-  const beersWithBreweries = await Promise.all(
-    publishedBeers.map(async (beer) => ({
-      beer,
-      brewery: await getBreweryById(beer.breweryId),
-    })),
-  );
+  const breweryRows = kind === "breweries" ? (await listBreweries()).map(toListItem) : [];
+  const beerRows = kind === "beers" ? (await listBeers()).map(toBeerListItem) : [];
+  const empty = kind === "breweries" ? breweryRows.length === 0 : beerRows.length === 0;
 
   return (
     <main>
@@ -79,56 +66,24 @@ export default async function DirectoryPage({
         <h1>{page.title}</h1>
         <p>{page.description}</p>
       </section>
-      {kind === "breweries" && publishedBreweries.length > 0 ? (
-        <section className="shell listing-section">
-          <BreweryCards
-            locale={locale}
-            items={publishedBreweries.map(toListItem)}
-            hrefBase={`/${locale}/directory/breweries`}
-            emptyLabel={page.empty}
-          />
-        </section>
-      ) : null}
-      {kind === "beers" && beersWithBreweries.length > 0 ? (
-        <section className="shell listing-section">
-          <ul className="beer-index">
-            {beersWithBreweries.map(({ beer, brewery }) => (
-              <li key={beer.slug}>
-                <Link href={beerPath(locale, beer.slug)}>
-                  <strong>{beer.name}</strong>
-                  <span>
-                    {[brewery?.name, beer.style, typeof beer.abv === "number" ? `${beer.abv}%` : null]
-                      .filter(Boolean)
-                      .join(" · ")}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-      {(kind === "breweries" && publishedBreweries.length === 0) || (kind === "beers" && beersWithBreweries.length === 0) ? (
+      {empty ? (
         <section className="empty-state shell">
           <PintMark className="empty-mark" />
           <h2>{page.empty}</h2>
           <p>{text.emptyCopy}</p>
-          <div className="actions empty-actions">
-            {pendingCount > 0 ? (
-              <Link className="button button-ale" href={`/${locale}/review`}>
-                {pendingCount} {text.pendingNote}
-              </Link>
-            ) : null}
-            <Link className="button button-quiet" href={`/${locale}/contribute`}>
-              {page.action}
-            </Link>
-          </div>
+          <Link className="button button-ale" href={`/${locale}/contribute`}>
+            {page.action}
+          </Link>
         </section>
-      ) : null}
-      {kind === "breweries" ? (
+      ) : (
         <section className="shell listing-section">
-          <SourceOriginNote locale={locale} />
+          {kind === "breweries" ? (
+            <BreweryList locale={locale} items={breweryRows} hrefBase={`/${locale}/directory/breweries`} />
+          ) : (
+            <BeerList locale={locale} items={beerRows} hrefBase={`/${locale}/directory/beers`} />
+          )}
         </section>
-      ) : null}
+      )}
       <SiteFooter locale={locale} />
     </main>
   );

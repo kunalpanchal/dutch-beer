@@ -1,0 +1,33 @@
+{
+  "id": "wd-q28034318",
+  "slug": "brouwerij-troost",
+  "name": "Brouwerij Troost",
+  "website": "http://www.brouwerijtroost.nl/",
+  "address": {
+    "locality": "Amsterdam",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q28034318",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijtroost.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q28034318",
+    "senb": "2252"
+  }
+}

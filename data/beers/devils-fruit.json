@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140796742",
+  "slug": "devils-fruit",
+  "breweryId": "wd-q114839811",
+  "breweryName": "Stadshaven Brouwerij",
+  "brewerySlug": "stadshaven-brouwerij",
+  "name": "Devil’s Fruit",
+  "style": "fruitbier",
+  "abv": 3.8,
+  "availability": "unknown",
+  "website": "https://stadshavenbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140796742",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://stadshavenbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140796742"
+  }
+}

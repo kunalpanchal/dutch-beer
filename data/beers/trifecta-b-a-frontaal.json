@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139680814",
+  "slug": "trifecta-b-a-frontaal",
+  "breweryId": "wd-q125779592",
+  "breweryName": "Brouwerij Bravoure",
+  "brewerySlug": "brouwerij-bravoure",
+  "name": "Trifecta B.A. (Frontaal)",
+  "style": "imperial stout",
+  "abv": 10.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680814",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680814"
+  }
+}

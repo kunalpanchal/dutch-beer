@@ -1,165 +1,183 @@
-import { readdir, readFile } from "fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
-import type { Beer, Brewery, Provenance, TrustLevel } from "@/lib/schema";
 import { normalizeName } from "@/lib/catalog/normalize";
+import type { CatalogFile } from "@/lib/catalog/merge";
+import type { Beer, Brewery, PublicationStatus, TrustLevel } from "@/lib/schema";
 
-export const listingsRoot = path.join(process.cwd(), "data");
+export const assembledCatalogName = ".assembled.json";
 
-export interface BeerListingFile extends Partial<Beer> {
-  slug: string;
-  name: string;
-  sources: Provenance[];
-  brewery?: string;
-  brewerySlug?: string;
+export function breweriesDir(directory: string): string {
+  return path.join(directory, "breweries");
 }
 
-export interface BreweryListingFile extends Partial<Brewery> {
-  slug: string;
-  name: string;
-  sources: Provenance[];
+export function beersDir(directory: string): string {
+  return path.join(directory, "beers");
 }
 
-async function readJsonDir<T>(directory: string): Promise<T[]> {
+export function listingFileName(slug: string): string {
+  return `${slug}.json`;
+}
+
+export function listingPath(directory: string, kind: "breweries" | "beers", slug: string): string {
+  return path.join(directory, kind, listingFileName(slug));
+}
+
+async function readJsonFiles(directory: string): Promise<{ slug: string; data: Record<string, unknown> }[]> {
   let names: string[];
   try {
-    names = (await readdir(directory)).filter((name) => name.endsWith(".json"));
+    names = await readdir(directory);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw error;
   }
-  const records: T[] = [];
+
+  const records = [];
   for (const name of names) {
-    const raw = await readFile(path.join(directory, name), "utf8");
-    records.push(JSON.parse(raw) as T);
+    if (!name.endsWith(".json")) continue;
+    const filePath = path.join(directory, name);
+    const data = JSON.parse(await readFile(filePath, "utf8")) as Record<string, unknown>;
+    const slug = typeof data.slug === "string" ? data.slug : name.slice(0, -5);
+    if (!slug) throw new Error(`${filePath} is missing slug`);
+    records.push({ slug, data });
   }
   return records;
 }
 
-export async function loadBreweryListings(): Promise<BreweryListingFile[]> {
-  return readJsonDir<BreweryListingFile>(path.join(listingsRoot, "breweries"));
+function asStatus(value: unknown): PublicationStatus {
+  return value === "published" || value === "draft" || value === "rejected" || value === "archived" ? value : "pending_review";
 }
 
-export async function loadBeerListings(): Promise<BeerListingFile[]> {
-  return readJsonDir<BeerListingFile>(path.join(listingsRoot, "beers"));
+function asTrust(value: unknown): TrustLevel {
+  return value === "trusted_contributor" || value === "verified_brewery" || value === "moderator" ? value : "new";
 }
 
-function mergeSources(base: Provenance[], extra: Provenance[] | undefined): Provenance[] {
-  if (!extra?.length) return base;
-  const seen = new Set(base.map((source) => `${source.sourceKind}|${source.url ?? ""}|${source.note ?? ""}`));
-  const merged = [...base];
-  for (const source of extra) {
-    const key = `${source.sourceKind}|${source.url ?? ""}|${source.note ?? ""}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    merged.push(source);
-  }
-  return merged;
+function optionalString(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() ? value : undefined;
 }
 
-function listingTimestamp(listing: Partial<Brewery>, fallback: string): { createdAt: string; updatedAt: string } {
-  const captured = listing.sources?.[0]?.capturedAt ?? fallback;
+function normalizeBreweryRecord(slug: string, data: Record<string, unknown>): Brewery {
+  const capturedAt = typeof data.updatedAt === "string" ? data.updatedAt : new Date().toISOString().slice(0, 10);
   return {
-    createdAt: listing.createdAt ?? captured,
-    updatedAt: listing.updatedAt ?? captured,
+    id: typeof data.id === "string" ? data.id : `file-${slug}`,
+    slug,
+    name: String(data.name ?? slug),
+    website: optionalString(data.website),
+    address: data.address as Brewery["address"],
+    status: asStatus(data.status),
+    createdAt: typeof data.createdAt === "string" ? data.createdAt : capturedAt,
+    updatedAt: capturedAt,
+    createdBy: optionalString(data.createdBy),
+    trustLevel: asTrust(data.trustLevel),
+    sources: Array.isArray(data.sources) ? (data.sources as Brewery["sources"]) : [],
+    claimedBy: optionalString(data.claimedBy),
+    externalIds: data.externalIds as Brewery["externalIds"],
+    closed: data.closed === true ? true : undefined,
+    description: optionalString(data.description),
+    coverImage: optionalString(data.coverImage),
+    logo: optionalString(data.logo),
+    social: data.social && typeof data.social === "object" ? (data.social as Brewery["social"]) : undefined,
+    telephone: optionalString(data.telephone),
+    openingHours: optionalString(data.openingHours),
+    taproom: data.taproom && typeof data.taproom === "object" ? (data.taproom as Brewery["taproom"]) : undefined,
   };
 }
 
-export function listingToBrewery(listing: BreweryListingFile, now = new Date().toISOString()): Brewery {
-  const times = listingTimestamp(listing, now);
+function normalizeBeerRecord(slug: string, data: Record<string, unknown>, breweries: Brewery[]): Beer {
+  const capturedAt = typeof data.updatedAt === "string" ? data.updatedAt : new Date().toISOString().slice(0, 10);
+  const breweryName = String(data.breweryName ?? data.brewery ?? "Unknown brewery");
+  const matched =
+    breweries.find((brewery) => brewery.slug === data.brewerySlug) ??
+    breweries.find((brewery) => normalizeName(brewery.name) === normalizeName(breweryName));
   return {
-    id: listing.id ?? `listing-${listing.slug}`,
-    slug: listing.slug,
-    name: listing.name,
-    website: listing.website,
-    address: listing.address,
-    claimedBy: listing.claimedBy,
-    externalIds: listing.externalIds,
-    closed: listing.closed,
-    description: listing.description,
-    coverImage: listing.coverImage,
-    logo: listing.logo,
-    social: listing.social,
-    telephone: listing.telephone,
-    openingHours: listing.openingHours,
-    taproom: listing.taproom,
-    status: listing.status ?? "pending_review",
-    createdAt: times.createdAt,
-    updatedAt: times.updatedAt,
-    createdBy: listing.createdBy,
-    trustLevel: listing.trustLevel ?? "new",
-    sources: listing.sources,
+    id: typeof data.id === "string" ? data.id : `file-${slug}`,
+    slug,
+    breweryId: typeof data.breweryId === "string" ? data.breweryId : (matched?.id ?? "unlinked"),
+    breweryName: matched?.name ?? breweryName,
+    brewerySlug: typeof data.brewerySlug === "string" ? data.brewerySlug : matched?.slug,
+    name: String(data.name ?? slug),
+    style: typeof data.style === "string" ? data.style : undefined,
+    abv: typeof data.abv === "number" ? data.abv : undefined,
+    availability: data.availability as Beer["availability"],
+    website: optionalString(data.website),
+    description: optionalString(data.description),
+    status: asStatus(data.status),
+    createdAt: typeof data.createdAt === "string" ? data.createdAt : capturedAt,
+    updatedAt: capturedAt,
+    createdBy: typeof data.createdBy === "string" ? data.createdBy : undefined,
+    trustLevel: asTrust(data.trustLevel),
+    sources: Array.isArray(data.sources) ? (data.sources as Beer["sources"]) : [],
+    externalIds: data.externalIds as Beer["externalIds"],
   };
 }
 
-export function applyBreweryOverlay(base: Brewery, overlay: BreweryListingFile): Brewery {
-  const times = listingTimestamp(overlay, base.updatedAt);
-  return {
-    ...base,
-    name: overlay.name || base.name,
-    website: overlay.website ?? base.website,
-    claimedBy: overlay.claimedBy ?? base.claimedBy,
-    closed: overlay.closed ?? base.closed,
-    description: overlay.description ?? base.description,
-    coverImage: overlay.coverImage ?? base.coverImage,
-    logo: overlay.logo ?? base.logo,
-    telephone: overlay.telephone ?? base.telephone,
-    openingHours: overlay.openingHours ?? base.openingHours,
-    taproom: overlay.taproom ?? base.taproom,
-    status: overlay.status ?? base.status,
-    trustLevel: overlay.trustLevel ?? base.trustLevel,
-    createdBy: overlay.createdBy ?? base.createdBy,
-    createdAt: overlay.createdAt ?? base.createdAt,
-    updatedAt: times.updatedAt,
-    address: overlay.address ? { ...base.address, ...overlay.address, countryCode: overlay.address.countryCode ?? base.address?.countryCode ?? "NL" } : base.address,
-    social: overlay.social ? { ...base.social, ...overlay.social } : base.social,
-    externalIds: overlay.externalIds ? { ...base.externalIds, ...overlay.externalIds } : base.externalIds,
-    sources: mergeSources(base.sources, overlay.sources),
-  };
-}
-
-export function mergeBreweryListings(catalog: Brewery[], listings: BreweryListingFile[]): Brewery[] {
-  const bySlug = new Map(catalog.map((brewery) => [brewery.slug, brewery]));
-  for (const listing of listings) {
-    const existing = bySlug.get(listing.slug);
-    bySlug.set(listing.slug, existing ? applyBreweryOverlay(existing, listing) : listingToBrewery(listing));
-  }
-  return [...bySlug.values()].sort((a, b) => a.name.localeCompare(b.name, "nl"));
-}
-
-export function resolveBeerListing(
-  listing: BeerListingFile,
-  breweries: Brewery[],
-  now = new Date().toISOString(),
-): Beer | undefined {
-  const brewery =
-    (listing.breweryId ? breweries.find((item) => item.id === listing.breweryId) : undefined) ??
-    (listing.brewerySlug ? breweries.find((item) => item.slug === listing.brewerySlug) : undefined) ??
-    (listing.brewery
-      ? breweries.find((item) => normalizeName(item.name) === normalizeName(listing.brewery ?? ""))
-      : undefined);
-  if (!brewery) return undefined;
-  const captured = listing.sources[0]?.capturedAt ?? now;
-  return {
-    id: listing.id ?? `beer-${listing.slug}`,
-    slug: listing.slug,
-    breweryId: brewery.id,
-    name: listing.name,
-    style: listing.style,
-    abv: listing.abv,
-    description: listing.description,
-    availability: listing.availability,
-    status: listing.status ?? "pending_review",
-    createdAt: listing.createdAt ?? captured,
-    updatedAt: listing.updatedAt ?? captured,
-    createdBy: listing.createdBy,
-    trustLevel: (listing.trustLevel as TrustLevel | undefined) ?? "new",
-    sources: listing.sources,
-  };
-}
-
-export function resolveBeerListings(listings: BeerListingFile[], breweries: Brewery[]): Beer[] {
-  return listings
-    .map((listing) => resolveBeerListing(listing, breweries))
-    .filter((beer): beer is Beer => Boolean(beer))
+export async function loadListingFiles(directory: string): Promise<{ breweries: Brewery[]; beers: Beer[] }> {
+  const [breweryFiles, beerFiles] = await Promise.all([
+    readJsonFiles(breweriesDir(directory)),
+    readJsonFiles(beersDir(directory)),
+  ]);
+  const breweries = breweryFiles
+    .map((file) => normalizeBreweryRecord(file.slug, file.data))
     .sort((a, b) => a.name.localeCompare(b.name, "nl"));
+  const beers = beerFiles
+    .map((file) => normalizeBeerRecord(file.slug, file.data, breweries))
+    .sort((a, b) => {
+      const byName = a.name.localeCompare(b.name, "nl");
+      if (byName !== 0) return byName;
+      return a.breweryName.localeCompare(b.breweryName, "nl");
+    });
+  return { breweries, beers };
+}
+
+export async function writeListingFile(
+  directory: string,
+  kind: "breweries" | "beers",
+  record: Brewery | Beer,
+  options: { overwrite?: boolean } = {},
+): Promise<"written" | "skipped"> {
+  await mkdir(path.join(directory, kind), { recursive: true });
+  const file = listingPath(directory, kind, record.slug);
+  if (!options.overwrite) {
+    try {
+      await readFile(file);
+      return "skipped";
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+    }
+  }
+  await writeFile(file, `${JSON.stringify(record, null, 2)}\n`);
+  return "written";
+}
+
+export async function writeListingFiles(
+  directory: string,
+  listings: { breweries?: Brewery[]; beers?: Beer[] },
+  options: { overwrite?: boolean } = {},
+): Promise<{ breweries: { written: number; skipped: number }; beers: { written: number; skipped: number } }> {
+  const counts = {
+    breweries: { written: 0, skipped: 0 },
+    beers: { written: 0, skipped: 0 },
+  };
+  for (const brewery of listings.breweries ?? []) {
+    const result = await writeListingFile(directory, "breweries", brewery, options);
+    counts.breweries[result] += 1;
+  }
+  for (const beer of listings.beers ?? []) {
+    const result = await writeListingFile(directory, "beers", beer, options);
+    counts.beers[result] += 1;
+  }
+  return counts;
+}
+
+export async function assembleCatalogFile(
+  directory: string,
+  destination: string,
+): Promise<CatalogFile> {
+  const listings = await loadListingFiles(directory);
+  const catalog: CatalogFile = {
+    generatedAt: new Date().toISOString(),
+    sources: {},
+    ...listings,
+  };
+  await writeFile(destination, `${JSON.stringify(catalog)}\n`);
+  return catalog;
 }

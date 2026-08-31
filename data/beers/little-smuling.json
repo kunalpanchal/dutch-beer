@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130473142",
+  "slug": "little-smuling",
+  "breweryId": "wd-q125779517",
+  "breweryName": "Poesiat & Kater",
+  "brewerySlug": "poesiat-kater",
+  "name": "Little Smuling",
+  "style": "session IPA",
+  "abv": 3.1,
+  "availability": "unknown",
+  "website": "https://poesiatenkater.nl/portfolio-item/little-smulling/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130473142",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://poesiatenkater.nl/portfolio-item/little-smulling/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130473142",
+    "senb": "15669"
+  }
+}

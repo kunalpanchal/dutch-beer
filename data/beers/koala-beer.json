@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700881",
+  "slug": "koala-beer",
+  "breweryId": "wd-q93765234",
+  "breweryName": "Stanislaus Brewskovitch",
+  "brewerySlug": "stanislaus-brewskovitch",
+  "name": "Koala Beer",
+  "style": "session IPA",
+  "abv": 3.4,
+  "availability": "unknown",
+  "website": "https://www.stanislausbrewskovitch.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700881",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.stanislausbrewskovitch.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700881"
+  }
+}

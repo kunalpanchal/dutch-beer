@@ -1,0 +1,42 @@
+{
+  "id": "wd-q13439309",
+  "slug": "bierbrouwerij-lindeboom",
+  "name": "Bierbrouwerij Lindeboom",
+  "website": "http://www.lindeboom.nl/",
+  "address": {
+    "locality": "Neer",
+    "region": "Limburg",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q13439309",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 70ef1083-9b83-4ef1-8870-fdd58cefd97d",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.lindeboom.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q13439309",
+    "openBreweryDb": "70ef1083-9b83-4ef1-8870-fdd58cefd97d",
+    "senb": "159"
+  }
+}

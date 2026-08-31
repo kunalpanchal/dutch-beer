@@ -1,0 +1,37 @@
+{
+  "id": "wd-q135412875",
+  "slug": "brouwerij-de-ridder",
+  "name": "Brouwerij De Ridder",
+  "address": {
+    "locality": "Maastricht",
+    "region": "Limburg",
+    "countryCode": "NL",
+    "latitude": 50.8499881,
+    "longitude": 5.697516
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q135412875",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 1a63ad19-ca05-4b9f-9aa6-6780ef41179d",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q135412875",
+    "openBreweryDb": "1a63ad19-ca05-4b9f-9aa6-6780ef41179d"
+  }
+}

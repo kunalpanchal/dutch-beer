@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139801947",
+  "slug": "bandwagon-436",
+  "breweryId": "wd-q124662583",
+  "breweryName": "Baxbier",
+  "brewerySlug": "baxbier",
+  "name": "Bandwagon 436",
+  "abv": 9.5,
+  "availability": "unknown",
+  "website": "https://www.baxbier.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139801947",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.baxbier.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139801947"
+  }
+}
