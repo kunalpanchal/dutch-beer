@@ -66,6 +66,10 @@ export const copy = {
       sources: "Sources",
       noWebsite: "No website on file",
       map: "Map",
+      mapOpenIn: "Open in",
+      mapsApp: "Maps app",
+      googleMaps: "Google Maps",
+      appleMaps: "Apple Maps",
       origin: {
         wikidata: "Wikidata",
         open_brewery_db: "Open Brewery DB",
@@ -328,6 +332,10 @@ export const copy = {
       sources: "Bronnen",
       noWebsite: "Geen website bekend",
       map: "Kaart",
+      mapOpenIn: "Openen in",
+      mapsApp: "Kaarten-app",
+      googleMaps: "Google Maps",
+      appleMaps: "Apple Kaarten",
       origin: {
         wikidata: "Wikidata",
         open_brewery_db: "Open Brewery DB",
@@ -532,3 +540,15 @@ export const copy = {
     },
   },
 } as const;
+
+export function mapLinkCopy(locale: Locale) {
+  const text = copy[locale].directory;
+  return {
+    label: text.map,
+    openIn: text.mapOpenIn,
+    mapsApp: text.mapsApp,
+    googleMaps: text.googleMaps,
+    appleMaps: text.appleMaps,
+    openStreetMap: text.origin.openstreetmap,
+  };
+}

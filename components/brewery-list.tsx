@@ -1,8 +1,9 @@
 "use client";
 
 import { DirectorySheet, type SheetColumn } from "@/components/directory-sheet";
+import { MapLink } from "@/components/map-link";
 import type { BreweryListItem } from "@/lib/catalog/store";
-import { copy, type Locale } from "@/lib/i18n";
+import { copy, mapLinkCopy, type Locale } from "@/lib/i18n";
 
 function host(url: string): string {
   if (!url) return "";
@@ -42,9 +43,15 @@ export function BreweryList({
     {
       id: "map",
       label: table.columns.map,
-      value: (row) => (row.mapHref ? table.columns.map : ""),
-      href: (row) => row.mapHref,
-      external: true,
+      value: (row) => (row.latitude !== undefined && row.longitude !== undefined ? table.columns.map : ""),
+      content: (row) => (
+        <MapLink
+          latitude={row.latitude}
+          longitude={row.longitude}
+          name={row.name}
+          copy={mapLinkCopy(locale)}
+        />
+      ),
     },
     {
       id: "website",

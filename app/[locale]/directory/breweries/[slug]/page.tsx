@@ -6,13 +6,14 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ClaimPanel } from "@/components/claim-panel";
 import { JsonLd } from "@/components/json-ld";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { MapLink } from "@/components/map-link";
 import {
   breweryOrigins,
   getBreweryBySlug,
   listBeersForBrewery,
   listBreweries,
 } from "@/lib/catalog/store";
-import { copy, isLocale } from "@/lib/i18n";
+import { copy, isLocale, mapLinkCopy } from "@/lib/i18n";
 import {
   beerPath,
   breweryPath,
@@ -28,7 +29,6 @@ import {
   breweryJsonLd,
   breweryMetadata,
   localityLine,
-  mapHref,
   socialEntries,
 } from "@/lib/seo";
 
@@ -106,7 +106,7 @@ export default async function BreweryPage({
   const beers = await listBeersForBrewery(brewery);
   const place = localityLine(brewery);
   const locality = brewery.address?.locality?.trim();
-  const directions = mapHref(brewery);
+  const hasMap = brewery.address?.latitude !== undefined && brewery.address.longitude !== undefined;
   const claimed = isClaimed(brewery);
   const verified = brewery.trustLevel === "verified_brewery";
   const social = socialEntries(brewery);
@@ -194,7 +194,7 @@ export default async function BreweryPage({
 
           {brewery.description ? <p className="brewery-description">{brewery.description}</p> : null}
 
-          {brewery.website || social.length || directions ? (
+          {brewery.website || social.length || hasMap ? (
           <ul className="brewery-actions-row">
             {brewery.website ? (
               <li>
@@ -210,11 +210,14 @@ export default async function BreweryPage({
                 </a>
               </li>
             ))}
-            {directions ? (
+            {hasMap ? (
               <li>
-                <a className="button button-quiet" href={directions} rel="noreferrer">
-                  {text.brewery.directions}
-                </a>
+                <MapLink
+                  latitude={brewery.address?.latitude}
+                  longitude={brewery.address?.longitude}
+                  name={brewery.name}
+                  copy={{ ...mapLinkCopy(locale), label: text.brewery.directions }}
+                />
               </li>
             ) : null}
           </ul>
@@ -329,11 +332,12 @@ export default async function BreweryPage({
                     referrerPolicy="no-referrer-when-downgrade"
                     src={osmEmbed(brewery.address.latitude, brewery.address.longitude)}
                   />
-                  {directions ? (
-                    <a href={directions} rel="noreferrer">
-                      {text.directory.map}
-                    </a>
-                  ) : null}
+                  <MapLink
+                    latitude={brewery.address.latitude}
+                    longitude={brewery.address.longitude}
+                    name={brewery.name}
+                    copy={mapLinkCopy(locale)}
+                  />
                 </div>
               ) : null}
             </section>

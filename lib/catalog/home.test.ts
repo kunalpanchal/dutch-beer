@@ -1,26 +1,18 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import path from "path";
+import path from "node:path";
 import type { CatalogFile } from "./merge";
 import { catalogCounts, recentBoardEntries } from "./home";
 import { loadListingFiles } from "./listings";
 
-async function realCatalog(): Promise<CatalogFile> {
+async function loadCatalog(): Promise<CatalogFile> {
   const listings = await loadListingFiles(path.join(process.cwd(), "data"));
-  return {
-    generatedAt: "",
-    sources: {
-      wikidata: { fetchedAt: "", count: 0 },
-      open_brewery_db: { fetchedAt: "", count: 0 },
-      openstreetmap: { fetchedAt: "", count: 0 },
-    },
-    ...listings,
-  };
+  return { generatedAt: "", sources: {}, ...listings };
 }
 
 describe("catalogCounts", () => {
   it("uses the real catalog lengths and does not invent a contributor count", async () => {
-    const catalog = await realCatalog();
+    const catalog = await loadCatalog();
     const counts = catalogCounts(catalog);
     assert.equal(counts.breweries, catalog.breweries.length);
     assert.equal(counts.beers, (catalog.beers ?? []).length);
@@ -48,7 +40,7 @@ describe("catalogCounts", () => {
 
 describe("recentBoardEntries", () => {
   it("returns real catalog names, newest first, mixed across kinds", async () => {
-    const catalog = await realCatalog();
+    const catalog = await loadCatalog();
     const breweryNames = new Set(catalog.breweries.map((brewery) => brewery.name));
     const beerNames = new Set((catalog.beers ?? []).map((beer) => beer.name));
     const recent = recentBoardEntries(catalog, 6);
