@@ -31,7 +31,7 @@ Pull requests stay `pending_review` in the listing file until a maintainer merge
 
 1. Open a pull request with a focused change.
 2. Include tests when behavior changes.
-3. Run `npm run lint`, `npm run typecheck`, and `npm run build`.
-4. Never add production secrets or invented directory records.
+3. Run `npm run lint`, `npm run typecheck`, `npm run test`, and `npm run build`.
+4. Never add production secrets or invented directory records. Open-data imports must stay `pending_review` until a moderator has checked the source.
 
 By contributing, you agree that your contribution may be published as part of this open community project once a repository license is chosen.

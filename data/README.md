@@ -76,3 +76,7 @@ Prefer the website form at `/contribute` — it prefills the file. On GitHub, ch
 ```
 
 Do not invent records. A public primary source is required.
+
+## Open-data catalog
+
+`data/catalog.json` is a bulk import from Wikidata, Open Brewery DB, and OpenStreetMap. Those records stay `pending_review` until a moderator publishes them. See [ATTRIBUTION.md](./ATTRIBUTION.md). Do not treat `catalog.json` as a listing file for `/contribute` — community additions still go in `data/breweries/`, `data/beers/`, or `data/corrections/`.

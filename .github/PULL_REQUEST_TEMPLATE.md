@@ -22,4 +22,6 @@ URL:
 - [ ] JSON is valid (directory data)
 - [ ] `npm run lint`
 - [ ] `npm run typecheck`
+- [ ] `npm run test`
+- [ ] `npm run validate:listings`
 - [ ] `npm run build`

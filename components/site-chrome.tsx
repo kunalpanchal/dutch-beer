@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { PintMark } from "@/components/pint-mark";
+import { SourceCredit } from "@/components/source-credit";
 import { copy, type Locale } from "@/lib/i18n";
 
 function Logo({ locale }: { locale: Locale }) {
@@ -43,11 +44,13 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
             <Link href={`/${locale}/directory/beers`}>{text.navigation.beers}</Link>
             <Link href={`/${locale}/contribute`}>{text.navigation.contribute}</Link>
+            <Link href={`/${locale}/review`}>{text.navigation.review}</Link>
             <a href="https://github.com/kunalpanchal/dutchbeer">GitHub</a>
           </nav>
           <LanguageSwitcher locale={locale} />
         </div>
       </div>
+      <SourceCredit locale={locale} />
     </footer>
   );
 }
