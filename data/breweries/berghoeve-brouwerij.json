@@ -1,0 +1,44 @@
+{
+  "id": "wd-q125779353",
+  "slug": "berghoeve-brouwerij",
+  "name": "Berghoeve Brouwerij",
+  "website": "https://www.berghoevebrouwerij.nl/",
+  "address": {
+    "locality": "Den Ham",
+    "region": "Overijssel",
+    "countryCode": "NL",
+    "latitude": 52.4661069,
+    "longitude": 6.5180278
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779353",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id c6f7015d-cd17-435f-bd87-c9b487843a52",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.berghoevebrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779353",
+    "openBreweryDb": "c6f7015d-cd17-435f-bd87-c9b487843a52",
+    "senb": "1107"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139700716",
+  "slug": "bont-gezelschap-bontanical",
+  "breweryId": "wd-q125779557",
+  "breweryName": "Strieper Craft Beer Company",
+  "brewerySlug": "strieper-craft-beer-company",
+  "name": "Bont Gezelschap Bontanical",
+  "abv": 8.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700716",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700716"
+  }
+}

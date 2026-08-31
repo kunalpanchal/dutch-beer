@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140229086",
+  "slug": "angelus-merula",
+  "breweryId": "wd-q140229073",
+  "breweryName": "Q140229073",
+  "brewerySlug": "q140229073",
+  "name": "Angelus Merula",
+  "style": "blond",
+  "abv": 5.7,
+  "availability": "unknown",
+  "website": "http://www.brielschbrouwersgilde.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140229086",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brielschbrouwersgilde.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140229086"
+  }
+}

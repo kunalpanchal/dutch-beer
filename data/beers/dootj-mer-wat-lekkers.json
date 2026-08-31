@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139736033",
+  "slug": "dootj-mer-wat-lekkers",
+  "breweryId": "wd-q125779429",
+  "breweryName": "De Brouwschuur",
+  "brewerySlug": "de-brouwschuur",
+  "name": "Dootj Mer Wat Lekkers",
+  "abv": 8.7,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139736033",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139736033"
+  }
+}

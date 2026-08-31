@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139673834",
+  "slug": "tropical-pale-ale",
+  "breweryId": "wd-q124662583",
+  "breweryName": "Baxbier",
+  "brewerySlug": "baxbier",
+  "name": "Tropical Pale Ale",
+  "abv": 5.6,
+  "availability": "unknown",
+  "website": "https://www.baxbier.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139673834",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.baxbier.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139673834"
+  }
+}

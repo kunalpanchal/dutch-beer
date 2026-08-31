@@ -1,0 +1,43 @@
+{
+  "id": "wd-q120749509",
+  "slug": "de-koperen-kat",
+  "name": "De Koperen Kat",
+  "website": "https://www.dekoperenkat.nl/",
+  "address": {
+    "locality": "Delft",
+    "region": "Zuid-Holland",
+    "countryCode": "NL",
+    "latitude": 51.9949092,
+    "longitude": 4.3674291
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q120749509",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id de6206d7-9bc0-4721-831d-5736fdcecff1",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dekoperenkat.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q120749509",
+    "openBreweryDb": "de6206d7-9bc0-4721-831d-5736fdcecff1"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139701061",
+  "slug": "all-black",
+  "breweryId": "wd-q93765234",
+  "breweryName": "Stanislaus Brewskovitch",
+  "brewerySlug": "stanislaus-brewskovitch",
+  "name": "All Black",
+  "style": "American Stout",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "https://www.stanislausbrewskovitch.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139701061",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.stanislausbrewskovitch.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139701061"
+  }
+}

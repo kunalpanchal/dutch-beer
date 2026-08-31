@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700819",
+  "slug": "budels-0-0-radler",
+  "breweryId": "wd-q1984997",
+  "breweryName": "Budelse Brouwerij",
+  "brewerySlug": "budelse-brouwerij",
+  "name": "Budels 0,0% Radler",
+  "style": "alcoholvrij bier",
+  "abv": 0,
+  "availability": "unknown",
+  "website": "https://www.budels.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700819",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.budels.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700819"
+  }
+}

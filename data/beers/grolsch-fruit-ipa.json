@@ -1,0 +1,35 @@
+{
+  "id": "wd-q132887899",
+  "slug": "grolsch-fruit-ipa",
+  "breweryId": "wd-q153075",
+  "breweryName": "Grolsch",
+  "brewerySlug": "grolsch",
+  "name": "Grolsch Fruit IPA",
+  "style": "India pale ale",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.grolsch.nl/proeverij/grolsch-Fruit-ipa.html",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q132887899",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.grolsch.nl/proeverij/grolsch-Fruit-ipa.html",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q132887899",
+    "senb": "11772"
+  }
+}

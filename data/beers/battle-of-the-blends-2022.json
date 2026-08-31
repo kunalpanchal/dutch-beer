@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700930",
+  "slug": "battle-of-the-blends-2022",
+  "breweryId": "wd-q124663040",
+  "breweryName": "Brouwerij Bliksem",
+  "brewerySlug": "brouwerij-bliksem",
+  "name": "Battle of the Blends 2022",
+  "style": "Strong ale",
+  "abv": 13.3,
+  "availability": "unknown",
+  "website": "https://www.brouwerijbliksem.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700930",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijbliksem.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700930"
+  }
+}

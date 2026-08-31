@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139676600",
+  "slug": "keeshond",
+  "breweryId": "wd-q125779710",
+  "breweryName": "White Dog Brewery",
+  "brewerySlug": "white-dog-brewery",
+  "name": "Keeshond",
+  "style": "New England India Pale Ale",
+  "abv": 6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676600",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676600"
+  }
+}

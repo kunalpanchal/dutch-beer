@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794507",
+  "slug": "scream-stout",
+  "breweryId": "wd-q125779502",
+  "breweryName": "Opener Bier",
+  "brewerySlug": "opener-bier",
+  "name": "Scream & Stout",
+  "style": "imperial stout",
+  "abv": 10.5,
+  "availability": "unknown",
+  "website": "http://www.opener.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794507",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.opener.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794507"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "wd-q140047972",
+  "slug": "fervent-farmhouse",
+  "breweryId": "wd-q125779950",
+  "breweryName": "Burgunder Bier",
+  "brewerySlug": "burgunder-bier",
+  "name": "Fervent Farmhouse",
+  "abv": 6.6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140047972",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140047972"
+  }
+}

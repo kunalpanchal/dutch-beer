@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140229092",
+  "slug": "thoelaver",
+  "breweryId": "wd-q140229073",
+  "breweryName": "Q140229073",
+  "brewerySlug": "q140229073",
+  "name": "Thoelaver",
+  "style": "weizenbier",
+  "abv": 5.7,
+  "availability": "unknown",
+  "website": "http://www.brielschbrouwersgilde.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140229092",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brielschbrouwersgilde.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140229092"
+  }
+}

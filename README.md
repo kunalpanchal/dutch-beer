@@ -26,14 +26,14 @@ npm run validate:listings
 npm run build
 ```
 
-Refresh the open-data catalog (`data/catalog.json`):
+The seed is already in `data/breweries/` and `data/beers/`. Import scripts only add files that do not already exist; they will not overwrite edits:
 
 ```bash
 npm run import:breweries
 npm run import:beers
 ```
 
-Beers come from Wikidata (CC0) only. Source licenses and matching rules are in [data/ATTRIBUTION.md](./data/ATTRIBUTION.md).
+Prefer a pull request to correct a listing. Beers were seeded from Wikidata (CC0) only. Licenses are in [data/ATTRIBUTION.md](./data/ATTRIBUTION.md).
 
 ## License
 

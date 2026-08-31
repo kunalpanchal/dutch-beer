@@ -1,0 +1,35 @@
+{
+  "id": "wd-q131351391",
+  "slug": "rumoerige-roodborst",
+  "breweryId": "wd-q125779482",
+  "breweryName": "Q125779482",
+  "brewerySlug": "q125779482",
+  "name": "Rumoerige Roodborst",
+  "style": "amber ale",
+  "abv": 5.8,
+  "availability": "unknown",
+  "website": "https://birdbrewery.com/rumoerige-roodborst/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q131351391",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://birdbrewery.com/rumoerige-roodborst/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q131351391",
+    "senb": "8284"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "wd-q2782244",
+  "slug": "brouwerij-casino",
+  "name": "Brouwerij Casino",
+  "address": {
+    "locality": "Venlo",
+    "countryCode": "NL",
+    "latitude": 51.3556,
+    "longitude": 6.180508333
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2782244",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2782244"
+  }
+}

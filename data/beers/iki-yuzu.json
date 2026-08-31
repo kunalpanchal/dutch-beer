@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139713121",
+  "slug": "iki-yuzu",
+  "breweryId": "wd-q124371572",
+  "breweryName": "iKi Beer",
+  "brewerySlug": "iki-beer",
+  "name": "iKi Yuzu",
+  "abv": 4.5,
+  "availability": "unknown",
+  "website": "https://www.ikibeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139713121",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.ikibeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139713121"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "wd-q139681446",
+  "slug": "adam-old-world-ale",
+  "breweryId": "wd-q5639517",
+  "breweryName": "Hair of the Dog Brewing Company",
+  "name": "ADAM - Old World Ale",
+  "abv": 10,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681446",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681446"
+  }
+}

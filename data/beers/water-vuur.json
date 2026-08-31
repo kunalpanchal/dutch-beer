@@ -1,0 +1,35 @@
+{
+  "id": "wd-q125477183",
+  "slug": "water-vuur",
+  "breweryId": "wd-q1828277",
+  "breweryName": "Brouwerij De Molen",
+  "brewerySlug": "brouwerij-de-molen",
+  "name": "Water & Vuur",
+  "style": "New England India Pale Ale",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://shop.brouwerijdemolen.nl/alle-bieren/de-molen-water-vuur/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125477183",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://shop.brouwerijdemolen.nl/alle-bieren/de-molen-water-vuur/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125477183",
+    "senb": "18874"
+  }
+}

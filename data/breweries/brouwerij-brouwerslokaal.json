@@ -1,0 +1,34 @@
+{
+  "id": "wd-q124663647",
+  "slug": "brouwerij-brouwerslokaal",
+  "name": "Brouwerij Brouwerslokaal",
+  "website": "https://www.brouwerslokaal.nl/",
+  "address": {
+    "locality": "Groede",
+    "countryCode": "NL",
+    "latitude": 51.380261191,
+    "longitude": 3.507323249
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124663647",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerslokaal.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124663647"
+  }
+}

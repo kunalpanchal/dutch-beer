@@ -1,0 +1,42 @@
+{
+  "id": "wd-q125779482",
+  "slug": "q125779482",
+  "name": "Q125779482",
+  "website": "https://birdbrewery.com/",
+  "address": {
+    "locality": "Diemen",
+    "region": "Noord-Holland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779482",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 2e8fe7d6-9f40-4ad8-aa13-bb4fd069af4d",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://birdbrewery.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779482",
+    "openBreweryDb": "2e8fe7d6-9f40-4ad8-aa13-bb4fd069af4d",
+    "senb": "1393"
+  }
+}

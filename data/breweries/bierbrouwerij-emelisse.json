@@ -1,0 +1,35 @@
+{
+  "id": "obdb-ff791d08-24c2-4f31-b9e5-4ceca362773d",
+  "slug": "bierbrouwerij-emelisse",
+  "name": "Bierbrouwerij Emelisse",
+  "website": "http://www.restaurantdebrouwerij.nl/",
+  "address": {
+    "locality": "Kamperland",
+    "region": "Zeeland",
+    "countryCode": "NL",
+    "latitude": 51.57543,
+    "longitude": 3.708862
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id ff791d08-24c2-4f31-b9e5-4ceca362773d",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.restaurantdebrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "ff791d08-24c2-4f31-b9e5-4ceca362773d"
+  }
+}

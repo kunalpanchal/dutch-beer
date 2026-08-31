@@ -1,0 +1,35 @@
+{
+  "id": "wd-q3445750",
+  "slug": "brouwerij-de-leckere",
+  "name": "Brouwerij De Leckere",
+  "website": "https://deleckere.nl/",
+  "address": {
+    "locality": "",
+    "countryCode": "NL",
+    "latitude": 52.235591825,
+    "longitude": 5.452747694
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q3445750",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://deleckere.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3445750",
+    "senb": "305"
+  }
+}

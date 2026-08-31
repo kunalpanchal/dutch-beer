@@ -1,0 +1,35 @@
+{
+  "id": "wd-q128150759",
+  "slug": "de-gouden-adelaar",
+  "breweryId": "wd-q125779352",
+  "breweryName": "Ramses Bier",
+  "brewerySlug": "ramses-bier",
+  "name": "De Gouden Adelaar",
+  "style": "Mexican-style lager",
+  "abv": 3.8,
+  "availability": "unknown",
+  "website": "https://www.ramsesbier.nl/bieren/de-gouden-adelaar",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q128150759",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.ramsesbier.nl/bieren/de-gouden-adelaar",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q128150759",
+    "senb": "17692"
+  }
+}

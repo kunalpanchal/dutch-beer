@@ -1,0 +1,32 @@
+{
+  "id": "wd-q2449451",
+  "slug": "scheldebrouwerij",
+  "name": "Scheldebrouwerij",
+  "website": "https://scheldebrouwerij.com/fr/",
+  "address": {
+    "locality": "Hoogstraten",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2449451",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://scheldebrouwerij.com/fr/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2449451"
+  }
+}

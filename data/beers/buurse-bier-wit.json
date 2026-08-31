@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140137500",
+  "slug": "buurse-bier-wit",
+  "breweryId": "wd-q125779413",
+  "breweryName": "Rigtersbier",
+  "brewerySlug": "rigtersbier",
+  "name": "Buurse Bier Wit",
+  "style": "witbier",
+  "abv": 4.5,
+  "availability": "unknown",
+  "website": "https://www.rigtersbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137500",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.rigtersbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137500"
+  }
+}

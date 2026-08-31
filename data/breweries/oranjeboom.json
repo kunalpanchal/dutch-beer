@@ -1,0 +1,50 @@
+{
+  "id": "wd-q479003",
+  "slug": "oranjeboom",
+  "name": "Oranjeboom",
+  "website": "http://www.uniteddutchbreweries.com/",
+  "address": {
+    "locality": "Breda",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.5999409,
+    "longitude": 4.8081501
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q479003",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 4ff7a8d8-ca42-48d9-9158-f23f3bc8d768",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id d125f9bc-8912-4d49-af6c-4bfaf0592e68",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.uniteddutchbreweries.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q479003",
+    "openBreweryDb": "4ff7a8d8-ca42-48d9-9158-f23f3bc8d768"
+  }
+}

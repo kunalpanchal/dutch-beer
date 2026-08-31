@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139680171",
+  "slug": "system-overload",
+  "breweryId": "wd-q115792344",
+  "breweryName": "Frontaal Brewing Company",
+  "brewerySlug": "frontaal-brewing-company",
+  "name": "System Overload",
+  "style": "Double New England India Pale Ale",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://frontaalbrewingcompany.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680171",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://frontaalbrewingcompany.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680171"
+  }
+}

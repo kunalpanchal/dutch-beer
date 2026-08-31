@@ -1,0 +1,35 @@
+{
+  "id": "wd-q133816239",
+  "slug": "budels-weizen",
+  "breweryId": "wd-q1984997",
+  "breweryName": "Budelse Brouwerij",
+  "brewerySlug": "budelse-brouwerij",
+  "name": "Budels Weizen",
+  "style": "weizenbier",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "https://www.budels.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q133816239",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.budels.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q133816239",
+    "senb": "7939"
+  }
+}

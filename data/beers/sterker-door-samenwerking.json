@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139680824",
+  "slug": "sterker-door-samenwerking",
+  "breweryId": "wd-q125779794",
+  "breweryName": "Stadsbrouwerij De Pelgrim",
+  "brewerySlug": "stadsbrouwerij-de-pelgrim",
+  "name": "Sterker Door Samenwerking",
+  "style": "Cold IPA",
+  "abv": 6.2,
+  "availability": "unknown",
+  "website": "https://www.pelgrimbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680824",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.pelgrimbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680824"
+  }
+}

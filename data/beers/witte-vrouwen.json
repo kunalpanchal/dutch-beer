@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139888413",
+  "slug": "witte-vrouwen",
+  "breweryId": "wd-q3445750",
+  "breweryName": "Brouwerij De Leckere",
+  "brewerySlug": "brouwerij-de-leckere",
+  "name": "Witte Vrouwen",
+  "style": "witbier",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "https://deleckere.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139888413",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://deleckere.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139888413"
+  }
+}

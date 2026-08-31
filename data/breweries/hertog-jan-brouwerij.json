@@ -1,0 +1,44 @@
+{
+  "id": "wd-q2239073",
+  "slug": "hertog-jan-brouwerij",
+  "name": "Hertog Jan Brouwerij",
+  "website": "https://www.hertogjan.nl/",
+  "address": {
+    "locality": "Arcen",
+    "region": "Limburg",
+    "countryCode": "NL",
+    "latitude": 51.4862376,
+    "longitude": 6.1733489
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2239073",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id bd07d5cc-99d9-49e8-9e3c-a03bf3f9f281",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.hertogjan.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2239073",
+    "openBreweryDb": "bd07d5cc-99d9-49e8-9e3c-a03bf3f9f281",
+    "senb": "149"
+  }
+}

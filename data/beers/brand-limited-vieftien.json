@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139916357",
+  "slug": "brand-limited-vieftien",
+  "breweryId": "wd-q897711",
+  "breweryName": "Brand Bierbrouwerij",
+  "brewerySlug": "brand-bierbrouwerij",
+  "name": "Brand Limited Vieftiën",
+  "style": "tripel",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://www.brand.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139916357",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brand.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139916357"
+  }
+}

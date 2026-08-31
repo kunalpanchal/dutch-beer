@@ -1,0 +1,27 @@
+{
+  "id": "wd-q140051584",
+  "slug": "wijze-henky",
+  "breweryId": "wd-q140051574",
+  "breweryName": "Henky Bier",
+  "name": "Wijze Henky",
+  "style": "weizenbier",
+  "abv": 5.3,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051584",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051584"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139691616",
+  "slug": "no-nuts-no-glory",
+  "breweryId": "wd-q124632565",
+  "breweryName": "Moersleutel",
+  "brewerySlug": "moersleutel",
+  "name": "No Nuts No Glory",
+  "style": "imperial stout",
+  "abv": 11.5,
+  "availability": "unknown",
+  "website": "https://moersleutel.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691616",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://moersleutel.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691616"
+  }
+}

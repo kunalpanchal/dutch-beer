@@ -1,0 +1,28 @@
+{
+  "id": "wd-q5374339",
+  "slug": "hengelosche-bierbrouwerij",
+  "name": "Hengelosche Bierbrouwerij",
+  "address": {
+    "locality": "Hengelo",
+    "countryCode": "NL",
+    "latitude": 52.259762,
+    "longitude": 6.80133104
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q5374339",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q5374339"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "wd-q125779400",
+  "slug": "brouwerij-borrelnoot-stadsbrouwerij-woerden",
+  "name": "Brouwerij BorrelNoot / Stadsbrouwerij Woerden",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779400",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779400",
+    "senb": "1226"
+  }
+}

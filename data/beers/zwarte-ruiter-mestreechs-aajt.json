@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139714792",
+  "slug": "zwarte-ruiter-mestreechs-aajt",
+  "breweryId": "wd-q2754546",
+  "breweryName": "Gulpener Bierbrouwerij",
+  "brewerySlug": "gulpener-bierbrouwerij",
+  "name": "Zwarte Ruiter Mestreechs Aajt",
+  "abv": 3.5,
+  "availability": "unknown",
+  "website": "http://www.gulpener.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139714792",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.gulpener.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139714792"
+  }
+}

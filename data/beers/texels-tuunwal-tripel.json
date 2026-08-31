@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130325536",
+  "slug": "texels-tuunwal-tripel",
+  "breweryId": "wd-q1991863",
+  "breweryName": "Texelse Bierbrouwerij",
+  "brewerySlug": "texelse-bierbrouwerij",
+  "name": "Texels Tuunwal Tripel",
+  "style": "tripel",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "https://www.texels.nl/bieren/texels-tripel-speciaalbier",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130325536",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.texels.nl/bieren/texels-tripel-speciaalbier",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130325536",
+    "senb": "5750"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q93765234",
+  "slug": "stanislaus-brewskovitch",
+  "name": "Stanislaus Brewskovitch",
+  "website": "https://www.stanislausbrewskovitch.nl/",
+  "address": {
+    "locality": "Enschede",
+    "countryCode": "NL",
+    "latitude": 52.2213,
+    "longitude": 6.8967
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q93765234",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.stanislausbrewskovitch.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q93765234",
+    "senb": "1463"
+  }
+}

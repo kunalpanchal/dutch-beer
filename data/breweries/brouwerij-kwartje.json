@@ -1,0 +1,29 @@
+{
+  "id": "obdb-bc3bb1d0-ee89-49ed-8778-dd00785a3040",
+  "slug": "brouwerij-kwartje",
+  "name": "Brouwerij Kwartje",
+  "address": {
+    "locality": "Den Haag",
+    "region": "Zuid-Holland",
+    "countryCode": "NL",
+    "latitude": 52.0739457,
+    "longitude": 4.2921562
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id bc3bb1d0-ee89-49ed-8778-dd00785a3040",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "bc3bb1d0-ee89-49ed-8778-dd00785a3040"
+  }
+}

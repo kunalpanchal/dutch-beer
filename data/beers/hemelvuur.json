@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700905",
+  "slug": "hemelvuur",
+  "breweryId": "wd-q124663040",
+  "breweryName": "Brouwerij Bliksem",
+  "brewerySlug": "brouwerij-bliksem",
+  "name": "Hemelvuur",
+  "style": "tripel",
+  "abv": 9,
+  "availability": "unknown",
+  "website": "https://www.brouwerijbliksem.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700905",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijbliksem.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700905"
+  }
+}

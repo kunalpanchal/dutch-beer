@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681181",
+  "slug": "rott-toetje-chocolate-caramel-edition",
+  "breweryId": "wd-q125779522",
+  "breweryName": "ROTT. Brouwers",
+  "brewerySlug": "rott-brouwers",
+  "name": "ROTT.TOETJE | Chocolate & Caramel Edition",
+  "style": "imperial stout",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "http://www.rottbrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681181",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rottbrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681181"
+  }
+}

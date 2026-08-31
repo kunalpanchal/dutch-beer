@@ -1,0 +1,34 @@
+{
+  "id": "wd-q4310330",
+  "slug": "autarkia-shii-take-bier",
+  "breweryId": "wd-q2515164",
+  "breweryName": "Bierbrouwerij Oijen",
+  "brewerySlug": "bierbrouwerij-oijen",
+  "name": "Autarkia Shii-take Bier",
+  "style": "blond",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "http://speciaalbierbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q4310330",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://speciaalbierbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q4310330"
+  }
+}

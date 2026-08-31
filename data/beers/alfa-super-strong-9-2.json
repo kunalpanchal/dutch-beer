@@ -1,0 +1,34 @@
+{
+  "id": "wd-q1869390",
+  "slug": "alfa-super-strong-9-2",
+  "breweryId": "wd-q2538673",
+  "breweryName": "Alfa Brouwerij",
+  "brewerySlug": "alfa-brouwerij",
+  "name": "Alfa Super Strong 9.2",
+  "style": "pils",
+  "abv": 9,
+  "availability": "unknown",
+  "website": "http://www.alfa-bier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q1869390",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.alfa-bier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q1869390"
+  }
+}

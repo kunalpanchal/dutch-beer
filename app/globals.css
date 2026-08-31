@@ -119,7 +119,7 @@ a.github-link:hover {
   grid-template-columns: 1fr auto;
   align-items: end;
   gap: 40px;
-  padding: 72px 0 56px;
+  padding: 72px 0 32px;
 }
 
 .eyebrow {
@@ -221,6 +221,36 @@ a.github-link:hover {
   color: var(--muted);
 }
 
+.home-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0 auto 36px;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.home-stats li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.home-stats li + li::before {
+  content: "·";
+  margin: 0 12px 0 10px;
+  color: var(--brass);
+}
+
+.home-stats strong {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .principles {
   display: grid;
   gap: 0;
@@ -252,6 +282,86 @@ a.github-link:hover {
   color: var(--muted);
 }
 
+.fresh-board {
+  padding: 40px 0 8px;
+}
+
+.fresh-board h2,
+.owners-invite h2 {
+  margin: 0 0 16px;
+  font: 700 24px / 1.2 var(--font-display), Georgia, serif;
+  overflow-wrap: anywhere;
+}
+
+.board-preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.board-preview a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 24px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.board-preview-name {
+  min-width: 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.board-preview-detail {
+  color: var(--muted);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.board-preview a:hover .board-preview-name {
+  color: var(--ale);
+}
+
+.fresh-empty {
+  padding: 4px 0 8px;
+}
+
+.fresh-empty-title {
+  margin: 0 0 8px;
+  font: 700 22px / 1.3 var(--font-display), Georgia, serif;
+}
+
+.fresh-empty p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.owners-invite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 20px auto 36px;
+  padding: 28px 0 8px;
+  border-top: 1px solid var(--line);
+}
+
+.owners-invite p {
+  margin: 0;
+  max-width: 42em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.owners-invite h2 { margin-bottom: 8px; }
+
 .contribute-banner {
   display: flex;
   align-items: center;
@@ -280,12 +390,23 @@ footer {
 }
 
 .footer-inner {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  gap: 16px 24px;
   padding: 28px 0;
   font-size: 14px;
+}
+
+.footer-inner .logo {
+  flex: 0 0 auto;
+}
+
+.footer-copy {
+  display: grid;
+  gap: 6px;
+  flex: 1 1 12rem;
+  min-width: 0;
 }
 
 footer p {
@@ -295,14 +416,17 @@ footer p {
 
 .footer-end {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  gap: 22px;
+  gap: 14px 22px;
+  min-width: 0;
 }
 
 .footer-end nav {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 10px 16px;
 }
 
 .language-switcher {
@@ -934,7 +1058,7 @@ button.button { font-family: inherit; }
     padding: 18px 0 16px;
   }
 
-  .logo { grid-area: logo; }
+  .header-inner .logo { grid-area: logo; }
 
   .site-header nav {
     grid-area: nav;
@@ -948,16 +1072,41 @@ button.button { font-family: inherit; }
     margin-left: 0;
     white-space: nowrap;
   }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    align-items: start;
+    gap: 14px;
+    padding: 22px 0 28px;
+  }
+
+  .footer-copy {
+    flex: none;
+    max-width: 36em;
+  }
+
+  .footer-end {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-end nav {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 720px) {
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 48px 0 40px;
+    padding: 48px 0 24px;
   }
 
   .tap-board { display: none; }
+
+  .home-stats { margin-bottom: 28px; }
 
   .principles {
     padding-bottom: 36px;
@@ -968,6 +1117,22 @@ button.button { font-family: inherit; }
     gap: 6px;
   }
 
+  .fresh-board { padding-top: 32px; }
+
+  .board-preview a {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .owners-invite {
+    display: block;
+    margin-bottom: 28px;
+    padding-top: 24px;
+  }
+
+  .owners-invite .button { margin-top: 16px; }
+
   .contribute-banner {
     display: block;
     padding: 24px;
@@ -975,16 +1140,6 @@ button.button { font-family: inherit; }
   }
 
   .contribute-banner .button { margin-top: 18px; }
-
-  .footer-inner {
-    grid-template-columns: 1fr;
-    padding-bottom: 28px;
-  }
-
-  .footer-end {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
 
   .form-grid,
   .form-grid-wide { grid-template-columns: 1fr; }
@@ -1106,4 +1261,39 @@ button.button { font-family: inherit; }
   }
 
   .brewery-page h1 { max-width: none; }
+}
+
+@media (max-width: 420px) {
+  .shell { width: calc(100% - 32px); }
+
+  .header-inner {
+    column-gap: 10px;
+    row-gap: 12px;
+    padding: 16px 0 14px;
+  }
+
+  .header-end { gap: 12px; }
+
+  .header-cta {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .hero { padding: 36px 0 20px; }
+
+  .hero-copy {
+    margin: 16px 0 22px;
+    font-size: 16px;
+  }
+
+  .actions { gap: 12px 16px; }
+
+  .button { padding: 11px 14px; }
+
+  .home-stats {
+    gap: 4px 0;
+    font-size: 14px;
+  }
+
+  .home-stats strong { font-size: 16px; }
 }

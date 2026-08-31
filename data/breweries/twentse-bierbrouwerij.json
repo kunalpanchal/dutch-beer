@@ -1,0 +1,27 @@
+{
+  "id": "wd-q19921781",
+  "slug": "twentse-bierbrouwerij",
+  "name": "Twentse Bierbrouwerij",
+  "address": {
+    "locality": "Hengelo",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q19921781",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q19921781",
+    "senb": "1103"
+  }
+}

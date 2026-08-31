@@ -8,11 +8,13 @@ Thank you for helping keep the Dutch beer record complete and accurate.
 
 Prefer the form at [dutch.beer/en/contribute](https://dutch.beer/en/contribute). It prefills a JSON file on GitHub. Choose **Create a new branch and start a pull request**.
 
-To add the file yourself:
+To add or **edit** a file yourself:
 
 1. Follow [data/README.md](./data/README.md).
-2. Add `data/breweries/<slug>.json`, `data/beers/<slug>.json`, `data/corrections/<slug>.json`, or `data/claims/<slug>.json`.
+2. Add or change `data/breweries/<slug>.json`, `data/beers/<slug>.json`, `data/corrections/<slug>.json`, or `data/claims/<slug>.json`.
 3. Open a pull request against `main`.
+
+Edit the existing brewery or beer file when you are correcting a listing. Claims stay in `data/claims/` so verified status is not copied into the listing.
 
 A brewery needs a name, official website, and Dutch locality. A beer needs a brewery, a name, and a primary source (the brewery’s own site is preferred; a clear label photo can also help). If a beer is discontinued, seasonal, or contract-brewed, say how you know and when the source was checked.
 

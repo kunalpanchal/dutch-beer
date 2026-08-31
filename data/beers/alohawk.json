@@ -1,0 +1,35 @@
+{
+  "id": "wd-q133042276",
+  "slug": "alohawk",
+  "breweryId": "wd-q125779482",
+  "breweryName": "Q125779482",
+  "brewerySlug": "q125779482",
+  "name": "Alohawk",
+  "style": "weizenbier",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://birdbrewery.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q133042276",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://birdbrewery.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q133042276",
+    "senb": "16269"
+  }
+}

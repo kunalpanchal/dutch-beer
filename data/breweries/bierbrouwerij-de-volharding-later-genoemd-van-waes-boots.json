@@ -1,0 +1,28 @@
+{
+  "id": "wd-q17460473",
+  "slug": "bierbrouwerij-de-volharding-later-genoemd-van-waes-boots",
+  "name": "Bierbrouwerij \"De Volharding\", later genoemd \"Van Waes Boots\"",
+  "address": {
+    "locality": "Terneuzen",
+    "countryCode": "NL",
+    "latitude": 51.23932,
+    "longitude": 3.84441
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q17460473",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q17460473"
+  }
+}

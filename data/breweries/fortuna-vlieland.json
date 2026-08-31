@@ -1,0 +1,18 @@
+{
+  "id": "osm-node-2756835932",
+  "slug": "fortuna-vlieland",
+  "name": "Fortuna Vlieland",
+  "website": "https://fortunavlieland.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://fortunavlieland.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "wd-q3266423",
+  "slug": "brouwerij-emelisse",
+  "name": "Brouwerij Emelisse",
+  "website": "https://emelisse.nl/",
+  "address": {
+    "locality": "Goes",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q3266423",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://emelisse.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3266423",
+    "senb": "1026"
+  }
+}

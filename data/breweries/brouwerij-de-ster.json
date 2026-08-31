@@ -1,0 +1,36 @@
+{
+  "id": "wd-q18011805",
+  "slug": "brouwerij-de-ster",
+  "name": "Brouwerij De Ster",
+  "address": {
+    "locality": "Roosendaal",
+    "countryCode": "NL",
+    "latitude": 51.522133333,
+    "longitude": 4.388533333
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q18011805",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q136696392",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "wikidata": "Q18011805"
+  }
+}

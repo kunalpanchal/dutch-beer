@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139691898",
+  "slug": "kalefater-107-tawny-port-barrel-aged-imperial-stout",
+  "breweryId": "wd-q124513920",
+  "breweryName": "Bierbrouwerij De Magistraat",
+  "brewerySlug": "bierbrouwerij-de-magistraat",
+  "name": "Kalefater 107 - Tawny Port Barrel Aged Imperial Stout",
+  "abv": 11.5,
+  "availability": "unknown",
+  "website": "https://www.magistraat.beer/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691898",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.magistraat.beer/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691898"
+  }
+}

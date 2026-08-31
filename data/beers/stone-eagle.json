@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140137810",
+  "slug": "stone-eagle",
+  "breweryId": "wd-q140137802",
+  "breweryName": "Q140137802",
+  "brewerySlug": "q140137802",
+  "name": "Stone Eagle",
+  "style": "American barley wine",
+  "abv": 11.5,
+  "availability": "unknown",
+  "website": "http://www.morebeer.nl/brewing",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137810",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.morebeer.nl/brewing",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137810"
+  }
+}

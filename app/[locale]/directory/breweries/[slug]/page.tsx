@@ -2,14 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, listBeersForBrewery, listBreweries } from "@/lib/catalog/store";
-import { copy, isLocale, locales, mapLinkCopy } from "@/lib/i18n";
 import { MapLink } from "@/components/map-link";
+import { breweryOrigins, getBreweryBySlug, listBeersForBrewery } from "@/lib/catalog/store";
+import { copy, isLocale, mapLinkCopy } from "@/lib/i18n";
 
-export async function generateStaticParams() {
-  const breweries = await listBreweries();
-  return locales.flatMap((locale) => breweries.map((brewery) => ({ locale, slug: brewery.slug })));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -145,14 +142,6 @@ export default async function BreweryPage({
                 </li>
               ) : null}
               {brewery.externalIds.openBreweryDb ? <li>Open Brewery DB: {brewery.externalIds.openBreweryDb}</li> : null}
-              {brewery.externalIds.osm ? (
-                <li>
-                  OpenStreetMap:{" "}
-                  <a href={`https://www.openstreetmap.org/${brewery.externalIds.osm}`} rel="noreferrer">
-                    {brewery.externalIds.osm}
-                  </a>
-                </li>
-              ) : null}
               {brewery.externalIds.senb ? (
                 <li>
                   SENB:{" "}

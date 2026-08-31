@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140137378",
+  "slug": "wicked-emperor",
+  "breweryId": "wd-q140137355",
+  "breweryName": "Q140137355",
+  "brewerySlug": "q140137355",
+  "name": "Wicked Emperor",
+  "style": "Double India Pale Ale",
+  "abv": 9.5,
+  "availability": "unknown",
+  "website": "http://www.neobosski.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137378",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.neobosski.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137378"
+  }
+}

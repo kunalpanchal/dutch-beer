@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710454",
+  "slug": "n-steekje-los",
+  "breweryId": "wd-q124666161",
+  "breweryName": "Stadsbrouwerij 013",
+  "brewerySlug": "stadsbrouwerij-013",
+  "name": "'N Steekje Los",
+  "style": "session IPA",
+  "abv": 3.5,
+  "availability": "unknown",
+  "website": "https://stadsbrouwerij013.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710454",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://stadsbrouwerij013.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710454"
+  }
+}

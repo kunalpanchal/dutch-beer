@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139701059",
+  "slug": "cocktale-mexican-margarita",
+  "breweryId": "wd-q124670909",
+  "breweryName": "Q124670909",
+  "brewerySlug": "q124670909",
+  "name": "CocktAle Mexican Margarita",
+  "abv": 5.9,
+  "availability": "unknown",
+  "website": "https://rockcitybrewing.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139701059",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://rockcitybrewing.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139701059"
+  }
+}

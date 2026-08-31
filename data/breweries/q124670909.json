@@ -1,0 +1,44 @@
+{
+  "id": "wd-q124670909",
+  "slug": "q124670909",
+  "name": "Q124670909",
+  "website": "https://rockcitybrewing.nl/",
+  "address": {
+    "locality": "Amersfoort",
+    "region": "Utrecht",
+    "countryCode": "NL",
+    "latitude": 52.166432478,
+    "longitude": 5.367148442
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124670909",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 17e345c5-0a15-4553-bb0c-49efa5bbc1da",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://rockcitybrewing.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124670909",
+    "openBreweryDb": "17e345c5-0a15-4553-bb0c-49efa5bbc1da",
+    "senb": "1219"
+  }
+}

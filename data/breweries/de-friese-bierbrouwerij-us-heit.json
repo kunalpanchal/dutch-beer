@@ -1,0 +1,33 @@
+{
+  "id": "obdb-735149b8-75e4-48bd-8089-912aa18a1bf0",
+  "slug": "de-friese-bierbrouwerij-us-heit",
+  "name": "De Friese Bierbrouwerij Us Heit",
+  "website": "https://www.usheit.com/nl/bierbrouwerij/",
+  "address": {
+    "locality": "Bolsward",
+    "region": "Friesland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 735149b8-75e4-48bd-8089-912aa18a1bf0",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.usheit.com/nl/bierbrouwerij/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "735149b8-75e4-48bd-8089-912aa18a1bf0"
+  }
+}

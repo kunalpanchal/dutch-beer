@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140051667",
+  "slug": "sallands-russian-imperial-stout",
+  "breweryId": "wd-q140051592",
+  "breweryName": "Q140051592",
+  "brewerySlug": "q140051592",
+  "name": "Sallands Russian Imperial Stout",
+  "style": "imperial stout",
+  "abv": 9.5,
+  "availability": "unknown",
+  "website": "http://www.sallandslandbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051667",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.sallandslandbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051667"
+  }
+}

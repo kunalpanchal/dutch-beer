@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139681001",
+  "slug": "magic-tricks",
+  "breweryId": "wd-q86756254",
+  "breweryName": "Magic Rock Brewing",
+  "name": "Magic & Tricks",
+  "style": "Double New England India Pale Ale",
+  "abv": 8.4,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681001",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681001"
+  }
+}

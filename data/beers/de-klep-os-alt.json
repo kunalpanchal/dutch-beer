@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140047977",
+  "slug": "de-klep-os-alt",
+  "breweryId": "wd-q112691301",
+  "breweryName": "Brouwerij De Klep",
+  "brewerySlug": "brouwerij-de-klep",
+  "name": "De Klep Ôs Alt",
+  "style": "Altbier",
+  "abv": 4.8,
+  "availability": "unknown",
+  "website": "https://www.brouwerijdeklep.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140047977",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijdeklep.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140047977"
+  }
+}

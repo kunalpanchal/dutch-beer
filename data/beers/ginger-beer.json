@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139692803",
+  "slug": "ginger-beer",
+  "breweryId": "wd-q124252069",
+  "breweryName": "Lowlander",
+  "brewerySlug": "lowlander",
+  "name": "Ginger Beer",
+  "abv": 3.5,
+  "availability": "unknown",
+  "website": "https://lowlander.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139692803",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://lowlander.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139692803"
+  }
+}

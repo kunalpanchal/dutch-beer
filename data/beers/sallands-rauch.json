@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140051669",
+  "slug": "sallands-rauch",
+  "breweryId": "wd-q140051592",
+  "breweryName": "Q140051592",
+  "brewerySlug": "q140051592",
+  "name": "Sallands Rauch",
+  "abv": 5.8,
+  "availability": "unknown",
+  "website": "http://www.sallandslandbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051669",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.sallandslandbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051669"
+  }
+}

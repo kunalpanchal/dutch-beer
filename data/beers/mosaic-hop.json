@@ -1,0 +1,35 @@
+{
+  "id": "wd-q125477251",
+  "slug": "mosaic-hop",
+  "breweryId": "wd-q123469240",
+  "breweryName": "Brouwerij Kees",
+  "brewerySlug": "brouwerij-kees",
+  "name": "Mosaic Hop",
+  "style": "India pale ale",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://brouwerijkees.nl/onze-bieren/core-range/mosaic-hop/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125477251",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/onze-bieren/core-range/mosaic-hop/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125477251",
+    "senb": "18072"
+  }
+}

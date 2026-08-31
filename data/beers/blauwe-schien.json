@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139857682",
+  "slug": "blauwe-schien",
+  "breweryId": "unlinked",
+  "breweryName": "Unknown brewery",
+  "name": "Blauwe Schien",
+  "style": "Gose",
+  "abv": 4.6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139857682",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139857682"
+  }
+}

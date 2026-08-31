@@ -1,0 +1,34 @@
+{
+  "id": "wd-q115576141",
+  "slug": "grolsch-oud-bruin",
+  "breweryId": "wd-q153075",
+  "breweryName": "Grolsch",
+  "brewerySlug": "grolsch",
+  "name": "Grolsch Oud Bruin",
+  "style": "dark lager",
+  "abv": 2.5,
+  "availability": "unknown",
+  "website": "https://www.grolsch.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q115576141",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.grolsch.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q115576141"
+  }
+}

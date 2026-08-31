@@ -1,0 +1,34 @@
+{
+  "id": "wd-q18086967",
+  "slug": "kornuit",
+  "breweryId": "wd-q153075",
+  "breweryName": "Grolsch",
+  "brewerySlug": "grolsch",
+  "name": "Kornuit",
+  "style": "pils",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "http://www.ontdekkornuit.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q18086967",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.ontdekkornuit.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q18086967"
+  }
+}

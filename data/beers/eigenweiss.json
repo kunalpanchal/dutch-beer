@@ -1,0 +1,35 @@
+{
+  "id": "wd-q20991290",
+  "slug": "eigenweiss",
+  "breweryId": "wd-q30239145",
+  "breweryName": "Bronckhorster Brewing Company",
+  "brewerySlug": "bronckhorster-brewing-company",
+  "name": "Eigenweiss",
+  "style": "weizenbier",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "https://www.bronckhorster.beer/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q20991290",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.bronckhorster.beer/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q20991290",
+    "senb": "7150"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794823",
+  "slug": "eeuwige-jeugd",
+  "breweryId": "wd-q2457956",
+  "breweryName": "Stadsbrouwerij De Hemel",
+  "brewerySlug": "stadsbrouwerij-de-hemel",
+  "name": "Eeuwige Jeugd",
+  "style": "blond",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.brouwerijdehemel.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794823",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijdehemel.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794823"
+  }
+}

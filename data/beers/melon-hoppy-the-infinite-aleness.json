@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140137380",
+  "slug": "melon-hoppy-the-infinite-aleness",
+  "breweryId": "wd-q140137355",
+  "breweryName": "Q140137355",
+  "brewerySlug": "q140137355",
+  "name": "Melon Hoppy & the Infinite Aleness",
+  "abv": 4.2,
+  "availability": "unknown",
+  "website": "http://www.neobosski.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137380",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.neobosski.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137380"
+  }
+}

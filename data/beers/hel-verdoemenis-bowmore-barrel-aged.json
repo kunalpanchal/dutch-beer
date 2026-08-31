@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139680943",
+  "slug": "hel-verdoemenis-bowmore-barrel-aged",
+  "breweryId": "wd-q1828277",
+  "breweryName": "Brouwerij De Molen",
+  "brewerySlug": "brouwerij-de-molen",
+  "name": "Hel & Verdoemenis Bowmore barrel aged",
+  "style": "imperial stout",
+  "abv": 10.5,
+  "availability": "unknown",
+  "website": "https://brouwerijdemolen.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680943",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdemolen.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680943"
+  }
+}

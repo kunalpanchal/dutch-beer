@@ -1,0 +1,35 @@
+{
+  "id": "wd-q2515164",
+  "slug": "bierbrouwerij-oijen",
+  "name": "Bierbrouwerij Oijen",
+  "website": "http://speciaalbierbrouwerij.nl/",
+  "address": {
+    "locality": "Oss",
+    "countryCode": "NL",
+    "latitude": 51.810277777,
+    "longitude": 5.530833333
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2515164",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://speciaalbierbrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2515164",
+    "senb": "999"
+  }
+}

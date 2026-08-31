@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139719437",
+  "slug": "merakels",
+  "breweryId": "wd-q3346453",
+  "breweryName": "Brouwerij Dampegheest",
+  "brewerySlug": "brouwerij-dampegheest",
+  "name": "Merakels",
+  "style": "tripel",
+  "abv": 8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139719437",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139719437"
+  }
+}

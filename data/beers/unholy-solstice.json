@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140051717",
+  "slug": "unholy-solstice",
+  "breweryId": "wd-q125779446",
+  "breweryName": "LOC Brewery",
+  "brewerySlug": "loc-brewery",
+  "name": "Unholy Solstice",
+  "abv": 5.2,
+  "availability": "unknown",
+  "website": "https://locbrewery.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051717",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://locbrewery.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051717"
+  }
+}

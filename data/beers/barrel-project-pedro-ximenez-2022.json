@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710920",
+  "slug": "barrel-project-pedro-ximenez-2022",
+  "breweryId": "wd-q123469240",
+  "breweryName": "Brouwerij Kees",
+  "brewerySlug": "brouwerij-kees",
+  "name": "Barrel Project Pedro Ximénez 2022",
+  "style": "gerstewijn",
+  "abv": 11.8,
+  "availability": "unknown",
+  "website": "https://brouwerijkees.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710920",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710920"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q137946495",
+  "slug": "tripelina",
+  "breweryId": "wd-q137940929",
+  "breweryName": "Jake's Beer",
+  "brewerySlug": "jakes-beer",
+  "name": "Tripelina",
+  "style": "tripel",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://www.jakesbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137946495",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jakesbeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137946495"
+  }
+}

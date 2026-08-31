@@ -1,0 +1,35 @@
+{
+  "id": "wd-q2036884",
+  "slug": "gulpener-korenwolf",
+  "breweryId": "wd-q2754546",
+  "breweryName": "Gulpener Bierbrouwerij",
+  "brewerySlug": "gulpener-bierbrouwerij",
+  "name": "Gulpener Korenwolf",
+  "style": "witbier",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "http://www.gulpener.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2036884",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.gulpener.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2036884",
+    "senb": "3023"
+  }
+}

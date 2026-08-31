@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139719480",
+  "slug": "de-rode-rijder",
+  "breweryId": "wd-q125779865",
+  "breweryName": "Brouwerij Tanklokaal",
+  "brewerySlug": "brouwerij-tanklokaal",
+  "name": "De Rode Rijder",
+  "style": "American pale ale",
+  "abv": 5.8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139719480",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139719480"
+  }
+}

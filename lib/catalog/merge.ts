@@ -26,7 +26,7 @@ export interface SourceRecord {
 
 export interface CatalogMeta {
   generatedAt: string;
-  sources: Record<OpenDataOrigin, { fetchedAt: string; count: number }>;
+  sources: Partial<Record<OpenDataOrigin, { fetchedAt: string; count: number }>>;
 }
 
 export interface CatalogFile extends CatalogMeta {

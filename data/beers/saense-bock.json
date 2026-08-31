@@ -1,0 +1,35 @@
+{
+  "id": "wd-q135409623",
+  "slug": "saense-bock",
+  "breweryId": "wd-q125779382",
+  "breweryName": "Breugem Bier",
+  "brewerySlug": "breugem-bier",
+  "name": "Saense Bock",
+  "style": "bokbier",
+  "abv": 7.4,
+  "availability": "unknown",
+  "website": "https://www.breugembier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q135409623",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.breugembier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q135409623",
+    "senb": "9005"
+  }
+}

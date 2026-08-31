@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139676776",
+  "slug": "bottle-brew-no-1",
+  "breweryId": "wd-q123469240",
+  "breweryName": "Brouwerij Kees",
+  "brewerySlug": "brouwerij-kees",
+  "name": "Bottle Brew No 1",
+  "style": "imperial stout",
+  "abv": 14,
+  "availability": "unknown",
+  "website": "https://brouwerijkees.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676776",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676776"
+  }
+}

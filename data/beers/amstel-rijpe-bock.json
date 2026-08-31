@@ -1,0 +1,35 @@
+{
+  "id": "wd-q134469571",
+  "slug": "amstel-rijpe-bock",
+  "breweryId": "wd-q180855",
+  "breweryName": "Heineken",
+  "brewerySlug": "heineken",
+  "name": "Amstel Rijpe Bock",
+  "style": "bokbier",
+  "abv": 7,
+  "availability": "unknown",
+  "website": "https://www.theheinekencompany.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q134469571",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.theheinekencompany.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q134469571",
+    "senb": "6640"
+  }
+}

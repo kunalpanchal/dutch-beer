@@ -1,0 +1,34 @@
+{
+  "id": "wd-q4307109",
+  "slug": "rooie-dop-chica-americana-ipa",
+  "breweryId": "wd-q140935198",
+  "breweryName": "Q140935198",
+  "brewerySlug": "q140935198",
+  "name": "Rooie Dop Chica Americana IPA",
+  "style": "American India Pale Ale",
+  "abv": 6.6,
+  "availability": "unknown",
+  "website": "http://www.rooiedop.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q4307109",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rooiedop.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q4307109"
+  }
+}

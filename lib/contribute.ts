@@ -69,7 +69,8 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
         {
           slug,
           name: payload.beerName,
-          brewery: payload.breweryName,
+          breweryName: payload.breweryName,
+          ...(payload.brewerySlug ? { brewerySlug: payload.brewerySlug } : {}),
           ...(payload.style ? { style: payload.style } : {}),
           ...(Number.isFinite(abv) ? { abv } : {}),
           availability: payload.availability || "unknown",

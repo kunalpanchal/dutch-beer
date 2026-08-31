@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139864192",
+  "slug": "gijtebok-smoked-rye-bock",
+  "breweryId": "wd-q139860180",
+  "breweryName": "Q139860180",
+  "brewerySlug": "q139860180",
+  "name": "Gijtebok - Smoked Rye Bock",
+  "style": "bokbier",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.brouwerijdenattegijt.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139864192",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijdenattegijt.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139864192"
+  }
+}

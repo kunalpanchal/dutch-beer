@@ -1,0 +1,29 @@
+{
+  "id": "obdb-45e0ccba-51f2-46eb-899a-d5f31ea4d1c4",
+  "slug": "brouwerij-de-natte-gijt",
+  "name": "Brouwerij De Natte Gijt",
+  "address": {
+    "locality": "Weert",
+    "region": "Limburg",
+    "countryCode": "NL",
+    "latitude": 51.2470614,
+    "longitude": 5.7071844
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 45e0ccba-51f2-46eb-899a-d5f31ea4d1c4",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "45e0ccba-51f2-46eb-899a-d5f31ea4d1c4"
+  }
+}

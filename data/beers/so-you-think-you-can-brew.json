@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139805587",
+  "slug": "so-you-think-you-can-brew",
+  "breweryId": "wd-q124663583",
+  "breweryName": "Dutch Bargain",
+  "brewerySlug": "dutch-bargain",
+  "name": "So You Think You Can Brew?",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://www.dutchbargain.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139805587",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dutchbargain.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139805587"
+  }
+}

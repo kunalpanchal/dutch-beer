@@ -1,0 +1,35 @@
+{
+  "id": "wd-q2198553",
+  "slug": "brand-lentebock",
+  "breweryId": "wd-q897711",
+  "breweryName": "Brand Bierbrouwerij",
+  "brewerySlug": "brand-bierbrouwerij",
+  "name": "Brand Lentebock",
+  "style": "lentebok",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.brand.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2198553",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brand.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2198553",
+    "senb": "3054"
+  }
+}

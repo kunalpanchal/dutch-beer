@@ -1,0 +1,35 @@
+{
+  "id": "wd-q124663040",
+  "slug": "brouwerij-bliksem",
+  "name": "Brouwerij Bliksem",
+  "website": "https://www.brouwerijbliksem.nl/",
+  "address": {
+    "locality": "Breda",
+    "countryCode": "NL",
+    "latitude": 51.608074914,
+    "longitude": 4.756029158
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124663040",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijbliksem.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124663040",
+    "senb": "1339"
+  }
+}

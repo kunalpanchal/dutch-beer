@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681156",
+  "slug": "summer-of-17",
+  "breweryId": "wd-q1828277",
+  "breweryName": "Brouwerij De Molen",
+  "brewerySlug": "brouwerij-de-molen",
+  "name": "Summer of '17",
+  "style": "American pale wheat",
+  "abv": 5.4,
+  "availability": "unknown",
+  "website": "https://brouwerijdemolen.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681156",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdemolen.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681156"
+  }
+}

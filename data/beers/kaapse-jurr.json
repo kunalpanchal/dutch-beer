@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139680817",
+  "slug": "kaapse-jurr",
+  "breweryId": "wd-q125779387",
+  "breweryName": "Oldskool Brewery",
+  "brewerySlug": "oldskool-brewery",
+  "name": "Kaapse Jurr",
+  "abv": 12,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680817",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680817"
+  }
+}

@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "predev": "tsx scripts/assemble-catalog.ts",
+    "prebuild": "tsx scripts/assemble-catalog.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",

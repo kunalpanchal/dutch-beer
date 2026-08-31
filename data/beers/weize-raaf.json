@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140066513",
+  "slug": "weize-raaf",
+  "breweryId": "wd-q125779935",
+  "breweryName": "Brouwerij Grensgeval",
+  "brewerySlug": "brouwerij-grensgeval",
+  "name": "Weize Raaf",
+  "style": "weizenbier",
+  "abv": 7,
+  "availability": "unknown",
+  "website": "https://www.brouwerijgrensgeval.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140066513",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijgrensgeval.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140066513"
+  }
+}

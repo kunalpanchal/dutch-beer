@@ -1,0 +1,27 @@
+{
+  "id": "wd-q2506730",
+  "slug": "czaar-peter",
+  "breweryId": "wd-q5244695",
+  "breweryName": "De Proefbrouwerij",
+  "name": "Czaar Peter",
+  "style": "imperial stout",
+  "abv": 8.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2506730",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2506730"
+  }
+}

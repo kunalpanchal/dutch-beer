@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130719352",
+  "slug": "texels-zeebries-blond",
+  "breweryId": "wd-q1991863",
+  "breweryName": "Texelse Bierbrouwerij",
+  "brewerySlug": "texelse-bierbrouwerij",
+  "name": "Texels Zeebries Blond",
+  "style": "blond",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "https://www.texels.nl/bieren/texels-blond-speciaalbier",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130719352",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.texels.nl/bieren/texels-blond-speciaalbier",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130719352",
+    "senb": "12442"
+  }
+}

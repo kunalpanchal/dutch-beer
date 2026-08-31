@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139691866",
+  "slug": "het-voske",
+  "breweryId": "wd-q22773399",
+  "breweryName": "Q22773399",
+  "brewerySlug": "q22773399",
+  "name": "Het Voske",
+  "style": "blonde ale",
+  "abv": 7.7,
+  "availability": "unknown",
+  "website": "https://www.muifelbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691866",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.muifelbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691866"
+  }
+}

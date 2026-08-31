@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140372100",
+  "slug": "gember-goud-super-spicy",
+  "breweryId": "wd-q113866902",
+  "breweryName": "Gebrouwen door Vrouwen",
+  "brewerySlug": "gebrouwen-door-vrouwen",
+  "name": "Gember Goud Super Spicy",
+  "abv": 4.6,
+  "availability": "unknown",
+  "website": "https://www.gebrouwendoorvrouwen.nl/en",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140372100",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.gebrouwendoorvrouwen.nl/en",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140372100"
+  }
+}

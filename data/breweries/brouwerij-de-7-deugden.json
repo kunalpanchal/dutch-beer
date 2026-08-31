@@ -1,0 +1,33 @@
+{
+  "id": "wd-q2208517",
+  "slug": "brouwerij-de-7-deugden",
+  "name": "Brouwerij De 7 Deugden",
+  "website": "https://de7deugden.nl/",
+  "address": {
+    "locality": "Amsterdam",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2208517",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://de7deugden.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2208517",
+    "senb": "1117"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139714783",
+  "slug": "aan-lager-wal",
+  "breweryId": "wd-q5900483",
+  "breweryName": "Brouwerij De Prael",
+  "brewerySlug": "brouwerij-de-prael",
+  "name": "Aan Lager Wal",
+  "abv": 3.5,
+  "availability": "unknown",
+  "website": "http://www.depraelamsterdam.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139714783",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.depraelamsterdam.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139714783"
+  }
+}

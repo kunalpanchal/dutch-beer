@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139710368",
+  "slug": "miss-delicious",
+  "breweryId": "wd-q124666075",
+  "breweryName": "100 Watt",
+  "brewerySlug": "100-watt",
+  "name": "Miss Delicious",
+  "abv": 4.4,
+  "availability": "unknown",
+  "website": "https://100watt.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710368",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://100watt.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710368"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q138713234",
+  "slug": "green-bullet",
+  "breweryId": "wd-q123965471",
+  "breweryName": "Two Chefs Brewing",
+  "brewerySlug": "two-chefs-brewing",
+  "name": "Green Bullet",
+  "style": "India pale ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://twochefsbrewing.com/nl/bier/green-bullet",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q138713234",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://twochefsbrewing.com/nl/bier/green-bullet",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q138713234",
+    "senb": "9362"
+  }
+}

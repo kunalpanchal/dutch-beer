@@ -1,0 +1,35 @@
+{
+  "id": "wd-q133980458",
+  "slug": "barry-weizen",
+  "breweryId": "wd-q93765234",
+  "breweryName": "Stanislaus Brewskovitch",
+  "brewerySlug": "stanislaus-brewskovitch",
+  "name": "Barry Weizen",
+  "style": "weizenbier",
+  "abv": 5.2,
+  "availability": "unknown",
+  "website": "https://www.stanislausbrewskovitch.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q133980458",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.stanislausbrewskovitch.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q133980458",
+    "senb": "13645"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681386",
+  "slug": "thirty-grams",
+  "breweryId": "wd-q1828277",
+  "breweryName": "Brouwerij De Molen",
+  "brewerySlug": "brouwerij-de-molen",
+  "name": "Thirty Grams",
+  "style": "India pale ale",
+  "abv": 6.7,
+  "availability": "unknown",
+  "website": "https://brouwerijdemolen.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681386",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdemolen.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681386"
+  }
+}

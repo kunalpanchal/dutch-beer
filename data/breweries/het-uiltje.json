@@ -1,0 +1,35 @@
+{
+  "id": "obdb-b65d7479-66c5-4294-8d73-930fb912acbe",
+  "slug": "het-uiltje",
+  "name": "Het Uiltje",
+  "website": "https://www.uiltjebrewing.com/venue/uiltje-bar/",
+  "address": {
+    "locality": "Haarlem",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.3828983,
+    "longitude": 4.6306578
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id b65d7479-66c5-4294-8d73-930fb912acbe",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.uiltjebrewing.com/venue/uiltje-bar/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "b65d7479-66c5-4294-8d73-930fb912acbe"
+  }
+}

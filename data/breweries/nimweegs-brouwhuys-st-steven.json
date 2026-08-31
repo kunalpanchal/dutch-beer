@@ -1,0 +1,23 @@
+{
+  "id": "wd-q125780103",
+  "slug": "nimweegs-brouwhuys-st-steven",
+  "name": "Nimweegs Brouwhuys St. Steven",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125780103",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125780103",
+    "senb": "6462"
+  }
+}

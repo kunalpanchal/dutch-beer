@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139766357",
+  "slug": "boerderijbier",
+  "breweryId": "wd-q125826775",
+  "breweryName": "Slot Oostende",
+  "brewerySlug": "slot-oostende",
+  "name": "Boerderijbier",
+  "style": "blond",
+  "abv": 5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139766357",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139766357"
+  }
+}

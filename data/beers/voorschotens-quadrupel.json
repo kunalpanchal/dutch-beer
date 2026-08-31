@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139919097",
+  "slug": "voorschotens-quadrupel",
+  "breweryId": "wd-q139919084",
+  "breweryName": "Q139919084",
+  "brewerySlug": "q139919084",
+  "name": "Voorschotens Quadrupel",
+  "style": "quadrupel",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "http://www.brouwerijvoorschoten.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139919097",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijvoorschoten.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139919097"
+  }
+}

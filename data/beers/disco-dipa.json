@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794494",
+  "slug": "disco-dipa",
+  "breweryId": "wd-q125779663",
+  "breweryName": "Gallivant Brewery",
+  "brewerySlug": "gallivant-brewery",
+  "name": "Disco DIPA",
+  "style": "Double India Pale Ale",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "http://www.gallivant.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794494",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.gallivant.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794494"
+  }
+}

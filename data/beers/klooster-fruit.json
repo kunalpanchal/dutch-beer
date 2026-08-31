@@ -1,0 +1,34 @@
+{
+  "id": "wd-q141142499",
+  "slug": "klooster-fruit",
+  "breweryId": "wd-q117847932",
+  "breweryName": "Q117847932",
+  "brewerySlug": "q117847932",
+  "name": "Klooster Fruit",
+  "style": "fruitbier",
+  "abv": 3.8,
+  "availability": "unknown",
+  "website": "http://www.bonifatius754.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q141142499",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.bonifatius754.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q141142499"
+  }
+}

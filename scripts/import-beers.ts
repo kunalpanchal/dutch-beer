@@ -1,9 +1,7 @@
-import { importBeers, writeCatalog } from "../lib/import/run";
+import { importBeers } from "../lib/import/run";
 
 async function main() {
   const result = await importBeers();
-  const file = await writeCatalog(result.catalog);
-  console.log(`Wrote ${file}`);
   console.log(JSON.stringify(result.counts, null, 2));
   if (result.counts.published !== 0) {
     throw new Error("Open-data import must not publish listings");

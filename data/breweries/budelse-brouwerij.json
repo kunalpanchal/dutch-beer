@@ -1,0 +1,44 @@
+{
+  "id": "wd-q1984997",
+  "slug": "budelse-brouwerij",
+  "name": "Budelse Brouwerij",
+  "website": "https://www.budels.nl/",
+  "address": {
+    "locality": "Budel",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.2732255,
+    "longitude": 5.5738978
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q1984997",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 4d3fcfcc-e925-462c-a20f-9f4e5896ec19",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.budels.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q1984997",
+    "openBreweryDb": "4d3fcfcc-e925-462c-a20f-9f4e5896ec19",
+    "senb": "153"
+  }
+}
