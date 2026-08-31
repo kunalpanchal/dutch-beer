@@ -10,7 +10,7 @@ A reviewer should check that:
 - [ ] The evidence URL is a page on that same website
 - [ ] The claim names an existing brewery slug
 
-To publish after review, set `"status": "published"` in the claim file. The directory overlays published claims onto the catalog at read time — do not put `claimedBy` into `data/catalog.json`.
+To publish after review, set `"status": "published"` in the claim file. Do not put `claimedBy` into `data/catalog.json`.
 
 ### Source URL
 

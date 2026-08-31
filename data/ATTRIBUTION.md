@@ -24,7 +24,3 @@ OpenStreetMap data is © OpenStreetMap contributors. Coordinate and address fact
 ## Matching
 
 Records are merged when they share a Wikidata id, a non-generic website host, or the same normalized name and locality. Each merged listing keeps every source URL and capture date.
-
-## Publication
-
-Imported listings appear in the public directory. Corrections go through `/contribute`. A brewery can later claim its profile through its official domain.

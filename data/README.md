@@ -102,8 +102,8 @@ A brewery claim proves someone at the brewery stands behind the listing. The con
 }
 ```
 
-After review, set `"status": "published"`. Published claims overlay onto `catalog.json` at read time, so a later open-data import does not wipe verification. Do not copy `claimedBy` into `catalog.json`. The public site shows a verified badge; it does not display the email.
+After review, set `"status": "published"`. The site shows a verified badge; it does not display the email. Do not copy `claimedBy` into `catalog.json`.
 
 ## Open-data catalog
 
-`data/catalog.json` is a bulk import: breweries from Wikidata, Open Brewery DB, and OpenStreetMap; beers from Wikidata (CC0) only. See [ATTRIBUTION.md](./ATTRIBUTION.md). Do not treat `catalog.json` as a listing file for `/contribute` — community additions still go in `data/breweries/`, `data/beers/`, `data/corrections/`, or `data/claims/`.
+`data/catalog.json` is the bulk import (breweries from Wikidata, Open Brewery DB, and OpenStreetMap; beers from Wikidata only). See [ATTRIBUTION.md](./ATTRIBUTION.md). Community additions still go in `data/breweries/`, `data/beers/`, `data/corrections/`, or `data/claims/`.
