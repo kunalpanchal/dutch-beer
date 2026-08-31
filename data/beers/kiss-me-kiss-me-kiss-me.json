@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139889197",
+  "slug": "kiss-me-kiss-me-kiss-me",
+  "breweryId": "wd-q54868190",
+  "breweryName": "Brouwerij Oersoep",
+  "brewerySlug": "brouwerij-oersoep",
+  "name": "Kiss Me, Kiss Me, Kiss Me",
+  "style": "tripel",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "https://oersoepbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139889197",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://oersoepbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139889197"
+  }
+}

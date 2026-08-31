@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139676857",
+  "slug": "mokums-overdreven-ijwit",
+  "breweryId": "wd-q3496897",
+  "breweryName": "Brouwerij 't IJ",
+  "name": "Mokums Overdreven IJwit",
+  "style": "witbier",
+  "abv": 7.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676857",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676857"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "osm-node-2942996175",
+  "slug": "huttenkloas",
+  "name": "Huttenkloas",
+  "website": "https://huttenkloas.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://huttenkloas.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

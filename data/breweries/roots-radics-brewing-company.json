@@ -1,0 +1,23 @@
+{
+  "id": "wd-q125779709",
+  "slug": "roots-radics-brewing-company",
+  "name": "Roots Radics Brewing Company",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779709",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779709",
+    "senb": "2098"
+  }
+}

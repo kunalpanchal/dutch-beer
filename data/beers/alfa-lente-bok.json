@@ -1,0 +1,35 @@
+{
+  "id": "wd-q2131449",
+  "slug": "alfa-lente-bok",
+  "breweryId": "wd-q2538673",
+  "breweryName": "Alfa Brouwerij",
+  "brewerySlug": "alfa-brouwerij",
+  "name": "Alfa Lente Bok",
+  "style": "bokbier",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.alfabier.nl/onze-bieren/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2131449",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.alfabier.nl/onze-bieren/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2131449",
+    "senb": "2588"
+  }
+}

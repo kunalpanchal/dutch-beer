@@ -1,0 +1,40 @@
+{
+  "id": "obdb-bb8680ef-fa79-4409-ab82-5d6a8f5e3e99",
+  "slug": "breugem-brewery",
+  "name": "Breugem Brewery",
+  "website": "http://www.brouwerijhoop.nl/",
+  "address": {
+    "locality": "Zaandijk",
+    "region": "Noord-Holland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id bb8680ef-fa79-4409-ab82-5d6a8f5e3e99",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 790a3147-e4b0-416f-a882-99223da6092a",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijhoop.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "bb8680ef-fa79-4409-ab82-5d6a8f5e3e99"
+  }
+}

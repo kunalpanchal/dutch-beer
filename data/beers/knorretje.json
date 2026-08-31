@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140254997",
+  "slug": "knorretje",
+  "breweryId": "wd-q140254995",
+  "breweryName": "Q140254995",
+  "brewerySlug": "q140254995",
+  "name": "Knorretje",
+  "style": "Dark Strong Ale",
+  "abv": 7.2,
+  "availability": "unknown",
+  "website": "http://www.hetrozevarken.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140254997",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.hetrozevarken.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140254997"
+  }
+}

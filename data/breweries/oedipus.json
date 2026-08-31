@@ -1,0 +1,42 @@
+{
+  "id": "wd-q125779378",
+  "slug": "oedipus",
+  "name": "Oedipus",
+  "website": "https://oedipus.com/",
+  "address": {
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779378",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id b61e8713-1671-42ce-88c9-44e46fd4f50e",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://oedipus.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779378",
+    "openBreweryDb": "b61e8713-1671-42ce-88c9-44e46fd4f50e",
+    "senb": "1168"
+  }
+}

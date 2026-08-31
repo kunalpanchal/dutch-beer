@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139701131",
+  "slug": "achterhoek-ipa",
+  "breweryId": "wd-q95143891",
+  "breweryName": "Bierbrouwerij Wentersch",
+  "brewerySlug": "bierbrouwerij-wentersch",
+  "name": "Achterhoek IPA",
+  "style": "American India Pale Ale",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://www.wentersch.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139701131",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.wentersch.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139701131"
+  }
+}

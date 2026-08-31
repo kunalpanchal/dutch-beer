@@ -1,0 +1,29 @@
+{
+  "id": "wd-q125779339",
+  "slug": "amsterdamse-stoombierbrouwerij-de-bekeerde-suster",
+  "name": "Amsterdamse Stoombierbrouwerij De Bekeerde Suster",
+  "website": "https://www.debekeerdesuster.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779339",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.debekeerdesuster.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779339",
+    "senb": "1012"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "wd-q140051752",
+  "slug": "i-think-im-aging-well",
+  "breweryId": "wd-q125779993",
+  "breweryName": "Pigs & Bears Brewing Co.",
+  "brewerySlug": "pigs-bears-brewing-co",
+  "name": "I Think I'm Aging Well",
+  "style": "Double India Pale Ale",
+  "abv": 7.9,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051752",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051752"
+  }
+}

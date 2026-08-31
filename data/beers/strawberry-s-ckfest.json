@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139694656",
+  "slug": "strawberry-s-ckfest",
+  "breweryId": "wd-q124663583",
+  "breweryName": "Dutch Bargain",
+  "brewerySlug": "dutch-bargain",
+  "name": "Strawberry S*CKFEST",
+  "abv": 9.2,
+  "availability": "unknown",
+  "website": "https://www.dutchbargain.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139694656",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dutchbargain.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139694656"
+  }
+}

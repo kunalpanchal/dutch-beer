@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140066562",
+  "slug": "moedige-margaretha",
+  "breweryId": "wd-q125779823",
+  "breweryName": "Brouwerij De 12 Stuyvers",
+  "brewerySlug": "brouwerij-de-12-stuyvers",
+  "name": "Moedige Margaretha",
+  "style": "quadrupel",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://www.de12stuyvers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140066562",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.de12stuyvers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140066562"
+  }
+}

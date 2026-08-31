@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139692757",
+  "slug": "la-trappe-quadrupel-oak-aged-batch-55",
+  "breweryId": "wd-q130276069",
+  "breweryName": "Brouwerij De Koningshoeven",
+  "brewerySlug": "brouwerij-de-koningshoeven",
+  "name": "La Trappe Quadrupel Oak Aged Batch #55",
+  "style": "quadrupel",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "https://www.koningshoeven.nl/de-abdij/brouwerij",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139692757",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.koningshoeven.nl/de-abdij/brouwerij",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139692757"
+  }
+}

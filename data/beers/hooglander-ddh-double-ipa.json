@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700698",
+  "slug": "hooglander-ddh-double-ipa",
+  "breweryId": "wd-q125779467",
+  "breweryName": "Hooglander Bier",
+  "brewerySlug": "hooglander-bier",
+  "name": "Hooglander DDH Double IPA",
+  "style": "Double India Pale Ale",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://www.hooglanderbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700698",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.hooglanderbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700698"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139719509",
+  "slug": "virgin-i-p-a-bio",
+  "breweryId": "wd-q28034318",
+  "breweryName": "Brouwerij Troost",
+  "brewerySlug": "brouwerij-troost",
+  "name": "Virgin I.P.A. Bio",
+  "style": "alcoholvrije IPA",
+  "abv": 0.4,
+  "availability": "unknown",
+  "website": "http://www.brouwerijtroost.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139719509",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.brouwerijtroost.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139719509"
+  }
+}

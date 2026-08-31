@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139888423",
+  "slug": "0-5-ipa",
+  "breweryId": "wd-q3445750",
+  "breweryName": "Brouwerij De Leckere",
+  "brewerySlug": "brouwerij-de-leckere",
+  "name": "0.5 IPA",
+  "style": "alcoholvrije IPA",
+  "abv": 0.5,
+  "availability": "unknown",
+  "website": "https://deleckere.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139888423",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://deleckere.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139888423"
+  }
+}

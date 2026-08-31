@@ -1,0 +1,34 @@
+{
+  "id": "wd-q134621101",
+  "slug": "vandaag",
+  "breweryId": "wd-q153075",
+  "breweryName": "Grolsch",
+  "brewerySlug": "grolsch",
+  "name": "Vandaag",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "https://www.grolsch.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q134621101",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.grolsch.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q134621101",
+    "senb": "5481"
+  }
+}

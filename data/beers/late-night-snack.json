@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139680800",
+  "slug": "late-night-snack",
+  "breweryId": "wd-q131225287",
+  "breweryName": "The Piggy Brewing Company",
+  "name": "Late Night Snack",
+  "style": "Double India Pale Ale",
+  "abv": 8.8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680800",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680800"
+  }
+}

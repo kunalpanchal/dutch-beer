@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681206",
+  "slug": "rott-nimbus-no-i-2025",
+  "breweryId": "wd-q125779522",
+  "breweryName": "ROTT. Brouwers",
+  "brewerySlug": "rott-brouwers",
+  "name": "ROTT.NIMBUS | No. I (2025)",
+  "style": "Double New England India Pale Ale",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "http://www.rottbrouwers.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681206",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rottbrouwers.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681206"
+  }
+}

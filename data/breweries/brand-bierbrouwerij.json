@@ -1,0 +1,44 @@
+{
+  "id": "wd-q897711",
+  "slug": "brand-bierbrouwerij",
+  "name": "Brand Bierbrouwerij",
+  "website": "https://www.brand.nl/",
+  "address": {
+    "locality": "Wijlre",
+    "region": "Limburg",
+    "countryCode": "NL",
+    "latitude": 50.8306858,
+    "longitude": 5.8940572
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q897711",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id b5c379e4-7d8a-4df5-9002-086a1756ef6e",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brand.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q897711",
+    "openBreweryDb": "b5c379e4-7d8a-4df5-9002-086a1756ef6e",
+    "senb": "151"
+  }
+}

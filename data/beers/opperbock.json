@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139885623",
+  "slug": "opperbock",
+  "breweryId": "wd-q125779577",
+  "breweryName": "Brouwerij Leeghwater",
+  "brewerySlug": "brouwerij-leeghwater",
+  "name": "Opperbock",
+  "style": "bokbier",
+  "abv": 6.3,
+  "availability": "unknown",
+  "website": "https://brouwerijleeghwater.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139885623",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijleeghwater.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139885623"
+  }
+}

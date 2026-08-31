@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139913268",
+  "slug": "jopen-wheat-impact",
+  "breweryId": "unlinked",
+  "breweryName": "Unknown brewery",
+  "name": "Jopen Wheat Impact",
+  "style": "weizenbier",
+  "abv": 5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139913268",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139913268"
+  }
+}

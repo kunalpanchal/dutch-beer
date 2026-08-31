@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139691654",
+  "slug": "levensgenieter-10-year-anniversary-special",
+  "breweryId": "wd-q124625708",
+  "breweryName": "Kompaan",
+  "brewerySlug": "kompaan",
+  "name": "Levensgenieter - 10 Year Anniversary Special",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://kompaanbier.nl/nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691654",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://kompaanbier.nl/nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691654"
+  }
+}

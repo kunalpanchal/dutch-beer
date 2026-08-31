@@ -1,0 +1,33 @@
+{
+  "id": "wd-q125780135",
+  "slug": "brouwerij-wijgman",
+  "name": "Brouwerij Wijgman",
+  "website": "http://brouwerij.wijgman.nl/",
+  "address": {
+    "locality": "Breedenbroek",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125780135",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://brouwerij.wijgman.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125780135",
+    "senb": "6797"
+  }
+}

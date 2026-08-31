@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139680441",
+  "slug": "ive-got-friends-in-the-music-business-b-a-2025",
+  "breweryId": "wd-q115792344",
+  "breweryName": "Frontaal Brewing Company",
+  "brewerySlug": "frontaal-brewing-company",
+  "name": "I've Got Friends In the Music Business B.A. 2025",
+  "style": "imperial stout",
+  "abv": 10.5,
+  "availability": "unknown",
+  "website": "https://frontaalbrewingcompany.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680441",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://frontaalbrewingcompany.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680441"
+  }
+}

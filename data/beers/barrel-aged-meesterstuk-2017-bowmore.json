@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140137770",
+  "slug": "barrel-aged-meesterstuk-2017-bowmore",
+  "breweryId": "wd-q392195",
+  "breweryName": "Jopen",
+  "brewerySlug": "jopen",
+  "name": "Barrel Aged Meesterstuk 2017 Bowmore",
+  "style": "porter",
+  "abv": 12.5,
+  "availability": "unknown",
+  "website": "https://www.jopenbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137770",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jopenbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137770"
+  }
+}

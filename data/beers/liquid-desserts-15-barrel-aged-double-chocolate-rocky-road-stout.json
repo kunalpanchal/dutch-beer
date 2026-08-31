@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139818064",
+  "slug": "liquid-desserts-15-barrel-aged-double-chocolate-rocky-road-stout",
+  "breweryId": "wd-q125578806",
+  "breweryName": "Big Belly Brewing",
+  "brewerySlug": "big-belly-brewing",
+  "name": "Liquid Desserts 15 - Barrel Aged Double Chocolate Rocky Road Stout",
+  "style": "imperial stout",
+  "abv": 12,
+  "availability": "unknown",
+  "website": "https://www.bigbellybrewing.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139818064",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.bigbellybrewing.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139818064"
+  }
+}

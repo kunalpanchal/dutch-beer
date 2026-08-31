@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140051718",
+  "slug": "naate-raaf",
+  "breweryId": "wd-q112691301",
+  "breweryName": "Brouwerij De Klep",
+  "brewerySlug": "brouwerij-de-klep",
+  "name": "Naate Raaf",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.brouwerijdeklep.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140051718",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijdeklep.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140051718"
+  }
+}

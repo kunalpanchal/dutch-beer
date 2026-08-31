@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139675698",
+  "slug": "pastry-factory-pecan-pie",
+  "breweryId": "wd-q124632565",
+  "breweryName": "Moersleutel",
+  "brewerySlug": "moersleutel",
+  "name": "Pastry Factory: Pecan Pie",
+  "style": "imperial stout",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://moersleutel.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139675698",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://moersleutel.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139675698"
+  }
+}

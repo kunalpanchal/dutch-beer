@@ -1,0 +1,35 @@
+{
+  "id": "wd-q134029922",
+  "slug": "lindeboom-radler-citroen-0-0",
+  "breweryId": "wd-q13439309",
+  "breweryName": "Bierbrouwerij Lindeboom",
+  "brewerySlug": "bierbrouwerij-lindeboom",
+  "name": "Lindeboom Radler Citroen 0.0",
+  "style": "radler",
+  "abv": 0,
+  "availability": "unknown",
+  "website": "https://lindeboom.nl/bieren/lindeboom-radler-citroen-0-0/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q134029922",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://lindeboom.nl/bieren/lindeboom-radler-citroen-0-0/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q134029922",
+    "senb": "13744"
+  }
+}

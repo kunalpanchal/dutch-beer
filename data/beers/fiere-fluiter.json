@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139985977",
+  "slug": "fiere-fluiter",
+  "breweryId": "wd-q139985795",
+  "breweryName": "Q139985795",
+  "brewerySlug": "q139985795",
+  "name": "Fiere Fluiter",
+  "style": "American pale ale",
+  "abv": 5.3,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139985977",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139985977"
+  }
+}

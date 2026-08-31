@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139691811",
+  "slug": "fear-and-loathing-in-la-haye",
+  "breweryId": "wd-q125779492",
+  "breweryName": "Vet & Lazy Brouwerij",
+  "brewerySlug": "vet-lazy-brouwerij",
+  "name": "Fear And Loathing In La Haye",
+  "style": "New England India Pale Ale",
+  "abv": 3.2,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139691811",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139691811"
+  }
+}

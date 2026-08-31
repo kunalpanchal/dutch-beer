@@ -1,0 +1,44 @@
+{
+  "id": "wd-q113866902",
+  "slug": "gebrouwen-door-vrouwen",
+  "name": "Gebrouwen door Vrouwen",
+  "website": "https://www.gebrouwendoorvrouwen.nl/en",
+  "address": {
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.362525,
+    "longitude": 4.864333
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q113866902",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 40818410-f956-4e68-81c7-bb802220378c",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.gebrouwendoorvrouwen.nl/en",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q113866902",
+    "openBreweryDb": "40818410-f956-4e68-81c7-bb802220378c",
+    "senb": "1347"
+  }
+}

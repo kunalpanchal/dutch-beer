@@ -1,0 +1,28 @@
+{
+  "id": "wd-q2196178",
+  "slug": "ezelenbok",
+  "breweryId": "wd-q5244695",
+  "breweryName": "De Proefbrouwerij",
+  "name": "Ezelenbok",
+  "style": "bokbier",
+  "abv": 7.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2196178",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2196178",
+    "senb": "5342"
+  }
+}

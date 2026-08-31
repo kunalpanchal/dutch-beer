@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710286",
+  "slug": "gute-nacht-freunde",
+  "breweryId": "wd-q124666148",
+  "breweryName": "Van Moll",
+  "brewerySlug": "van-moll",
+  "name": "Gute Nacht Freunde",
+  "style": "wheat wine",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://vanmollcraftbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710286",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vanmollcraftbeer.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710286"
+  }
+}

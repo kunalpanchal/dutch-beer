@@ -1,0 +1,34 @@
+{
+  "id": "wd-q107252594",
+  "slug": "nevel",
+  "name": "Nevel",
+  "website": "https://nevel.org/",
+  "address": {
+    "locality": "Nijmegen",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q107252594",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://nevel.org/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "wikidata": "Q107252594",
+    "senb": "1263"
+  }
+}

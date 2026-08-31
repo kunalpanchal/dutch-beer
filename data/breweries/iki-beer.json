@@ -1,0 +1,44 @@
+{
+  "id": "wd-q124371572",
+  "slug": "iki-beer",
+  "name": "iKi Beer",
+  "website": "https://www.ikibeer.com/",
+  "address": {
+    "locality": "'s-Hertogenbosch",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.6992048,
+    "longitude": 5.2802583
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124371572",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 5b08f5ad-28b7-4bde-ae2e-62c92b0c37ed",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.ikibeer.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124371572",
+    "openBreweryDb": "5b08f5ad-28b7-4bde-ae2e-62c92b0c37ed",
+    "senb": "1233"
+  }
+}

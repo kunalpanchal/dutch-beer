@@ -1,0 +1,35 @@
+{
+  "id": "obdb-2cf60801-e6ed-4a95-a713-de65d2019d2c",
+  "slug": "hooten-brewing",
+  "name": "Hoöten Brewing",
+  "website": "https://nl.bavaria.com/",
+  "address": {
+    "locality": "Lieshout",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.518775,
+    "longitude": 5.613055
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 2cf60801-e6ed-4a95-a713-de65d2019d2c",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://nl.bavaria.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "2cf60801-e6ed-4a95-a713-de65d2019d2c"
+  }
+}

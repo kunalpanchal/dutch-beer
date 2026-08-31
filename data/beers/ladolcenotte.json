@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139700717",
+  "slug": "ladolcenotte",
+  "breweryId": "wd-q125779467",
+  "breweryName": "Hooglander Bier",
+  "brewerySlug": "hooglander-bier",
+  "name": "#LaDolceNotte",
+  "style": "imperial stout",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://www.hooglanderbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700717",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.hooglanderbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700717"
+  }
+}

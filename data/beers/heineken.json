@@ -1,0 +1,35 @@
+{
+  "id": "wd-q854383",
+  "slug": "heineken",
+  "breweryId": "wd-q180855",
+  "breweryName": "Heineken",
+  "brewerySlug": "heineken",
+  "name": "Heineken",
+  "style": "pils",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "http://www.heineken.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q854383",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.heineken.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q854383",
+    "senb": "273"
+  }
+}

@@ -2,13 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { getBeerBySlug, listBeers } from "@/lib/catalog/store";
-import { copy, isLocale, locales } from "@/lib/i18n";
+import { getBeerBySlug } from "@/lib/catalog/store";
+import { copy, isLocale } from "@/lib/i18n";
 
-export async function generateStaticParams() {
-  const beers = await listBeers();
-  return locales.flatMap((locale) => beers.map((beer) => ({ locale, slug: beer.slug })));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,

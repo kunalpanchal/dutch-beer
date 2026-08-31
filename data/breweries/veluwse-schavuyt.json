@@ -1,0 +1,32 @@
+{
+  "id": "wd-q81427420",
+  "slug": "veluwse-schavuyt",
+  "name": "Veluwse Schavuyt",
+  "website": "https://www.veluwseschavuyt.nl/",
+  "address": {
+    "locality": "Nederland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q81427420",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.veluwseschavuyt.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q81427420"
+  }
+}

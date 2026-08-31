@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140250858",
+  "slug": "jolly-johnny",
+  "breweryId": "wd-q140250857",
+  "breweryName": "Q140250857",
+  "brewerySlug": "q140250857",
+  "name": "Jolly Johnny",
+  "style": "New England India Pale Ale",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.taphuys.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140250858",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.taphuys.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140250858"
+  }
+}

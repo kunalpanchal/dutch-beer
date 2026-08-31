@@ -1,0 +1,34 @@
+{
+  "id": "wd-q137460475",
+  "slug": "blurred-lines",
+  "breweryId": "wd-q392195",
+  "breweryName": "Jopen",
+  "brewerySlug": "jopen",
+  "name": "Blurred Lines",
+  "style": "New England India Pale Ale",
+  "abv": 5.3,
+  "availability": "unknown",
+  "website": "https://www.jopenbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137460475",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jopenbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137460475"
+  }
+}

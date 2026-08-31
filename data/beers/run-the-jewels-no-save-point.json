@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139674222",
+  "slug": "run-the-jewels-no-save-point",
+  "breweryId": "wd-q123759630",
+  "breweryName": "vandeStreek",
+  "brewerySlug": "vandestreek",
+  "name": "Run the Jewels - No Save Point",
+  "style": "New England India Pale Ale",
+  "abv": 6.6,
+  "availability": "unknown",
+  "website": "https://vandestreekbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139674222",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139674222"
+  }
+}

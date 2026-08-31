@@ -1,0 +1,44 @@
+{
+  "id": "wd-q2110734",
+  "slug": "maximus-brouwerij",
+  "name": "Maximus Brouwerij",
+  "website": "https://maximusbrouwerij.nl/",
+  "address": {
+    "locality": "Utrecht",
+    "region": "Utrecht",
+    "countryCode": "NL",
+    "latitude": 52.0884895,
+    "longitude": 5.0458145
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2110734",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 640fd21c-db18-4beb-9ee3-76d408c7b9c6",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://maximusbrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2110734",
+    "openBreweryDb": "640fd21c-db18-4beb-9ee3-76d408c7b9c6",
+    "senb": "1118"
+  }
+}

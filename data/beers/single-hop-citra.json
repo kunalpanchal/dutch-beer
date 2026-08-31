@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139681089",
+  "slug": "single-hop-citra",
+  "breweryId": "wd-q1828277",
+  "breweryName": "Brouwerij De Molen",
+  "brewerySlug": "brouwerij-de-molen",
+  "name": "Single Hop Citra",
+  "style": "English India Pale Ale",
+  "abv": 4.8,
+  "availability": "unknown",
+  "website": "https://brouwerijdemolen.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681089",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdemolen.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681089"
+  }
+}

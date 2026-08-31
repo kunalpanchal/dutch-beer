@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139680080",
+  "slug": "smooth-criminals-s-x-on-the-beach",
+  "breweryId": "wd-q115792344",
+  "breweryName": "Frontaal Brewing Company",
+  "brewerySlug": "frontaal-brewing-company",
+  "name": "Smooth Criminals: S*x On The Beach",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://frontaalbrewingcompany.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680080",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://frontaalbrewingcompany.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680080"
+  }
+}

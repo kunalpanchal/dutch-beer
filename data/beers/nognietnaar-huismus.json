@@ -1,0 +1,35 @@
+{
+  "id": "wd-q131531596",
+  "slug": "nognietnaar-huismus",
+  "breweryId": "wd-q125779482",
+  "breweryName": "Q125779482",
+  "brewerySlug": "q125779482",
+  "name": "Nognietnaar Huismus",
+  "style": "brown ale",
+  "abv": 6.4,
+  "availability": "unknown",
+  "website": "https://birdbrewery.com/nognietnaar-huismus/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q131531596",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://birdbrewery.com/nognietnaar-huismus/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q131531596",
+    "senb": "8401"
+  }
+}

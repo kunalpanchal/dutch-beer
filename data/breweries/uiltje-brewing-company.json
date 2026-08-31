@@ -1,0 +1,29 @@
+{
+  "id": "wd-q61698778",
+  "slug": "uiltje-brewing-company",
+  "name": "Uiltje Brewing Company",
+  "website": "https://www.uiltjecraftbeer.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q61698778",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.uiltjecraftbeer.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q61698778",
+    "senb": "1162"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q137776806",
+  "slug": "8-6-red",
+  "breweryId": "wd-q2072541",
+  "breweryName": "Royal Swinkels",
+  "brewerySlug": "royal-swinkels",
+  "name": "8.6 Red",
+  "style": "amber lager",
+  "abv": 7.9,
+  "availability": "unknown",
+  "website": "https://royalswinkels.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q137776806",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://royalswinkels.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q137776806",
+    "senb": "6555"
+  }
+}

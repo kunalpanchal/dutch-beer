@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139675302",
+  "slug": "mystery-beer-5",
+  "breweryId": "wd-q125758709",
+  "breweryName": "Brew York",
+  "name": "Mystery Beer 5",
+  "style": "imperial stout",
+  "abv": 12,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139675302",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139675302"
+  }
+}

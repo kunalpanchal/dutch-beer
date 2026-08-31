@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139681402",
+  "slug": "lost-found",
+  "breweryId": "wd-q17110738",
+  "breweryName": "Tired Hands Brewing Company",
+  "name": "Lost & Found",
+  "style": "sour beer",
+  "abv": 6.6,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139681402",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139681402"
+  }
+}

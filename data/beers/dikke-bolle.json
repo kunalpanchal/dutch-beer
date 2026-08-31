@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139719572",
+  "slug": "dikke-bolle",
+  "breweryId": "wd-q125779596",
+  "breweryName": "Brouwerij Avereest",
+  "brewerySlug": "brouwerij-avereest",
+  "name": "Dikke Bolle",
+  "style": "tripel",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "https://www.brouwerijavereest.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139719572",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwerijavereest.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139719572"
+  }
+}

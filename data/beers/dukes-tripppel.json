@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794793",
+  "slug": "dukes-tripppel",
+  "breweryId": "wd-q125779585",
+  "breweryName": "Stadsbrouwerij Dukes",
+  "brewerySlug": "stadsbrouwerij-dukes",
+  "name": "Dukes Tripppel",
+  "style": "tripel",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "http://www.stadsbrouwerijdukes.nu/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794793",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.stadsbrouwerijdukes.nu/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794793"
+  }
+}

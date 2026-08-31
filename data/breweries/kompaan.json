@@ -1,0 +1,44 @@
+{
+  "id": "wd-q124625708",
+  "slug": "kompaan",
+  "name": "Kompaan",
+  "website": "https://kompaanbier.nl/nl/",
+  "address": {
+    "locality": "Den Haag",
+    "region": "Zuid-Holland",
+    "countryCode": "NL",
+    "latitude": 52.0671662,
+    "longitude": 4.3462556
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124625708",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 6c5eac6b-beab-4de1-9e12-a8f714727b04",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://kompaanbier.nl/nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124625708",
+    "openBreweryDb": "6c5eac6b-beab-4de1-9e12-a8f714727b04",
+    "senb": "1141"
+  }
+}

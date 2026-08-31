@@ -1,0 +1,43 @@
+{
+  "id": "wd-q55372351",
+  "slug": "brouwerij-bavaria",
+  "name": "Brouwerij Bavaria",
+  "website": "http://www.bavariabrouwerijcafe.nl/",
+  "address": {
+    "locality": "Lieshout",
+    "region": "Noord-Brabant",
+    "countryCode": "NL",
+    "latitude": 51.5178125,
+    "longitude": 5.5957611
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q55372351",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 75cf7eb3-3c01-4977-9764-8d873bfadf3a",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.bavariabrouwerijcafe.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q55372351",
+    "openBreweryDb": "75cf7eb3-3c01-4977-9764-8d873bfadf3a"
+  }
+}

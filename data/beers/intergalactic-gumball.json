@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139832786",
+  "slug": "intergalactic-gumball",
+  "breweryId": "wd-q125779700",
+  "breweryName": "X-brewing",
+  "brewerySlug": "x-brewing",
+  "name": "Intergalactic Gumball",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.x-brewing.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139832786",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.x-brewing.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139832786"
+  }
+}

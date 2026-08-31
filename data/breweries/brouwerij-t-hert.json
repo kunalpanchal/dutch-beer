@@ -1,0 +1,28 @@
+{
+  "id": "wd-q114231893",
+  "slug": "brouwerij-t-hert",
+  "name": "Brouwerij 't Hert",
+  "address": {
+    "locality": "",
+    "countryCode": "NL",
+    "latitude": 51.364444444,
+    "longitude": 6.149444444
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q114231893",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q114231893"
+  }
+}

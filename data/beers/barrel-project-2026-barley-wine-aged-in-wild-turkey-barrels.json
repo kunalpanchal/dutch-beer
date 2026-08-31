@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140066647",
+  "slug": "barrel-project-2026-barley-wine-aged-in-wild-turkey-barrels",
+  "breweryId": "wd-q123469240",
+  "breweryName": "Brouwerij Kees",
+  "brewerySlug": "brouwerij-kees",
+  "name": "Barrel Project 2026 Barley Wine Aged In Wild Turkey Barrels",
+  "style": "gerstewijn",
+  "abv": 11,
+  "availability": "unknown",
+  "website": "https://brouwerijkees.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140066647",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijkees.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140066647"
+  }
+}

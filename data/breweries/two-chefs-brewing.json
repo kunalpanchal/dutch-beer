@@ -1,0 +1,44 @@
+{
+  "id": "wd-q123965471",
+  "slug": "two-chefs-brewing",
+  "name": "Two Chefs Brewing",
+  "website": "https://twochefsbrewing.com/nl",
+  "address": {
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.3926576,
+    "longitude": 4.8201689
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q123965471",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 9b327a2b-3a7c-4c73-bea5-8a5962bc5fd4",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://twochefsbrewing.com/nl",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q123965471",
+    "openBreweryDb": "9b327a2b-3a7c-4c73-bea5-8a5962bc5fd4",
+    "senb": "1178"
+  }
+}

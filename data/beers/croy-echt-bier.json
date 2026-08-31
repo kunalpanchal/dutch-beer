@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140140266",
+  "slug": "croy-echt-bier",
+  "breweryId": "wd-q140140236",
+  "breweryName": "Q140140236",
+  "brewerySlug": "q140140236",
+  "name": "Croy Echt Bier",
+  "abv": 4.5,
+  "availability": "unknown",
+  "website": "http://www.croybier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140140266",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.croybier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140140266"
+  }
+}

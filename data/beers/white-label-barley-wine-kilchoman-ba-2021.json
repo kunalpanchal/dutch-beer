@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139766301",
+  "slug": "white-label-barley-wine-kilchoman-ba-2021",
+  "breweryId": "wd-q3266423",
+  "breweryName": "Brouwerij Emelisse",
+  "brewerySlug": "brouwerij-emelisse",
+  "name": "White Label Barley Wine Kilchoman BA 2021",
+  "style": "vatgerijpt bier",
+  "abv": 13.2,
+  "availability": "unknown",
+  "website": "https://emelisse.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139766301",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://emelisse.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139766301"
+  }
+}

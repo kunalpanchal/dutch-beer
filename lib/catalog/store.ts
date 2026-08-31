@@ -7,15 +7,11 @@ import type { CatalogFile } from "@/lib/catalog/merge";
 import { breweryOrigins, sourceConfidence } from "@/lib/catalog/merge";
 import { catalogCounts, recentBoardEntries } from "@/lib/catalog/home";
 
-export const catalogPath = path.join(process.cwd(), "data/catalog.json");
+const assembledCatalogPath = path.join(process.cwd(), "data/.assembled.json");
 
 const emptyCatalog = (): CatalogFile => ({
   generatedAt: "",
-  sources: {
-    wikidata: { fetchedAt: "", count: 0 },
-    open_brewery_db: { fetchedAt: "", count: 0 },
-    openstreetmap: { fetchedAt: "", count: 0 },
-  },
+  sources: {},
   breweries: [],
   beers: [],
   beerSources: { wikidata: { fetchedAt: "", count: 0 } },
@@ -23,8 +19,7 @@ const emptyCatalog = (): CatalogFile => ({
 
 export const loadCatalog = cache(async (): Promise<CatalogFile> => {
   try {
-    const raw = await readFile(catalogPath, "utf8");
-    return JSON.parse(raw) as CatalogFile;
+    return JSON.parse(await readFile(assembledCatalogPath, "utf8")) as CatalogFile;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return emptyCatalog();
     throw error;
@@ -33,9 +28,33 @@ export const loadCatalog = cache(async (): Promise<CatalogFile> => {
 
 const loadClaims = cache(loadClaimFiles);
 
-export async function listBreweries(): Promise<Brewery[]> {
+interface CatalogIndex {
+  breweries: Brewery[];
+  beers: Beer[];
+  breweryBySlug: Map<string, Brewery>;
+  beerBySlug: Map<string, Beer>;
+  beersByBrewery: Map<string, Beer[]>;
+}
+
+const loadIndexedCatalog = cache(async (): Promise<CatalogIndex> => {
   const [catalog, claims] = await Promise.all([loadCatalog(), loadClaims()]);
-  return applyPublishedClaims(catalog.breweries, claims);
+  const breweries = applyPublishedClaims(catalog.breweries, claims);
+  const beers = catalog.beers ?? [];
+  const breweryBySlug = new Map(breweries.map((brewery) => [brewery.slug, brewery]));
+  const beerBySlug = new Map(beers.map((beer) => [beer.slug, beer]));
+  const beersByBrewery = new Map<string, Beer[]>();
+  for (const beer of beers) {
+    for (const key of new Set([beer.breweryId, beer.brewerySlug].filter((value): value is string => Boolean(value)))) {
+      const list = beersByBrewery.get(key) ?? [];
+      list.push(beer);
+      beersByBrewery.set(key, list);
+    }
+  }
+  return { breweries, beers, breweryBySlug, beerBySlug, beersByBrewery };
+});
+
+export async function listBreweries(): Promise<Brewery[]> {
+  return (await loadIndexedCatalog()).breweries;
 }
 
 export async function listPublishedBreweries(): Promise<Brewery[]> {
@@ -47,12 +66,11 @@ export async function listPendingBreweries(): Promise<Brewery[]> {
 }
 
 export async function getBreweryBySlug(slug: string): Promise<Brewery | undefined> {
-  return (await listBreweries()).find((brewery) => brewery.slug === slug);
+  return (await loadIndexedCatalog()).breweryBySlug.get(slug);
 }
 
 export async function listBeers(): Promise<Beer[]> {
-  const catalog = await loadCatalog();
-  return catalog.beers ?? [];
+  return (await loadIndexedCatalog()).beers;
 }
 
 export async function getCatalogCounts() {
@@ -64,13 +82,14 @@ export async function listRecentBoardEntries(limit = 6) {
 }
 
 export async function getBeerBySlug(slug: string): Promise<Beer | undefined> {
-  return (await listBeers()).find((beer) => beer.slug === slug);
+  return (await loadIndexedCatalog()).beerBySlug.get(slug);
 }
 
 export async function listBeersForBrewery(brewery: Brewery): Promise<Beer[]> {
-  return (await listBeers()).filter(
-    (beer) => beer.breweryId === brewery.id || beer.brewerySlug === brewery.slug,
-  );
+  const index = await loadIndexedCatalog();
+  const byId = index.beersByBrewery.get(brewery.id) ?? [];
+  if (byId.length) return byId;
+  return index.beersByBrewery.get(brewery.slug) ?? [];
 }
 
 export function isLikelyCurrent(brewery: Brewery): boolean {

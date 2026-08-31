@@ -1,0 +1,44 @@
+{
+  "id": "wd-q125779340",
+  "slug": "de-heidebrouwerij",
+  "name": "De Heidebrouwerij",
+  "website": "http://www.deheidebrouwerij.nl/",
+  "address": {
+    "locality": "Ede",
+    "region": "Gelderland",
+    "countryCode": "NL",
+    "latitude": 52.0328156,
+    "longitude": 5.6031654
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q125779340",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 7dc27421-8e1e-4f46-9597-a9d2fa5047ee",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.deheidebrouwerij.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q125779340",
+    "openBreweryDb": "7dc27421-8e1e-4f46-9597-a9d2fa5047ee",
+    "senb": "1027"
+  }
+}

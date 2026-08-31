@@ -1,0 +1,34 @@
+{
+  "id": "wd-q2240622",
+  "slug": "gulpener-puurzaam",
+  "breweryId": "wd-q2754546",
+  "breweryName": "Gulpener Bierbrouwerij",
+  "brewerySlug": "gulpener-bierbrouwerij",
+  "name": "Gulpener Puurzaam",
+  "style": "hoog fermentatiebier",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "http://www.gulpener.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2240622",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.gulpener.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2240622"
+  }
+}

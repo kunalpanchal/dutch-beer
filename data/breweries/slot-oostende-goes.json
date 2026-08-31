@@ -1,0 +1,18 @@
+{
+  "id": "osm-node-2905821301",
+  "slug": "slot-oostende-goes",
+  "name": "Slot Oostende",
+  "website": "https://www.slotoostende.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.slotoostende.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ]
+}

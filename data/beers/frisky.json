@@ -1,0 +1,34 @@
+{
+  "id": "wd-q138610471",
+  "slug": "frisky",
+  "breweryId": "wd-q123759630",
+  "breweryName": "vandeStreek",
+  "brewerySlug": "vandestreek",
+  "name": "Frisky",
+  "style": "session New England India Pale Ale",
+  "abv": 4.4,
+  "availability": "unknown",
+  "website": "https://vandestreekbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q138610471",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q138610471"
+  }
+}

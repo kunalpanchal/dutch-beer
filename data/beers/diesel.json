@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140050750",
+  "slug": "diesel",
+  "breweryId": "wd-q2110734",
+  "breweryName": "Maximus Brouwerij",
+  "brewerySlug": "maximus-brouwerij",
+  "name": "Diesel",
+  "style": "Engelse stout",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://maximusbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140050750",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://maximusbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140050750"
+  }
+}

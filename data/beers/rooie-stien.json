@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139710450",
+  "slug": "rooie-stien",
+  "breweryId": "wd-q124666161",
+  "breweryName": "Stadsbrouwerij 013",
+  "brewerySlug": "stadsbrouwerij-013",
+  "name": "Rooie Stien",
+  "style": "American India Pale Ale",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://stadsbrouwerij013.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139710450",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://stadsbrouwerij013.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139710450"
+  }
+}

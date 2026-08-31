@@ -1,0 +1,44 @@
+{
+  "id": "wd-q392195",
+  "slug": "jopen",
+  "name": "Jopen",
+  "website": "https://www.jopenbier.nl/",
+  "address": {
+    "locality": "Haarlem",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.381228097,
+    "longitude": 4.629774915
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q392195",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 600934dc-8889-48da-af7d-31d3b85d1a32",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.jopenbier.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q392195",
+    "openBreweryDb": "600934dc-8889-48da-af7d-31d3b85d1a32",
+    "senb": "296"
+  }
+}

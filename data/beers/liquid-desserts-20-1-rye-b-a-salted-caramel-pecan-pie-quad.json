@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139818071",
+  "slug": "liquid-desserts-20-1-rye-b-a-salted-caramel-pecan-pie-quad",
+  "breweryId": "wd-q125578806",
+  "breweryName": "Big Belly Brewing",
+  "brewerySlug": "big-belly-brewing",
+  "name": "Liquid Desserts 20.1 - Rye B.A. Salted Caramel Pecan Pie Quad",
+  "style": "quadrupel",
+  "abv": 12.5,
+  "availability": "unknown",
+  "website": "https://www.bigbellybrewing.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139818071",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.bigbellybrewing.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139818071"
+  }
+}

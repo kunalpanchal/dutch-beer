@@ -1,0 +1,44 @@
+{
+  "id": "wd-q5280024",
+  "slug": "brouwerij-sint-christoffel",
+  "name": "Brouwerij Sint Christoffel",
+  "website": "https://www.christoffelbieren.com/",
+  "address": {
+    "locality": "Roermond",
+    "region": "Limburg",
+    "countryCode": "NL",
+    "latitude": 51.1686563,
+    "longitude": 6.0504787
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q5280024",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id f5e23510-be1e-4fbe-bbeb-175a25bf2412",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.christoffelbieren.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q5280024",
+    "openBreweryDb": "f5e23510-be1e-4fbe-bbeb-175a25bf2412",
+    "senb": "176"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wd-q138608778",
+  "slug": "fun-house-non-alcoholic-neipa",
+  "breweryId": "wd-q123759630",
+  "breweryName": "vandeStreek",
+  "brewerySlug": "vandestreek",
+  "name": "Fun House Non Alcoholic NEIPA",
+  "style": "alcoholvrije IPA",
+  "abv": 0.5,
+  "availability": "unknown",
+  "website": "https://vandestreekbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q138608778",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vandestreekbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q138608778",
+    "senb": "14287"
+  }
+}

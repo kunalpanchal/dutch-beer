@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140935218",
+  "slug": "final-countdown-winter-saison",
+  "breweryId": "wd-q140935198",
+  "breweryName": "Q140935198",
+  "brewerySlug": "q140935198",
+  "name": "Final Countdown Winter Saison",
+  "style": "saison",
+  "abv": 6.5,
+  "availability": "unknown",
+  "website": "http://www.rooiedop.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140935218",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.rooiedop.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140935218"
+  }
+}

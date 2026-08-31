@@ -1,0 +1,27 @@
+{
+  "id": "wd-q139680181",
+  "slug": "the-golden-ratio",
+  "breweryId": "wd-q135533570",
+  "breweryName": "Track",
+  "name": "The Golden Ratio",
+  "style": "American India Pale Ale",
+  "abv": 6.7,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680181",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680181"
+  }
+}

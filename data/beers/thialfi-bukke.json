@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139857652",
+  "slug": "thialfi-bukke",
+  "breweryId": "wd-q125779950",
+  "breweryName": "Burgunder Bier",
+  "brewerySlug": "burgunder-bier",
+  "name": "Thialfi Bükke",
+  "style": "dubbelbok",
+  "abv": 8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139857652",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139857652"
+  }
+}

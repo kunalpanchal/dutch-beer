@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139709916",
+  "slug": "540-kveik",
+  "breweryId": "wd-q117857292",
+  "breweryName": "Grutte Pier Brouwerij",
+  "brewerySlug": "grutte-pier-brouwerij",
+  "name": "540 Kveik",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "https://gruttepierbrouwerij.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139709916",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://gruttepierbrouwerij.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139709916"
+  }
+}

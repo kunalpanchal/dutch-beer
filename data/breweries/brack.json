@@ -1,0 +1,27 @@
+{
+  "id": "wd-q127789624",
+  "slug": "brack",
+  "name": "BRACK",
+  "address": {
+    "locality": "Breda",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q127789624",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    }
+  ],
+  "closed": true,
+  "externalIds": {
+    "wikidata": "Q127789624"
+  }
+}

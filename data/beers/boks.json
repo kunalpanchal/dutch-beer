@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140053878",
+  "slug": "boks",
+  "breweryId": "wd-q125779382",
+  "breweryName": "Breugem Bier",
+  "brewerySlug": "breugem-bier",
+  "name": "Boks",
+  "style": "Double India Pale Ale",
+  "abv": 8.1,
+  "availability": "unknown",
+  "website": "https://www.breugembier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140053878",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.breugembier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140053878"
+  }
+}

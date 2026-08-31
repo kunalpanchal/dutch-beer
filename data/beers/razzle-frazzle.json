@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139832798",
+  "slug": "razzle-frazzle",
+  "breweryId": "wd-q125779700",
+  "breweryName": "X-brewing",
+  "brewerySlug": "x-brewing",
+  "name": "Razzle Frazzle",
+  "style": "porter",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "https://www.x-brewing.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139832798",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.x-brewing.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139832798"
+  }
+}

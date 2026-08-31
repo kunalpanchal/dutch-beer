@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139744326",
+  "slug": "welcome-back",
+  "breweryId": "wd-q125821702",
+  "breweryName": "Cockroach Brew",
+  "brewerySlug": "cockroach-brew",
+  "name": "Welcome Back",
+  "style": "New England Pale Ale",
+  "abv": 4.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139744326",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139744326"
+  }
+}

@@ -41,7 +41,7 @@ Prefer the website form at `/contribute`. It prefills the file. On GitHub, choos
 {
   "slug": "hel-en-verdoemenis",
   "name": "Hel & Verdoemenis",
-  "brewery": "Brouwerij De Molen",
+  "breweryName": "Brouwerij De Molen",
   "style": "Imperial Stout",
   "abv": 10,
   "availability": "year_round",
@@ -102,8 +102,8 @@ A brewery claim proves someone at the brewery stands behind the listing. The con
 }
 ```
 
-After review, set `"status": "published"`. The site shows a verified badge; it does not display the email. Do not copy `claimedBy` into `catalog.json`.
+After review, set `"status": "published"`. The site shows a verified badge; it does not display the email. Do not copy `claimedBy` into the brewery listing file.
 
-## Open-data catalog
+## Catalog files
 
-`data/catalog.json` is the bulk import (breweries from Wikidata, Open Brewery DB, and OpenStreetMap; beers from Wikidata only). See [ATTRIBUTION.md](./ATTRIBUTION.md). Community additions still go in `data/breweries/`, `data/beers/`, `data/corrections/`, or `data/claims/`.
+Each brewery and beer is its own JSON file. Edit that file to correct a listing. Published claims in `data/claims/` overlay a verified badge at read time. See [ATTRIBUTION.md](./ATTRIBUTION.md) for seed licenses and why OpenStreetMap data is not stored here.

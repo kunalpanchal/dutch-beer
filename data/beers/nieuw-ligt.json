@@ -1,0 +1,35 @@
+{
+  "id": "wd-q130735956",
+  "slug": "nieuw-ligt",
+  "breweryId": "wd-q2457956",
+  "breweryName": "Stadsbrouwerij De Hemel",
+  "brewerySlug": "stadsbrouwerij-de-hemel",
+  "name": "Nieuw Ligt",
+  "style": "gerstewijn",
+  "abv": 10,
+  "availability": "unknown",
+  "website": "https://brouwerijdehemel.nl/product/nieuw-ligt/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q130735956",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijdehemel.nl/product/nieuw-ligt/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q130735956",
+    "senb": "4408"
+  }
+}

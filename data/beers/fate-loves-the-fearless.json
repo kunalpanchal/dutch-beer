@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139676620",
+  "slug": "fate-loves-the-fearless",
+  "breweryId": "wd-q125779592",
+  "breweryName": "Brouwerij Bravoure",
+  "brewerySlug": "brouwerij-bravoure",
+  "name": "Fate Loves the Fearless",
+  "style": "American barley wine",
+  "abv": 14.8,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676620",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676620"
+  }
+}

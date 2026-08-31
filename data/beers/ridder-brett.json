@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794440",
+  "slug": "ridder-brett",
+  "breweryId": "wd-q139720529",
+  "breweryName": "Q139720529",
+  "brewerySlug": "q139720529",
+  "name": "Ridder Brett",
+  "style": "blond",
+  "abv": 5.5,
+  "availability": "unknown",
+  "website": "https://www.legrandcrue.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794440",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.legrandcrue.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794440"
+  }
+}

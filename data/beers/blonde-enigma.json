@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140935263",
+  "slug": "blonde-enigma",
+  "breweryId": "wd-q140935260",
+  "breweryName": "Q140935260",
+  "brewerySlug": "q140935260",
+  "name": "Blonde Enigma",
+  "style": "American India Pale Ale",
+  "abv": 6,
+  "availability": "unknown",
+  "website": "http://www.ruigbier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140935263",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.ruigbier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140935263"
+  }
+}

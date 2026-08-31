@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140137327",
+  "slug": "czaar-peter-stichting-noord-hollandse-alternatieve-bierbrouwers",
+  "breweryId": "wd-q2380166",
+  "breweryName": "Stichting Noord-Hollandse Alternatieve Bierbrouwers",
+  "brewerySlug": "stichting-noord-hollandse-alternatieve-bierbrouwers",
+  "name": "Czaar Peter",
+  "style": "imperial stout",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "http://www.snab.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140137327",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.snab.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140137327"
+  }
+}

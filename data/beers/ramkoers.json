@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139700815",
+  "slug": "ramkoers",
+  "breweryId": "wd-q125779476",
+  "breweryName": "Brouwerij Homeland",
+  "brewerySlug": "brouwerij-homeland",
+  "name": "Ramkoers",
+  "abv": 8,
+  "availability": "unknown",
+  "website": "https://brouwerijhomeland.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139700815",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijhomeland.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139700815"
+  }
+}

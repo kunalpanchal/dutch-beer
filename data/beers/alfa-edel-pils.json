@@ -1,0 +1,35 @@
+{
+  "id": "wd-q2067248",
+  "slug": "alfa-edel-pils",
+  "breweryId": "wd-q2538673",
+  "breweryName": "Alfa Brouwerij",
+  "brewerySlug": "alfa-brouwerij",
+  "name": "Alfa Edel Pils",
+  "style": "pils",
+  "abv": 5,
+  "availability": "unknown",
+  "website": "http://www.alfa-bier.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2067248",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.alfa-bier.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2067248",
+    "senb": "346"
+  }
+}

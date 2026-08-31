@@ -1,0 +1,33 @@
+{
+  "id": "wd-q140052961",
+  "slug": "ostara-gold",
+  "breweryId": "wd-q140052951",
+  "breweryName": "Q140052951",
+  "brewerySlug": "q140052951",
+  "name": "Ostara Gold",
+  "abv": 6.4,
+  "availability": "unknown",
+  "website": "http://www.burgunder.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140052961",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "http://www.burgunder.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140052961"
+  }
+}

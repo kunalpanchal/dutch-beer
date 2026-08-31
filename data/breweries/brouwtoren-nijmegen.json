@@ -1,0 +1,33 @@
+{
+  "id": "obdb-1cc8ff81-b319-428d-b888-d476fc53b322",
+  "slug": "brouwtoren-nijmegen",
+  "name": "Brouwtoren",
+  "website": "https://www.brouwtoren.nl/",
+  "address": {
+    "locality": "Nijmegen",
+    "region": "Gelderland",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id 1cc8ff81-b319-428d-b888-d476fc53b322",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.brouwtoren.nl/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "1cc8ff81-b319-428d-b888-d476fc53b322"
+  }
+}

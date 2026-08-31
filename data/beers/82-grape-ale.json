@@ -1,0 +1,26 @@
+{
+  "id": "wd-q139676869",
+  "slug": "82-grape-ale",
+  "breweryId": "wd-q3496897",
+  "breweryName": "Brouwerij 't IJ",
+  "name": "82 Grape Ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139676869",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139676869"
+  }
+}

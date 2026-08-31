@@ -1,0 +1,35 @@
+{
+  "id": "obdb-c4b543bd-313d-4cf7-b9c6-b8f58e326d58",
+  "slug": "heineken-amsterdam",
+  "name": "Heineken",
+  "website": "https://www.heinekenexperience.com/",
+  "address": {
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.3578313,
+    "longitude": 4.8918249
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id c4b543bd-313d-4cf7-b9c6-b8f58e326d58",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.heinekenexperience.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "openBreweryDb": "c4b543bd-313d-4cf7-b9c6-b8f58e326d58"
+  }
+}

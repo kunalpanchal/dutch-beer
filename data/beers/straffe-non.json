@@ -1,0 +1,28 @@
+{
+  "id": "wd-q139766347",
+  "slug": "straffe-non",
+  "breweryId": "wd-q125826775",
+  "breweryName": "Slot Oostende",
+  "brewerySlug": "slot-oostende",
+  "name": "Straffe Non",
+  "style": "India pale ale",
+  "abv": 6.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139766347",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139766347"
+  }
+}

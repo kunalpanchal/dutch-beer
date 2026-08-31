@@ -1,0 +1,27 @@
+{
+  "id": "wd-q2129474",
+  "slug": "koning-honing",
+  "breweryId": "wd-q5244695",
+  "breweryName": "De Proefbrouwerij",
+  "name": "Koning Honing",
+  "style": "hoog fermentatiebier",
+  "abv": 7.5,
+  "availability": "unknown",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2129474",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2129474"
+  }
+}

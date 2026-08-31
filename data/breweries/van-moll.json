@@ -1,0 +1,42 @@
+{
+  "id": "wd-q124666148",
+  "slug": "van-moll",
+  "name": "Van Moll",
+  "website": "https://vanmollcraftbeer.com/",
+  "address": {
+    "locality": "Eindhoven",
+    "region": "Noord-Brabant",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "createdAt": "2026-08-31T19:09:49.894Z",
+  "updatedAt": "2026-08-31T19:09:49.894Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q124666148",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.openbrewerydb.org/",
+      "note": "Open Brewery DB (MIT) id e0f4cfb4-eb19-48b2-b59f-37e76088c2e1",
+      "capturedAt": "2026-08-31T19:09:49.894Z",
+      "origin": "open_brewery_db"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://vanmollcraftbeer.com/",
+      "capturedAt": "2026-08-31T19:09:49.894Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q124666148",
+    "openBreweryDb": "e0f4cfb4-eb19-48b2-b59f-37e76088c2e1",
+    "senb": "1179"
+  }
+}

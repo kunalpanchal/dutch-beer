@@ -1,0 +1,34 @@
+{
+  "id": "wd-q2200384",
+  "slug": "oesterstout",
+  "breweryId": "wd-q2449451",
+  "breweryName": "Scheldebrouwerij",
+  "brewerySlug": "scheldebrouwerij",
+  "name": "Oesterstout",
+  "style": "oesterstout",
+  "abv": 8.5,
+  "availability": "unknown",
+  "website": "https://scheldebrouwerij.com/fr/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q2200384",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://scheldebrouwerij.com/fr/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2200384"
+  }
+}

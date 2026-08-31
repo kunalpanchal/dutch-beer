@@ -1,0 +1,33 @@
+{
+  "id": "wd-q139679147",
+  "slug": "single-hop-series-1-4-motueka",
+  "breweryId": "wd-q123965471",
+  "breweryName": "Two Chefs Brewing",
+  "brewerySlug": "two-chefs-brewing",
+  "name": "Single Hop Series: 1/4 Motueka",
+  "abv": 6.6,
+  "availability": "unknown",
+  "website": "https://twochefsbrewing.com/nl",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139679147",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://twochefsbrewing.com/nl",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139679147"
+  }
+}

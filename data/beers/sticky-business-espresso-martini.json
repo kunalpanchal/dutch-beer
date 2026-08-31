@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139680803",
+  "slug": "sticky-business-espresso-martini",
+  "breweryId": "wd-q115792344",
+  "breweryName": "Frontaal Brewing Company",
+  "brewerySlug": "frontaal-brewing-company",
+  "name": "Sticky Business: Espresso Martini",
+  "style": "stout",
+  "abv": 7.5,
+  "availability": "unknown",
+  "website": "https://frontaalbrewingcompany.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139680803",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://frontaalbrewingcompany.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139680803"
+  }
+}

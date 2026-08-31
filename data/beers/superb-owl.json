@@ -1,0 +1,35 @@
+{
+  "id": "wd-q127469063",
+  "slug": "superb-owl",
+  "breweryId": "wd-q61698778",
+  "breweryName": "Uiltje Brewing Company",
+  "brewerySlug": "uiltje-brewing-company",
+  "name": "Superb-Owl",
+  "style": "alcoholvrije IPA",
+  "abv": 0.2,
+  "availability": "unknown",
+  "website": "https://www.uiltjebrewing.com/product/superb-owl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q127469063",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.uiltjebrewing.com/product/superb-owl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q127469063",
+    "senb": "14908"
+  }
+}

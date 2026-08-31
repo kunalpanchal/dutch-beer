@@ -1,0 +1,34 @@
+{
+  "id": "wd-q139694714",
+  "slug": "double-overhead",
+  "breweryId": "wd-q124663583",
+  "breweryName": "Dutch Bargain",
+  "brewerySlug": "dutch-bargain",
+  "name": "Double Overhead",
+  "style": "Double New England India Pale Ale",
+  "abv": 8.7,
+  "availability": "unknown",
+  "website": "https://www.dutchbargain.com/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q139694714",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://www.dutchbargain.com/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q139694714"
+  }
+}

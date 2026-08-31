@@ -1,0 +1,34 @@
+{
+  "id": "wd-q140794816",
+  "slug": "gingerbitch",
+  "breweryId": "wd-q140794815",
+  "breweryName": "Q140794815",
+  "brewerySlug": "q140794815",
+  "name": "Gingerbitch",
+  "style": "American pale ale",
+  "abv": 5.1,
+  "availability": "unknown",
+  "website": "https://brouwerijastronaut.nl/",
+  "status": "pending_review",
+  "createdAt": "2026-08-31T20:23:49.334Z",
+  "updatedAt": "2026-08-31T20:23:49.334Z",
+  "createdBy": "open-data-import",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "open_data",
+      "url": "https://www.wikidata.org/wiki/Q140794816",
+      "note": "Wikidata (CC0)",
+      "capturedAt": "2026-08-31T20:23:49.334Z",
+      "origin": "wikidata"
+    },
+    {
+      "sourceKind": "official_website",
+      "url": "https://brouwerijastronaut.nl/",
+      "capturedAt": "2026-08-31T20:23:49.334Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q140794816"
+  }
+}
