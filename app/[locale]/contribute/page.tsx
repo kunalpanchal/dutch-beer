@@ -1,12 +1,30 @@
 import { notFound } from "next/navigation";
 import { ContributionForm, GithubTemplateLinks } from "@/components/contribution-form";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { getBreweryBySlug } from "@/lib/catalog/store";
+import { contributionKinds, type ContributionKind } from "@/lib/contribute";
 import { copy, isLocale } from "@/lib/i18n";
 
-export default async function ContributePage({ params }: { params: Promise<{ locale: string }> }) {
+function isContributionKind(value: string | undefined): value is ContributionKind {
+  return contributionKinds.includes(value as ContributionKind);
+}
+
+export default async function ContributePage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ kind?: string; brewery?: string }>;
+}) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+  const query = await searchParams;
   const text = copy[locale].contribute;
+  const initialKind = isContributionKind(query.kind) ? query.kind : undefined;
+  const brewery = query.brewery ? await getBreweryBySlug(query.brewery) : undefined;
+  const claimPrefill = brewery
+    ? { slug: brewery.slug, name: brewery.name, website: brewery.website }
+    : undefined;
 
   return (
     <main>
@@ -15,7 +33,12 @@ export default async function ContributePage({ params }: { params: Promise<{ loc
         <p className="eyebrow">{text.eyebrow}</p>
         <h1>{text.title}</h1>
         <p className="lead">{text.lead}</p>
-        <ContributionForm locale={locale} />
+        <ContributionForm
+          key={`${initialKind ?? "brewery"}-${claimPrefill?.slug ?? ""}`}
+          locale={locale}
+          initialKind={initialKind}
+          claimPrefill={claimPrefill}
+        />
         <GithubTemplateLinks locale={locale} />
         <aside className="trust-note">
           <strong>{text.trustTitle}</strong>

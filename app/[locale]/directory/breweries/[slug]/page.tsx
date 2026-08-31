@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, listBreweries } from "@/lib/catalog/store";
+import { breweryOrigins, getBreweryBySlug, listBreweries, openStreetMapHref } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
 export async function generateStaticParams() {
@@ -31,13 +31,9 @@ export default async function BreweryPage({
   const brewery = await getBreweryBySlug(slug);
   if (!brewery) notFound();
   const text = copy[locale];
-  const pending = brewery.status !== "published";
   const origins = breweryOrigins(brewery);
   const place = [brewery.address?.locality, brewery.address?.region].filter(Boolean).join(", ");
-  const mapHref =
-    brewery.address?.latitude !== undefined && brewery.address.longitude !== undefined
-      ? `https://www.openstreetmap.org/?mlat=${brewery.address.latitude}&mlon=${brewery.address.longitude}#map=16/${brewery.address.latitude}/${brewery.address.longitude}`
-      : undefined;
+  const mapHref = openStreetMapHref(brewery.address?.latitude, brewery.address?.longitude);
 
   return (
     <main>
@@ -48,14 +44,17 @@ export default async function BreweryPage({
         </p>
         <div className="listing-card-top">
           <h1>{brewery.name}</h1>
-          {brewery.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
+          <div className="listing-badges">
+            {brewery.claimedBy ? <span className="badge badge-claimed">{text.brewery.claimed}</span> : null}
+            {brewery.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
+          </div>
         </div>
         {place ? <p className="lead">{place}</p> : null}
 
-        {pending ? (
+        {brewery.claimedBy ? (
           <aside className="trust-note">
-            <strong>{text.brewery.awaiting}</strong>
-            <p>{text.brewery.awaitingCopy}</p>
+            <strong>{text.brewery.claimed}</strong>
+            <p>{text.brewery.claimedCopy}</p>
           </aside>
         ) : null}
 
@@ -150,6 +149,14 @@ export default async function BreweryPage({
           <Link className="button button-quiet" href={`/${locale}/contribute`}>
             {text.brewery.suggestCorrection}
           </Link>
+          {!brewery.claimedBy && brewery.website ? (
+            <Link
+              className="button button-ale"
+              href={`/${locale}/contribute?kind=claim&brewery=${encodeURIComponent(brewery.slug)}`}
+            >
+              {text.brewery.claimListing}
+            </Link>
+          ) : null}
         </p>
       </article>
       <SiteFooter locale={locale} />

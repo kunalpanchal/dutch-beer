@@ -5,4 +5,4 @@ contact_links:
     about: Opens a prefilled GitHub pull request. Issues are not used for listings.
   - name: Add a listing file yourself
     url: https://github.com/kunalpanchal/dutchbeer/blob/main/data/README.md
-    about: JSON layout for breweries, beers, and corrections. Open a pull request; do not commit to main.
+    about: JSON layout for breweries, beers, corrections, and claims. Open a pull request; do not commit to main.

@@ -16,6 +16,27 @@ const GENERIC_HOSTS = new Set([
   "ratebeer.com",
 ]);
 
+const GENERIC_EMAIL_HOSTS = new Set([
+  "gmail.com",
+  "googlemail.com",
+  "hotmail.com",
+  "outlook.com",
+  "live.com",
+  "live.nl",
+  "msn.com",
+  "yahoo.com",
+  "yahoo.nl",
+  "icloud.com",
+  "me.com",
+  "mac.com",
+  "proton.me",
+  "protonmail.com",
+  "ziggo.nl",
+  "kpnmail.nl",
+  "planet.nl",
+  "xs4all.nl",
+]);
+
 const NAME_NOISE =
   /\b(brouwerij|bierbrouwerij|stadsbrouwerij|stadsbrouwer|microbrouwerij|brewery|brewing|brewpub|brouwhuis|proeflokaal|craft beer company|beer company|beer|bier|bieren|de|het|den|the|van|'t|’t)\b/g;
 
@@ -57,6 +78,29 @@ export function hostnameFromUrl(value: string | undefined): string | undefined {
   } catch {
     return undefined;
   }
+}
+
+export function hostnameFromEmail(value: string | undefined): string | undefined {
+  if (!value?.trim()) return undefined;
+  const email = value.trim().toLowerCase();
+  const at = email.lastIndexOf("@");
+  if (at < 1 || at === email.length - 1) return undefined;
+  const host = email.slice(at + 1).replace(/^www\./, "");
+  if (!host.includes(".") || GENERIC_EMAIL_HOSTS.has(host) || GENERIC_HOSTS.has(host)) return undefined;
+  return host;
+}
+
+export function hostsAlign(left: string | undefined, right: string | undefined): boolean {
+  if (!left || !right) return false;
+  return left === right || left.endsWith(`.${right}`) || right.endsWith(`.${left}`);
+}
+
+export function emailMatchesWebsite(email: string | undefined, website: string | undefined): boolean {
+  return hostsAlign(hostnameFromEmail(email), hostnameFromUrl(website));
+}
+
+export function urlMatchesWebsite(url: string | undefined, website: string | undefined): boolean {
+  return hostsAlign(hostnameFromUrl(url), hostnameFromUrl(website));
 }
 
 export function canonicalWebsite(value: string | undefined): string | undefined {

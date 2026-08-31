@@ -1,11 +1,14 @@
+import { emailMatchesWebsite, urlMatchesWebsite } from "@/lib/catalog/normalize";
+
 export const GITHUB_REPO = "kunalpanchal/dutchbeer";
 
-export const contributionKinds = ["brewery", "beer", "correction"] as const;
+export const contributionKinds = ["brewery", "beer", "correction", "claim"] as const;
 export type ContributionKind = (typeof contributionKinds)[number];
 
 export type ContributionPayload = {
   kind: ContributionKind;
   breweryName: string;
+  brewerySlug: string;
   beerName: string;
   website: string;
   locality: string;
@@ -16,6 +19,8 @@ export type ContributionPayload = {
   entity: string;
   source: string;
   notes: string;
+  email: string;
+  contact: string;
 };
 
 export function slugify(value: string): string {
@@ -39,13 +44,19 @@ function capturedAt(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
-function source(payload: ContributionPayload) {
+function source(payload: ContributionPayload, sourceKind: "official_website" | "brewery_submission" = "official_website") {
   return {
-    sourceKind: "official_website" as const,
+    sourceKind,
     url: payload.source,
     capturedAt: capturedAt(),
     ...(payload.notes ? { note: payload.notes } : {}),
   };
+}
+
+export function claimDomainError(payload: Pick<ContributionPayload, "email" | "website" | "source">): "email" | "evidence" | undefined {
+  if (!emailMatchesWebsite(payload.email, payload.website)) return "email";
+  if (!urlMatchesWebsite(payload.source, payload.website)) return "evidence";
+  return undefined;
 }
 
 export function contributionFile(payload: ContributionPayload): { path: string; contents: string } {
@@ -89,6 +100,27 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
     };
   }
 
+  if (payload.kind === "claim") {
+    const slug = payload.brewerySlug || slugify(payload.breweryName);
+    return {
+      path: `data/claims/${slug}.json`,
+      contents: `${JSON.stringify(
+        {
+          slug,
+          brewery: payload.breweryName,
+          claimedBy: payload.contact,
+          email: payload.email,
+          website: payload.website,
+          status: "pending_review",
+          trustLevel: "new",
+          sources: [source(payload, "brewery_submission")],
+        },
+        null,
+        2,
+      )}\n`,
+    };
+  }
+
   const slug = slugify(payload.breweryName);
   return {
     path: `data/breweries/${slug}.json`,
@@ -121,6 +153,7 @@ export const githubNewEntryUrls = {
   brewery: githubNewFileUrl("data/breweries/brewery-name.json"),
   beer: githubNewFileUrl("data/beers/beer-name.json"),
   correction: githubNewFileUrl("data/corrections/entry-name.json"),
+  claim: githubNewFileUrl("data/claims/brewery-name.json"),
 } as const;
 
 export function payloadFromForm(kind: ContributionKind, form: FormData): ContributionPayload {
@@ -128,6 +161,7 @@ export function payloadFromForm(kind: ContributionKind, form: FormData): Contrib
   return {
     kind,
     breweryName: read("breweryName"),
+    brewerySlug: read("brewerySlug"),
     beerName: read("beerName"),
     website: read("website"),
     locality: read("locality"),
@@ -138,5 +172,7 @@ export function payloadFromForm(kind: ContributionKind, form: FormData): Contrib
     entity: read("entity"),
     source: read("source"),
     notes: read("notes"),
+    email: read("email"),
+    contact: read("contact"),
   };
 }

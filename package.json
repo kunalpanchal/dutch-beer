@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test lib/catalog/*.test.ts",
+    "test": "tsx --test lib/catalog/*.test.ts lib/contribute.test.ts",
     "validate:listings": "node scripts/validate-listings.mjs",
     "import:breweries": "tsx scripts/import-breweries.ts"
   },

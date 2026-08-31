@@ -2,7 +2,7 @@
 
 Thank you for helping make the Dutch beer record more complete and more accurate.
 
-**Every change goes through a GitHub pull request.** That includes new breweries, beers, corrections, docs, and code. Do not commit to `main`, and do not file an issue for a listing.
+**Every change goes through a GitHub pull request.** That includes new breweries, beers, corrections, claims, docs, and code. Do not commit to `main`, and do not file an issue for a listing.
 
 ## Add a brewery or beer
 
@@ -11,7 +11,7 @@ The preferred path is the website form at `/contribute`. It prefills a JSON file
 You can also add the file yourself:
 
 1. Read [data/README.md](./data/README.md).
-2. Add `data/breweries/<slug>.json`, `data/beers/<slug>.json`, or `data/corrections/<slug>.json`.
+2. Add `data/breweries/<slug>.json`, `data/beers/<slug>.json`, `data/corrections/<slug>.json`, or `data/claims/<slug>.json`.
 3. Open a pull request against `main`.
 4. Wait for review. Listings are not published until the PR is merged.
 
@@ -25,13 +25,13 @@ Every submitted fact needs provenance: source kind, URL or explanatory note, and
 
 ## Review and publication
 
-Pull requests stay `pending_review` in the listing file until a maintainer merges them. Merged listings can later be claimed by a brewery through its official domain.
+Pull requests stay `pending_review` in the listing file until a maintainer merges them. A brewery can claim a listing by opening a claim pull request: contact email and evidence URL must be on the official website domain. After a maintainer sets the claim file to `published`, the directory shows the listing as a verified brewery.
 
 ## Code contributions
 
 1. Open a pull request with a focused change.
 2. Include tests when behavior changes.
 3. Run `npm run lint`, `npm run typecheck`, `npm run test`, and `npm run build`.
-4. Never add production secrets or invented directory records. Open-data imports must stay `pending_review` until a moderator has checked the source.
+4. Never add production secrets or invented directory records.
 
 By contributing, you agree that your contribution may be published as part of this open community project once a repository license is chosen.

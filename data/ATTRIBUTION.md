@@ -1,6 +1,6 @@
 # Open brewery data
 
-Dutch.beer imports public brewery records as **`pending_review`**. Nothing from these sources is published automatically.
+Dutch.beer imports public brewery records from Wikidata, Open Brewery DB, and OpenStreetMap. They appear in the public directory with their source URLs attached.
 
 Refresh the catalog:
 
@@ -24,4 +24,4 @@ Records are merged when they share a Wikidata id, a non-generic website host, or
 
 ## Publication
 
-Imported listings stay `pending_review` with trust level `new`. The public directory only renders `published` records. Review the inbox at `/review`.
+Imported listings appear in the public directory. Corrections go through `/contribute`. A brewery can later claim its profile through its official domain.
