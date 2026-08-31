@@ -27,7 +27,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         <div className="header-end">
           <GitHubLink />
           <Link className="header-cta" href={`/${locale}/contribute`}>
-            {text.addListing}
+            {text.contribute}
           </Link>
         </div>
       </div>
@@ -41,7 +41,10 @@ export function SiteFooter({ locale }: { locale: Locale }) {
     <footer>
       <div className="shell footer-inner">
         <Logo locale={locale} />
-        <p>{text.footer}</p>
+        <div className="footer-copy">
+          <p>{text.footer}</p>
+          <p>{text.footerBuilt}</p>
+        </div>
         <div className="footer-end">
           <nav aria-label="Footer">
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
