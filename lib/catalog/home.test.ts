@@ -1,14 +1,18 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
-import path from "path";
+import path from "node:path";
 import type { CatalogFile } from "./merge";
 import { catalogCounts, recentBoardEntries } from "./home";
+import { loadListingFiles } from "./listings";
 
-const catalog = JSON.parse(readFileSync(path.join(process.cwd(), "data/catalog.json"), "utf8")) as CatalogFile;
+async function loadCatalog(): Promise<CatalogFile> {
+  const listings = await loadListingFiles(path.join(process.cwd(), "data"));
+  return { generatedAt: "", sources: {}, ...listings };
+}
 
 describe("catalogCounts", () => {
-  it("uses the real catalog lengths and does not invent a contributor count", () => {
+  it("uses the real catalog lengths and does not invent a contributor count", async () => {
+    const catalog = await loadCatalog();
     const counts = catalogCounts(catalog);
     assert.equal(counts.breweries, catalog.breweries.length);
     assert.equal(counts.beers, (catalog.beers ?? []).length);
@@ -35,7 +39,8 @@ describe("catalogCounts", () => {
 });
 
 describe("recentBoardEntries", () => {
-  it("returns real catalog names, newest first, mixed across kinds", () => {
+  it("returns real catalog names, newest first, mixed across kinds", async () => {
+    const catalog = await loadCatalog();
     const breweryNames = new Set(catalog.breweries.map((brewery) => brewery.name));
     const beerNames = new Set((catalog.beers ?? []).map((beer) => beer.name));
     const recent = recentBoardEntries(catalog, 6);

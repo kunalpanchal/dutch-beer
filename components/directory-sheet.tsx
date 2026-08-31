@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 
 const PAGE_SIZE = 25;
 
@@ -26,6 +26,7 @@ export type SheetColumn<T> = {
   href?: (row: T) => string | undefined;
   external?: boolean;
   format?: (row: T) => string;
+  content?: (row: T) => ReactNode;
 };
 
 function compare(a: string, b: string): number {
@@ -207,7 +208,9 @@ export function DirectorySheet<T extends { slug: string }>({
                         className={`sheet-col-${column.id}${empty ? " is-empty" : ""}`}
                         data-label={column.label}
                       >
-                        {href && label ? (
+                        {column.content ? (
+                          column.content(row)
+                        ) : href && label ? (
                           column.external ? (
                             <a href={href} target="_blank" rel="noreferrer">
                               {label}

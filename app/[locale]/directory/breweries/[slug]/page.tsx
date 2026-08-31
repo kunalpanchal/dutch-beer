@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, listBeersForBrewery, openStreetMapHref } from "@/lib/catalog/store";
-import { copy, isLocale } from "@/lib/i18n";
+import { MapLink } from "@/components/map-link";
+import { breweryOrigins, getBreweryBySlug, listBeersForBrewery } from "@/lib/catalog/store";
+import { copy, isLocale, mapLinkCopy } from "@/lib/i18n";
 
 export const dynamic = "force-dynamic";
 
@@ -30,7 +31,7 @@ export default async function BreweryPage({
   const text = copy[locale];
   const origins = breweryOrigins(brewery);
   const place = [brewery.address?.locality, brewery.address?.region].filter(Boolean).join(", ");
-  const mapHref = openStreetMapHref(brewery.address?.latitude, brewery.address?.longitude);
+  const hasMap = brewery.address?.latitude !== undefined && brewery.address?.longitude !== undefined;
   const beers = await listBeersForBrewery(brewery);
 
   return (
@@ -65,17 +66,20 @@ export default async function BreweryPage({
               </dd>
             </div>
           ) : null}
-          {place ? (
+          {place || hasMap ? (
             <div>
               <dt>{text.brewery.location}</dt>
               <dd>
                 {place}
-                {mapHref ? (
+                {hasMap ? (
                   <>
-                    {" · "}
-                    <a href={mapHref} rel="noreferrer">
-                      {text.directory.map}
-                    </a>
+                    {place ? " · " : null}
+                    <MapLink
+                      latitude={brewery.address?.latitude}
+                      longitude={brewery.address?.longitude}
+                      name={brewery.name}
+                      copy={mapLinkCopy(locale)}
+                    />
                   </>
                 ) : null}
               </dd>
