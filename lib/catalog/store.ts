@@ -76,7 +76,7 @@ export function googleMapsHref(
   if (latitude === undefined || longitude === undefined) return undefined;
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return undefined;
   const query = name?.trim() ? `${name.trim()} ${latitude},${longitude}` : `${latitude},${longitude}`;
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query).replace(/'/g, "%27")}`;
 }
 
 export interface BreweryListItem {

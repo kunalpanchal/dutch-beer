@@ -18,6 +18,13 @@ describe("googleMapsHref", () => {
     );
   });
 
+  it("percent-encodes apostrophes in brewery names", () => {
+    assert.equal(
+      googleMapsHref(52.3814, 4.64564, "'t Scheepje"),
+      "https://www.google.com/maps/search/?api=1&query=%27t%20Scheepje%2052.3814%2C4.64564",
+    );
+  });
+
   it("returns nothing without a finite coordinate pair", () => {
     assert.equal(googleMapsHref(undefined, 5), undefined);
     assert.equal(googleMapsHref(52, undefined), undefined);
