@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
+import { BrewerySheet } from "@/components/directory-sheet";
 import type { BreweryListItem } from "@/lib/catalog/store";
 import type { OpenDataOrigin } from "@/lib/schema";
 import { copy, type Locale } from "@/lib/i18n";
@@ -22,38 +22,27 @@ export function BreweryList({
   showFilters?: boolean;
 }) {
   const text = copy[locale];
-  const [query, setQuery] = useState("");
   const [currentOnly, setCurrentOnly] = useState(showFilters);
   const [hasWebsite, setHasWebsite] = useState(false);
   const [showClosed, setShowClosed] = useState(!showFilters);
   const [origin, setOrigin] = useState<OpenDataOrigin | "all">("all");
 
   const filtered = useMemo(() => {
-    const needle = query.trim().toLowerCase();
     return items.filter((item) => {
       if (currentOnly && (item.closed || (!item.website && item.origins.length < 2))) return false;
       if (hasWebsite && !item.website) return false;
       if (!showClosed && item.closed) return false;
       if (origin !== "all" && !item.origins.includes(origin)) return false;
-      if (!needle) return true;
-      const haystack = [item.name, item.locality, item.region].filter(Boolean).join(" ").toLowerCase();
-      return haystack.includes(needle);
+      return true;
     });
-  }, [items, query, currentOnly, hasWebsite, showClosed, origin]);
+  }, [items, currentOnly, hasWebsite, showClosed, origin]);
+
+  const table = text.directory.table;
 
   return (
     <div className="brewery-list">
       {showFilters ? (
         <div className="review-filters">
-          <label className="review-search">
-            <span className="visually-hidden">{text.review.search}</span>
-            <input
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder={text.review.search}
-            />
-          </label>
           <div className="filter-toggles">
             <label>
               <input type="checkbox" checked={currentOnly} onChange={(event) => setCurrentOnly(event.target.checked)} />
@@ -83,37 +72,27 @@ export function BreweryList({
               </button>
             ))}
           </div>
-          <p className="review-count">
-            {filtered.length} {text.review.count}
-            {items.length ? ` / ${items.length}` : ""}
-          </p>
         </div>
       ) : null}
 
-      {filtered.length === 0 ? (
-        <p className="list-empty">{emptyLabel}</p>
-      ) : (
-        <ul className="listing-grid">
-          {filtered.map((item) => (
-            <li key={item.slug}>
-              <Link className="listing-card" href={`${hrefBase}/${item.slug}`}>
-                <div className="listing-card-top">
-                  <h2>{item.name}</h2>
-                  {item.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
-                </div>
-                <p>{[item.locality, item.region].filter(Boolean).join(", ")}</p>
-                <div className="source-badges">
-                  {item.origins.map((value) => (
-                    <span key={value} className={`badge badge-${value}`}>
-                      {text.directory.origin[value]}
-                    </span>
-                  ))}
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <BrewerySheet
+        rows={filtered}
+        hrefBase={hrefBase}
+        copy={{
+          search: table.search,
+          searchPlaceholder: table.searchPlaceholder,
+          facetLabel: table.region,
+          allFacet: table.allRegions,
+          showing: table.showing,
+          noMatches: filtered.length === 0 && items.length === 0 ? emptyLabel : table.noMatches,
+          previous: table.previous,
+          next: table.next,
+          pagination: table.pagination,
+          columns: table.columns,
+          origin: text.directory.origin,
+          closed: text.directory.closed,
+        }}
+      />
     </div>
   );
 }
