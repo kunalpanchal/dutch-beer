@@ -5,6 +5,7 @@ import type { Beer, Brewery, OpenDataOrigin, PublicationStatus } from "@/lib/sch
 import { applyPublishedClaims, loadClaimFiles } from "@/lib/catalog/claims";
 import type { CatalogFile } from "@/lib/catalog/merge";
 import { breweryOrigins, sourceConfidence } from "@/lib/catalog/merge";
+import { catalogCounts, recentBoardEntries } from "@/lib/catalog/home";
 
 export const catalogPath = path.join(process.cwd(), "data/catalog.json");
 
@@ -52,6 +53,14 @@ export async function getBreweryBySlug(slug: string): Promise<Brewery | undefine
 export async function listBeers(): Promise<Beer[]> {
   const catalog = await loadCatalog();
   return catalog.beers ?? [];
+}
+
+export async function getCatalogCounts() {
+  return catalogCounts(await loadCatalog());
+}
+
+export async function listRecentBoardEntries(limit = 6) {
+  return recentBoardEntries(await loadCatalog(), limit);
 }
 
 export async function getBeerBySlug(slug: string): Promise<Beer | undefined> {
