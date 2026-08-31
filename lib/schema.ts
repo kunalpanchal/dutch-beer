@@ -13,6 +13,7 @@ export type SourceKind =
   | "open_data"
   | "other";
 export type OpenDataOrigin = "wikidata" | "open_brewery_db" | "openstreetmap";
+export type BeerAvailability = "year_round" | "seasonal" | "one_off" | "unknown";
 
 export interface Provenance {
   sourceKind: SourceKind;
@@ -33,6 +34,8 @@ export interface AuditFields {
 }
 
 export interface BreweryAddress {
+  street?: string;
+  postalCode?: string;
   locality: string;
   region?: string;
   countryCode: "NL";
@@ -47,6 +50,19 @@ export interface BreweryExternalIds {
   senb?: string;
 }
 
+export interface BrewerySocial {
+  instagram?: string;
+  facebook?: string;
+  twitter?: string;
+  youtube?: string;
+}
+
+export interface TaproomInfo {
+  name?: string;
+  description?: string;
+  website?: string;
+}
+
 export interface Brewery extends AuditFields {
   id: string;
   slug: string;
@@ -56,6 +72,15 @@ export interface Brewery extends AuditFields {
   claimedBy?: string;
   externalIds?: BreweryExternalIds;
   closed?: boolean;
+  /** Owner- or source-supplied short copy. Never generated. */
+  description?: string;
+  /** Absolute URL or site-relative path. Never a stock stand-in. */
+  coverImage?: string;
+  logo?: string;
+  social?: BrewerySocial;
+  telephone?: string;
+  openingHours?: string;
+  taproom?: TaproomInfo;
 }
 
 export interface Beer extends AuditFields {
@@ -65,7 +90,8 @@ export interface Beer extends AuditFields {
   name: string;
   style?: string;
   abv?: number;
-  availability?: "year_round" | "seasonal" | "one_off" | "unknown";
+  description?: string;
+  availability?: BeerAvailability;
 }
 
 export interface Contribution extends AuditFields {
@@ -83,3 +109,7 @@ export const moderationPolicy = {
   verified_brewery: "pending_review",
   moderator: "published",
 } as const satisfies Record<TrustLevel, PublicationStatus>;
+
+export function isClaimed(brewery: Pick<Brewery, "claimedBy" | "trustLevel">): boolean {
+  return Boolean(brewery.claimedBy) || brewery.trustLevel === "verified_brewery";
+}

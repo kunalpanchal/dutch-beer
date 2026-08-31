@@ -7,6 +7,7 @@
 - [ ] Adds or updates a brewery (`data/breweries/`)
 - [ ] Adds or updates a beer (`data/beers/`)
 - [ ] Corrects a listing (`data/corrections/` or an existing data file)
+- [ ] Claims a brewery (`data/claims/`)
 - [ ] Code, docs, or site change
 
 Every change, including listings, must go through a pull request. Do not commit to `main`.

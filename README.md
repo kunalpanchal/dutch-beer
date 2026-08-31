@@ -5,6 +5,8 @@ An independent, community-maintained and source-aware directory of Dutch breweri
 ## What is here
 
 - A polished Next.js directory and contribution landing experience
+- SEO-first brewery profile pages (`/en/directory/breweries/[slug]`) with claim CTAs, structured data, and city links
+- Indexable beer pages when a sourced beer listing exists
 - A directory that lists only `published` breweries, with empty beers until those are sourced
 - A persistence-neutral TypeScript domain model for breweries, beers, sources, contributors, and moderation
 - Importers for Wikidata (CC0), Open Brewery DB (MIT), and OpenStreetMap (ODbL)

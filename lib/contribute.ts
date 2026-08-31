@@ -1,6 +1,6 @@
 export const GITHUB_REPO = "kunalpanchal/dutchbeer";
 
-export const contributionKinds = ["brewery", "beer", "correction"] as const;
+export const contributionKinds = ["brewery", "beer", "correction", "claim"] as const;
 export type ContributionKind = (typeof contributionKinds)[number];
 
 export type ContributionPayload = {
@@ -16,6 +16,11 @@ export type ContributionPayload = {
   entity: string;
   source: string;
   notes: string;
+  description: string;
+  coverImage: string;
+  logo: string;
+  instagram: string;
+  facebook: string;
 };
 
 export function slugify(value: string): string {
@@ -39,12 +44,25 @@ function capturedAt(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
-function source(payload: ContributionPayload) {
+function source(payload: ContributionPayload, sourceKind: "official_website" | "brewery_submission" = "official_website") {
   return {
-    sourceKind: "official_website" as const,
-    url: payload.source,
+    sourceKind,
+    url: payload.source || payload.website,
     capturedAt: capturedAt(),
     ...(payload.notes ? { note: payload.notes } : {}),
+  };
+}
+
+function profileFields(payload: ContributionPayload) {
+  const social = {
+    ...(payload.instagram ? { instagram: payload.instagram } : {}),
+    ...(payload.facebook ? { facebook: payload.facebook } : {}),
+  };
+  return {
+    ...(payload.description ? { description: payload.description } : {}),
+    ...(payload.coverImage ? { coverImage: payload.coverImage } : {}),
+    ...(payload.logo ? { logo: payload.logo } : {}),
+    ...(Object.keys(social).length ? { social } : {}),
   };
 }
 
@@ -80,8 +98,30 @@ export function contributionFile(payload: ContributionPayload): { path: string; 
         {
           entry: payload.entity,
           change: payload.notes,
+          ...profileFields(payload),
           status: "pending_review",
           sources: [source(payload)],
+        },
+        null,
+        2,
+      )}\n`,
+    };
+  }
+
+  if (payload.kind === "claim") {
+    const slug = slugify(payload.breweryName);
+    return {
+      path: `data/claims/${slug}.json`,
+      contents: `${JSON.stringify(
+        {
+          kind: "claim",
+          slug,
+          name: payload.breweryName,
+          website: payload.website,
+          ...profileFields(payload),
+          status: "pending_review",
+          trustLevel: "new",
+          sources: [source(payload, "brewery_submission")],
         },
         null,
         2,
@@ -121,6 +161,7 @@ export const githubNewEntryUrls = {
   brewery: githubNewFileUrl("data/breweries/brewery-name.json"),
   beer: githubNewFileUrl("data/beers/beer-name.json"),
   correction: githubNewFileUrl("data/corrections/entry-name.json"),
+  claim: githubNewFileUrl("data/claims/brewery-name.json"),
 } as const;
 
 export function payloadFromForm(kind: ContributionKind, form: FormData): ContributionPayload {
@@ -138,5 +179,10 @@ export function payloadFromForm(kind: ContributionKind, form: FormData): Contrib
     entity: read("entity"),
     source: read("source"),
     notes: read("notes"),
+    description: read("description"),
+    coverImage: read("coverImage"),
+    logo: read("logo"),
+    instagram: read("instagram"),
+    facebook: read("facebook"),
   };
 }

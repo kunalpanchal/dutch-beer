@@ -11,7 +11,7 @@ The preferred path is the website form at `/contribute`. It prefills a JSON file
 You can also add the file yourself:
 
 1. Read [data/README.md](./data/README.md).
-2. Add `data/breweries/<slug>.json`, `data/beers/<slug>.json`, or `data/corrections/<slug>.json`.
+2. Add `data/breweries/<slug>.json`, `data/beers/<slug>.json`, `data/corrections/<slug>.json`, or `data/claims/<slug>.json`.
 3. Open a pull request against `main`.
 4. Wait for review. Listings are not published until the PR is merged.
 

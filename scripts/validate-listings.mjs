@@ -23,4 +23,5 @@ async function validate(dir, required) {
 await validate("data/breweries", ["slug", "name", "sources"]);
 await validate("data/beers", ["slug", "name", "brewery", "sources"]);
 await validate("data/corrections", ["entry", "change", "sources"]);
+await validate("data/claims", ["slug", "name", "sources"]);
 console.log("Listing files are valid.");
