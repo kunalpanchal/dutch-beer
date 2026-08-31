@@ -150,7 +150,9 @@ export function pageMetadata({
 }): Metadata {
   const url = path;
   const fullTitle = `${title} | ${SITE_NAME}`;
-  const images = image ? [{ url: image, alt: imageAlt ?? title }] : undefined;
+  const images = image
+    ? [{ url: image, alt: imageAlt ?? title }]
+    : [{ url: "/opengraph-image", alt: SITE_NAME }];
   const sibling = (next: Locale) => path.replace(/^\/(en|nl)/, `/${next}`);
   return {
     title: { absolute: fullTitle },
@@ -172,10 +174,10 @@ export function pageMetadata({
       images,
     },
     twitter: {
-      card: images ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title: fullTitle,
       description,
-      images: image ? [image] : undefined,
+      images: images.map((item) => item.url),
     },
   };
 }

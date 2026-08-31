@@ -195,12 +195,7 @@ export default async function BreweryPage({
             </header>
           ) : null}
 
-          {brewery.description ? (
-            <section className="brewery-about">
-              <h2>{text.brewery.about}</h2>
-              <p>{brewery.description}</p>
-            </section>
-          ) : null}
+          {brewery.description ? <p className="brewery-description">{brewery.description}</p> : null}
 
           {brewery.website || social.length || directions ? (
           <ul className="brewery-actions-row">
