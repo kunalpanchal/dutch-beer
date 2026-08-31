@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, listBeersForBrewery, listBreweries, openStreetMapHref } from "@/lib/catalog/store";
+import { breweryOrigins, getBreweryBySlug, googleMapsHref, listBeersForBrewery, listBreweries } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
 export async function generateStaticParams() {
@@ -33,7 +33,7 @@ export default async function BreweryPage({
   const text = copy[locale];
   const origins = breweryOrigins(brewery);
   const place = [brewery.address?.locality, brewery.address?.region].filter(Boolean).join(", ");
-  const mapHref = openStreetMapHref(brewery.address?.latitude, brewery.address?.longitude);
+  const mapHref = googleMapsHref(brewery.address?.latitude, brewery.address?.longitude, brewery.name);
   const beers = await listBeersForBrewery(brewery);
 
   return (
@@ -76,7 +76,7 @@ export default async function BreweryPage({
                 {mapHref ? (
                   <>
                     {" · "}
-                    <a href={mapHref} rel="noreferrer">
+                    <a href={mapHref} target="_blank" rel="noreferrer">
                       {text.directory.map}
                     </a>
                   </>
