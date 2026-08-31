@@ -216,7 +216,7 @@ export function DirectorySheet<T extends { slug: string }>({
                             <Link href={href}>{label}</Link>
                           )
                         ) : (
-                          label || "—"
+                          label || ""
                         )}
                       </td>
                     );

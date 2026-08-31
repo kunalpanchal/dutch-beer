@@ -2,7 +2,7 @@
 
 Thank you for helping keep the Dutch beer record complete and accurate.
 
-**Every change goes through a GitHub pull request** — listings, claims, docs, and code. Do not commit to `main`. Do not file an issue for a listing.
+**Every change goes through a GitHub pull request**: listings, claims, docs, and code. Do not commit to `main`. Do not file an issue for a listing.
 
 ## Add a brewery, beer, correction, or claim
 

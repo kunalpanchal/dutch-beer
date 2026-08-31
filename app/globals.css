@@ -261,7 +261,7 @@ footer {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
-  padding: 28px 0 16px;
+  padding: 28px 0;
   font-size: 14px;
 }
 
@@ -280,18 +280,6 @@ footer p {
 .footer-end nav {
   display: flex;
   gap: 16px;
-}
-
-.source-credit {
-  padding: 0 0 28px;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #d8c4a4;
-}
-
-.source-credit a {
-  color: #ead7a8;
-  border-bottom: 1px solid rgba(234, 215, 168, 0.4);
 }
 
 .language-switcher {

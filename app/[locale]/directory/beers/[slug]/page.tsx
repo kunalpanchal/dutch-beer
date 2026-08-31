@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const beer = await getBeerBySlug(slug);
   if (!beer || !isLocale(locale)) return {};
-  return { title: beer.name, description: `${beer.name} — Dutch.beer` };
+  return { title: beer.name, description: `${beer.name} | Dutch.beer` };
 }
 
 export default async function BeerPage({

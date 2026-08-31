@@ -9,7 +9,7 @@ Listings live in this folder and **only enter the site through a GitHub pull req
 | Correction | `data/corrections/<slug>.json` | [New correction file](https://github.com/kunalpanchal/dutchbeer/new/main?filename=data/corrections/entry-name.json) |
 | Claim | `data/claims/<slug>.json` | [New claim file](https://github.com/kunalpanchal/dutchbeer/new/main?filename=data/claims/brewery-name.json) |
 
-Prefer the website form at `/contribute` — it prefills the file. On GitHub, choose **Create a new branch and start a pull request**. Do not commit to `main`.
+Prefer the website form at `/contribute`. It prefills the file. On GitHub, choose **Create a new branch and start a pull request**. Do not commit to `main`.
 
 ## Brewery
 

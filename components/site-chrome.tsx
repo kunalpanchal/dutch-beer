@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { PintMark } from "@/components/pint-mark";
-import { SourceCredit } from "@/components/source-credit";
 import { copy, type Locale } from "@/lib/i18n";
 
 function Logo({ locale }: { locale: Locale }) {
@@ -49,7 +48,6 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <LanguageSwitcher locale={locale} />
         </div>
       </div>
-      <SourceCredit locale={locale} />
     </footer>
   );
 }

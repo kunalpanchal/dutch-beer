@@ -37,4 +37,4 @@ Beers come from Wikidata (CC0) only. Source licenses and matching rules are in [
 
 ## License
 
-Source code is [MIT](./LICENSE). Imported catalog data keeps its original licenses — see [data/ATTRIBUTION.md](./data/ATTRIBUTION.md).
+Source code is [MIT](./LICENSE). Imported catalog data keeps its original licenses. See [data/ATTRIBUTION.md](./data/ATTRIBUTION.md).
