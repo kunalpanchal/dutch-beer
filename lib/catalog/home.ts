@@ -20,9 +20,20 @@ export function catalogCounts(catalog: CatalogFile): CatalogCounts {
   };
 }
 
-function byNewestThenName(a: { createdAt: string; name: string }, b: { createdAt: string; name: string }): number {
+function startsWithLetter(name: string): boolean {
+  return /^\p{L}/u.test(name);
+}
+
+function byNewestThenName(
+  a: { createdAt: string; name: string; detail?: string },
+  b: { createdAt: string; name: string; detail?: string },
+): number {
   const byDate = b.createdAt.localeCompare(a.createdAt);
   if (byDate !== 0) return byDate;
+  const detailScore = Number(Boolean(b.detail)) - Number(Boolean(a.detail));
+  if (detailScore !== 0) return detailScore;
+  const letterScore = Number(startsWithLetter(b.name)) - Number(startsWithLetter(a.name));
+  if (letterScore !== 0) return letterScore;
   return a.name.localeCompare(b.name, "nl");
 }
 
@@ -33,20 +44,28 @@ function newest<T>(items: T[], compare: (a: T, b: T) => number, limit: number): 
 export function recentBoardEntries(catalog: CatalogFile, limit = 6): RecentBoardEntry[] {
   if (limit <= 0) return [];
 
-  const breweries = newest(catalog.breweries, byNewestThenName, limit).map((brewery) => ({
-    kind: "brewery" as const,
-    slug: brewery.slug,
-    name: brewery.name,
-    detail: brewery.address?.locality?.trim() || undefined,
-    createdAt: brewery.createdAt,
-  }));
-  const beers = newest(catalog.beers ?? [], byNewestThenName, limit).map((beer) => ({
-    kind: "beer" as const,
-    slug: beer.slug,
-    name: beer.name,
-    detail: beer.breweryName,
-    createdAt: beer.createdAt,
-  }));
+  const breweries = newest(
+    catalog.breweries.map((brewery) => ({
+      kind: "brewery" as const,
+      slug: brewery.slug,
+      name: brewery.name,
+      detail: brewery.address?.locality?.trim() || undefined,
+      createdAt: brewery.createdAt,
+    })),
+    byNewestThenName,
+    limit,
+  );
+  const beers = newest(
+    (catalog.beers ?? []).map((beer) => ({
+      kind: "beer" as const,
+      slug: beer.slug,
+      name: beer.name,
+      detail: beer.breweryName,
+      createdAt: beer.createdAt,
+    })),
+    byNewestThenName,
+    limit,
+  );
 
   const mixed: RecentBoardEntry[] = [];
   let breweryIndex = 0;

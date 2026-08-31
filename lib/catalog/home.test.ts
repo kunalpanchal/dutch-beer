@@ -55,6 +55,8 @@ describe("recentBoardEntries", () => {
       }
     }
 
+    assert.ok(recent.filter((entry) => entry.kind === "beer").every((entry) => /^\p{L}/u.test(entry.name)));
+
     const dates = recent.map((entry) => entry.createdAt);
     assert.deepEqual(
       dates,
