@@ -8,7 +8,7 @@ function Logo({ locale }: { locale: Locale }) {
   return (
     <Link className="logo" href={`/${locale}`}>
       <PintMark className="logo-mark" />
-      dutch<span>.beer</span>
+      <span className="logo-wordmark">dutch<span>.beer</span></span>
     </Link>
   );
 }
