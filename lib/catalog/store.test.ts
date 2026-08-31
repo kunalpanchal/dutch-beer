@@ -1,39 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { googleMapsHref, toListItem } from "@/lib/catalog/store";
+import { toListItem } from "@/lib/catalog/store";
 import type { Brewery } from "@/lib/schema";
 
-describe("googleMapsHref", () => {
-  it("builds a Google Maps search URL from coordinates", () => {
-    assert.equal(
-      googleMapsHref(51.4359941, 5.4849086),
-      "https://www.google.com/maps/search/?api=1&query=51.4359941%2C5.4849086",
-    );
-  });
-
-  it("includes the brewery name when provided", () => {
-    assert.equal(
-      googleMapsHref(51.4359941, 5.4849086, "100 Watt"),
-      "https://www.google.com/maps/search/?api=1&query=100%20Watt%2051.4359941%2C5.4849086",
-    );
-  });
-
-  it("percent-encodes apostrophes in brewery names", () => {
-    assert.equal(
-      googleMapsHref(52.3814, 4.64564, "'t Scheepje"),
-      "https://www.google.com/maps/search/?api=1&query=%27t%20Scheepje%2052.3814%2C4.64564",
-    );
-  });
-
-  it("returns nothing without a finite coordinate pair", () => {
-    assert.equal(googleMapsHref(undefined, 5), undefined);
-    assert.equal(googleMapsHref(52, undefined), undefined);
-    assert.equal(googleMapsHref(Number.NaN, 5), undefined);
-  });
-});
-
 describe("toListItem", () => {
-  it("uses a Google Maps href for directory map links", () => {
+  it("keeps brewery coordinates for map links", () => {
     const brewery: Brewery = {
       id: "wd-q124666075",
       slug: "100-watt",
@@ -53,7 +24,7 @@ describe("toListItem", () => {
     };
 
     const item = toListItem(brewery);
-    assert.equal(item.mapHref, googleMapsHref(51.4359941, 5.4849086, "100 Watt"));
-    assert.match(item.mapHref ?? "", /^https:\/\/www\.google\.com\/maps\//);
+    assert.equal(item.latitude, 51.4359941);
+    assert.equal(item.longitude, 5.4849086);
   });
 });

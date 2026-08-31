@@ -68,24 +68,14 @@ export function isLikelyCurrent(brewery: Brewery): boolean {
   return !brewery.closed && Boolean(brewery.website || breweryOrigins(brewery).length >= 2);
 }
 
-export function googleMapsHref(
-  latitude?: number,
-  longitude?: number,
-  name?: string,
-): string | undefined {
-  if (latitude === undefined || longitude === undefined) return undefined;
-  if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return undefined;
-  const query = name?.trim() ? `${name.trim()} ${latitude},${longitude}` : `${latitude},${longitude}`;
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query).replace(/'/g, "%27")}`;
-}
-
 export interface BreweryListItem {
   slug: string;
   name: string;
   locality?: string;
   region?: string;
   website?: string;
-  mapHref?: string;
+  latitude?: number;
+  longitude?: number;
   origins: OpenDataOrigin[];
   closed?: boolean;
   claimed?: boolean;
@@ -131,7 +121,8 @@ export function toListItem(brewery: Brewery): BreweryListItem {
     locality: brewery.address?.locality || undefined,
     region: brewery.address?.region,
     website: brewery.website,
-    mapHref: googleMapsHref(brewery.address?.latitude, brewery.address?.longitude, brewery.name),
+    latitude: brewery.address?.latitude,
+    longitude: brewery.address?.longitude,
     origins,
     closed: brewery.closed,
     claimed: Boolean(brewery.claimedBy),

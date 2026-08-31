@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { breweryOrigins, getBreweryBySlug, googleMapsHref, listBeersForBrewery, listBreweries } from "@/lib/catalog/store";
-import { copy, isLocale, locales } from "@/lib/i18n";
+import { breweryOrigins, getBreweryBySlug, listBeersForBrewery, listBreweries } from "@/lib/catalog/store";
+import { copy, isLocale, locales, mapLinkCopy } from "@/lib/i18n";
+import { MapLink } from "@/components/map-link";
 
 export async function generateStaticParams() {
   const breweries = await listBreweries();
@@ -33,7 +34,7 @@ export default async function BreweryPage({
   const text = copy[locale];
   const origins = breweryOrigins(brewery);
   const place = [brewery.address?.locality, brewery.address?.region].filter(Boolean).join(", ");
-  const mapHref = googleMapsHref(brewery.address?.latitude, brewery.address?.longitude, brewery.name);
+  const hasMap = brewery.address?.latitude !== undefined && brewery.address?.longitude !== undefined;
   const beers = await listBeersForBrewery(brewery);
 
   return (
@@ -68,17 +69,20 @@ export default async function BreweryPage({
               </dd>
             </div>
           ) : null}
-          {place ? (
+          {place || hasMap ? (
             <div>
               <dt>{text.brewery.location}</dt>
               <dd>
                 {place}
-                {mapHref ? (
+                {hasMap ? (
                   <>
-                    {" · "}
-                    <a href={mapHref} target="_blank" rel="noreferrer">
-                      {text.directory.map}
-                    </a>
+                    {place ? " · " : null}
+                    <MapLink
+                      latitude={brewery.address?.latitude}
+                      longitude={brewery.address?.longitude}
+                      name={brewery.name}
+                      copy={mapLinkCopy(locale)}
+                    />
                   </>
                 ) : null}
               </dd>
