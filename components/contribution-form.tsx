@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import {
+  claimDomainError,
   contributionKinds,
   githubNewEntryUrls,
   githubPullRequestUrl,
@@ -10,14 +11,35 @@ import {
 } from "@/lib/contribute";
 import { copy, type Locale } from "@/lib/i18n";
 
-export function ContributionForm({ locale }: { locale: Locale }) {
-  const [kind, setKind] = useState<ContributionKind>("brewery");
+export function ContributionForm({
+  locale,
+  initialKind = "brewery",
+  claimPrefill,
+}: {
+  locale: Locale;
+  initialKind?: ContributionKind;
+  claimPrefill?: { slug: string; name: string; website?: string };
+}) {
+  const [kind, setKind] = useState<ContributionKind>(initialKind);
+  const [error, setError] = useState<string>();
   const text = copy[locale].contribute;
   const type = text.types[kind];
 
   function submitPullRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    window.location.assign(githubPullRequestUrl(payloadFromForm(kind, new FormData(event.currentTarget))));
+    const payload = payloadFromForm(kind, new FormData(event.currentTarget));
+    if (kind === "claim") {
+      const mismatch = claimDomainError(payload);
+      if (mismatch === "email") {
+        setError(text.domainEmail);
+        return;
+      }
+      if (mismatch === "evidence") {
+        setError(text.domainEvidence);
+        return;
+      }
+    }
+    window.location.assign(githubPullRequestUrl(payload));
   }
 
   return (
@@ -29,7 +51,10 @@ export function ContributionForm({ locale }: { locale: Locale }) {
             type="button"
             aria-pressed={kind === value}
             className={kind === value ? "is-active" : undefined}
-            onClick={() => setKind(value)}
+            onClick={() => {
+              setKind(value);
+              setError(undefined);
+            }}
           >
             {text.types[value].label}
           </button>
@@ -101,16 +126,63 @@ export function ContributionForm({ locale }: { locale: Locale }) {
         </div>
       ) : null}
 
+      {kind === "claim" ? (
+        <div className="form-grid">
+          {claimPrefill ? <input type="hidden" name="brewerySlug" value={claimPrefill.slug} /> : null}
+          <label>
+            {text.fields.breweryName}
+            <input
+              name="breweryName"
+              required
+              autoComplete="organization"
+              defaultValue={claimPrefill?.name}
+              readOnly={Boolean(claimPrefill)}
+              placeholder={text.placeholders.breweryName}
+            />
+          </label>
+          <label>
+            {text.fields.website}
+            <input
+              name="website"
+              type="url"
+              required
+              defaultValue={claimPrefill?.website}
+              placeholder={text.placeholders.website}
+            />
+          </label>
+          <label>
+            {text.fields.contact}
+            <input name="contact" required autoComplete="name" placeholder={text.placeholders.contact} />
+          </label>
+          <label>
+            {text.fields.email}
+            <input name="email" type="email" required autoComplete="email" placeholder={text.placeholders.email} />
+          </label>
+        </div>
+      ) : null}
+
       <div className="form-grid form-grid-wide">
         <label>
-          {text.fields.source}
-          <input name="source" type="url" required placeholder={text.placeholders.source} />
+          {text.fields[kind === "claim" ? "evidence" : "source"]}
+          <input
+            name="source"
+            type="url"
+            required
+            placeholder={kind === "claim" ? text.placeholders.claimSource : text.placeholders.source}
+          />
         </label>
         <label>
           {text.fields.notes} {kind === "correction" ? null : <span>{text.optional}</span>}
-          <textarea name="notes" rows={4} required={kind === "correction"} placeholder={text.placeholders.notes} />
+          <textarea
+            name="notes"
+            rows={4}
+            required={kind === "correction"}
+            placeholder={kind === "claim" ? text.placeholders.claimNotes : text.placeholders.notes}
+          />
         </label>
       </div>
+
+      {error ? <p className="form-error" role="alert">{error}</p> : null}
 
       <div className="form-actions">
         <button className="button button-ale" type="submit">
@@ -132,6 +204,7 @@ export function GithubTemplateLinks({ locale }: { locale: Locale }) {
         <a href={githubNewEntryUrls.brewery}>{text.githubBrewery}</a>
         <a href={githubNewEntryUrls.beer}>{text.githubBeer}</a>
         <a href={githubNewEntryUrls.correction}>{text.githubCorrection}</a>
+        <a href={githubNewEntryUrls.claim}>{text.githubClaim}</a>
       </div>
     </aside>
   );

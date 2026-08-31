@@ -21,34 +21,7 @@ export function SourceCredit({ locale }: { locale: Locale }) {
           </span>
         );
       })}
-      . {text.creditAfter}
+      .
     </p>
-  );
-}
-
-export function SourceOriginNote({ locale }: { locale: Locale }) {
-  const text = copy[locale].attribution;
-  return (
-    <aside className="source-origin">
-      <strong>{text.title}</strong>
-      <p>{text.lead}</p>
-      <ul>
-        {openDataOriginOrder.map((origin) => {
-          const source = openDataSources[origin];
-          return (
-            <li key={origin}>
-              <a href={source.href} rel="noreferrer">
-                {copy[locale].directory.origin[origin]}
-              </a>
-              <span>
-                {source.license}
-                {source.copyright ? ` · ${source.copyright}` : ""}
-              </span>
-              <span>{text.blurb[origin]}</span>
-            </li>
-          );
-        })}
-      </ul>
-    </aside>
   );
 }

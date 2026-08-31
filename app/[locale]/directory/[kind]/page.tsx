@@ -3,8 +3,7 @@ import { notFound } from "next/navigation";
 import { PintMark } from "@/components/pint-mark";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { BreweryList } from "@/components/brewery-list";
-import { SourceOriginNote } from "@/components/source-credit";
-import { listPendingBreweries, listPublishedBreweries, toListItem } from "@/lib/catalog/store";
+import { listBreweries, toListItem } from "@/lib/catalog/store";
 import { copy, isLocale, locales } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -22,8 +21,7 @@ export default async function DirectoryPage({
   if (!isLocale(locale) || (kind !== "breweries" && kind !== "beers")) notFound();
   const text = copy[locale].directory;
   const page = text[kind];
-  const published = kind === "breweries" ? await listPublishedBreweries() : [];
-  const pendingCount = kind === "breweries" ? (await listPendingBreweries()).length : 0;
+  const rows = kind === "breweries" ? (await listBreweries()).map(toListItem) : [];
 
   return (
     <main>
@@ -46,13 +44,12 @@ export default async function DirectoryPage({
         <h1>{page.title}</h1>
         <p>{page.description}</p>
       </section>
-      {published.length > 0 ? (
+      {rows.length > 0 ? (
         <section className="shell listing-section">
           <BreweryList
             locale={locale}
-            items={published.map(toListItem)}
+            items={rows}
             hrefBase={`/${locale}/directory/breweries`}
-            emptyLabel={page.empty}
           />
         </section>
       ) : (
@@ -60,23 +57,11 @@ export default async function DirectoryPage({
           <PintMark className="empty-mark" />
           <h2>{page.empty}</h2>
           <p>{text.emptyCopy}</p>
-          <div className="actions empty-actions">
-            {pendingCount > 0 ? (
-              <Link className="button button-ale" href={`/${locale}/review`}>
-                {pendingCount} {text.pendingNote}
-              </Link>
-            ) : null}
-            <Link className="button button-quiet" href={`/${locale}/contribute`}>
-              {page.action}
-            </Link>
-          </div>
+          <Link className="button button-ale" href={`/${locale}/contribute`}>
+            {page.action}
+          </Link>
         </section>
       )}
-      {kind === "breweries" ? (
-        <section className="shell listing-section">
-          <SourceOriginNote locale={locale} />
-        </section>
-      ) : null}
       <SiteFooter locale={locale} />
     </main>
   );

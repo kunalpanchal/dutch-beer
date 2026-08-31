@@ -23,10 +23,12 @@ export type SheetCopy = {
     locality: string;
     region: string;
     website: string;
+    map: string;
     sources: string;
   };
   origin: Record<string, string>;
   closed: string;
+  claimed: string;
 };
 
 type Column = {
@@ -78,10 +80,20 @@ export function BrewerySheet({
       label: copy.columns.name,
       value: (row) => row.name,
       href: (row) => `${hrefBase}/${row.slug}`,
-      format: (row) => (row.closed ? `${row.name} (${copy.closed})` : row.name),
+      format: (row) => {
+        const flags = [row.closed ? copy.closed : "", row.claimed ? copy.claimed : ""].filter(Boolean);
+        return flags.length ? `${row.name} (${flags.join(", ")})` : row.name;
+      },
     },
     { id: "locality", label: copy.columns.locality, value: (row) => row.locality ?? "" },
     { id: "region", label: copy.columns.region, value: (row) => row.region ?? "" },
+    {
+      id: "map",
+      label: copy.columns.map,
+      value: (row) => (row.mapHref ? copy.columns.map : ""),
+      href: (row) => row.mapHref,
+      external: true,
+    },
     {
       id: "website",
       label: copy.columns.website,

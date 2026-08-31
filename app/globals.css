@@ -285,49 +285,6 @@ footer p {
   border-bottom: 1px solid rgba(234, 215, 168, 0.4);
 }
 
-.source-origin {
-  margin: 0 0 28px;
-  padding: 18px 20px;
-  background: var(--foam);
-  border-left: 4px solid var(--ale);
-}
-
-.source-origin p {
-  margin: 6px 0 12px;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-
-.source-origin ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.source-origin li {
-  display: grid;
-  grid-template-columns: 11rem 4.5rem 1fr;
-  gap: 12px;
-  align-items: baseline;
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--line);
-  font-size: 14px;
-}
-
-.source-origin li:last-child { border-bottom: 0; }
-
-.source-origin li a {
-  font-weight: 700;
-  border-bottom: 1px solid var(--ink);
-}
-
-.source-origin li span:nth-child(2) {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .language-switcher {
   display: inline-flex;
   border: 1px solid rgba(251, 244, 228, 0.25);
@@ -426,6 +383,7 @@ footer p {
 
 .kind-switch {
   display: flex;
+  flex-wrap: wrap;
   width: fit-content;
   margin-bottom: 24px;
   border: 1px solid var(--line);
@@ -490,7 +448,9 @@ footer p {
   font: 16px var(--font-sans), sans-serif;
 }
 
-.contribute-form textarea { resize: vertical; }
+.contribute-form input[readonly] {
+  background: var(--paper);
+}
 
 .form-actions {
   display: flex;
@@ -505,6 +465,13 @@ footer p {
   margin: 0;
   font-size: 14px;
   color: var(--muted);
+  line-height: 1.5;
+}
+
+.form-error {
+  margin: 0 0 12px;
+  color: #8a2f1a;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -710,64 +677,6 @@ button.button { font-family: inherit; }
   cursor: default;
 }
 
-.review-filters {
-  display: grid;
-  gap: 14px;
-  margin-bottom: 28px;
-  padding: 18px 20px;
-  background: var(--foam);
-  border: 1px solid var(--line);
-}
-
-.review-search input {
-  width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--line);
-  background: #fff;
-  font: 16px var(--font-sans), sans-serif;
-}
-
-.filter-toggles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 22px;
-  font-size: 14px;
-}
-
-.filter-toggles label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.source-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.source-filters button {
-  appearance: none;
-  padding: 7px 12px;
-  border: 1px solid var(--line);
-  background: transparent;
-  font: 700 13px var(--font-sans), sans-serif;
-  cursor: pointer;
-}
-
-.source-filters button.is-active {
-  background: var(--stout);
-  color: var(--foam);
-  border-color: var(--stout);
-}
-
-.review-count,
-.list-empty {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
 .listing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -792,6 +701,13 @@ button.button { font-family: inherit; }
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
+}
+
+.listing-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
 }
 
 .listing-card h2 {
@@ -821,6 +737,7 @@ button.button { font-family: inherit; }
 }
 
 .badge-closed { background: #f3d7c8; }
+.badge-claimed { background: #dce8d4; }
 .badge-wikidata { background: #e8eef8; }
 .badge-open_brewery_db { background: #e8f3e4; }
 .badge-openstreetmap { background: #efe6d4; }
@@ -886,7 +803,12 @@ button.button { font-family: inherit; }
 
 .source-list small { color: var(--muted); }
 
-.brewery-actions { margin-top: 28px; }
+.brewery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
 
 .empty-actions { justify-content: center; }
 
@@ -982,12 +904,5 @@ button.button { font-family: inherit; }
 
   .sheet-pager { justify-content: space-between; }
 
-  .review-filters { padding: 16px; }
-
   .brewery-page h1 { max-width: none; }
-
-  .source-origin li {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
 }

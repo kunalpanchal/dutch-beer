@@ -2,11 +2,14 @@ import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import {
   canonicalWebsite,
+  emailMatchesWebsite,
+  hostnameFromEmail,
   hostnameFromUrl,
   normalizeLocality,
   normalizeName,
   normalizeProvince,
   slugify,
+  urlMatchesWebsite,
 } from "@/lib/catalog/normalize";
 
 describe("normalizeName", () => {
@@ -21,6 +24,20 @@ describe("hostnameFromUrl", () => {
   it("drops www and rejects generic hosts", () => {
     assert.equal(hostnameFromUrl("https://www.jopen.nl/haarlem"), "jopen.nl");
     assert.equal(hostnameFromUrl("http://facebook.com/brewery"), undefined);
+  });
+});
+
+describe("email / evidence domain checks", () => {
+  it("accepts an email and page on the brewery domain", () => {
+    assert.equal(hostnameFromEmail("info@jopen.nl"), "jopen.nl");
+    assert.equal(emailMatchesWebsite("taproom@mail.jopen.nl", "https://www.jopen.nl/"), true);
+    assert.equal(urlMatchesWebsite("https://jopen.nl/contact", "https://www.jopen.nl/"), true);
+  });
+
+  it("rejects consumer mail and off-domain evidence", () => {
+    assert.equal(hostnameFromEmail("owner@gmail.com"), undefined);
+    assert.equal(emailMatchesWebsite("owner@gmail.com", "https://jopen.nl"), false);
+    assert.equal(urlMatchesWebsite("https://facebook.com/jopen", "https://jopen.nl"), false);
   });
 });
 
