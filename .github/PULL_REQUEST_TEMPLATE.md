@@ -16,4 +16,5 @@ New public listings should start as a GitHub issue from [the website form](https
 
 - [ ] `npm run lint`
 - [ ] `npm run typecheck`
+- [ ] `npm run test`
 - [ ] `npm run build`

@@ -29,7 +29,7 @@ Initial contributions are not published automatically. They are recorded as `pen
 
 1. Open an issue describing the proposed change.
 2. Keep changes focused and include tests when behavior changes.
-3. Run `npm run lint`, `npm run typecheck`, and `npm run build` before opening a pull request.
-4. Never add production secrets or invented directory records.
+3. Run `npm run lint`, `npm run typecheck`, `npm run test`, and `npm run build` before opening a pull request.
+4. Never add production secrets or invented directory records. Open-data imports must stay `pending_review` until a moderator has checked the source.
 
 By contributing, you agree that your contribution may be published as part of this open community project once a repository license is chosen.

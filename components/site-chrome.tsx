@@ -43,6 +43,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
             <Link href={`/${locale}/directory/beers`}>{text.navigation.beers}</Link>
             <Link href={`/${locale}/contribute`}>{text.navigation.contribute}</Link>
+            <Link href={`/${locale}/review`}>{text.navigation.review}</Link>
             <a href="https://github.com/kunalpanchal/dutchbeer">GitHub</a>
           </nav>
           <LanguageSwitcher locale={locale} />
