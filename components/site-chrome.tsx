@@ -27,6 +27,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         </nav>
         <div className="header-end">
           <GitHubLink />
+          <LanguageSwitcher locale={locale} />
           <Link className="header-cta" href={`/${locale}/contribute`}>
             {text.contribute}
           </Link>

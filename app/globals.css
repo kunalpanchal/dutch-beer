@@ -286,8 +286,7 @@ a.github-link:hover {
   padding: 40px 0 8px;
 }
 
-.fresh-board h2,
-.owners-invite h2 {
+.fresh-board h2 {
   margin: 0 0 16px;
   font: 700 24px / 1.2 var(--font-display), Georgia, serif;
   overflow-wrap: anywhere;
@@ -342,32 +341,12 @@ a.github-link:hover {
   line-height: 1.5;
 }
 
-.owners-invite {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin: 20px auto 36px;
-  padding: 28px 0 8px;
-  border-top: 1px solid var(--line);
-}
-
-.owners-invite p {
-  margin: 0;
-  max-width: 42em;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-
-.owners-invite h2 { margin-bottom: 8px; }
-
 .contribute-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 56px;
+  margin: 28px auto 56px;
   padding: 28px 32px;
   background: var(--wood);
   color: var(--foam);
@@ -375,12 +354,15 @@ a.github-link:hover {
 }
 
 .contribute-banner h2 {
-  margin: 0;
+  margin: 0 0 8px;
   font: 700 clamp(24px, 3vw, 32px) / 1.2 var(--font-display), Georgia, serif;
 }
 
-.contribute-banner h2 span {
-  display: block;
+.contribute-banner p {
+  margin: 0;
+  max-width: 42em;
+  font-size: 16px;
+  line-height: 1.5;
   color: #ead7a8;
 }
 
@@ -430,20 +412,32 @@ footer p {
 }
 
 .language-switcher {
-  display: inline-flex;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   border: 1px solid rgba(251, 244, 228, 0.25);
   font-size: 12px;
   font-weight: 700;
 }
 
 .language-switcher a {
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
   padding: 6px 10px;
   color: #d8c4a4;
+  text-align: center;
 }
 
 .language-switcher a[aria-current="page"] {
   background: var(--amber);
   color: var(--stout);
+}
+
+.language-switcher a:hover,
+.site-header .language-switcher a:hover,
+footer .language-switcher a:hover {
+  text-decoration: none;
 }
 
 .directory-hero,
@@ -1120,14 +1114,6 @@ button.button { font-family: inherit; }
     gap: 4px;
     padding: 12px 0;
   }
-
-  .owners-invite {
-    display: block;
-    margin-bottom: 28px;
-    padding-top: 24px;
-  }
-
-  .owners-invite .button { margin-top: 16px; }
 
   .contribute-banner {
     display: block;

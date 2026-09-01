@@ -41,8 +41,6 @@ export const copy = {
       ownersTitle: "Own a brewery or beer bar?",
       ownersCopy: "Put yourself on the board. Add your brewery, beers, taproom or venue and keep the information up to date.",
       ownersCta: "Add your brewery",
-      bannerTitle: "Know a brewery that isn't listed?",
-      bannerTitleSecond: "Add it.",
     },
     directory: {
       breweries: {
@@ -331,8 +329,6 @@ export const copy = {
       ownersTitle: "Heb je een brouwerij of biercafé?",
       ownersCopy: "Zet jezelf op het bord. Voeg je brouwerij, bieren, taproom of zaak toe en houd de informatie bij.",
       ownersCta: "Voeg je brouwerij toe",
-      bannerTitle: "Ken je een brouwerij die er nog niet op staat?",
-      bannerTitleSecond: "Voeg hem toe.",
     },
     directory: {
       breweries: {

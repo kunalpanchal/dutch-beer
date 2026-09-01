@@ -94,22 +94,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         )}
       </section>
-      <section className="owners-invite shell">
+      <section className="contribute-banner shell">
         <div>
           <h2>{text.ownersTitle}</h2>
           <p>{text.ownersCopy}</p>
         </div>
-        <Link className="button button-ale" href={`/${locale}/contribute?kind=brewery`}>
+        <Link className="button button-foam" href={`/${locale}/contribute?kind=brewery`}>
           {text.ownersCta}
-        </Link>
-      </section>
-      <section className="contribute-banner shell">
-        <h2>
-          {text.bannerTitle}
-          <span>{text.bannerTitleSecond}</span>
-        </h2>
-        <Link className="button button-foam" href={`/${locale}/contribute`}>
-          {text.add}
         </Link>
       </section>
       <SiteFooter locale={locale} />
