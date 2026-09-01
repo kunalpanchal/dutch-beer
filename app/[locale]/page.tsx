@@ -1,8 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getCatalogCounts, listRecentBoardEntries } from "@/lib/catalog/store";
 import { copy, isLocale, type Locale } from "@/lib/i18n";
+import { homeMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return homeMetadata(locale);
+}
 
 function formatCount(locale: Locale, value: number): string {
   return value.toLocaleString(locale === "nl" ? "nl-NL" : "en");

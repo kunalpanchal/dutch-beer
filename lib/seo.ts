@@ -6,6 +6,7 @@ import {
   beerPath,
   breweriesIndexPath,
   breweryPath,
+  contributePath,
   homePath,
   placePath,
 } from "@/lib/paths";
@@ -82,6 +83,9 @@ export function breweryTitle(brewery: Brewery, locale: Locale): string {
 }
 
 export function breweryDescription(brewery: Brewery, locale: Locale): string {
+  if (brewery.description) {
+    return brewery.description.length > 160 ? `${brewery.description.slice(0, 157).trimEnd()}…` : brewery.description;
+  }
   const templates = copy[locale].seo.brewery;
   const place = localityLine(brewery);
   const bits: string[] = [templates.beersBit, templates.infoBit];
@@ -133,6 +137,18 @@ export function placeDescription(placeName: string, region: string | undefined, 
   return templates.description.replace("{place}", where).replace("{count}", String(count));
 }
 
+export function homeOgImagePath(locale: Locale): string {
+  return `${homePath(locale)}/opengraph-image`;
+}
+
+export function breweryOgImagePath(locale: Locale, slug: string): string {
+  return `${breweryPath(locale, slug)}/opengraph-image`;
+}
+
+export function beerOgImagePath(locale: Locale, slug: string): string {
+  return `${beerPath(locale, slug)}/opengraph-image`;
+}
+
 export function pageMetadata({
   locale,
   title,
@@ -140,6 +156,7 @@ export function pageMetadata({
   path,
   image,
   imageAlt,
+  keywords,
 }: {
   locale: Locale;
   title: string;
@@ -147,16 +164,17 @@ export function pageMetadata({
   path: string;
   image?: string;
   imageAlt?: string;
+  keywords?: string[];
 }): Metadata {
   const url = path;
   const fullTitle = `${title} | ${SITE_NAME}`;
-  const images = image
-    ? [{ url: image, alt: imageAlt ?? title }]
-    : [{ url: "/opengraph-image", alt: SITE_NAME }];
+  const imagePath = image ?? homeOgImagePath(locale);
+  const images = [{ url: imagePath, alt: imageAlt ?? title }];
   const sibling = (next: Locale) => path.replace(/^\/(en|nl)/, `/${next}`);
   return {
     title: { absolute: fullTitle },
     description,
+    keywords,
     alternates: {
       canonical: url,
       languages: {
@@ -167,9 +185,10 @@ export function pageMetadata({
     openGraph: {
       title: fullTitle,
       description,
-      url,
+      url: absoluteUrl(url),
       type: "website",
       locale: locale === "nl" ? "nl_NL" : "en_US",
+      alternateLocale: locale === "nl" ? ["en_US"] : ["nl_NL"],
       siteName: SITE_NAME,
       images,
     },
@@ -182,23 +201,52 @@ export function pageMetadata({
   };
 }
 
-export function breweryMetadata(brewery: Brewery, locale: Locale): Metadata {
+export function homeMetadata(locale: Locale): Metadata {
+  const seo = copy[locale].seo.homePage;
   return pageMetadata({
     locale,
-    title: breweryTitle(brewery, locale),
+    title: seo.title,
+    description: seo.description,
+    path: homePath(locale),
+    image: homeOgImagePath(locale),
+    imageAlt: seo.title,
+    keywords: [...seo.keywords],
+  });
+}
+
+export function contributeMetadata(locale: Locale): Metadata {
+  const seo = copy[locale].seo.contribute;
+  return pageMetadata({
+    locale,
+    title: seo.title,
+    description: seo.description,
+    path: contributePath(locale),
+    image: homeOgImagePath(locale),
+    imageAlt: seo.title,
+  });
+}
+
+export function breweryMetadata(brewery: Brewery, locale: Locale): Metadata {
+  const title = breweryTitle(brewery, locale);
+  return pageMetadata({
+    locale,
+    title,
     description: breweryDescription(brewery, locale),
     path: breweryPath(locale, brewery.slug),
-    image: brewery.coverImage,
+    image: brewery.coverImage ?? breweryOgImagePath(locale, brewery.slug),
     imageAlt: brewery.name,
   });
 }
 
 export function beerMetadata(beer: Beer, brewery: Brewery | undefined, locale: Locale): Metadata {
+  const title = beerTitle(beer, brewery, locale);
   return pageMetadata({
     locale,
-    title: beerTitle(beer, brewery, locale),
+    title,
     description: beerDescription(beer, brewery, locale),
     path: beerPath(locale, beer.slug),
+    image: brewery?.coverImage ?? beerOgImagePath(locale, beer.slug),
+    imageAlt: beer.name,
   });
 }
 

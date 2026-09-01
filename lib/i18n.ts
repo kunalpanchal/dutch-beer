@@ -168,6 +168,30 @@ export const copy = {
     },
     seo: {
       home: "Home",
+      homePage: {
+        title: "Dutch beer, listed like a tap board",
+        description:
+          "A community-kept directory of Dutch breweries and beers. No ads, no locked lists — explore breweries, beers, and places across the Netherlands.",
+        keywords: [
+          "Dutch beer",
+          "Netherlands breweries",
+          "Dutch breweries",
+          "craft beer Netherlands",
+          "beer directory",
+          "Dutch beer list",
+        ],
+      },
+      contribute: {
+        title: "Contribute",
+        description:
+          "Add a Dutch brewery, beer, or correction to the community directory. Every listing needs a source — open a pull request on GitHub.",
+      },
+      og: {
+        eyebrow: "The Netherlands",
+        homeSubtitle: "A directory of Dutch breweries and beers.",
+        breweryLabel: "Brewery",
+        beerLabel: "Beer",
+      },
       brewery: {
         brewery: "Brewery",
         beers: "Beers",
@@ -434,6 +458,30 @@ export const copy = {
     },
     seo: {
       home: "Home",
+      homePage: {
+        title: "Nederlands bier, op een bord zoals in het café",
+        description:
+          "Een door de community bijgehouden gids van Nederlandse brouwerijen en bieren. Geen advertenties, geen afgesloten lijsten — ontdek brouwerijen, bieren en plekken in heel Nederland.",
+        keywords: [
+          "Nederlands bier",
+          "Nederlandse brouwerijen",
+          "brouwerijen Nederland",
+          "craftbier Nederland",
+          "biergids",
+          "bierlijst Nederland",
+        ],
+      },
+      contribute: {
+        title: "Bijdragen",
+        description:
+          "Voeg een Nederlandse brouwerij, bier of correctie toe aan de communitygids. Elke vermelding heeft een bron nodig — open een pull request op GitHub.",
+      },
+      og: {
+        eyebrow: "Nederland",
+        homeSubtitle: "Een gids van Nederlandse brouwerijen en bieren.",
+        breweryLabel: "Brouwerij",
+        beerLabel: "Bier",
+      },
       brewery: {
         brewery: "Brouwerij",
         beers: "Bieren",

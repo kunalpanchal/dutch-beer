@@ -1,13 +1,14 @@
 import { ImageResponse } from "next/og";
-import { copy } from "@/lib/i18n";
+import { copy, isLocale } from "@/lib/i18n";
 import { OgShell, ogContentType, ogSize } from "@/lib/og-image";
 
 export const size = ogSize;
 export const contentType = ogContentType;
-export const alt = "Dutch.beer — a directory of Dutch beer";
 
-export default function OpenGraphImage() {
-  const text = copy.en.seo;
+export default async function LocaleOpenGraphImage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const resolved = isLocale(locale) ? locale : "en";
+  const text = copy[resolved].seo;
   return new ImageResponse(
     <OgShell eyebrow={text.og.eyebrow} title="dutch.beer" subtitle={text.og.homeSubtitle} />,
     size,
