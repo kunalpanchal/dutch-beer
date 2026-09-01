@@ -3,17 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { BreweryBeerSheet } from "@/components/brewery-beer-sheet";
 import { ClaimPanel } from "@/components/claim-panel";
 import { JsonLd } from "@/components/json-ld";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { MapLink } from "@/components/map-link";
+import { breweryIntro, partitionBreweryBeers, usesBeerSheet } from "@/lib/catalog/brewery-hub";
 import {
   breweryOrigins,
   getBreweryBySlug,
   listBeersForBrewery,
   listBreweries,
+  toBeerListItem,
 } from "@/lib/catalog/store";
-import { copy, isLocale, mapLinkCopy } from "@/lib/i18n";
+import { copy, isLocale, mapLinkCopy, type Locale } from "@/lib/i18n";
 import {
   beerPath,
   breweryPath,
@@ -21,7 +24,7 @@ import {
   placePath,
 } from "@/lib/paths";
 import { slugify } from "@/lib/catalog/normalize";
-import type { Brewery } from "@/lib/schema";
+import type { Beer, Brewery } from "@/lib/schema";
 import { isClaimed } from "@/lib/schema";
 import {
   breadcrumbJsonLd,
@@ -91,6 +94,74 @@ function hasUpdate(brewery: Brewery): boolean {
   return brewery.updatedAt.slice(0, 10) > brewery.createdAt.slice(0, 10);
 }
 
+function beerCountLabel(count: number, text: (typeof copy)[Locale]["brewery"]): string {
+  return count === 1 ? text.beerOne : text.beersCount.replace("{count}", String(count));
+}
+
+function BeerIndex({ beers, locale }: { beers: Beer[]; locale: Locale }) {
+  return (
+    <ul className="beer-index">
+      {beers.map((item) => (
+        <li key={item.slug}>
+          <Link href={beerPath(locale, item.slug)}>
+            <strong>{item.name}</strong>
+            <span>
+              {[item.style, typeof item.abv === "number" ? `${item.abv}%` : null].filter(Boolean).join(" · ")}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function BreweryHeading({
+  brewery,
+  locale,
+  place,
+  locality,
+  claimed,
+  verified,
+  pending,
+}: {
+  brewery: Brewery;
+  locale: Locale;
+  place: string;
+  locality: string | undefined;
+  claimed: boolean;
+  verified: boolean;
+  pending: boolean;
+}) {
+  const text = copy[locale];
+  return (
+    <>
+      <div className="listing-card-top">
+        <h1>{brewery.name}</h1>
+        {brewery.closed || pending ? (
+          <div className="listing-badges">
+            {brewery.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
+            {pending ? <span className="badge badge-pending">{text.directory.pending}</span> : null}
+          </div>
+        ) : null}
+      </div>
+      {place ? (
+        <p className="brewery-place">
+          {locality ? <Link href={placePath(locale, slugify(locality))}>{locality}</Link> : null}
+          {locality && brewery.address?.region ? " · " : null}
+          {brewery.address?.region}
+        </p>
+      ) : null}
+      {claimed ? (
+        <p className="claimed-status">
+          <span aria-hidden="true">✓ </span>
+          {verified ? `${text.brewery.verified} · ` : null}
+          {text.brewery.managedBy.replace("{name}", brewery.name)}
+        </p>
+      ) : null}
+    </>
+  );
+}
+
 export default async function BreweryPage({
   params,
 }: {
@@ -104,6 +175,7 @@ export default async function BreweryPage({
   const pending = brewery.status !== "published";
   const origins = breweryOrigins(brewery);
   const beers = await listBeersForBrewery(brewery);
+  const { featured, listed } = partitionBreweryBeers(beers);
   const place = localityLine(brewery);
   const locality = brewery.address?.locality?.trim();
   const hasMap = brewery.address?.latitude !== undefined && brewery.address.longitude !== undefined;
@@ -113,14 +185,24 @@ export default async function BreweryPage({
   const crumbs = breweryBreadcrumbs(brewery, locale);
   const streetLines = formatStreetAddress(brewery);
   const visit = hasVisitInfo(brewery);
+  const intro = breweryIntro(brewery, text.brewery, place);
+  const showActions = Boolean(brewery.website || social.length || hasMap || !claimed);
   const related = locality
     ? (await listBreweries())
         .filter((item) => item.slug !== brewery.slug && item.address?.locality?.trim() && slugify(item.address.locality) === slugify(locality))
         .slice(0, 6)
     : [];
-
-  const beerCountLabel =
-    beers.length === 1 ? text.brewery.beerOne : text.brewery.beersCount.replace("{count}", String(beers.length));
+  const heading = (
+    <BreweryHeading
+      brewery={brewery}
+      locale={locale}
+      place={place}
+      locality={locality}
+      claimed={claimed}
+      verified={verified}
+      pending={pending}
+    />
+  );
 
   return (
     <main>
@@ -142,114 +224,160 @@ export default async function BreweryPage({
           <header className="brewery-identity-band">
             <div className="shell">
               {brewery.logo ? mediaImage(brewery.logo, "brewery-logo brewery-logo-band", { width: 72, height: 72 }) : null}
-              <div className="listing-card-top">
-                <h1>{brewery.name}</h1>
-                {brewery.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
-              </div>
-              {place ? (
-                <p className="brewery-place">
-                  {locality ? (
-                    <Link href={placePath(locale, slugify(locality))}>{locality}</Link>
-                  ) : null}
-                  {locality && brewery.address?.region ? " · " : null}
-                  {brewery.address?.region}
-                </p>
-              ) : null}
-              {claimed ? (
-                <p className="claimed-status">
-                  <span aria-hidden="true">✓ </span>
-                  {verified ? `${text.brewery.verified} · ` : null}
-                  {text.brewery.managedBy.replace("{name}", brewery.name)}
-                </p>
-              ) : null}
+              {heading}
             </div>
           </header>
         )}
 
         <div className="shell brewery-hub-body">
-          {brewery.coverImage ? (
-            <header className="brewery-identity">
-              <div className="listing-card-top">
-                <h1>{brewery.name}</h1>
-                {brewery.closed ? <span className="badge badge-closed">{text.directory.closed}</span> : null}
-              </div>
-              {place ? (
-                <p className="brewery-place">
-                  {locality ? (
-                    <Link href={placePath(locale, slugify(locality))}>{locality}</Link>
+          {brewery.coverImage ? <header className="brewery-identity">{heading}</header> : null}
+
+          <div className={visit ? "brewery-home" : "brewery-home brewery-home-solo"}>
+            <div className="brewery-home-main">
+              <p className="brewery-description">{intro}</p>
+              {showActions ? (
+                <ul className="brewery-actions-row">
+                  {brewery.website ? (
+                    <li>
+                      <a className="button button-ale" href={brewery.website} rel="noreferrer">
+                        {text.brewery.website}
+                      </a>
+                    </li>
                   ) : null}
-                  {locality && brewery.address?.region ? " · " : null}
-                  {brewery.address?.region}
-                </p>
+                  {social.map((entry) => (
+                    <li key={entry.key}>
+                      <a className="button button-quiet" href={entry.href} rel="noreferrer">
+                        {text.brewery[entry.key]}
+                      </a>
+                    </li>
+                  ))}
+                  {hasMap ? (
+                    <li>
+                      <MapLink
+                        latitude={brewery.address?.latitude}
+                        longitude={brewery.address?.longitude}
+                        name={brewery.name}
+                        copy={{ ...mapLinkCopy(locale), label: text.brewery.directions }}
+                      />
+                    </li>
+                  ) : null}
+                  {!claimed ? (
+                    <li>
+                      <Link className="button button-quiet" href={contributePath(locale, { kind: "claim", brewery: brewery.slug })}>
+                        {text.brewery.claimThis}
+                      </Link>
+                    </li>
+                  ) : null}
+                </ul>
               ) : null}
-              {claimed ? (
-                <p className="claimed-status">
-                  <span aria-hidden="true">✓ </span>
-                  {verified ? `${text.brewery.verified} · ` : null}
-                  {text.brewery.managedBy.replace("{name}", brewery.name)}
-                </p>
-              ) : null}
-            </header>
-          ) : null}
+            </div>
 
-          {brewery.description ? <p className="brewery-description">{brewery.description}</p> : null}
-
-          {brewery.website || social.length || hasMap ? (
-          <ul className="brewery-actions-row">
-            {brewery.website ? (
-              <li>
-                <a className="button button-ale" href={brewery.website} rel="noreferrer">
-                  {text.brewery.website}
-                </a>
-              </li>
+            {visit ? (
+              <aside className="brewery-home-visit">
+                <h2>{text.brewery.visit}</h2>
+                <dl className="fact-list">
+                  {streetLines.length ? (
+                    <div>
+                      <dt>{text.brewery.address}</dt>
+                      <dd>
+                        <address>
+                          {brewery.address?.street ? (
+                            <>
+                              {brewery.address.street}
+                              <br />
+                            </>
+                          ) : null}
+                          {brewery.address?.postalCode ? `${brewery.address.postalCode} ` : null}
+                          {locality ? <Link href={placePath(locale, slugify(locality))}>{locality}</Link> : null}
+                          {brewery.address?.region ? (
+                            <>
+                              <br />
+                              {brewery.address.region}
+                            </>
+                          ) : null}
+                        </address>
+                      </dd>
+                    </div>
+                  ) : place ? (
+                    <div>
+                      <dt>{text.brewery.location}</dt>
+                      <dd>
+                        {locality ? <Link href={placePath(locale, slugify(locality))}>{place}</Link> : place}
+                      </dd>
+                    </div>
+                  ) : null}
+                  {brewery.telephone ? (
+                    <div>
+                      <dt>{text.brewery.telephone}</dt>
+                      <dd>
+                        <a href={`tel:${brewery.telephone}`}>{brewery.telephone}</a>
+                      </dd>
+                    </div>
+                  ) : null}
+                  {brewery.openingHours ? (
+                    <div>
+                      <dt>{text.brewery.openingHours}</dt>
+                      <dd>{brewery.openingHours}</dd>
+                    </div>
+                  ) : null}
+                  {brewery.taproom ? (
+                    <div>
+                      <dt>{text.brewery.taproom}</dt>
+                      <dd>
+                        {brewery.taproom.name ? <strong>{brewery.taproom.name}</strong> : null}
+                        {brewery.taproom.description ? <p>{brewery.taproom.description}</p> : null}
+                        {brewery.taproom.website ? (
+                          <a href={brewery.taproom.website} rel="noreferrer">
+                            {brewery.taproom.website}
+                          </a>
+                        ) : null}
+                      </dd>
+                    </div>
+                  ) : null}
+                </dl>
+                {brewery.address?.latitude !== undefined && brewery.address.longitude !== undefined ? (
+                  <div className="brewery-map-wrap">
+                    <iframe
+                      title={text.directory.map}
+                      className="brewery-map"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      src={osmEmbed(brewery.address.latitude, brewery.address.longitude)}
+                    />
+                    <MapLink
+                      latitude={brewery.address.latitude}
+                      longitude={brewery.address.longitude}
+                      name={brewery.name}
+                      copy={mapLinkCopy(locale)}
+                    />
+                  </div>
+                ) : null}
+              </aside>
             ) : null}
-            {social.map((entry) => (
-              <li key={entry.key}>
-                <a className="button button-quiet" href={entry.href} rel="noreferrer">
-                  {text.brewery[entry.key]}
-                </a>
-              </li>
-            ))}
-            {hasMap ? (
-              <li>
-                <MapLink
-                  latitude={brewery.address?.latitude}
-                  longitude={brewery.address?.longitude}
-                  name={brewery.name}
-                  copy={{ ...mapLinkCopy(locale), label: text.brewery.directions }}
-                />
-              </li>
-            ) : null}
-          </ul>
+          </div>
+
+          {featured.length ? (
+            <section>
+              <div className="section-heading">
+                <h2>{text.brewery.coreRange}</h2>
+                <p>{beerCountLabel(featured.length, text.brewery)}</p>
+              </div>
+              <BeerIndex beers={featured} locale={locale} />
+            </section>
           ) : null}
 
-          <ClaimPanel brewery={brewery} locale={locale} placement="hero" />
-
-          {pending ? (
-            <aside className="trust-note">
-              <strong>{text.brewery.awaiting}</strong>
-              <p>{text.brewery.awaitingCopy}</p>
-            </aside>
-          ) : null}
-
+          {listed.length || !beers.length ? (
           <section>
             <div className="section-heading">
-              <h2>{text.brewery.beers}</h2>
-              <p>{beerCountLabel}</p>
+              <h2>{featured.length ? text.brewery.listedBeers : text.brewery.beers}</h2>
+              <p>{beers.length ? beerCountLabel(listed.length, text.brewery) : null}</p>
             </div>
-            {beers.length ? (
-              <ul className="beer-index">
-                {beers.map((beer) => (
-                  <li key={beer.slug}>
-                    <Link href={beerPath(locale, beer.slug)}>
-                      <strong>{beer.name}</strong>
-                      <span>
-                        {[beer.style, typeof beer.abv === "number" ? `${beer.abv}%` : null].filter(Boolean).join(" · ")}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            {listed.length ? (
+              usesBeerSheet(listed.length) ? (
+                <BreweryBeerSheet locale={locale} items={listed.map(toBeerListItem)} hrefBase={`/${locale}/directory/beers`} />
+              ) : (
+                <BeerIndex beers={listed} locale={locale} />
+              )
             ) : (
               <div className="empty-inline">
                 <p>{text.brewery.beersEmpty}</p>
@@ -259,157 +387,6 @@ export default async function BreweryPage({
               </div>
             )}
           </section>
-
-          {visit ? (
-            <section>
-              <h2>{text.brewery.visit}</h2>
-              <dl className="fact-list">
-                {streetLines.length ? (
-                  <div>
-                    <dt>{text.brewery.address}</dt>
-                    <dd>
-                      <address>
-                        {brewery.address?.street ? (
-                          <>
-                            {brewery.address.street}
-                            <br />
-                          </>
-                        ) : null}
-                        {brewery.address?.postalCode ? `${brewery.address.postalCode} ` : null}
-                        {locality ? <Link href={placePath(locale, slugify(locality))}>{locality}</Link> : null}
-                        {brewery.address?.region ? (
-                          <>
-                            <br />
-                            {brewery.address.region}
-                          </>
-                        ) : null}
-                      </address>
-                    </dd>
-                  </div>
-                ) : place ? (
-                  <div>
-                    <dt>{text.brewery.location}</dt>
-                    <dd>
-                      {locality ? <Link href={placePath(locale, slugify(locality))}>{place}</Link> : place}
-                    </dd>
-                  </div>
-                ) : null}
-                {brewery.telephone ? (
-                  <div>
-                    <dt>{text.brewery.telephone}</dt>
-                    <dd>
-                      <a href={`tel:${brewery.telephone}`}>{brewery.telephone}</a>
-                    </dd>
-                  </div>
-                ) : null}
-                {brewery.openingHours ? (
-                  <div>
-                    <dt>{text.brewery.openingHours}</dt>
-                    <dd>{brewery.openingHours}</dd>
-                  </div>
-                ) : null}
-                {brewery.taproom ? (
-                  <div>
-                    <dt>{text.brewery.taproom}</dt>
-                    <dd>
-                      {brewery.taproom.name ? <strong>{brewery.taproom.name}</strong> : null}
-                      {brewery.taproom.description ? <p>{brewery.taproom.description}</p> : null}
-                      {brewery.taproom.website ? (
-                        <a href={brewery.taproom.website} rel="noreferrer">
-                          {brewery.taproom.website}
-                        </a>
-                      ) : null}
-                    </dd>
-                  </div>
-                ) : null}
-              </dl>
-              {brewery.address?.latitude !== undefined && brewery.address.longitude !== undefined ? (
-                <div className="brewery-map-wrap">
-                  <iframe
-                    title={text.directory.map}
-                    className="brewery-map"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    src={osmEmbed(brewery.address.latitude, brewery.address.longitude)}
-                  />
-                  <MapLink
-                    latitude={brewery.address.latitude}
-                    longitude={brewery.address.longitude}
-                    name={brewery.name}
-                    copy={mapLinkCopy(locale)}
-                  />
-                </div>
-              ) : null}
-            </section>
-          ) : null}
-
-          {hasUpdate(brewery) ? (
-            <section>
-              <h2>{text.brewery.updates}</h2>
-              <p>
-                {text.brewery.updatedOn} {brewery.updatedAt.slice(0, 10)}
-              </p>
-            </section>
-          ) : null}
-
-          <section>
-            <h2>{text.directory.sources}</h2>
-            <ul className="source-list">
-              {brewery.sources.map((source, index) => (
-                <li key={`${source.url ?? source.note}-${index}`}>
-                  {source.url ? (
-                    <a href={source.url} rel="noreferrer">
-                      {source.note ?? source.sourceKind}
-                    </a>
-                  ) : (
-                    <span>{source.note ?? source.sourceKind}</span>
-                  )}
-                  <small>
-                    {text.brewery.captured} {source.capturedAt.slice(0, 10)}
-                  </small>
-                </li>
-              ))}
-            </ul>
-            <div className="source-badges">
-              {origins.map((origin) => (
-                <span key={origin} className={`badge badge-${origin}`}>
-                  {text.directory.origin[origin]}
-                </span>
-              ))}
-            </div>
-          </section>
-
-          {brewery.externalIds && Object.values(brewery.externalIds).some(Boolean) ? (
-            <section>
-              <h2>{text.brewery.identifiers}</h2>
-              <ul className="id-list">
-                {brewery.externalIds.wikidata ? (
-                  <li>
-                    Wikidata:{" "}
-                    <a href={`https://www.wikidata.org/wiki/${brewery.externalIds.wikidata}`} rel="noreferrer">
-                      {brewery.externalIds.wikidata}
-                    </a>
-                  </li>
-                ) : null}
-                {brewery.externalIds.openBreweryDb ? <li>Open Brewery DB: {brewery.externalIds.openBreweryDb}</li> : null}
-                {brewery.externalIds.osm ? (
-                  <li>
-                    OpenStreetMap:{" "}
-                    <a href={`https://www.openstreetmap.org/${brewery.externalIds.osm}`} rel="noreferrer">
-                      {brewery.externalIds.osm}
-                    </a>
-                  </li>
-                ) : null}
-                {brewery.externalIds.senb ? (
-                  <li>
-                    SENB:{" "}
-                    <a href={`https://www.nederlandsebiercultuur.nl/brouwerij/${brewery.externalIds.senb}`} rel="noreferrer">
-                      {brewery.externalIds.senb}
-                    </a>
-                  </li>
-                ) : null}
-              </ul>
-            </section>
           ) : null}
 
           {related.length ? (
@@ -424,6 +401,82 @@ export default async function BreweryPage({
               </ul>
             </section>
           ) : null}
+
+          <details className="brewery-listing-details">
+            <summary>{text.brewery.listingDetails}</summary>
+            {pending ? (
+              <aside className="trust-note">
+                <strong>{text.brewery.awaiting}</strong>
+                <p>{text.brewery.awaitingCopy}</p>
+              </aside>
+            ) : null}
+            {hasUpdate(brewery) ? (
+              <section>
+                <h2>{text.brewery.updates}</h2>
+                <p>
+                  {text.brewery.updatedOn} {brewery.updatedAt.slice(0, 10)}
+                </p>
+              </section>
+            ) : null}
+            <section>
+              <h2>{text.directory.sources}</h2>
+              <ul className="source-list">
+                {brewery.sources.map((source, index) => (
+                  <li key={`${source.url ?? source.note}-${index}`}>
+                    {source.url ? (
+                      <a href={source.url} rel="noreferrer">
+                        {source.note ?? source.sourceKind}
+                      </a>
+                    ) : (
+                      <span>{source.note ?? source.sourceKind}</span>
+                    )}
+                    <small>
+                      {text.brewery.captured} {source.capturedAt.slice(0, 10)}
+                    </small>
+                  </li>
+                ))}
+              </ul>
+              <div className="source-badges">
+                {origins.map((origin) => (
+                  <span key={origin} className={`badge badge-${origin}`}>
+                    {text.directory.origin[origin]}
+                  </span>
+                ))}
+              </div>
+            </section>
+            {brewery.externalIds && Object.values(brewery.externalIds).some(Boolean) ? (
+              <section>
+                <h2>{text.brewery.identifiers}</h2>
+                <ul className="id-list">
+                  {brewery.externalIds.wikidata ? (
+                    <li>
+                      Wikidata:{" "}
+                      <a href={`https://www.wikidata.org/wiki/${brewery.externalIds.wikidata}`} rel="noreferrer">
+                        {brewery.externalIds.wikidata}
+                      </a>
+                    </li>
+                  ) : null}
+                  {brewery.externalIds.openBreweryDb ? <li>Open Brewery DB: {brewery.externalIds.openBreweryDb}</li> : null}
+                  {brewery.externalIds.osm ? (
+                    <li>
+                      OpenStreetMap:{" "}
+                      <a href={`https://www.openstreetmap.org/${brewery.externalIds.osm}`} rel="noreferrer">
+                        {brewery.externalIds.osm}
+                      </a>
+                    </li>
+                  ) : null}
+                  {brewery.externalIds.senb ? (
+                    <li>
+                      SENB:{" "}
+                      <a href={`https://www.nederlandsebiercultuur.nl/brouwerij/${brewery.externalIds.senb}`} rel="noreferrer">
+                        {brewery.externalIds.senb}
+                      </a>
+                    </li>
+                  ) : null}
+                </ul>
+              </section>
+            ) : null}
+          </details>
 
           <ClaimPanel brewery={brewery} locale={locale} placement="footer" />
 

@@ -897,6 +897,7 @@ button.button { font-family: inherit; }
 }
 
 .badge-closed { background: #f3d7c8; }
+.badge-pending { background: #ead7a8; }
 .badge-claimed { background: #dce8d4; }
 .badge-wikidata { background: #e8eef8; }
 .badge-open_brewery_db { background: #e8f3e4; }
@@ -1383,6 +1384,12 @@ button.button { font-family: inherit; }
   font: 700 clamp(34px, 5vw, 52px) / 1.12 var(--font-display), Georgia, serif;
 }
 
+.brewery-identity-band .badge-pending {
+  background: #ead7a8;
+  color: var(--stout);
+  border-color: #8a5a28;
+}
+
 .brewery-place {
   margin: 10px 0 0;
   font-size: 17px;
@@ -1423,6 +1430,56 @@ button.button { font-family: inherit; }
   margin: 0;
   font-size: 17px;
   line-height: 1.55;
+}
+
+.brewery-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.85fr);
+  gap: 32px 48px;
+  align-items: start;
+  margin: 8px 0 12px;
+}
+
+.brewery-home-solo {
+  grid-template-columns: minmax(0, 40em);
+}
+
+.brewery-home-visit {
+  padding: 22px 24px 20px;
+  background: var(--foam);
+  border: 1px solid var(--line);
+}
+
+.brewery-home-visit h2 {
+  margin-top: 0;
+}
+
+.brewery-home-visit .brewery-map {
+  height: 200px;
+}
+
+.brewery-listing-details {
+  margin: 36px 0 8px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+.brewery-listing-details > summary {
+  cursor: pointer;
+  font: 700 16px var(--font-sans), sans-serif;
+  color: var(--muted);
+}
+
+.brewery-listing-details[open] > summary {
+  margin-bottom: 8px;
+}
+
+.brewery-listing-details .trust-note {
+  margin-top: 16px;
+}
+
+.brewery-hub .sheet {
+  margin: 0 0 8px;
 }
 
 .brewery-actions-row {
@@ -1568,6 +1625,12 @@ address { font-style: normal; }
 @media (max-width: 720px) {
   .brewery-identity-band h1,
   .brewery-identity h1 { max-width: none; }
+
+  .brewery-home,
+  .brewery-home-solo {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 
   .brewery-cover img { height: 200px; }
 
