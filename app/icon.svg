@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Dutch.beer">
+  <rect width="32" height="32" rx="8" fill="#24150f"/>
+  <g fill="none" transform="translate(5.2 3.4) scale(0.305)">
+    <path fill="#fbf4e4" d="M12 8c5-7 14-8 22-5 7 2 13 2 20-3 1 9-6 16-20 16S11 16 12 8Z"/>
+    <path fill="#d97820" fill-opacity=".28" d="M16 18h28l-2.6 62H18.6L16 18Z"/>
+    <path stroke="#d97820" stroke-width="5.2" stroke-linejoin="round" d="M16 18h28l-2.6 62H18.6L16 18Z"/>
+    <path stroke="#d97820" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round" d="M44 30c9 3 14 10 14 18 0 9-5 16-14 19"/>
+  </g>
+</svg>

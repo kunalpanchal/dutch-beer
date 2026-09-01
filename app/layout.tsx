@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: { default: "Dutch.beer | A directory of Dutch beer", template: "%s | Dutch.beer" },
   description: "A community-kept list of Dutch breweries and beers.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
+};
+
+export const viewport: Viewport = {
+  themeColor: "#24150f",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
