@@ -413,8 +413,10 @@ footer p {
 
 .language-switcher {
   display: inline-grid;
+  flex: 0 0 auto;
   grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: 2.75rem;
+  overflow: hidden;
   border: 1px solid rgba(251, 244, 228, 0.25);
   font-size: 12px;
   font-weight: 700;
@@ -423,8 +425,8 @@ footer p {
 .language-switcher a {
   display: grid;
   place-items: center;
-  min-width: 2.75rem;
-  padding: 6px 10px;
+  width: 2.75rem;
+  padding: 6px 0;
   color: #d8c4a4;
   text-align: center;
 }
@@ -1061,6 +1063,10 @@ button.button { font-family: inherit; }
     grid-area: cta;
     margin-left: 0;
     white-space: nowrap;
+  }
+
+  .header-end .github-link {
+    display: none;
   }
 
   .footer-inner {
