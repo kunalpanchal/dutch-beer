@@ -4,12 +4,17 @@ import type { Beer, Brewery } from "@/lib/schema";
 import {
   beerDescription,
   beerJsonLd,
+  beerMetadata,
   beerTitle,
   breweryBreadcrumbs,
   breweryDescription,
   breweryJsonLd,
+  breweryMetadata,
   breweryTitle,
+  homeDescription,
+  homeMetadata,
   localityLine,
+  websiteJsonLd,
 } from "@/lib/seo";
 
 const capturedAt = "2026-08-31T00:00:00.000Z";
@@ -87,6 +92,26 @@ describe("brewery SEO", () => {
       ["/en", "/en/directory/breweries", "/en/directory/places/den-haag", "/en/directory/breweries/kompaan"],
     );
   });
+
+  it("emits Open Graph and Twitter cards with a generated share image", () => {
+    const withCover = { ...kompaan, coverImage: "https://kompaanbier.nl/cover.jpg" };
+    const meta = breweryMetadata(withCover, "en");
+    const og = meta.openGraph;
+    assert.ok(og);
+    assert.equal(og.locale, "en_US");
+    assert.equal(og.siteName, "Dutch.beer");
+    assert.equal((og as { type?: string }).type, "website");
+    assert.equal(og.url, "http://localhost:3000/en/directory/breweries/kompaan");
+    const images = og.images as Array<{ url: string; width: number; height: number; alt: string; type: string }>;
+    assert.equal(images[0].url, "http://localhost:3000/en/directory/breweries/kompaan/opengraph-image");
+    assert.equal(images[0].width, 1200);
+    assert.equal(images[0].height, 630);
+    assert.equal(images[0].type, "image/png");
+    assert.equal(images[0].alt, "Kompaan");
+    const twitter = meta.twitter as { card: string; title: string };
+    assert.equal(twitter.card, "summary_large_image");
+    assert.match(twitter.title, /Kompaan/);
+  });
 });
 
 describe("beer SEO", () => {
@@ -113,5 +138,31 @@ describe("beer SEO", () => {
     );
     const data = beerJsonLd(beer, kompaan, "en") as Record<string, unknown>;
     assert.equal(data.description, undefined);
+  });
+
+  it("points social previews at a generated beer share image", () => {
+    const meta = beerMetadata(beer, kompaan, "en");
+    const images = meta.openGraph?.images as Array<{ url: string; alt: string }>;
+    assert.equal(images[0].url, "http://localhost:3000/en/directory/beers/bloedbroeder/opengraph-image");
+    assert.equal(images[0].alt, "Bloedbroeder");
+    const twitter = meta.twitter as { card: string; description: string };
+    assert.equal(twitter.card, "summary_large_image");
+    assert.match(twitter.description, /Kompaan/);
+  });
+});
+
+describe("home SEO", () => {
+  it("builds a homepage description from catalog counts", () => {
+    assert.equal(
+      homeDescription("en", { breweries: 412, beers: 1234 }),
+      "A community-kept directory of Dutch beer. Browse 412 breweries and 1,234 beers. No ads. No locked lists.",
+    );
+    const meta = homeMetadata("nl", { breweries: 412, beers: 1234 });
+    assert.equal((meta.title as { absolute: string }).absolute, "Nederlands bier, op een taplijst. | Dutch.beer");
+    const images = meta.openGraph?.images as Array<{ url: string }>;
+    assert.equal(images[0].url, "http://localhost:3000/nl/opengraph-image");
+    const data = websiteJsonLd("en", { breweries: 412, beers: 1234 }) as Record<string, unknown>;
+    assert.equal(data["@type"], "WebSite");
+    assert.match(String(data.description), /412/);
   });
 });

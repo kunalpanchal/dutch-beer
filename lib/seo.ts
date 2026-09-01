@@ -6,10 +6,17 @@ import {
   beerPath,
   breweriesIndexPath,
   breweryPath,
+  contributePath,
   homePath,
   placePath,
 } from "@/lib/paths";
-import { absoluteUrl, SITE_NAME } from "@/lib/site";
+import {
+  absoluteUrl,
+  OG_IMAGE_SIZE,
+  OG_IMAGE_TYPE,
+  openGraphImagePath,
+  SITE_NAME,
+} from "@/lib/site";
 
 export interface Breadcrumb {
   name: string;
@@ -127,6 +134,32 @@ export function placeTitle(placeName: string, locale: Locale): string {
   return copy[locale].seo.place.title.replace("{place}", placeName);
 }
 
+function formatCount(locale: Locale, value: number): string {
+  return value.toLocaleString(locale === "nl" ? "nl-NL" : "en");
+}
+
+export function homeTitle(locale: Locale): string {
+  return copy[locale].home.title;
+}
+
+export function homeDescription(locale: Locale, counts?: { breweries: number; beers: number }): string {
+  const templates = copy[locale].seo.homePage;
+  if (counts && (counts.breweries || counts.beers)) {
+    return templates.descriptionWithCounts
+      .replace("{breweries}", formatCount(locale, counts.breweries))
+      .replace("{beers}", formatCount(locale, counts.beers));
+  }
+  return templates.description;
+}
+
+export function contributeTitle(locale: Locale): string {
+  return copy[locale].contribute.title;
+}
+
+export function contributeDescription(locale: Locale): string {
+  return copy[locale].seo.contributePage.description;
+}
+
 export function placeDescription(placeName: string, region: string | undefined, count: number, locale: Locale): string {
   const templates = copy[locale].seo.place;
   const where = region ? `${placeName}, ${region}` : placeName;
@@ -148,17 +181,25 @@ export function pageMetadata({
   image?: string;
   imageAlt?: string;
 }): Metadata {
-  const url = path;
+  const url = absoluteUrl(path);
   const fullTitle = `${title} | ${SITE_NAME}`;
-  const images = image
-    ? [{ url: image, alt: imageAlt ?? title }]
-    : [{ url: "/opengraph-image", alt: SITE_NAME }];
+  const imageUrl = absoluteUrl(image ?? openGraphImagePath(path));
+  const images = [
+    {
+      url: imageUrl,
+      alt: imageAlt ?? title,
+      width: OG_IMAGE_SIZE.width,
+      height: OG_IMAGE_SIZE.height,
+      type: OG_IMAGE_TYPE,
+    },
+  ];
   const sibling = (next: Locale) => path.replace(/^\/(en|nl)/, `/${next}`);
   return {
     title: { absolute: fullTitle },
     description,
+    applicationName: SITE_NAME,
     alternates: {
-      canonical: url,
+      canonical: path,
       languages: {
         en: sibling("en"),
         nl: sibling("nl"),
@@ -170,6 +211,7 @@ export function pageMetadata({
       url,
       type: "website",
       locale: locale === "nl" ? "nl_NL" : "en_US",
+      alternateLocale: locale === "nl" ? ["en_US"] : ["nl_NL"],
       siteName: SITE_NAME,
       images,
     },
@@ -177,9 +219,27 @@ export function pageMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: images.map((item) => item.url),
+      images: [{ url: imageUrl, alt: imageAlt ?? title, width: OG_IMAGE_SIZE.width, height: OG_IMAGE_SIZE.height }],
     },
   };
+}
+
+export function homeMetadata(locale: Locale, counts?: { breweries: number; beers: number }): Metadata {
+  return pageMetadata({
+    locale,
+    title: homeTitle(locale),
+    description: homeDescription(locale, counts),
+    path: homePath(locale),
+  });
+}
+
+export function contributeMetadata(locale: Locale): Metadata {
+  return pageMetadata({
+    locale,
+    title: contributeTitle(locale),
+    description: contributeDescription(locale),
+    path: contributePath(locale),
+  });
 }
 
 export function breweryMetadata(brewery: Brewery, locale: Locale): Metadata {
@@ -188,7 +248,6 @@ export function breweryMetadata(brewery: Brewery, locale: Locale): Metadata {
     title: breweryTitle(brewery, locale),
     description: breweryDescription(brewery, locale),
     path: breweryPath(locale, brewery.slug),
-    image: brewery.coverImage,
     imageAlt: brewery.name,
   });
 }
@@ -199,6 +258,7 @@ export function beerMetadata(beer: Beer, brewery: Brewery | undefined, locale: L
     title: beerTitle(beer, brewery, locale),
     description: beerDescription(beer, brewery, locale),
     path: beerPath(locale, beer.slug),
+    imageAlt: beer.name,
   });
 }
 
@@ -283,6 +343,22 @@ export function breweryJsonLd(brewery: Brewery, locale: Locale) {
     address,
     geo,
     sameAs: brewerySameAs(brewery),
+  });
+}
+
+export function websiteJsonLd(locale: Locale, counts?: { breweries: number; beers: number }) {
+  return compact({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: absoluteUrl(homePath(locale)),
+    description: homeDescription(locale, counts),
+    inLanguage: locale === "nl" ? "nl-NL" : "en-US",
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: absoluteUrl(homePath(locale)),
+    },
   });
 }
 

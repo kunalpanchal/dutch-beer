@@ -168,6 +168,18 @@ export const copy = {
     },
     seo: {
       home: "Home",
+      homePage: {
+        description: "A community-kept directory of Dutch beer. No ads. No locked lists.",
+        descriptionWithCounts:
+          "A community-kept directory of Dutch beer. Browse {breweries} breweries and {beers} beers. No ads. No locked lists.",
+      },
+      contributePage: {
+        description: "Add a Dutch brewery or beer to this public directory. Every listing needs a source.",
+      },
+      og: {
+        beer: "Beer",
+        place: "Place",
+      },
       brewery: {
         brewery: "Brewery",
         beers: "Beers",
@@ -434,6 +446,18 @@ export const copy = {
     },
     seo: {
       home: "Home",
+      homePage: {
+        description: "Een door de community bijgehouden gids van Nederlands bier. Geen reclame. Geen gesloten lijsten.",
+        descriptionWithCounts:
+          "Een door de community bijgehouden gids van Nederlands bier. Bekijk {breweries} brouwerijen en {beers} bieren. Geen reclame. Geen gesloten lijsten.",
+      },
+      contributePage: {
+        description: "Voeg een Nederlandse brouwerij of bier toe aan deze openbare gids. Elke vermelding heeft een bron nodig.",
+      },
+      og: {
+        beer: "Bier",
+        place: "Plek",
+      },
       brewery: {
         brewery: "Brouwerij",
         beers: "Bieren",
