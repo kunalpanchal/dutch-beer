@@ -1,9 +1,21 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ContributionForm, GithubTemplateLinks } from "@/components/contribution-form";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getBreweryBySlug } from "@/lib/catalog/store";
 import { contributionKinds, type ContributionKind } from "@/lib/contribute";
 import { copy, isLocale } from "@/lib/i18n";
+import { contributeMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return contributeMetadata(locale);
+}
 
 function isContributionKind(value: string | undefined): value is ContributionKind {
   return contributionKinds.includes(value as ContributionKind);
