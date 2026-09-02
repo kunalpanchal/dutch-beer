@@ -17,13 +17,12 @@ export function ClaimPanel({
   if (isClaimed(brewery)) {
     if (placement === "footer") {
       return (
-        <aside className="claim-panel claim-panel-managed">
+        <aside className="brewery-invite brewery-invite-managed">
           <h2>{text.managedBy.replace("{name}", brewery.name)}</h2>
-          <p>
-            <Link className="button button-quiet" href={contributePath(locale, { kind: "correction", brewery: brewery.slug })}>
-              {text.updateListing}
-            </Link>
-          </p>
+          <p>{text.claimedCopy}</p>
+          <Link className="button button-quiet" href={contributePath(locale, { kind: "correction", brewery: brewery.slug })}>
+            {text.updateListing}
+          </Link>
         </aside>
       );
     }
@@ -31,10 +30,10 @@ export function ClaimPanel({
   }
 
   return (
-    <aside className={`claim-panel ${placement === "hero" ? "claim-panel-hero" : ""}`}>
-      <p className="claim-kicker">{text.claimLead}</p>
+    <aside className={`brewery-invite${placement === "hero" ? " brewery-invite-hero" : ""}`}>
+      <p className="eyebrow">{text.claimLead}</p>
       <h2>{text.areYou.replace("{name}", brewery.name)}</h2>
-      <p>{text.claimCopy}</p>
+      <p>{text.ownerHelp}</p>
       <Link className="button button-ale" href={contributePath(locale, { kind: "claim", brewery: brewery.slug })}>
         {text.claimThis}
       </Link>
