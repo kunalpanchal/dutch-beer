@@ -436,12 +436,6 @@ export default async function BreweryPage({
             <div className="brewery-section-head">
               <h2>{text.directory.sources}</h2>
             </div>
-            {pending ? (
-              <aside className="trust-note">
-                <strong>{text.brewery.awaiting}</strong>
-                <p>{text.brewery.awaitingCopy}</p>
-              </aside>
-            ) : null}
             {sourceLinks.length ? (
               <p className="brewery-source-line">
                 {sourceLinks.map((source, index) => (
@@ -456,6 +450,11 @@ export default async function BreweryPage({
                     )}
                   </span>
                 ))}
+              </p>
+            ) : null}
+            {pending ? (
+              <p className="brewery-source-meta">
+                {text.brewery.awaiting}. {text.brewery.awaitingCopy}
               </p>
             ) : null}
             {hasUpdate(brewery) ? (

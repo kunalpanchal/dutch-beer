@@ -2008,10 +2008,12 @@ address { font-style: normal; }
 
 .brewery-sources .id-list {
   margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
 }
 
-.brewery-sources .trust-note {
-  margin: 0 0 18px;
+.brewery-sources .id-list a {
+  color: inherit;
 }
 
 .brewery-corrections p,
