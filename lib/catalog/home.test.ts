@@ -14,27 +14,58 @@ describe("catalogCounts", () => {
   it("uses the real catalog lengths and does not invent a contributor count", async () => {
     const catalog = await loadCatalog();
     const counts = catalogCounts(catalog);
-    assert.equal(counts.breweries, catalog.breweries.length);
-    assert.equal(counts.beers, (catalog.beers ?? []).length);
+    const listedBreweries = catalog.breweries.filter((brewery) => !brewery.previewOnly).length;
+    const previewKeys = new Set(
+      catalog.breweries.filter((brewery) => brewery.previewOnly).flatMap((brewery) => [brewery.id, brewery.slug]),
+    );
+    const listedBeers = (catalog.beers ?? []).filter(
+      (beer) => !previewKeys.has(beer.breweryId) && !(beer.brewerySlug && previewKeys.has(beer.brewerySlug)),
+    ).length;
+    assert.equal(counts.breweries, listedBreweries);
+    assert.equal(counts.beers, listedBeers);
     assert.ok(counts.breweries > 0);
     assert.ok(counts.beers > 0);
     assert.equal("contributors" in counts, false);
   });
 
-  it("returns zeros for an empty catalog", () => {
+  it("omits preview-only fixtures from public counts", () => {
     assert.deepEqual(
       catalogCounts({
-        generatedAt: "",
-        sources: {
-          wikidata: { fetchedAt: "", count: 0 },
-          open_brewery_db: { fetchedAt: "", count: 0 },
-          openstreetmap: { fetchedAt: "", count: 0 },
-        },
-        breweries: [],
-        beers: [],
+        breweries: [
+          {
+            id: "preview-dummy",
+            slug: "dummy",
+            name: "Dummy Brewery",
+            status: "published",
+            createdAt: "2026-09-05T00:00:00.000Z",
+            updatedAt: "2026-09-05T00:00:00.000Z",
+            trustLevel: "verified_brewery",
+            sources: [],
+            previewOnly: true,
+          },
+        ],
+        beers: [
+          {
+            id: "preview-beer",
+            slug: "dummy-beer",
+            breweryId: "preview-dummy",
+            breweryName: "Dummy Brewery",
+            brewerySlug: "dummy",
+            name: "Dummy Beer",
+            status: "published",
+            createdAt: "2026-09-05T00:00:00.000Z",
+            updatedAt: "2026-09-05T00:00:00.000Z",
+            trustLevel: "verified_brewery",
+            sources: [],
+          },
+        ],
       }),
       { breweries: 0, beers: 0 },
     );
+  });
+
+  it("returns zeros for an empty catalog", () => {
+    assert.deepEqual(catalogCounts({ breweries: [], beers: [] }), { breweries: 0, beers: 0 });
   });
 });
 
@@ -70,18 +101,6 @@ describe("recentBoardEntries", () => {
   });
 
   it("returns an empty list when the catalog has no listings", () => {
-    assert.deepEqual(
-      recentBoardEntries({
-        generatedAt: "",
-        sources: {
-          wikidata: { fetchedAt: "", count: 0 },
-          open_brewery_db: { fetchedAt: "", count: 0 },
-          openstreetmap: { fetchedAt: "", count: 0 },
-        },
-        breweries: [],
-        beers: [],
-      }),
-      [],
-    );
+    assert.deepEqual(recentBoardEntries({ breweries: [], beers: [] }), []);
   });
 });

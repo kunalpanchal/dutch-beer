@@ -104,7 +104,56 @@ A brewery claim proves someone at the brewery stands behind the listing. The con
 
 After review, set `"status": "published"`. The site shows a verified badge; it does not display the email. Do not copy `claimedBy` into the brewery listing file.
 
-Optional profile fields (`description`, `coverImage`, `logo`, `social`, `telephone`, `openingHours`, `taproom`) must come from a public source. Do not invent them. They may live on the brewery listing or on a published claim.
+Optional profile fields must come from a public source. Do not invent them. They may live on the brewery listing or on a published claim.
+
+Supported optional fields (omit any that are unknown):
+
+| Field | Purpose |
+| --- | --- |
+| `description` | Short, sourced about copy |
+| `coverImage`, `logo`, `photos` | Owner- or source-supplied images only |
+| `accentColor` | Brand hex color (`#c41230`) |
+| `social` | Instagram, Facebook, X, YouTube |
+| `telephone`, `contactUrl` | Phone and public contact page |
+| `openingHours`, `taproom`, `tours` | Visit info |
+| `foundedYear`, `founder` | History |
+| `branches` | Extra locations (taproom, shop, …) |
+| `events`, `news` | Upcoming events and brewery updates |
+| `highlightLinks` | Extra CTAs (`[{ "label", "url" }]`) |
+| `featuredBeerSlugs` | Brewery-ranked beer order |
+| `featured` | Featured placement flag |
+| `previewOnly` | Hide from directory lists; page still works by direct URL |
+
+```json
+{
+  "slug": "example-brewery",
+  "name": "Example Brewery",
+  "website": "https://example.beer",
+  "accentColor": "#1a3a5c",
+  "foundedYear": 2014,
+  "contactUrl": "https://example.beer/contact",
+  "highlightLinks": [{ "label": "Webshop", "url": "https://example.beer/shop" }],
+  "featuredBeerSlugs": ["house-ipa", "seasonal-stout"],
+  "address": {
+    "locality": "Breda",
+    "region": "Noord-Brabant",
+    "countryCode": "NL"
+  },
+  "status": "pending_review",
+  "trustLevel": "new",
+  "sources": [
+    {
+      "sourceKind": "official_website",
+      "url": "https://example.beer",
+      "capturedAt": "2026-09-05"
+    }
+  ]
+}
+```
+
+Local layout preview: `data/breweries/dummy.json` (`previewOnly: true`) plus `data/preview/dummy-beers.json` are reachable at `/en/directory/breweries/dummy` and are omitted from brewery/beer indexes, places, sitemap counts, and the home board.
+
+After review, set `"status": "published"`. The site shows a verified badge; it does not display the email. Do not copy `claimedBy` into the brewery listing file.
 
 ## Catalog files
 

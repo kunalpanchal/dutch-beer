@@ -1,0 +1,174 @@
+{
+  "id": "preview-dummy",
+  "slug": "dummy",
+  "name": "Dummy Brewery",
+  "website": "https://example.com/dummy-brewery",
+  "contactUrl": "https://example.com/dummy-brewery/contact",
+  "previewOnly": true,
+  "featured": true,
+  "accentColor": "#1a4d6d",
+  "foundedYear": 2014,
+  "description": "A fully filled preview listing used to check the brewery page layout. Not a real Dutch brewery — open this URL only when reviewing the hub design.",
+  "coverImage": "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&h=640&q=80",
+  "logo": "https://placehold.co/200x200/1a4d6d/f5f0e8/png?text=DB",
+  "telephone": "+31 20 123 4567",
+  "openingHours": "Thu–Fri 16:00–22:00 · Sat 12:00–22:00 · Sun 12:00–18:00",
+  "address": {
+    "street": "Proeflokaalstraat 12",
+    "postalCode": "1011 AB",
+    "locality": "Amsterdam",
+    "region": "Noord-Holland",
+    "countryCode": "NL",
+    "latitude": 52.3731,
+    "longitude": 4.8922
+  },
+  "social": {
+    "instagram": "https://instagram.com/example",
+    "facebook": "https://facebook.com/example",
+    "twitter": "https://x.com/example",
+    "youtube": "https://youtube.com/@example"
+  },
+  "taproom": {
+    "name": "Dummy Taproom",
+    "description": "Eight taps, shared plates, and a view of the brew kit.",
+    "website": "https://example.com/dummy-brewery/taproom"
+  },
+  "tours": {
+    "description": "Walk through the brewery floor and finish with three pours.",
+    "schedule": "Saturdays at 14:00",
+    "bookingUrl": "https://example.com/dummy-brewery/tours"
+  },
+  "founder": {
+    "name": "Alex Brewer",
+    "role": "Founder & head brewer",
+    "bio": "Started Dummy Brewery to show what a complete Dutch.beer profile can look like.",
+    "image": "https://placehold.co/200x200/3a2418/f5f0e8/png?text=AB"
+  },
+  "branches": [
+    {
+      "name": "Dummy Brewery (brewery)",
+      "kind": "brewery",
+      "address": {
+        "street": "Proeflokaalstraat 12",
+        "postalCode": "1011 AB",
+        "locality": "Amsterdam",
+        "region": "Noord-Holland",
+        "countryCode": "NL",
+        "latitude": 52.3731,
+        "longitude": 4.8922
+      },
+      "openingHours": "By appointment",
+      "telephone": "+31 20 123 4567"
+    },
+    {
+      "name": "Dummy Shop West",
+      "kind": "shop",
+      "address": {
+        "street": "Winkelweg 4",
+        "postalCode": "1054 CD",
+        "locality": "Amsterdam",
+        "region": "Noord-Holland",
+        "countryCode": "NL"
+      },
+      "openingHours": "Wed–Sun 12:00–19:00",
+      "website": "https://example.com/dummy-brewery/shop"
+    },
+    {
+      "name": "Dummy Taproom Haarlem",
+      "kind": "taproom",
+      "address": {
+        "street": "Grote Houtstraat 1",
+        "postalCode": "2011 SV",
+        "locality": "Haarlem",
+        "region": "Noord-Holland",
+        "countryCode": "NL"
+      },
+      "openingHours": "Fri–Sat 16:00–23:00",
+      "telephone": "+31 23 765 4321"
+    }
+  ],
+  "events": [
+    {
+      "title": "Release night: Dummy DIPA",
+      "startsAt": "2026-09-20",
+      "endsAt": "2026-09-20",
+      "description": "First pours of the anniversary double IPA.",
+      "url": "https://example.com/dummy-brewery/events/dipa",
+      "location": "Dummy Taproom, Amsterdam"
+    },
+    {
+      "title": "Brewery tour weekend",
+      "startsAt": "2026-10-11",
+      "endsAt": "2026-10-12",
+      "description": "Extra Saturday and Sunday tours with food pairing.",
+      "location": "Proeflokaalstraat 12"
+    }
+  ],
+  "news": [
+    {
+      "title": "New Haarlem taproom now open",
+      "publishedAt": "2026-08-15",
+      "body": "We opened a second taproom in Haarlem with six house beers on draft.",
+      "url": "https://example.com/dummy-brewery/news/haarlem"
+    },
+    {
+      "title": "Canning line upgrade",
+      "publishedAt": "2026-07-01",
+      "body": "Fresh packaging for the core range starts this month."
+    }
+  ],
+  "photos": [
+    {
+      "src": "https://images.unsplash.com/photo-1436076863939-06870fe779c2?auto=format&fit=crop&w=800&h=600&q=80",
+      "alt": "Pints on a wooden bar",
+      "caption": "Taproom pours"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&w=800&h=600&q=80",
+      "alt": "Beer bottles",
+      "caption": "Core range cans"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&h=600&q=80",
+      "alt": "Brewery tanks",
+      "caption": "Brew floor"
+    }
+  ],
+  "highlightLinks": [
+    {
+      "label": "Webshop",
+      "url": "https://example.com/dummy-brewery/shop"
+    },
+    {
+      "label": "Book a table",
+      "url": "https://example.com/dummy-brewery/reservations"
+    },
+    {
+      "label": "Press kit",
+      "url": "https://example.com/dummy-brewery/press"
+    }
+  ],
+  "featuredBeerSlugs": [
+    "dummy-house-ipa",
+    "dummy-barrel-stout",
+    "dummy-wit"
+  ],
+  "claimedBy": "Dummy Brewery",
+  "status": "published",
+  "createdAt": "2026-09-05T00:00:00.000Z",
+  "updatedAt": "2026-09-05T18:00:00.000Z",
+  "createdBy": "preview-fixture",
+  "trustLevel": "verified_brewery",
+  "sources": [
+    {
+      "sourceKind": "other",
+      "note": "Local preview fixture — not a real brewery",
+      "capturedAt": "2026-09-05T00:00:00.000Z"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q0",
+    "openBreweryDb": "00000000-0000-0000-0000-000000000000",
+    "senb": "0"
+  }
+}

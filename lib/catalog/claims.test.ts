@@ -56,6 +56,24 @@ describe("applyPublishedClaims", () => {
     assert.equal(claimed[0].telephone, undefined);
   });
 
+  it("lets a published claim overlay richer profile fields", () => {
+    const claimed = applyPublishedClaims([brewery], [
+      {
+        ...publishedClaim,
+        accentColor: "#1a3a5c",
+        foundedYear: 1994,
+        contactUrl: "https://www.jopen.nl/contact",
+        featuredBeerSlugs: ["hoppenbier"],
+        highlightLinks: [{ label: "Shop", url: "https://www.jopen.nl/shop" }],
+      },
+    ]);
+    assert.equal(claimed[0].accentColor, "#1a3a5c");
+    assert.equal(claimed[0].foundedYear, 1994);
+    assert.equal(claimed[0].contactUrl, "https://www.jopen.nl/contact");
+    assert.deepEqual(claimed[0].featuredBeerSlugs, ["hoppenbier"]);
+    assert.equal(claimed[0].highlightLinks?.[0].label, "Shop");
+  });
+
   it("does not invent a cover or description when the claim omits them", () => {
     const claimed = applyPublishedClaims([brewery], [publishedClaim]);
     assert.equal(claimed[0].coverImage, undefined);
