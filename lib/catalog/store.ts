@@ -6,6 +6,7 @@ import { applyPublishedClaims, loadClaimFiles } from "@/lib/catalog/claims";
 import type { CatalogFile } from "@/lib/catalog/merge";
 import { breweryOrigins, sourceConfidence } from "@/lib/catalog/merge";
 import { catalogCounts, recentBoardEntries } from "@/lib/catalog/home";
+import { buildSearchIndex } from "@/lib/catalog/search";
 import { slugify } from "@/lib/catalog/normalize";
 
 const assembledCatalogPath = path.join(process.cwd(), "data/.assembled.json");
@@ -225,3 +226,8 @@ export async function getPlaceBySlug(slug: string): Promise<{ place: Place; brew
 }
 
 export { breweryOrigins, sourceConfidence };
+
+export async function getSearchIndex() {
+  const index = await loadIndexedCatalog();
+  return buildSearchIndex(index.breweries, index.beers);
+}

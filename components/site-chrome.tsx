@@ -3,6 +3,7 @@ import { GitHubLink } from "@/components/github-mark";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Nix18Mark } from "@/components/nix18-mark";
 import { PintMark } from "@/components/pint-mark";
+import { HeaderSearch } from "@/components/search/search-box";
 import { copy, type Locale } from "@/lib/i18n";
 
 function Logo({ locale }: { locale: Locale }) {
@@ -14,10 +15,16 @@ function Logo({ locale }: { locale: Locale }) {
   );
 }
 
-export function SiteHeader({ locale }: { locale: Locale }) {
+export function SiteHeader({
+  locale,
+  showSearch = true,
+}: {
+  locale: Locale;
+  showSearch?: boolean;
+}) {
   const text = copy[locale].navigation;
   return (
-    <header className="site-header">
+    <header className={`site-header${showSearch ? " site-header-sticky" : ""}`}>
       <div className="shell header-inner">
         <Logo locale={locale} />
         <nav aria-label="Primary navigation">
@@ -27,6 +34,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <Link href={`/${locale}/contribute`}>{text.contribute}</Link>
         </nav>
         <div className="header-end">
+          {showSearch ? <HeaderSearch locale={locale} /> : null}
           <GitHubLink />
           <Link className="header-cta" href={`/${locale}/contribute`}>
             {text.contribute}
