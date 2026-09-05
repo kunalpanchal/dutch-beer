@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GitHubLink } from "@/components/github-mark";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { Nix18Mark } from "@/components/nix18-mark";
 import { PintMark } from "@/components/pint-mark";
 import { copy, type Locale } from "@/lib/i18n";
 
@@ -40,7 +41,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
   const text = copy[locale];
   return (
     <footer>
-      <div className="shell footer-inner">
+      <div className="footer-backdrop" aria-hidden="true">
+        <PintMark className="footer-backdrop-mark footer-backdrop-mark-main" />
+        <PintMark className="footer-backdrop-mark footer-backdrop-mark-side" />
+      </div>
+      <div className="shell footer-shell footer-inner">
         <Logo locale={locale} />
         <div className="footer-copy">
           <p>{text.footer}</p>
@@ -53,6 +58,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/directory/places`}>{text.navigation.places}</Link>
             <Link href={`/${locale}/contribute`}>{text.navigation.contribute}</Link>
           </nav>
+          <Nix18Mark className="footer-nix18" />
           <GitHubLink />
           <LanguageSwitcher locale={locale} />
         </div>
