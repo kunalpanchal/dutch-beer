@@ -385,16 +385,54 @@ a.github-link:hover {
 }
 
 footer {
+  position: relative;
+  overflow: hidden;
   background: var(--stout);
   color: var(--foam);
 }
 
+.footer-shell {
+  width: min(1280px, calc(100% - 48px));
+}
+
+.footer-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.footer-backdrop-mark {
+  position: absolute;
+  color: var(--amber);
+}
+
+.footer-backdrop-mark-main {
+  width: clamp(180px, 28vw, 320px);
+  height: auto;
+  right: clamp(-24px, 4vw, 48px);
+  bottom: -18%;
+  opacity: 0.07;
+  transform: rotate(-12deg);
+}
+
+.footer-backdrop-mark-side {
+  width: clamp(100px, 14vw, 180px);
+  height: auto;
+  left: clamp(4%, 8vw, 12%);
+  top: -22%;
+  opacity: 0.05;
+  transform: rotate(18deg);
+}
+
 .footer-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 16px 24px;
-  padding: 28px 0;
+  gap: 18px 32px;
+  padding: 36px 0;
   font-size: 14px;
 }
 
@@ -405,7 +443,7 @@ footer {
 .footer-copy {
   display: grid;
   gap: 6px;
-  flex: 1 1 12rem;
+  flex: 1 1 16rem;
   min-width: 0;
 }
 
@@ -427,6 +465,26 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 16px;
+}
+
+.footer-nix18 {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  line-height: 0;
+  opacity: 0.92;
+  transition: opacity 0.15s ease;
+}
+
+.footer-nix18:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.footer-nix18-img {
+  display: block;
+  width: 52px;
+  height: auto;
 }
 
 .language-switcher {
@@ -1070,13 +1128,17 @@ button.button { font-family: inherit; }
     white-space: nowrap;
   }
 
+  .footer-shell {
+    width: min(1280px, calc(100% - 40px));
+  }
+
   .footer-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     justify-items: start;
     align-items: start;
-    gap: 14px;
-    padding: 22px 0 28px;
+    gap: 16px;
+    padding: 28px 0 32px;
   }
 
   .footer-copy {
@@ -1091,6 +1153,14 @@ button.button { font-family: inherit; }
 
   .footer-end nav {
     flex: 1 1 100%;
+  }
+
+  .footer-backdrop-mark-main {
+    opacity: 0.06;
+  }
+
+  .footer-backdrop-mark-side {
+    opacity: 0.04;
   }
 }
 
@@ -1262,6 +1332,7 @@ button.button { font-family: inherit; }
 
 @media (max-width: 420px) {
   .shell { width: calc(100% - 32px); }
+  .footer-shell { width: calc(100% - 32px); }
 
   .header-inner {
     column-gap: 10px;
