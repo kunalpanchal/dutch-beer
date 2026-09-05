@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "preview-dummy-dummy-house-ipa",
+    "slug": "dummy-house-ipa",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy House IPA",
+    "style": "India Pale Ale",
+    "abv": 5.2,
+    "availability": "year_round",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-barrel-stout",
+    "slug": "dummy-barrel-stout",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Barrel Stout",
+    "style": "New England India Pale Ale",
+    "abv": 6.9,
+    "availability": "year_round",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-wit",
+    "slug": "dummy-wit",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Wit",
+    "style": "Double India Pale Ale",
+    "abv": 8.6,
+    "availability": "year_round",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-004",
+    "slug": "dummy-beer-004",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 004",
+    "style": "pale ale",
+    "abv": 10.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-005",
+    "slug": "dummy-beer-005",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 005",
+    "style": "blond",
+    "abv": 12,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-006",
+    "slug": "dummy-beer-006",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 006",
+    "style": "witbier",
+    "abv": 4.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-007",
+    "slug": "dummy-beer-007",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 007",
+    "style": "weizenbier",
+    "abv": 6.4,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-008",
+    "slug": "dummy-beer-008",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 008",
+    "style": "pils",
+    "abv": 8.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-009",
+    "slug": "dummy-beer-009",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 009",
+    "style": "stout",
+    "abv": 9.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-010",
+    "slug": "dummy-beer-010",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 010",
+    "style": "imperial stout",
+    "abv": 11.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-011",
+    "slug": "dummy-beer-011",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 011",
+    "style": "porter",
+    "abv": 4.2,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-012",
+    "slug": "dummy-beer-012",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 012",
+    "style": "tripel",
+    "abv": 5.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-013",
+    "slug": "dummy-beer-013",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 013",
+    "style": "dubbel",
+    "abv": 7.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-014",
+    "slug": "dummy-beer-014",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 014",
+    "style": "saison",
+    "abv": 9.3,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-015",
+    "slug": "dummy-beer-015",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 015",
+    "style": "sour beer",
+    "abv": 11,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-016",
+    "slug": "dummy-beer-016",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 016",
+    "style": "farmhouse ale",
+    "abv": 3.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-017",
+    "slug": "dummy-beer-017",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 017",
+    "style": "amber ale",
+    "abv": 5.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-018",
+    "slug": "dummy-beer-018",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 018",
+    "style": "brown ale",
+    "abv": 7.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-019",
+    "slug": "dummy-beer-019",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 019",
+    "style": "barley wine",
+    "abv": 8.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-020",
+    "slug": "dummy-beer-020",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 020",
+    "style": "session IPA",
+    "abv": 10.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-021",
+    "slug": "dummy-beer-021",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 021",
+    "style": "Cold IPA",
+    "abv": 12.2,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-022",
+    "slug": "dummy-beer-022",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 022",
+    "style": "Milkshake India Pale Ale",
+    "abv": 4.9,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-023",
+    "slug": "dummy-beer-023",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 023",
+    "style": "lager",
+    "abv": 6.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-024",
+    "slug": "dummy-beer-024",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 024",
+    "style": "bock",
+    "abv": 8.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-025",
+    "slug": "dummy-beer-025",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 025",
+    "style": "India Pale Ale",
+    "abv": 10,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-026",
+    "slug": "dummy-beer-026",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 026",
+    "style": "New England India Pale Ale",
+    "abv": 11.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-027",
+    "slug": "dummy-beer-027",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 027",
+    "style": "Double India Pale Ale",
+    "abv": 4.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-028",
+    "slug": "dummy-beer-028",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 028",
+    "style": "pale ale",
+    "abv": 6.1,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-029",
+    "slug": "dummy-beer-029",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 029",
+    "style": "blond",
+    "abv": 7.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-030",
+    "slug": "dummy-beer-030",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 030",
+    "style": "witbier",
+    "abv": 9.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-031",
+    "slug": "dummy-beer-031",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 031",
+    "style": "weizenbier",
+    "abv": 11.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-032",
+    "slug": "dummy-beer-032",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 032",
+    "style": "pils",
+    "abv": 3.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-033",
+    "slug": "dummy-beer-033",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 033",
+    "style": "stout",
+    "abv": 5.6,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-034",
+    "slug": "dummy-beer-034",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 034",
+    "style": "imperial stout",
+    "abv": 7.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-035",
+    "slug": "dummy-beer-035",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 035",
+    "style": "porter",
+    "abv": 9,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-036",
+    "slug": "dummy-beer-036",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 036",
+    "style": "tripel",
+    "abv": 10.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-037",
+    "slug": "dummy-beer-037",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 037",
+    "style": "dubbel",
+    "abv": 12.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-038",
+    "slug": "dummy-beer-038",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 038",
+    "style": "saison",
+    "abv": 5.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-039",
+    "slug": "dummy-beer-039",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 039",
+    "style": "sour beer",
+    "abv": 6.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-040",
+    "slug": "dummy-beer-040",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 040",
+    "style": "farmhouse ale",
+    "abv": 8.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-041",
+    "slug": "dummy-beer-041",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 041",
+    "style": "amber ale",
+    "abv": 10.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-042",
+    "slug": "dummy-beer-042",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 042",
+    "style": "brown ale",
+    "abv": 11.9,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-043",
+    "slug": "dummy-beer-043",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 043",
+    "style": "barley wine",
+    "abv": 4.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-044",
+    "slug": "dummy-beer-044",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 044",
+    "style": "session IPA",
+    "abv": 6.3,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-045",
+    "slug": "dummy-beer-045",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 045",
+    "style": "Cold IPA",
+    "abv": 8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-046",
+    "slug": "dummy-beer-046",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 046",
+    "style": "Milkshake India Pale Ale",
+    "abv": 9.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-047",
+    "slug": "dummy-beer-047",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 047",
+    "style": "lager",
+    "abv": 11.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-048",
+    "slug": "dummy-beer-048",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 048",
+    "style": "bock",
+    "abv": 4.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-049",
+    "slug": "dummy-beer-049",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 049",
+    "style": "India Pale Ale",
+    "abv": 5.8,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-050",
+    "slug": "dummy-beer-050",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 050",
+    "style": "New England India Pale Ale",
+    "abv": 7.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-051",
+    "slug": "dummy-beer-051",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 051",
+    "style": "Double India Pale Ale",
+    "abv": 9.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-052",
+    "slug": "dummy-beer-052",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 052",
+    "style": "pale ale",
+    "abv": 10.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-053",
+    "slug": "dummy-beer-053",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 053",
+    "style": "blond",
+    "abv": 3.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-054",
+    "slug": "dummy-beer-054",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 054",
+    "style": "witbier",
+    "abv": 5.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-055",
+    "slug": "dummy-beer-055",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 055",
+    "style": "weizenbier",
+    "abv": 7,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-056",
+    "slug": "dummy-beer-056",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 056",
+    "style": "pils",
+    "abv": 8.7,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-057",
+    "slug": "dummy-beer-057",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 057",
+    "style": "stout",
+    "abv": 10.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-058",
+    "slug": "dummy-beer-058",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 058",
+    "style": "imperial stout",
+    "abv": 12.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-059",
+    "slug": "dummy-beer-059",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 059",
+    "style": "porter",
+    "abv": 4.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-060",
+    "slug": "dummy-beer-060",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 060",
+    "style": "tripel",
+    "abv": 6.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-061",
+    "slug": "dummy-beer-061",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 061",
+    "style": "dubbel",
+    "abv": 8.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-062",
+    "slug": "dummy-beer-062",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 062",
+    "style": "saison",
+    "abv": 9.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-063",
+    "slug": "dummy-beer-063",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 063",
+    "style": "sour beer",
+    "abv": 11.6,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-064",
+    "slug": "dummy-beer-064",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 064",
+    "style": "farmhouse ale",
+    "abv": 4.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-065",
+    "slug": "dummy-beer-065",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 065",
+    "style": "amber ale",
+    "abv": 6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-066",
+    "slug": "dummy-beer-066",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 066",
+    "style": "brown ale",
+    "abv": 7.7,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-067",
+    "slug": "dummy-beer-067",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 067",
+    "style": "barley wine",
+    "abv": 9.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-068",
+    "slug": "dummy-beer-068",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 068",
+    "style": "session IPA",
+    "abv": 11.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-069",
+    "slug": "dummy-beer-069",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 069",
+    "style": "Cold IPA",
+    "abv": 3.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-070",
+    "slug": "dummy-beer-070",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 070",
+    "style": "Milkshake India Pale Ale",
+    "abv": 5.5,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-071",
+    "slug": "dummy-beer-071",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 071",
+    "style": "lager",
+    "abv": 7.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-072",
+    "slug": "dummy-beer-072",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 072",
+    "style": "bock",
+    "abv": 8.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-073",
+    "slug": "dummy-beer-073",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 073",
+    "style": "India Pale Ale",
+    "abv": 10.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-074",
+    "slug": "dummy-beer-074",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 074",
+    "style": "New England India Pale Ale",
+    "abv": 12.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-075",
+    "slug": "dummy-beer-075",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 075",
+    "style": "Double India Pale Ale",
+    "abv": 5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-076",
+    "slug": "dummy-beer-076",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 076",
+    "style": "pale ale",
+    "abv": 6.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-077",
+    "slug": "dummy-beer-077",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 077",
+    "style": "blond",
+    "abv": 8.4,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-078",
+    "slug": "dummy-beer-078",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 078",
+    "style": "witbier",
+    "abv": 10.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-079",
+    "slug": "dummy-beer-079",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 079",
+    "style": "weizenbier",
+    "abv": 11.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-080",
+    "slug": "dummy-beer-080",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 080",
+    "style": "pils",
+    "abv": 4.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-081",
+    "slug": "dummy-beer-081",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 081",
+    "style": "stout",
+    "abv": 6.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-082",
+    "slug": "dummy-beer-082",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 082",
+    "style": "imperial stout",
+    "abv": 7.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-083",
+    "slug": "dummy-beer-083",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 083",
+    "style": "porter",
+    "abv": 9.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-084",
+    "slug": "dummy-beer-084",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 084",
+    "style": "tripel",
+    "abv": 11.3,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-085",
+    "slug": "dummy-beer-085",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 085",
+    "style": "dubbel",
+    "abv": 4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-086",
+    "slug": "dummy-beer-086",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 086",
+    "style": "saison",
+    "abv": 5.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-087",
+    "slug": "dummy-beer-087",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 087",
+    "style": "sour beer",
+    "abv": 7.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-088",
+    "slug": "dummy-beer-088",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 088",
+    "style": "farmhouse ale",
+    "abv": 9.1,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-089",
+    "slug": "dummy-beer-089",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 089",
+    "style": "amber ale",
+    "abv": 10.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-090",
+    "slug": "dummy-beer-090",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 090",
+    "style": "brown ale",
+    "abv": 3.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-091",
+    "slug": "dummy-beer-091",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 091",
+    "style": "barley wine",
+    "abv": 5.2,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-092",
+    "slug": "dummy-beer-092",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 092",
+    "style": "session IPA",
+    "abv": 6.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-093",
+    "slug": "dummy-beer-093",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 093",
+    "style": "Cold IPA",
+    "abv": 8.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-094",
+    "slug": "dummy-beer-094",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 094",
+    "style": "Milkshake India Pale Ale",
+    "abv": 10.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-095",
+    "slug": "dummy-beer-095",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 095",
+    "style": "lager",
+    "abv": 12,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-096",
+    "slug": "dummy-beer-096",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 096",
+    "style": "bock",
+    "abv": 4.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-097",
+    "slug": "dummy-beer-097",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 097",
+    "style": "India Pale Ale",
+    "abv": 6.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-098",
+    "slug": "dummy-beer-098",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 098",
+    "style": "New England India Pale Ale",
+    "abv": 8.1,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-099",
+    "slug": "dummy-beer-099",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 099",
+    "style": "Double India Pale Ale",
+    "abv": 9.8,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-100",
+    "slug": "dummy-beer-100",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 100",
+    "style": "pale ale",
+    "abv": 11.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-101",
+    "slug": "dummy-beer-101",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 101",
+    "style": "blond",
+    "abv": 4.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-102",
+    "slug": "dummy-beer-102",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 102",
+    "style": "witbier",
+    "abv": 5.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-103",
+    "slug": "dummy-beer-103",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 103",
+    "style": "weizenbier",
+    "abv": 7.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-104",
+    "slug": "dummy-beer-104",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 104",
+    "style": "pils",
+    "abv": 9.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-105",
+    "slug": "dummy-beer-105",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 105",
+    "style": "stout",
+    "abv": 11,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-106",
+    "slug": "dummy-beer-106",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 106",
+    "style": "imperial stout",
+    "abv": 3.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-107",
+    "slug": "dummy-beer-107",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 107",
+    "style": "porter",
+    "abv": 5.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-108",
+    "slug": "dummy-beer-108",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 108",
+    "style": "tripel",
+    "abv": 7.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-109",
+    "slug": "dummy-beer-109",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 109",
+    "style": "dubbel",
+    "abv": 8.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-110",
+    "slug": "dummy-beer-110",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 110",
+    "style": "saison",
+    "abv": 10.5,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-111",
+    "slug": "dummy-beer-111",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 111",
+    "style": "sour beer",
+    "abv": 12.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-112",
+    "slug": "dummy-beer-112",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 112",
+    "style": "farmhouse ale",
+    "abv": 4.9,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-113",
+    "slug": "dummy-beer-113",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 113",
+    "style": "amber ale",
+    "abv": 6.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-114",
+    "slug": "dummy-beer-114",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 114",
+    "style": "brown ale",
+    "abv": 8.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-115",
+    "slug": "dummy-beer-115",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 115",
+    "style": "barley wine",
+    "abv": 10,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-116",
+    "slug": "dummy-beer-116",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 116",
+    "style": "session IPA",
+    "abv": 11.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-117",
+    "slug": "dummy-beer-117",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 117",
+    "style": "Cold IPA",
+    "abv": 4.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-118",
+    "slug": "dummy-beer-118",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 118",
+    "style": "Milkshake India Pale Ale",
+    "abv": 6.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-119",
+    "slug": "dummy-beer-119",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 119",
+    "style": "lager",
+    "abv": 7.8,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-120",
+    "slug": "dummy-beer-120",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 120",
+    "style": "bock",
+    "abv": 9.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-121",
+    "slug": "dummy-beer-121",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 121",
+    "style": "India Pale Ale",
+    "abv": 11.2,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-122",
+    "slug": "dummy-beer-122",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 122",
+    "style": "New England India Pale Ale",
+    "abv": 3.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-123",
+    "slug": "dummy-beer-123",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 123",
+    "style": "Double India Pale Ale",
+    "abv": 5.6,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-124",
+    "slug": "dummy-beer-124",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 124",
+    "style": "pale ale",
+    "abv": 7.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-125",
+    "slug": "dummy-beer-125",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 125",
+    "style": "blond",
+    "abv": 9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-126",
+    "slug": "dummy-beer-126",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 126",
+    "style": "witbier",
+    "abv": 10.7,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-127",
+    "slug": "dummy-beer-127",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 127",
+    "style": "weizenbier",
+    "abv": 12.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-128",
+    "slug": "dummy-beer-128",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 128",
+    "style": "pils",
+    "abv": 5.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-129",
+    "slug": "dummy-beer-129",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 129",
+    "style": "stout",
+    "abv": 6.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-130",
+    "slug": "dummy-beer-130",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 130",
+    "style": "imperial stout",
+    "abv": 8.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-131",
+    "slug": "dummy-beer-131",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 131",
+    "style": "porter",
+    "abv": 10.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-132",
+    "slug": "dummy-beer-132",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 132",
+    "style": "tripel",
+    "abv": 11.9,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-133",
+    "slug": "dummy-beer-133",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 133",
+    "style": "dubbel",
+    "abv": 4.6,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-134",
+    "slug": "dummy-beer-134",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 134",
+    "style": "saison",
+    "abv": 6.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-135",
+    "slug": "dummy-beer-135",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 135",
+    "style": "sour beer",
+    "abv": 8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-136",
+    "slug": "dummy-beer-136",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 136",
+    "style": "farmhouse ale",
+    "abv": 9.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-137",
+    "slug": "dummy-beer-137",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 137",
+    "style": "amber ale",
+    "abv": 11.4,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-138",
+    "slug": "dummy-beer-138",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 138",
+    "style": "brown ale",
+    "abv": 4.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-139",
+    "slug": "dummy-beer-139",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 139",
+    "style": "barley wine",
+    "abv": 5.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-140",
+    "slug": "dummy-beer-140",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 140",
+    "style": "session IPA",
+    "abv": 7.5,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-141",
+    "slug": "dummy-beer-141",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 141",
+    "style": "Cold IPA",
+    "abv": 9.2,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-142",
+    "slug": "dummy-beer-142",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 142",
+    "style": "Milkshake India Pale Ale",
+    "abv": 10.9,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-143",
+    "slug": "dummy-beer-143",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 143",
+    "style": "lager",
+    "abv": 3.6,
+    "availability": "one_off",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-144",
+    "slug": "dummy-beer-144",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 144",
+    "style": "bock",
+    "abv": 5.3,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-145",
+    "slug": "dummy-beer-145",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 145",
+    "style": "India Pale Ale",
+    "abv": 7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-146",
+    "slug": "dummy-beer-146",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 146",
+    "style": "New England India Pale Ale",
+    "abv": 8.7,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-147",
+    "slug": "dummy-beer-147",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 147",
+    "style": "Double India Pale Ale",
+    "abv": 10.4,
+    "availability": "seasonal",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-148",
+    "slug": "dummy-beer-148",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 148",
+    "style": "pale ale",
+    "abv": 12.1,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-149",
+    "slug": "dummy-beer-149",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 149",
+    "style": "blond",
+    "abv": 4.8,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "preview-dummy-dummy-beer-150",
+    "slug": "dummy-beer-150",
+    "breweryId": "preview-dummy",
+    "breweryName": "Dummy Brewery",
+    "brewerySlug": "dummy",
+    "name": "Dummy Beer 150",
+    "style": "witbier",
+    "abv": 6.5,
+    "availability": "unknown",
+    "status": "published",
+    "createdAt": "2026-09-05T00:00:00.000Z",
+    "updatedAt": "2026-09-05T00:00:00.000Z",
+    "createdBy": "preview-fixture",
+    "trustLevel": "verified_brewery",
+    "previewOnly": true,
+    "sources": [
+      {
+        "sourceKind": "other",
+        "note": "Local preview fixture",
+        "capturedAt": "2026-09-05T00:00:00.000Z"
+      }
+    ]
+  }
+]
