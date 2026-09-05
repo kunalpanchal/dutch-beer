@@ -52,6 +52,10 @@ export function homePath(locale: Locale): string {
   return `/${locale}`;
 }
 
+export function analyticsPath(locale: Locale): string {
+  return `/${locale}/analytics`;
+}
+
 export function searchPath(
   locale: Locale,
   query?: string,

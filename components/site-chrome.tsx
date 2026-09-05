@@ -31,6 +31,7 @@ export function SiteHeader({
           <Link href={`/${locale}/directory/breweries`}>{text.breweries}</Link>
           <Link href={`/${locale}/directory/beers`}>{text.beers}</Link>
           <Link href={`/${locale}/directory/places`}>{text.places}</Link>
+          <Link href={`/${locale}/analytics`}>{text.analytics}</Link>
           <Link href={`/${locale}/contribute`}>{text.contribute}</Link>
         </nav>
         <div className="header-end">
@@ -64,6 +65,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
             <Link href={`/${locale}/directory/beers`}>{text.navigation.beers}</Link>
             <Link href={`/${locale}/directory/places`}>{text.navigation.places}</Link>
+            <Link href={`/${locale}/analytics`}>{text.navigation.analytics}</Link>
             <Link href={`/${locale}/contribute`}>{text.navigation.contribute}</Link>
           </nav>
           <Nix18Mark className="footer-nix18" />

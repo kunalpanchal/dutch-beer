@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [breweries, beers, places] = await Promise.all([listBreweries(), listBeers(), listPlaces()]);
-  const staticPaths = ["", "/directory/breweries", "/directory/beers", "/directory/places", "/contribute"];
+  const staticPaths = ["", "/directory/breweries", "/directory/beers", "/directory/places", "/analytics", "/contribute"];
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of locales) {
