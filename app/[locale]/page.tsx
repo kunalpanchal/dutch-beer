@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { HeroSearch } from "@/components/search/search-box";
 import { getCatalogCounts, listRecentBoardEntries } from "@/lib/catalog/store";
 import { copy, isLocale, type Locale } from "@/lib/i18n";
 import { homeMetadata } from "@/lib/seo";
@@ -28,30 +29,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   return (
     <main>
-      <SiteHeader locale={locale} />
-      <section className="hero shell">
-        <div>
-          <p className="eyebrow">{text.eyebrow}</p>
-          <h1>{text.title}</h1>
-          <p className="hero-copy">{text.intro}</p>
-          <div className="actions">
-            <Link className="button button-ale" href={`/${locale}/directory/breweries`}>
-              {text.explore}
-            </Link>
-            <Link className="button button-quiet" href={`/${locale}/contribute`}>
-              {text.add}
-            </Link>
-          </div>
-          <p className="hero-note">{text.note}</p>
+      <SiteHeader locale={locale} showSearch={false} />
+      <section className="hero hero-search-layout shell">
+        <HeroSearch locale={locale} />
+        <div className="hero-search-actions">
+          <Link className="button button-ale" href={`/${locale}/directory/breweries`}>
+            {text.explore}
+          </Link>
+          <Link className="button button-quiet" href={`/${locale}/contribute`}>
+            {text.add}
+          </Link>
         </div>
-        <aside className="tap-board" aria-hidden="true">
-          <p>{text.boardLabel}</p>
-          <ul>
-            <li>{copy[locale].navigation.breweries}</li>
-            <li>{copy[locale].navigation.beers}</li>
-            <li>{copy[locale].navigation.contribute}</li>
-          </ul>
-        </aside>
+        <p className="hero-note">{text.note}</p>
       </section>
       <ul className="home-stats shell">
         <li>
@@ -94,22 +83,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         )}
       </section>
-      <section className="owners-invite shell">
-        <div>
+      <section className="contribute-invite shell">
+        <div className="contribute-invite-copy">
           <h2>{text.ownersTitle}</h2>
           <p>{text.ownersCopy}</p>
         </div>
-        <Link className="button button-ale" href={`/${locale}/contribute?kind=brewery`}>
+        <Link className="button button-foam" href={`/${locale}/contribute?kind=brewery`}>
           {text.ownersCta}
-        </Link>
-      </section>
-      <section className="contribute-banner shell">
-        <h2>
-          {text.bannerTitle}
-          <span>{text.bannerTitleSecond}</span>
-        </h2>
-        <Link className="button button-foam" href={`/${locale}/contribute`}>
-          {text.add}
         </Link>
       </section>
       <SiteFooter locale={locale} />

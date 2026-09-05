@@ -55,3 +55,17 @@ export function homePath(locale: Locale): string {
 export function analyticsPath(locale: Locale): string {
   return `/${locale}/analytics`;
 }
+
+export function searchPath(
+  locale: Locale,
+  query?: string,
+  kind?: "brewery" | "place" | "beer" | "style",
+): string {
+  const path = `/${locale}/search`;
+  if (!query && !kind) return path;
+  const params = new URLSearchParams();
+  if (query?.trim()) params.set("q", query.trim());
+  if (kind) params.set("kind", kind);
+  const encoded = params.toString();
+  return encoded ? `${path}?${encoded}` : path;
+}
