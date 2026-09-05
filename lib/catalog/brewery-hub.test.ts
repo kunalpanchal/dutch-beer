@@ -3,7 +3,13 @@ import assert from "node:assert/strict";
 import path from "node:path";
 import type { Beer } from "../schema";
 import { loadListingFiles } from "./listings";
-import { breweryIntro, partitionBreweryBeers, usesBeerSheet } from "./brewery-hub";
+import {
+  breweryIntro,
+  isSafeAccentColor,
+  partitionBreweryBeers,
+  upcomingEvents,
+  usesBeerSheet,
+} from "./brewery-hub";
 
 const capturedAt = "2026-09-01T00:00:00.000Z";
 
@@ -40,6 +46,24 @@ describe("partitionBreweryBeers", () => {
     assert.deepEqual(partitionBreweryBeers([special, core, unknown]), {
       featured: [core],
       listed: [special, unknown],
+    });
+  });
+
+  it("lets a brewery rank featured beers ahead of availability tagging", () => {
+    const alpha = beer({ id: "a", slug: "alpha", name: "Alpha", availability: "year_round" });
+    const bravo = beer({ id: "b", slug: "bravo", name: "Bravo" });
+    const charlie = beer({ id: "c", slug: "charlie", name: "Charlie" });
+    assert.deepEqual(partitionBreweryBeers([alpha, bravo, charlie], ["charlie", "bravo"]), {
+      featured: [charlie, bravo],
+      listed: [alpha],
+    });
+  });
+
+  it("falls back when featuredBeerSlugs match nothing", () => {
+    const core = beer({ id: "core", slug: "core", name: "Core", availability: "year_round" });
+    assert.deepEqual(partitionBreweryBeers([core], ["missing"]), {
+      featured: [core],
+      listed: [],
     });
   });
 
@@ -80,6 +104,33 @@ describe("breweryIntro", () => {
     assert.equal(
       breweryIntro({ name: "Old Tap", closed: true }, templates, "Utrecht"),
       "Old Tap was a brewery in Utrecht.",
+    );
+  });
+});
+
+describe("isSafeAccentColor", () => {
+  it("accepts hex colors only", () => {
+    assert.equal(isSafeAccentColor("#c41230"), true);
+    assert.equal(isSafeAccentColor("#abc"), true);
+    assert.equal(isSafeAccentColor("red"), false);
+    assert.equal(isSafeAccentColor("url(javascript:alert(1))"), false);
+  });
+});
+
+describe("upcomingEvents", () => {
+  it("keeps current and future events and drops past ones", () => {
+    const now = new Date("2026-09-05T12:00:00.000Z");
+    const events = upcomingEvents(
+      [
+        { title: "Past", startsAt: "2026-08-01" },
+        { title: "Today", startsAt: "2026-09-05" },
+        { title: "Soon", startsAt: "2026-10-01", endsAt: "2026-10-02" },
+      ],
+      now,
+    );
+    assert.deepEqual(
+      events.map((event) => event.title),
+      ["Today", "Soon"],
     );
   });
 });

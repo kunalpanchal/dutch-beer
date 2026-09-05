@@ -55,6 +55,29 @@ function optionalString(value: unknown): string | undefined {
   return typeof value === "string" && value.trim() ? value : undefined;
 }
 
+function optionalObject<T>(value: unknown): T | undefined {
+  return value && typeof value === "object" && !Array.isArray(value) ? (value as T) : undefined;
+}
+
+function optionalArray<T>(value: unknown): T[] | undefined {
+  return Array.isArray(value) && value.length ? (value as T[]) : undefined;
+}
+
+function optionalYear(value: unknown): number | undefined {
+  if (typeof value === "number" && Number.isInteger(value) && value >= 1200 && value <= 2100) return value;
+  if (typeof value === "string" && /^\d{4}$/.test(value)) {
+    const year = Number(value);
+    if (year >= 1200 && year <= 2100) return year;
+  }
+  return undefined;
+}
+
+function optionalStringList(value: unknown): string[] | undefined {
+  if (!Array.isArray(value) || !value.length) return undefined;
+  const items = value.filter((entry): entry is string => typeof entry === "string" && Boolean(entry.trim()));
+  return items.length ? items : undefined;
+}
+
 function normalizeBreweryRecord(slug: string, data: Record<string, unknown>): Brewery {
   const capturedAt = typeof data.updatedAt === "string" ? data.updatedAt : new Date().toISOString().slice(0, 10);
   return {
@@ -75,10 +98,23 @@ function normalizeBreweryRecord(slug: string, data: Record<string, unknown>): Br
     description: optionalString(data.description),
     coverImage: optionalString(data.coverImage),
     logo: optionalString(data.logo),
-    social: data.social && typeof data.social === "object" ? (data.social as Brewery["social"]) : undefined,
+    accentColor: optionalString(data.accentColor),
+    social: optionalObject(data.social),
     telephone: optionalString(data.telephone),
+    contactUrl: optionalString(data.contactUrl),
     openingHours: optionalString(data.openingHours),
-    taproom: data.taproom && typeof data.taproom === "object" ? (data.taproom as Brewery["taproom"]) : undefined,
+    taproom: optionalObject(data.taproom),
+    foundedYear: optionalYear(data.foundedYear),
+    founder: optionalObject(data.founder),
+    tours: optionalObject(data.tours),
+    branches: optionalArray(data.branches),
+    events: optionalArray(data.events),
+    news: optionalArray(data.news),
+    photos: optionalArray(data.photos),
+    highlightLinks: optionalArray(data.highlightLinks),
+    featuredBeerSlugs: optionalStringList(data.featuredBeerSlugs),
+    featured: data.featured === true ? true : undefined,
+    previewOnly: data.previewOnly === true ? true : undefined,
   };
 }
 
@@ -107,7 +143,27 @@ function normalizeBeerRecord(slug: string, data: Record<string, unknown>, brewer
     trustLevel: asTrust(data.trustLevel),
     sources: Array.isArray(data.sources) ? (data.sources as Beer["sources"]) : [],
     externalIds: data.externalIds as Beer["externalIds"],
+    previewOnly: data.previewOnly === true ? true : undefined,
   };
+}
+
+async function loadPreviewBeers(directory: string, breweries: Brewery[]): Promise<Beer[]> {
+  const previewPath = path.join(directory, "preview", "dummy-beers.json");
+  let raw: string;
+  try {
+    raw = await readFile(previewPath, "utf8");
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
+    throw error;
+  }
+  const parsed = JSON.parse(raw) as unknown;
+  if (!Array.isArray(parsed)) throw new Error(`${previewPath} must be a JSON array of beers`);
+  return parsed.map((entry, index) => {
+    if (!entry || typeof entry !== "object") throw new Error(`${previewPath}[${index}] is not an object`);
+    const data = entry as Record<string, unknown>;
+    const slug = typeof data.slug === "string" ? data.slug : `preview-beer-${index + 1}`;
+    return { ...normalizeBeerRecord(slug, { ...data, previewOnly: true }, breweries), previewOnly: true as const };
+  });
 }
 
 export async function loadListingFiles(directory: string): Promise<{ breweries: Brewery[]; beers: Beer[] }> {
@@ -118,13 +174,18 @@ export async function loadListingFiles(directory: string): Promise<{ breweries: 
   const breweries = breweryFiles
     .map((file) => normalizeBreweryRecord(file.slug, file.data))
     .sort((a, b) => a.name.localeCompare(b.name, "nl"));
-  const beers = beerFiles
-    .map((file) => normalizeBeerRecord(file.slug, file.data, breweries))
-    .sort((a, b) => {
-      const byName = a.name.localeCompare(b.name, "nl");
-      if (byName !== 0) return byName;
-      return a.breweryName.localeCompare(b.breweryName, "nl");
-    });
+  const previewBeers = await loadPreviewBeers(directory, breweries);
+  const previewSlugs = new Set(previewBeers.map((beer) => beer.slug));
+  const beers = [
+    ...beerFiles
+      .map((file) => normalizeBeerRecord(file.slug, file.data, breweries))
+      .filter((beer) => !previewSlugs.has(beer.slug)),
+    ...previewBeers,
+  ].sort((a, b) => {
+    const byName = a.name.localeCompare(b.name, "nl");
+    if (byName !== 0) return byName;
+    return a.breweryName.localeCompare(b.breweryName, "nl");
+  });
   return { breweries, beers };
 }
 

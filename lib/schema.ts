@@ -63,6 +63,59 @@ export interface TaproomInfo {
   website?: string;
 }
 
+export interface BreweryLink {
+  label: string;
+  url: string;
+}
+
+export interface BreweryFounder {
+  name: string;
+  role?: string;
+  /** Owner- or source-supplied. Never generated. */
+  bio?: string;
+  /** Absolute URL or site-relative path. Never a stock stand-in. */
+  image?: string;
+}
+
+export type BreweryBranchKind = "brewery" | "taproom" | "shop" | "other";
+
+export interface BreweryBranch {
+  name: string;
+  kind?: BreweryBranchKind;
+  address?: BreweryAddress;
+  telephone?: string;
+  openingHours?: string;
+  website?: string;
+}
+
+export interface BreweryEvent {
+  title: string;
+  startsAt: string;
+  endsAt?: string;
+  description?: string;
+  url?: string;
+  location?: string;
+}
+
+export interface BreweryNewsUpdate {
+  title: string;
+  publishedAt: string;
+  body?: string;
+  url?: string;
+}
+
+export interface BreweryTour {
+  description?: string;
+  bookingUrl?: string;
+  schedule?: string;
+}
+
+export interface BreweryPhoto {
+  src: string;
+  alt?: string;
+  caption?: string;
+}
+
 export interface Brewery extends AuditFields {
   id: string;
   slug: string;
@@ -77,10 +130,30 @@ export interface Brewery extends AuditFields {
   /** Absolute URL or site-relative path. Never a stock stand-in. */
   coverImage?: string;
   logo?: string;
+  /** CSS color from the brewery brand, e.g. "#1a3a5c". */
+  accentColor?: string;
   social?: BrewerySocial;
   telephone?: string;
+  /** Public contact page or form. Prefer over publishing a private inbox. */
+  contactUrl?: string;
   openingHours?: string;
   taproom?: TaproomInfo;
+  foundedYear?: number;
+  founder?: BreweryFounder;
+  tours?: BreweryTour;
+  branches?: BreweryBranch[];
+  events?: BreweryEvent[];
+  /** Brewery-authored news, distinct from listing updatedAt. */
+  news?: BreweryNewsUpdate[];
+  photos?: BreweryPhoto[];
+  /** Owner-chosen links to highlight (shop, booking, menu, …). */
+  highlightLinks?: BreweryLink[];
+  /** Brewery-ranked beer slugs shown ahead of the full list. */
+  featuredBeerSlugs?: string[];
+  /** Editorial or claimed featured placement on the directory. */
+  featured?: boolean;
+  /** Preview fixture: reachable by slug URL, omitted from directory lists. */
+  previewOnly?: boolean;
 }
 
 export interface BeerExternalIds {
@@ -102,6 +175,8 @@ export interface Beer extends AuditFields {
   /** Owner- or source-supplied short copy. Never generated. */
   description?: string;
   externalIds?: BeerExternalIds;
+  /** Preview fixture beer: omitted from public beer lists. */
+  previewOnly?: boolean;
 }
 
 export interface Contribution extends AuditFields {

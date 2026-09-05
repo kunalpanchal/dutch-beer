@@ -957,6 +957,8 @@ button.button { font-family: inherit; }
 .badge-closed { background: #f3d7c8; }
 .badge-pending { background: #ead7a8; }
 .badge-claimed { background: #dce8d4; }
+.badge-verified { background: #dce8d4; }
+.badge-featured { background: #ead7a8; color: var(--stout); }
 .badge-wikidata { background: #e8eef8; }
 .badge-open_brewery_db { background: #e8f3e4; }
 .badge-openstreetmap { background: #efe6d4; }
@@ -1373,7 +1375,26 @@ button.button { font-family: inherit; }
 }
 
 .brewery-hub {
-  padding: 0 0 56px;
+  padding: 0 0 24px;
+}
+
+.brewery-hub-branded {
+  --brewery-accent: var(--amber);
+}
+
+.brewery-hub-branded .brewery-cover,
+.brewery-hub-branded .brewery-identity-band {
+  border-bottom-color: var(--brewery-accent);
+}
+
+.brewery-hub-branded .button-ale {
+  background: var(--brewery-accent);
+}
+
+.brewery-hub-branded .claimed-status,
+.brewery-hub-branded .brewery-identity-band .eyebrow,
+.brewery-hub-branded .brewery-identity-band .eyebrow a {
+  color: var(--brewery-accent);
 }
 
 .brewery-hub-top {
@@ -1461,6 +1482,13 @@ button.button { font-family: inherit; }
   border-color: #8a5a28;
 }
 
+.brewery-identity-band .badge-verified,
+.brewery-identity-band .badge-featured {
+  background: rgba(251, 244, 228, 0.16);
+  color: var(--foam);
+  border-color: rgba(234, 215, 168, 0.45);
+}
+
 .brewery-place {
   margin: 10px 0 0;
   font-size: 17px;
@@ -1529,6 +1557,169 @@ button.button { font-family: inherit; }
   height: 200px;
 }
 
+.brewery-about-extras {
+  margin-top: 20px;
+  max-width: 40em;
+}
+
+.brewery-founded {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.brewery-founder-body {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.brewery-founder-image {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  background: var(--foam);
+  border: 1px solid var(--line);
+}
+
+.brewery-founder-role {
+  margin: 4px 0 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.brewery-tour-schedule {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.brewery-highlight-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brewery-highlight-links a {
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid currentColor;
+}
+
+.brewery-section > h2 {
+  margin-top: 36px;
+}
+
+.brewery-branch-list,
+.brewery-event-list,
+.brewery-news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brewery-branch-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px 28px;
+}
+
+.brewery-branch {
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.brewery-branch-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.brewery-branch-head strong {
+  font: 700 18px / 1.3 var(--font-display), Georgia, serif;
+}
+
+.brewery-branch-head span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.brewery-branch p {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.brewery-event-list li,
+.brewery-news-list li {
+  display: grid;
+  grid-template-columns: minmax(110px, 140px) minmax(0, 1fr);
+  gap: 12px 20px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.brewery-event-list time,
+.brewery-news-list time {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.brewery-event-place {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.brewery-event-list p,
+.brewery-news-list p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.brewery-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brewery-photo-grid li {
+  margin: 0;
+}
+
+.brewery-photo-grid figure {
+  margin: 0;
+}
+
+.brewery-photo-grid img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--foam);
+  border: 1px solid var(--line);
+}
+
+.brewery-photo-grid figcaption {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .brewery-listing-details {
   margin: 36px 0 8px;
   padding-top: 16px;
@@ -1589,22 +1780,19 @@ button.button { font-family: inherit; }
 }
 
 .beer-index,
-.place-index,
-.related-breweries {
+.place-index {
   margin: 0 0 8px;
   padding: 0;
   list-style: none;
 }
 
 .beer-index li,
-.place-index li,
-.related-breweries li {
+.place-index li {
   border-bottom: 1px dashed var(--line);
 }
 
 .beer-index a,
-.place-index a,
-.related-breweries a {
+.place-index a {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -1612,8 +1800,7 @@ button.button { font-family: inherit; }
 }
 
 .beer-index strong,
-.place-index strong,
-.related-breweries a {
+.place-index strong {
   font: 700 18px / 1.3 var(--font-display), Georgia, serif;
 }
 
@@ -1622,6 +1809,63 @@ button.button { font-family: inherit; }
   color: var(--muted);
   font-size: 14px;
   font-weight: 500;
+}
+
+.brewery-nearby {
+  margin: 48px 0 0;
+  padding: 28px 0 40px;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.brewery-nearby-kicker {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.brewery-nearby h2 {
+  margin: 0 0 16px;
+  font: 700 16px / 1.35 var(--font-sans), sans-serif;
+  color: var(--muted);
+}
+
+.brewery-nearby-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brewery-nearby-list a {
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--line);
+}
+
+.brewery-nearby-list a:hover {
+  border-bottom-color: var(--ink);
+}
+
+.brewery-nearby-more {
+  margin: 18px 0 0;
+}
+
+.brewery-nearby-more a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  border-bottom: 1px solid currentColor;
+}
+
+.brewery-nearby-more a:hover {
+  color: var(--ink);
 }
 
 .claim-panel {
@@ -1709,6 +1953,16 @@ address { font-style: normal; }
     left: 16px;
     width: 72px;
     height: 72px;
+  }
+
+  .brewery-event-list li,
+  .brewery-news-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .brewery-founder-body {
+    flex-direction: column;
   }
 
   .beer-index a,
