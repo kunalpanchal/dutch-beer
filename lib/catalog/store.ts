@@ -58,7 +58,7 @@ const loadIndexedCatalog = cache(async (): Promise<CatalogIndex> => {
 });
 
 export async function listBreweries(): Promise<Brewery[]> {
-  return (await loadIndexedCatalog()).breweries;
+  return (await loadIndexedCatalog()).breweries.filter((brewery) => !brewery.previewOnly);
 }
 
 export async function listPublishedBreweries(): Promise<Brewery[]> {
@@ -78,7 +78,9 @@ export async function getBreweryById(id: string): Promise<Brewery | undefined> {
 }
 
 export async function listBeers(): Promise<Beer[]> {
-  return (await loadIndexedCatalog()).beers;
+  const index = await loadIndexedCatalog();
+  const previewKeys = previewBreweryKeys(index.breweries);
+  return index.beers.filter((beer) => !beer.previewOnly && !beerBelongsToPreview(beer, previewKeys));
 }
 
 export async function listPublishedBeers(): Promise<Beer[]> {
@@ -86,11 +88,22 @@ export async function listPublishedBeers(): Promise<Beer[]> {
 }
 
 export async function getCatalogCounts() {
-  return catalogCounts(await loadCatalog());
+  return catalogCounts(await loadCatalog(), await listBreweries(), await listBeers());
 }
 
 export async function listRecentBoardEntries(limit = 6) {
-  return recentBoardEntries(await loadCatalog(), limit);
+  const [breweries, beers] = await Promise.all([listBreweries(), listBeers()]);
+  return recentBoardEntries({ breweries, beers }, limit);
+}
+
+function previewBreweryKeys(breweries: Brewery[]): Set<string> {
+  return new Set(
+    breweries.filter((brewery) => brewery.previewOnly).flatMap((brewery) => [brewery.id, brewery.slug]),
+  );
+}
+
+function beerBelongsToPreview(beer: Beer, previewKeys: Set<string>): boolean {
+  return previewKeys.has(beer.breweryId) || Boolean(beer.brewerySlug && previewKeys.has(beer.brewerySlug));
 }
 
 export async function getBeerBySlug(slug: string): Promise<Beer | undefined> {

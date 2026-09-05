@@ -1,4 +1,5 @@
 import type { CatalogFile } from "@/lib/catalog/merge";
+import type { Beer, Brewery } from "@/lib/schema";
 
 export interface CatalogCounts {
   breweries: number;
@@ -13,10 +14,25 @@ export interface RecentBoardEntry {
   createdAt: string;
 }
 
-export function catalogCounts(catalog: CatalogFile): CatalogCounts {
+type CatalogSlice = CatalogFile | Pick<CatalogFile, "breweries" | "beers">;
+
+function previewKeysFrom(breweries: Brewery[]): Set<string> {
+  return new Set(breweries.filter((brewery) => brewery.previewOnly).flatMap((brewery) => [brewery.id, brewery.slug]));
+}
+
+function isListedBeer(beer: Beer, previewKeys: Set<string>): boolean {
+  return !beer.previewOnly && !previewKeys.has(beer.breweryId) && !(beer.brewerySlug && previewKeys.has(beer.brewerySlug));
+}
+
+export function catalogCounts(
+  catalog: CatalogSlice,
+  listedBreweries?: Brewery[],
+  listedBeers?: Beer[],
+): CatalogCounts {
+  const previewKeys = previewKeysFrom(catalog.breweries);
   return {
-    breweries: catalog.breweries.length,
-    beers: (catalog.beers ?? []).length,
+    breweries: listedBreweries?.length ?? catalog.breweries.filter((brewery) => !brewery.previewOnly).length,
+    beers: listedBeers?.length ?? (catalog.beers ?? []).filter((beer) => isListedBeer(beer, previewKeys)).length,
   };
 }
 
@@ -41,28 +57,33 @@ function newest<T>(items: T[], compare: (a: T, b: T) => number, limit: number): 
   return [...items].sort(compare).slice(0, limit);
 }
 
-export function recentBoardEntries(catalog: CatalogFile, limit = 6): RecentBoardEntry[] {
+export function recentBoardEntries(catalog: CatalogSlice, limit = 6): RecentBoardEntry[] {
   if (limit <= 0) return [];
 
+  const previewKeys = previewKeysFrom(catalog.breweries);
   const breweries = newest(
-    catalog.breweries.map((brewery) => ({
-      kind: "brewery" as const,
-      slug: brewery.slug,
-      name: brewery.name,
-      detail: brewery.address?.locality?.trim() || undefined,
-      createdAt: brewery.createdAt,
-    })),
+    catalog.breweries
+      .filter((brewery) => !brewery.previewOnly)
+      .map((brewery) => ({
+        kind: "brewery" as const,
+        slug: brewery.slug,
+        name: brewery.name,
+        detail: brewery.address?.locality?.trim() || undefined,
+        createdAt: brewery.createdAt,
+      })),
     byNewestThenName,
     limit,
   );
   const beers = newest(
-    (catalog.beers ?? []).map((beer) => ({
-      kind: "beer" as const,
-      slug: beer.slug,
-      name: beer.name,
-      detail: beer.breweryName,
-      createdAt: beer.createdAt,
-    })),
+    (catalog.beers ?? [])
+      .filter((beer) => isListedBeer(beer, previewKeys))
+      .map((beer) => ({
+        kind: "beer" as const,
+        slug: beer.slug,
+        name: beer.name,
+        detail: beer.breweryName,
+        createdAt: beer.createdAt,
+      })),
     byNewestThenName,
     limit,
   );
