@@ -24,15 +24,14 @@ export function SubstackSubscribe({ locale }: { locale: Locale }) {
         src="https://dutchbeer.substack.com/embed"
         title={text.title}
         width={480}
-        height={150}
+        height={320}
         style={{
           display: "block",
           width: "100%",
           maxWidth: 480,
-          height: 150,
-          border: "1px solid rgba(251, 244, 228, 0.18)",
-          borderRadius: 10,
-          background: "transparent",
+          height: 320,
+          border: "1px solid #EEE",
+          background: "white",
         }}
         frameBorder={0}
         scrolling="no"
