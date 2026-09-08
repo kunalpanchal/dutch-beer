@@ -4,6 +4,7 @@ import { LanguageSwitcher } from "@/components/language-switcher";
 import { Nix18Mark } from "@/components/nix18-mark";
 import { PintMark } from "@/components/pint-mark";
 import { HeaderSearch } from "@/components/search/search-box";
+import { SubstackSubscribe } from "@/components/substack-subscribe";
 import { copy, type Locale } from "@/lib/i18n";
 
 function Logo({ locale }: { locale: Locale }) {
@@ -60,6 +61,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <p>{text.footer}</p>
           <p>{text.footerBuilt}</p>
         </div>
+        <SubstackSubscribe locale={locale} />
         <div className="footer-end">
           <nav aria-label="Footer">
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
