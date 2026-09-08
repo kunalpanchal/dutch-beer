@@ -61,11 +61,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <p>{text.footer}</p>
           <p>{text.footerBuilt}</p>
         </div>
-        <div className="footer-newsletter">
-          <h2>{text.footerNewsletter}</h2>
-          <p>{text.footerNewsletterHint}</p>
-          <SubstackSubscribe title={text.footerNewsletter} />
-        </div>
+        <SubstackSubscribe locale={locale} />
         <div className="footer-end">
           <nav aria-label="Footer">
             <Link href={`/${locale}/directory/breweries`}>{text.navigation.breweries}</Link>
